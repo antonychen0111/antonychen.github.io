@@ -40,7 +40,7 @@ body {
 	width: 50px;
 	
 	position: fixed;
-	margin: 50vh;
+	margin-top: 50vh;
 	margin-left: 47.5vw;
 	
 	z-index: 12;
@@ -77,24 +77,23 @@ body {
     }
 }
 
-#infotext {
+#infoname {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 1rem;
 	line-height: 0.75rem;
-	align-items: left;
+	text-align: left;
 	
 	padding: 15px;
-	width:40vw;
-    height:40vw;
+	width: 400px;
+    height: 400px;
 	
-	margin-left: 1vw;
-	margin-top: 1vw;
+	margin-top: 10px;
+	margin-left: 10px;
 	
 	position: fixed;
-	top: 5;
-	left: 10;
 	z-index: 5;
+	cursor: default;
 }
 
 #info {
@@ -102,103 +101,102 @@ body {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 1rem;
 	line-height: 0.75rem;
-	align-items: left;
+	text-align: left;
 	
 	background-color: #7FFFD4;
 	border: 2px black solid;
 	padding: 15px;
-	width:40vw;
-    height:40vw;
+	width: 400px;
+    height: 460px;
 	
-	margin-left: 1vw;
-	margin-top: 1vw;
+	margin-top: 10px;
+	margin-left: 10px;
 	
 	position: fixed;
-	top: 5;
-	left: 10;
+	opacity: 1;
 	z-index: 3;
 	
 }
+
+#infotext {
+	
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	
+	}
+
+.contact {
+	color: #FFFFFF;
+	background-color: #000000;
+	text-decoration: none;
+	
+	}
+
+.contact:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1.5px #000000 solid;
+	text-decoration: none;
+	
+	}
 
 #test {
 	
 	background-color: #FFFFFF;
 	border: 2px black solid;
 	padding: 15px;
-	width:400px;
-    height:4000px;
+	width: 500px;
+    height: 5000px;
 	
-	margin-left: 100px;
 	margin-top: 60px;
+	margin-left: 100px;
 	
 	position: absolute;
-	top: 5;
-	left: 10;
 	z-index: 0;
 	
 }
 
 .material-icons {
 	display: none;
+	user-select: none;
 	cursor: pointer;
 	font-size: 40px;
+	text-align: right;
 	position: fixed;
-	right: 5vw;
+	right: 30px;
 	bottom: 50px;
 	z-index: 5;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
 	
-	#infotext {
+	#infoname {
 		font-size: 0.75rem;
 		line-height: 0.5rem;
-		width: 240px;
-		height: 250px;
-		margin-left: 6px;
-		margin-top: 6px;
-	
+		width: 275px;
+		height: 265px;
+		margin-top: 5px;
+		margin-left: 5px;
 	}
 	
 	#info {
 		font-size: 0.75rem;
 		line-height: 0.5rem;
-		width: 240px;
-		height: 250px;
-		margin-left: 6px;
-		margin-top: 6px;
-	
+		width: 275px;
+		height: 310px;
+		margin-top: 5px;
+		margin-left: 5px;
 	}
-	
-	.material-icons {
-	font-size: 40px;
-	right: 27px;
-	bottom: 50px;
-	}
-	
-}
-
-@media (min-width: 1000px) {
 	
 	#infotext {
-		width:400px;
-		height:450px;
-		margin-left: 9.5px;
-		margin-top: 9.5px;
-	
-	}
-	
-	#info {
-		width:400px;
-		height:450px;
-		margin-left: 9.5px;
-		margin-top: 9.5px;
-	
+		font-size: 0.5rem;
+		line-height: 1rem;
 	}
 	
 	.material-icons {
-	font-size: 40px;
-	right: 50px;
+	font-size: 50px;
+	right: 30px;
 	bottom: 50px;
 	}
 	

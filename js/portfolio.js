@@ -17,10 +17,12 @@ setInterval(topdisplay, 100);
 
 window.onscroll = function(){
 	document.getElementById("info").style.zIndex = -1;
+	document.getElementById("info").style.opacity = 0.5;
 }
 
 function infoup(){
 	document.getElementById("info").style.zIndex = 3;
+	document.getElementById("info").style.opacity = 1;
 }
 
 function totop(){
