@@ -1,9 +1,11 @@
-window.onload = setTimeout (function inloading(){
+// JavaScript Document
+
+window.onload = setTimeout( function(){
 	document.getElementById("loadingbackground").style.display = 'none';
 	document.getElementById("loadingbar").style.display = 'none';
 	document.getElementById("loadingline").style.display = 'none';
 	document.querySelector("html").style.overflowY= 'scroll';
-	},1000);
+	} ,1000)
 
 function topdisplay() {
 	if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
@@ -27,4 +29,18 @@ function infoup(){
 
 function totop(){
 	window.document.documentElement.scrollTop = 0;
+}
+
+function createbox(){
+
+var box = "";
+for (var i = 0; i < 10; i++) {
+    box += '<div id="inbox">';
+	box += '<div class="pic"><img src="./works/pic/'+(1+i)+'.jpg" width="100%"></div>';
+	box += '   <div class="description">';
+	box += '       <p>'+'<iframe frameborder=0 src="works/text/'+(1+i)+'.txt"></iframe>'+'</p>';
+	box += '   </div>';
+    box += '</div>';
+}
+document.getElementById("box").innerHTML = box;
 }
