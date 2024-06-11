@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body {
+	
+	font-size: 16px;
+	scroll-behavior: smooth;
+    overflow-y: visible;
+    overflow-x: visible;
+	user-select: none;
+	
+	--LightModeBackground: #FFFFFF;
+	--DarkModeBackground: #000000;
+	--LightModeInvent: #000000;
+	--DarkModeInvent: #FFFFFF;
+
+	background-color: var(--LightModeBackground);
+	
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	float: left;
+}
+
+::-webkit-scrollbar {
+	
+	background-color: #F0F0F0;
+	width: 10px;
+	height: 10px;
+	z-index: 9;
+}
+
+::-webkit-scrollbar-thumb {
+	
+    background-color: #A0A0A0;
+	z-index: 9;
+	
+}
+
+::-webkit-scrollbar-thumb:hover {
+	
+    background-color: #A0A0A0;
+	z-index: 9;
+	
+}
+
+#loadingBackground {
+	
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	
+	background: #FFFFFF;
+	opacity: 0.85;
+	z-index: 10;
+	display: block;
+	
+}
+
+#loadingBar {
+	
+	border: 2px black solid;
+	height: 5px;
+	width: 50px;
+	
+	position: fixed;
+	margin-top: 50vh;
+	margin-left: 47.5vw;
+	
+	z-index: 12;
+	display: block;
+	
+}
+
+#loadingLine {
+	
+	background-color: #000000;
+	height: 8px;
+	
+	position: fixed;
+	margin-top: 50vh;
+	margin-left: 47.5vw;
+	
+    animation-name: inloading;
+    animation-duration: 1s;
+	animation-fill-mode:forwards;
+	animation-timing-function: ease;
+	
+	z-index: 11;
+	display: block;
+	
+}
+
+@keyframes inloading{
+    0% {
+		width: 0.1px;
+    }
+    100% {
+		width: 52.5px;
+    }
+}
+
+.material-iconMenuOpen {
+    
+	display: none;
+	user-select: none;
+	cursor: pointer;
+	
+	font-family: 'Material Icons';
+	font-size: 40px;
+	font-style: normal;
+	
+    color: #000000;
+	text-align: left;
+	position: fixed;
+	left: 30px;
+	top: 30px;
+	z-index: 4;
+}
+
+.material-iconMenuOpen:hover {
+    
+    color: #A0A0A0;
+    
+}
+
+.material-iconMenuClose {
+    
+	display: none;
+	user-select: none;
+	cursor: pointer;
+	
+	font-family: 'Material Icons';
+	font-size: 45px;
+	font-style: normal;
+	
+    color: #000000;
+	text-align: left;
+	position: fixed;
+	left: 30px;
+	top: 30px;
+	z-index: 6;
+}
+
+.material-iconMenuClose:hover {
+    
+    color: #A0A0A0;
+    
+}
+
+.material-iconUpward {
+    
+	display: none;
+	user-select: none;
+	cursor: pointer;
+	
+	font-family: 'Material Icons';
+	font-size: 40px;
+	font-style: normal;
+	
+    color: #000000;
+	text-align: right;
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	z-index: 4;
+}
+
+.material-iconUpward:hover {
+    
+    color: #A0A0A0;
+    
+}
+
+#menuBox {
+	
+	display: none;
+	background-color: rgba(200,200,200,85%);
+	padding: 15px;
+    width: 100%;
+    height: 100%;
+	position: fixed;
+	opacity: 1;
+	z-index: 5;
+	
+}
+
+.menuBox {
+	
+	color: #000000;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 3rem;
+	text-align: left;
+	
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #000000;
+	text-decoration-thickness: 3px;
+	
+}
+
+.menuBox:hover {
+	
+	text-decoration: none;
+	
+}
+
+.menuBar {
+	
+	color: #000000;
+	font-size: 30px;
+	font-family: 'Noto Sans TC', sans-serif;
+	Font-weight: bold;
+	line-height: 3rem;
+	padding: 15px;
+	
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #000000;
+	text-decoration-thickness: 3px;
+	
+}
+
+.menuBar:hover {
+	
+	text-decoration: none;
+	
+}
+
+#infoBox {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	line-height: 0.75rem;
+	text-align: left;
+	
+	background-color: #7FFFD4;
+	border: 2px black solid;
+	padding: 15px;
+	width: 400px;
+    height: 460px;
+	
+	margin-top: 10px;
+	margin-left: 10px;
+	
+	position: fixed;
+	opacity: 1;
+	z-index: 3;
+	
+}
+
+#infoName {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	line-height: 0.75rem;
+	text-align: left;
+	
+	padding: 15px;
+	width: 400px;
+    height: 400px;
+	
+	margin-top: 10px;
+	margin-left: 10px;
+	
+	position: fixed;
+	z-index: 5;
+	cursor: default;
+}
+
+#infoText {
+	
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	
+}
+
+#works {
+    
+    margin: auto;
+    
+}
+
+#inbox {
+    
+    background-color: #FFFFFF;
+	border: 1px #2D2D2D solid;
+	padding: 15px;
+    width: 33vw;
+    height: auto;
+	
+    min-width: 20%;
+    max-width: 25%;
+    min-height: 250px;
+    max-height: auto;
+    
+    margin-top: 50px;
+	margin-left: 50px;
+    
+	z-index: 0;
+    float: left;
+    
+}
+
+.description {
+	
+    background-color: #FFFFFF;
+    font-family: 'Noto Sans TC', sans-serif;
+    min-width: 20%;
+    max-width: 25%;
+    height: auto;
+    
+}
+
+#bottom {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: center;
+	width: 97.5vw;
+	padding: 5px;
+	z-index: 3;
+	
+}
+
+@media (max-width: 600px) {
+	
+	.material-iconMenuOpen {
+	
+	font-size: 30px;
+	left: 10px;
+	top: 20px;
+	
+	}
+	
+	.material-iconMenuClose {
+	
+	font-size: 35px;
+	left: 10px;
+	top: 20px;
+	
+	}
+	
+	.menuBox {
+	
+	padding: 4px;
+	
+	}
+	
+	.material-iconUpward {
+	
+	font-size: 40px;
+	right: 20px;
+	bottom: 40px;
+	
+	}
+	
+	#infoBox {
+	
+		font-size: 0.75rem;
+		line-height: 0.5rem;
+		width: 275px;
+		height: 320px;
+		margin-top: 5px;
+		margin-left: 5px;
+		
+	}
+	
+	#infoName {
+		
+		font-size: 0.75rem;
+		line-height: 0.5rem;
+		width: 275px;
+		height: 265px;
+		margin-top: 5px;
+		margin-left: 5px;
+		
+	}
+	
+	#infoText {
+		
+		font-size: 0.75rem;
+		line-height: 1rem;
+		
+	}
+	
+	#bottom {
+		
+		font-size: 0.75rem;
+		
+	}
+}
