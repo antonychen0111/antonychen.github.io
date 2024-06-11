@@ -53,26 +53,26 @@ function menuClose(){
 
 function toTop(){
 	
-	window.document.documentElement.scrollTop = 0;
+		window.document.documentElement.scrollTop = 0;
 	
 }
 
 window.onscroll = function(){
 	
-	document.getElementById("infoBox").style.zIndex = -1;
-	document.getElementById("infoBox").style.opacity = 0.5;
+		document.getElementById("infoBox").style.zIndex = -1;
+		document.getElementById("infoBox").style.opacity = 0.5;
 	
 }
 
 function infoUp(){
 	
-	document.getElementById("infoBox").style.zIndex = 3;
-	document.getElementById("infoBox").style.opacity = 1;
+		document.getElementById("infoBox").style.zIndex = 3;
+		document.getElementById("infoBox").style.opacity = 1;
 	
 }
 
 //function createBox(){
-
+//
 //var box = "";
 //for (var i = 0; i < 10; i++) {
 //    box += '<div id="inbox">';
