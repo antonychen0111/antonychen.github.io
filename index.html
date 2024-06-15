@@ -7,11 +7,13 @@
     <title>Antony Chen</title>
     <meta name="Author" content="Antony Chen">
     <meta name="Description" content="Works">
+	<link rel="canonical" href="<%= url %>" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 	<link href="css/website.css" rel="stylesheet" type="text/css">
@@ -22,70 +24,137 @@
 <body>
 	
 <!--
-	<div id="loadingBackground"></div>
-	<div id="loadingBar"></div>
-	<div id="loadingLine"></div>
+	<div id="loading">
+	<div class="loadingBackground"></div>
+	<div class="loadingBar"></div>
+	<div class="loadingLine"></div>
+	</div>
 -->
 	
-	<i onclick="menuOpen()" id="iconMenuOpen" class="material-iconMenuOpen">menu</i>
-	<i onclick="menuClose()" id="iconMenuClose" class="material-iconMenuClose">close</i>
-	<i onclick="toTop()" id="iconUpward" class="material-iconUpward">arrow_upward</i>
+	<p onclick="menuOpen()" id="iconMenuOpen" class="iconMenuOpen">menu</p>
+	<p onclick="menuClose()" id="iconMenuClose" class="iconMenuClose">close</p>
+	<p onclick="toTop()" id="iconUpward" class="iconUpward">arrow_upward</p>
 	
 	<div id="menuBox">
 		
-		<br><br>
-		<p><a href="https://www.behance.net/antonychen0111" target="_blank" class="menuBox">About</a></p>
-        <p><a href="http://instagram.com/antonychen_0111" target="_blank" class="menuBox">3D Works</a></p>
-        <p><a href="https://www.facebook.com/antonychen0111" target="_blank" class="menuBox">Graphic Design</a></p>
-        <p><a href="https://www.youtube.com/ChenAntony" target="_blank" class="menuBox">Articles</a></p>
-		<p><a href="https://www.youtube.com/ChenAntony" target="_blank" class="menuBox">Contect</a></p>
+		<br><br><br><br><br>
+		<div class="menuBox"><a onclick="aboutOpen()" class="menuBoxText">About</a></div>
+        <div class="menuBox"><a href="http://instagram.com/antonychen_0111" target="_blank" class="menuBoxText">3D Works</a></div>
+        <div class="menuBox"><a href="https://www.facebook.com/antonychen0111" target="_blank" class="menuBoxText">Graphic Design</a></div>
+        <div class="menuBox"><a href="https://www.youtube.com/ChenAntony" target="_blank" class="menuBoxText">Articles</a></div>
+		<div class="menuBox"><a onclick="contectOpen()" class="menuBoxText">Contect</a></div>
 		
 	</div>
 	
 	<div id="menuBar">
 		
-		<p><a href="https://www.behance.net/antonychen0111" target="_blank" class="menuBar">About</a></p>
-        <p><a href="http://instagram.com/antonychen_0111" target="_blank" class="menuBar">3D Works</a></p>
-        <p><a href="https://www.facebook.com/antonychen0111" target="_blank" class="menuBar">Graphic Design</a></p>
-        <p><a href="https://www.youtube.com/ChenAntony" target="_blank" class="menuBar">Articles</a></p>
-		<p><a href="https://www.youtube.com/ChenAntony" target="_blank" class="menuBar">Contect</a></p>
+		<div class="menuBar"><a onclick="aboutOpen()" class="menuBarText">About</a></div>
+		<div class="menuBar"><a href="http://instagram.com/antonychen_0111" target="_blank" class="menuBarText">3D Works</a></div>
+		<div class="menuBar"><a href="https://www.facebook.com/antonychen0111" target="_blank" class="menuBarText">Graphic Design</a></div>
+		<div class="menuBar"><a href="https://www.youtube.com/ChenAntony" target="_blank" class="menuBarText">Articles</a></div>
+		<div class="menuBar"><a onclick="contectOpen()" class="menuBarText">Contect</a></div>
 		
 	</div>
 	
-	<div>
+<!--
+	<div id="indexImages">
 		
-		<p id="infoText"><br><br><br><br>
-		2001, 台中人現居台北<br>
-		國立台灣科技大學 設計系商業設計組 大三生
-		<br><br>
-		平面設計 / 動態設計 / 3D建模
-		<br><br>
-		Born in Taichung and currently based in Taipei.<br>
-		Majoring in commercial design at Taiwan Tech.
-		<br><br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		Graphic Design / Motion Graphics / 3D Modeling<br>
-		</p><hr><br>
+		<div class="indexImages"><img src="images/index.webp" alt=""></div>
 		
-		<b>Contact</b><br>
-		<p>antony90011199@gmail.com</p>
-		<p><a href="https://www.behance.net/antonychen0111" target="_blank" class="contact">&nbsp;bēhance&nbsp;</a>&nbsp;&nbsp;
-        <a href="http://instagram.com/antonychen_0111" target="_blank" class="contact">&nbsp;instagram&nbsp;</a>&nbsp;&nbsp;
-        <a href="https://www.facebook.com/antonychen0111" target="_blank" class="contact">&nbsp;facebook&nbsp;</a>&nbsp;&nbsp;
-        <a href="https://www.youtube.com/ChenAntony" target="_blank" class="contact">&nbsp;youtube&nbsp;</a></p>
+	</div>
+-->
+	
+	<div id="aboutBackground">
+	
+	<div class="aboutBox">
+		
+		<i onclick="aboutClose()" id="iconAboutClose" class="iconAboutClose">close</i>
+		
+		<p class="aboutTitle">
+			
+			<br>
+			<span class="name">
+			陳盈誌
+			</span>
+			<br>
+			<span class="nameEnglish">
+			Ying-Zhi,&thinsp;Chen
+			</span>
+			
+		</p>
+		
+		<p class="aboutText">
+			
+			<span class="text">
+			
+			<br>
+			2001, 台中人&nbsp;現居台北
+			<br>
+			國立台灣科技大學&nbsp;設計系商業設計組&nbsp;&nbsp;畢
+			<br><br>
+			平面設計 / 動態設計 / 3D&thinsp;建模
+			
+			</span>
+			
+		</p>
+		
+		<p class="aboutText">	
+			
+			<span class="textEnglish">
+			
+			Born in Taichung and currently based in Taipei.
+			<br><br>
+			Graduated from Taiwan Tech,
+			<br>
+			majoring in commercial design.
+			<br><br>
+			Graphic Design / Motion Graphics / 3D Modeling
+			
+			</span>
+		
+		</p>
+		
+	</div>
 	
 	</div>
-    
+	
+	<div id="contectBackground">
+	
+	<div class="aboutBox">
+			
+		<i onclick="contectClose()" id="iconContectClose" class="iconAboutClose">close</i>
+		
+		<p class="aboutTitle">
+			
+			<br>
+			<span class="name">
+			Contect
+			</span>
+			
+		</p>
+		
+		<p class="aboutText">
+			
+			<br>
+			<span class="text">
+			antony9001199@gmail.com
+			</span>
+			
+		</p>
+		
+		<br><br>
+		<p class="contectButton"><a href="https://www.behance.net/antonychen0111" target="_blank" class="contectButtonText">&nbsp;Bēhance&nbsp;</a></p>
+		<br>
+		<p class="contectButton"><a href="http://instagram.com/antonychen_0111" target="_blank" class="contectButtonText">&nbsp;Instagram&nbsp;</a></p>
+		<br>
+		<p class="contectButton"><a href="https://www.facebook.com/antonychen0111" target="_blank" class="contectButtonText">&nbsp;Facebook&nbsp;</a></p>
+		<br>
+		<p class="contectButton"><a href="https://www.youtube.com/ChenAntony" target="_blank" class="contectButtonText">&nbsp;Youtube&nbsp;</a></p>
+		
+	</div>
+	
+	</div>
+	
 <!--
     <div id="works">
     <ui id="box"></ui>
@@ -93,12 +162,10 @@
 -->
 	
 	<div id="copyright">
-	<p>Copyright © 2011–2024 YING-ZHI, CHEN (Antony Chen). All rights reserved.</p>
+		
+		<div class="copyright"><p>© 2011–2024 YING-ZHI, CHEN (Antony Chen)</p></div>
+		
 	</div>
-	
-	<div id="loadingBackground"></div>
-	<div id="loadingBar"></div>
-	<div id="loadingLine"></div>
     
 </body>
 	
