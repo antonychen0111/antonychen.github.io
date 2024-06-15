@@ -3,21 +3,22 @@
 
 html,body {
 	
-	font-size: 16px;
 	scroll-behavior: smooth;
     overflow-y: visible;
     overflow-x: visible;
 	user-select: none;
+	
+	font-size: 16px;
 	
 	--lightBackgroundColor: #F5F5F5;
 	--darkBackgroundColor: #1A1A1A;
 	--lightInventColor: #1A1A1A;
 	--darkInventColor: #F5F5F5;
 	
-	--lightBottomColor: #5A5A5A;
-	--darkBottomColor: #DDDDDD;
-	--lightBottomHoverColor: #8A8A8A;
-	--darkBottomHoverColor: #C0C0C0;
+	--lightButtonColor: #5A5A5A;
+	--darkButtonColor: #DDDDDD;
+	--lightButtonHoverColor: #8A8A8A;
+	--darkButtonHoverColor: #C0C0C0;
 	
 	--lightTextColor: #2A2A2A;
 	--darkTextColor: #C0C0C0;
@@ -28,8 +29,8 @@ html,body {
 	background-color: var(--lightBackgroundColor);
 	
 	float: left;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	height: 100vh;
 	width: 99vw;
 	
@@ -37,44 +38,48 @@ html,body {
 
 ::-webkit-scrollbar {
 	
-	background-color: var(--DarkBottomHoverColor);
+	background-color: var(--DarkButtonHoverColor);
 	width: calc(0.5vw + 0.15rem);
 	z-index: 10;
 }
 
 ::-webkit-scrollbar-thumb {
 	
-    background-color: var(--lightBottomColor);
+    background-color: var(--lightButtonColor);
 	z-index: 10;
 	
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	
-    background-color: var(--lightBottomHoverColor);
+    background-color: var(--lightButtonHoverColor);
 	z-index: 10;
 	
 }
 
-#loadingBackground {
+#loading {
+	
+	display: block;
+	
+}
+
+.loadingBackground {
 	
 	background: var(--lightBackgroundColor);
 	opacity: 0.85;
-
 	
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
 	
-	display: block;
 	z-index: 11;
 	
 }
 
-#loadingBar {
+.loadingBar {
 	
 	border: 0.25vh solid;
-	border-color: var(--lightBottomColor);
+	border-color: var(--lightButtonColor);
 	height: 1vh;
 	width: 10vw;
 	
@@ -82,14 +87,13 @@ html,body {
 	margin-top: 50vh;
 	margin-left: 42.5vw;
 	
-	display: block;	
 	z-index: 12;
 	
 }
 
-#loadingLine {
+.loadingLine {
 	
-	background-color: var(--lightBottomColor);
+	background-color: var(--lightButtonColor);
 	height: 1.3vh;
 	
 	animation-name: inloading;
@@ -101,7 +105,6 @@ html,body {
 	margin-top: 50vh;
 	margin-left: 42.5vw;
 	
-	display: block;
 	z-index: 13;
 	
 }
@@ -115,90 +118,225 @@ html,body {
     }
 }
 
-.material-iconMenuOpen {
-    
+#iconMenuOpen {
+	
 	user-select: none;
 	cursor: pointer;
 	
-	font-family: 'Material Icons';
-	font-size: 2rem;
-	font-style: normal;
-	color: var(--lightBottomColor);
-	
-	text-align: left;
 	position: fixed;
-	left: 3vw;
 	top: 3vh;
+	left: 3vw;
 	
 	display: none;
 	z-index: 8;
-}
-
-.material-iconMenuOpen:hover {
-    
-    color: var(--lightBottomHoverColor);
-    
-}
-
-.material-iconMenuClose {
-    
-	user-select: none;
-	cursor: pointer;
 	
+}
+
+.iconMenuOpen {
+    
 	font-family: 'Material Icons';
 	font-size: 2rem;
 	font-style: normal;
-    color: var(--lightBottomColor);
-	
+	color: var(--lightButtonColor);
 	text-align: left;
+	
+}
+
+.iconMenuOpen:hover {
+    
+    color: var(--lightButtonHoverColor);
+	
+	animation-name: iconHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+    
+}
+
+.iconMenuOpen:active {
+	
+	animation-name: iconClick;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+#iconMenuClose {
+	
+	user-select: none;
+	cursor: pointer;
+	
 	position: fixed;
-	left: 3vw;
 	top: 3vh;
+	left: 3vw;
+	
 	
 	display: none;
 	z-index: 9;
+	
 }
 
-.material-iconMenuClose:hover {
-    
-    color: var(--lightBottomHoverColor);
-    
-}
-
-.material-iconUpward {
-    
-	user-select: none;
-	cursor: pointer;
+.iconMenuClose {
 	
 	font-family: 'Material Icons';
 	font-size: 2rem;
 	font-style: normal;
-    color: var(--lightBottomColor);
+    color: var(--lightTextColor);
+	text-align: left;
+}
+
+.iconMenuClose:hover {
+    
+    color: var(--lightButtonHoverColor);
 	
-	text-align: right;
+	animation-name: iconHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+    
+}
+
+.iconMenuClose:active {
+	
+	animation-name: iconClick;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+#iconUpward {
+	
+	user-select: none;
+	cursor: pointer;
+	
 	position: fixed;
 	right: 3vw;
 	bottom: 5vh;
+	margin-left: 95vw;
 	
 	display: none;
 	z-index: 4;
+	
 }
 
-.material-iconUpward:hover {
+.iconUpward {
+	
+	font-family: 'Material Icons';
+	font-size: 2rem;
+	font-style: normal;
+    color: var(--lightButtonColor);
+	text-align: right;
+	
+}
+
+.iconUpward:hover {
     
-    color: var(--lightBottomHoverColor);
+    color: var(--lightButtonHoverColor);
+	
+	animation-name: iconHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
     
+}
+
+.iconUpward:active {
+	
+	animation-name: iconClick;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+#iconAboutClose {
+	
+	user-select: none;
+	cursor: pointer;
+	
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	z-index: 9;
+	
+}
+
+.iconAboutClose {
+	
+	font-family: 'Material Icons';
+	font-size: 2rem;
+	font-style: normal;
+    color: var(--lightTextColor);
+	text-align: left;
+	
+}
+
+.iconAboutClose:hover {
+    
+    color: var(--lightButtonHoverColor);
+	
+    animation-name: iconHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+.iconAboutClose:active {
+	
+	animation-name: iconClick;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+#iconContectClose {
+	
+	user-select: none;
+	cursor: pointer;
+	
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	z-index: 9;
+	
+}
+
+@keyframes iconHover{
+	
+	0% {
+	transform: scale(1, 1);
+	}
+	100% {
+    transform: scale(1.15, 1.15);
+	}
+	
+}
+
+@keyframes iconClick{
+	
+	0% {
+	transform: scale(1, 1);
+	}
+	100% {
+    transform: scale(0.5, 0.5);
+	}
+	
 }
 
 #menuBox {
 	
-	background: rgba(100,100,100,0.85);
+	background-color: rgba(100,100,100,0.85);
 	
-	position: fixed;
-	padding: 3vw;
     width: 100vw;
     height: 100vh;
 	
+	position: fixed;
 	display: none;
 	z-index: 5;
 	
@@ -206,114 +344,407 @@ html,body {
 
 .menuBox {
 	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 2rem;
-	font-weight: bold;
-	line-height: 3rem;
-	color: var(--lightTextColor);
-	text-align: left;
-	
-	text-decoration: underline;
-	text-decoration-style: solid;
-	text-decoration-color: var(--lightTextColor);
-	text-decoration-thickness: 0.2rem;
-	
-	z-index: 6;
+	margin-top: 2rem;
 	
 }
 
 .menuBox:hover {
 	
-	text-decoration: none;
+	animation-name: menuHover;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
 	
 }
 
-.menuBar {
+.menuBox:active {
 	
-	font-family: 'Noto Sans TC', sans-serif;
+	animation-name: menuClick;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+.menuBoxText {
+	
+	cursor: pointer;
+	
+	font-family: 'Prompt', sans-serif;
 	font-size: 2rem;
-	Font-weight: bold;
-	line-height: 3rem;
+	font-weight: 600;
 	color: var(--lightTextColor);
+	line-height: 3rem;
+	text-align: left;
 	
 	text-decoration: underline;
 	text-decoration-style: solid;
 	text-decoration-color: var(--lightTextColor);
 	text-decoration-thickness: 0.2rem;
 	
-	padding: 3vw;
-	z-index: 4;
+	margin-left: 3vw;
+	
+	z-index: 6;
 	
 }
 
-.menuBar:hover {
+.menuBoxText:hover {
 	
 	text-decoration: none;
 	
 }
 
-#infoBox {
+#menuBar {
 	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
-	line-height: 0.75rem;
-	text-align: left;
+	position: absolute;
+	padding-left: 3vw;
 	
-	background-color: #7FFFD4;
-	border: 2px black solid;
-	padding: 15px;
-	width: 400px;
-    height: 460px;
-	
-	margin-top: 10px;
-	margin-left: 10px;
-	
-	position: fixed;
-	opacity: 1;
-	z-index: 3;
+	z-index: 4;
 	
 }
 
-#infoName {
+.menuBar {
+	
+	margin-top: 2rem;
+	
+}
+
+.menuBar:hover {
+	
+	animation-name: menuHover;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+.menuBar:active {
+	
+	animation-name: menuClick;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+.menuBarText {
+	
+	cursor: pointer;
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--lightTextColor);
+	line-height: 3rem;
+	
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: var(--lightTextColor);
+	text-decoration-thickness: 0.2rem;
+}
+
+.menuBarText:hover {
+	
+	text-decoration: none;
+	
+}
+
+@keyframes menuHover{
+	
+	0% {
+	transform-origin: 1rem 0.5rem;
+	transform: rotate(0deg) translateX(0rem) translateY(0rem);
+	}
+	100% {
+	transform-origin: 1rem 0.5rem;
+    transform: rotate(3.5deg) translateX(0.5rem) translateY(-0.75rem);
+	}
+	
+}
+
+@keyframes menuClick{
+	
+	0% {
+	transform-origin: 1rem 0.5rem;
+	transform: rotate(0deg) translateX(0rem) translateY(0rem) scale(1,1);
+	}
+	100% {
+	transform-origin: 1rem 0.5rem;
+    transform: rotate(3.5deg) translateX(-0.1rem) translateY(0.25rem) scale(0.9,0.9);
+	}
+	
+}
+
+#indexImages {
+	
+	position: absolute;
+	height: 100vh;
+	width: 99vw;
+	
+	display: flex;
+	justify-content: center;
+	
+	z-index: 0;
+	
+}
+
+.title {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 1rem;
-	line-height: 0.75rem;
-	text-align: left;
-	
-	padding: 15px;
-	width: 400px;
-    height: 400px;
-	
-	margin-top: 10px;
-	margin-left: 10px;
-	
-	position: fixed;
-	z-index: 5;
-	cursor: default;
-}
-
-#infoText {
-	
-	font-size: 1rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
 	line-height: 1.5rem;
 	text-align: left;
 	
 }
 
+.titleEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+	
+}
+
+.text {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+	
+	margin: 2.5rem 0;
+}
+
+.textEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+	
+	margin: 2.5rem 0;
+	
+}
+
+.description {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+	
+}
+
+.descriptionEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+	
+}
+
+.indexImages {
+	
+	margin-top: 5vh;
+	
+}
+
+.indexImages img{
+	
+	height: 75vh;
+	max-height: calc(99vw * 1.44);
+	max-width: 99.5vw;
+	
+}
+
+.name {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 2rem;
+	text-align: left;
+	
+}
+
+.nameEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+	
+}
+
+#aboutBackground {
+	
+	cursor: default;
+	background-color: rgba(255,255,255,0.35);
+	
+	width: 100vw;
+    height: 100vh;
+	
+	position: fixed;
+	display: none;
+	justify-content: center;
+	
+	z-index: 10;
+	
+}
+
+.aboutBox {
+	
+	
+	background: var(--darkTextColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	height: 35vh;
+	width: 15vw;
+	max-height: 80vh;
+	max-width: 80vw;
+	min-height: 35rem;
+	min-width: 25rem;
+	
+	position: absolute;
+	padding: 1.2rem;
+	margin-top: 5vh;
+	
+	z-index: 11;
+	
+}
+
+.aboutTitle {
+	
+	z-index: 12;
+}
+
+.aboutText {
+	
+	margin: 2.5rem 0;
+	z-index: 12;
+	
+}
+
+#contectBackground {
+	
+	cursor: default;
+	background-color: rgba(255,255,255,0.35);
+	
+	width: 100vw;
+    height: 100vh;
+	
+	position: fixed;
+	display: none;
+	justify-content: center;
+	
+	z-index: 10;
+	
+}
+
+.contectButton {
+	
+	background-color: var(--lightButtonColor);
+	text-align: center;
+	height: 1.5rem;
+	width: 6rem;
+	border: 0.1rem solid var(--darkButtonColor);
+	
+	margin: 0.5rem 0;
+	
+	z-index: 4;
+	
+}
+
+.contectButtonText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--darkButtonColor);
+	text-decoration: none;
+	
+}
+
+.contectButton:hover {
+	
+	background-color: var(--lightButtonHoverColor);
+	border: 0.1rem solid var(--darkButtonHoverColor);
+	animation-name: buttonHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+.contectButton:active {
+	
+	animation-name: buttonClick;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	
+}
+
+.contectButtonText:hover {
+	
+	color: var(--darkButtonHoverColor);
+	
+}
+
+@keyframes buttonHover{
+	
+	0% {
+	transform: scale(1, 1);
+	}
+	100% {
+    transform: scale(1.05, 1.05);
+	}
+	
+}
+
+@keyframes buttonClick{
+	
+	0% {
+	transform: scale(1, 1);
+	}
+	100% {
+    transform: scale(0.9, 0.9);
+	}
+	
+}
+
+/*
 #works {
     
-    margin: auto;
+    
     
 }
 
-#inbox {
+.inbox {
     
     background-color: #FFFFFF;
 	border: 1px #2D2D2D solid;
-	padding: 15px;
+	
     width: 33vw;
     height: auto;
+	padding: 15px;
 	
     min-width: 20%;
     max-width: 25%;
@@ -322,104 +753,44 @@ html,body {
     
     margin-top: 50px;
 	margin-left: 50px;
-    
-	z-index: 0;
+	
     float: left;
-    
+	z-index: 0;
+	
 }
 
-.description {
+.boxDescription {
 	
     background-color: #FFFFFF;
+	
     font-family: 'Noto Sans TC', sans-serif;
+	
     min-width: 20%;
     max-width: 25%;
     height: auto;
     
 }
+*/
 
 #copyright {
+	
+	width: 99vw;
+	position: relative;
+	margin-top: 99vh;
+	padding-bottom: 3vh;
+	display: flex;
+	justify-content: center;
+	
+	z-index: 1;
+	
+}
+
+.copyright {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	
+	color: var(--lightDescriptionColor);
 	text-align: center;
-	padding: 1vw;
-	width: 97vw;
-	
-	z-index: 3;
 	
 }
-
-/*
-
-@media (max-width: 600px) {
-	
-	.material-iconMenuOpen {
-	
-	font-size: 30px;
-	left: 10px;
-	top: 20px;
-	
-	}
-	
-	.material-iconMenuClose {
-	
-	font-size: 35px;
-	left: 10px;
-	top: 20px;
-	
-	}
-	
-	.menuBox {
-	
-	padding: 4px;
-	
-	}
-	
-	.material-iconUpward {
-	
-	font-size: 40px;
-	right: 20px;
-	bottom: 40px;
-	
-	}
-	
-	#infoBox {
-	
-		font-size: 0.75rem;
-		line-height: 0.5rem;
-		width: 275px;
-		height: 320px;
-		margin-top: 5px;
-		margin-left: 5px;
-		
-	}
-	
-	#infoName {
-		
-		font-size: 0.75rem;
-		line-height: 0.5rem;
-		width: 275px;
-		height: 265px;
-		margin-top: 5px;
-		margin-left: 5px;
-		
-	}
-	
-	#infoText {
-		
-		font-size: 0.75rem;
-		line-height: 1rem;
-		
-	}
-	
-	#bottom {
-		
-		font-size: 0.75rem;
-		
-	}
-}
-
-*/
