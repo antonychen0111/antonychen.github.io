@@ -4,9 +4,9 @@
 html,body {
 	
 	scroll-behavior: smooth;
-    overflow-y: visible;
-    overflow-x: visible;
 	user-select: none;
+	overflow: visible;
+	float: left;
 	
 	font-size: 16px;
 	
@@ -28,210 +28,136 @@ html,body {
 
 	background-color: var(--lightBackgroundColor);
 	
-	float: left;
 	margin: 0;
 	padding: 0;
 	height: 100vh;
 	width: 99vw;
-	
 }
 
 ::-webkit-scrollbar {
 	
-	background-color: var(--DarkButtonHoverColor);
-	width: calc(0.5vw + 0.15rem);
-	z-index: 10;
+	background-color: var(--darkButtonColor);
+	width: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb {
 	
     background-color: var(--lightButtonColor);
-	z-index: 10;
-	
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	
     background-color: var(--lightButtonHoverColor);
-	z-index: 10;
-	
 }
 
-#loading {
-	
-	display: block;
-	
+#loadingBar {
+
+	display: flex;
+	justify-content: center;
 }
 
-.loadingBackground {
+.loadingBarBackground {
 	
-	background: var(--lightBackgroundColor);
+	background-color: var(--darkButtonColor);
 	opacity: 0.85;
+	height: 100vh;
+	width: 99vw;
 	
 	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	
-	z-index: 11;
-	
+	z-index: 99;
 }
 
 .loadingBar {
 	
-	border: 0.25vh solid;
+	border: 3.5px solid;
 	border-color: var(--lightButtonColor);
-	height: 1vh;
-	width: 10vw;
+	height: 0.5rem;
+	width: 15rem;
 	
-	position: fixed;
-	margin-top: 50vh;
-	margin-left: 42.5vw;
+	position: relative;
+	top: 47.5vh;
 	
-	z-index: 12;
-	
+	z-index: 99;
 }
 
-.loadingLine {
+.loadingBarLine {
 	
 	background-color: var(--lightButtonColor);
-	height: 1.3vh;
+	height: 0.5rem;
 	
 	animation-name: inloading;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 	
-	position: fixed;
-	margin-top: 50vh;
-	margin-left: 42.5vw;
-	
-	z-index: 13;
-	
+	z-index: 99;
 }
 
 @keyframes inloading{
+	
     0% {
-		width: 0.3vw;
+		width: 0.1rem;
     }
     100% {
-		width: 10.25vw;
+		width: 15.15rem;
     }
+}
+
+#iconMenuOpenContainer {
+	
+	position: fixed;
+	margin-top: 1vw;
+	margin-left: 3vw;
+	padding-left: 0.35rem;
+}
+
+#iconMenuCloseContainer {
+	
+	position: fixed;
+	margin-top: 1vw;
+	margin-left: 3vw;
+	padding-left: 0.35rem;
+}
+
+#iconUpwardContainer {
+	
+	position: fixed;
+	margin-bottom: 3vw;
+	margin-right: 2vw;
+	padding-bottom: 1.5rem;
+	padding-right: 0.75rem;
+	right: 0;
+	bottom: 0;
 }
 
 #iconMenuOpen {
 	
-	user-select: none;
 	cursor: pointer;
-	
-	position: fixed;
-	top: 3vh;
-	left: 3vw;
-	
 	display: none;
-	z-index: 8;
-	
-}
-
-.iconMenuOpen {
-    
-	font-family: 'Material Icons';
-	font-size: 2rem;
-	font-style: normal;
-	color: var(--lightButtonColor);
-	text-align: left;
-	
-}
-
-.iconMenuOpen:hover {
-    
-    color: var(--lightButtonHoverColor);
-	
-	animation-name: iconHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-    
-}
-
-.iconMenuOpen:active {
-	
-	animation-name: iconClick;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-	
 }
 
 #iconMenuClose {
 	
-	user-select: none;
 	cursor: pointer;
-	
-	position: fixed;
-	top: 3vh;
-	left: 3vw;
-	
-	
+	margin: 0;
 	display: none;
-	z-index: 9;
-	
-}
-
-.iconMenuClose {
-	
-	font-family: 'Material Icons';
-	font-size: 2rem;
-	font-style: normal;
-    color: var(--lightTextColor);
-	text-align: left;
-}
-
-.iconMenuClose:hover {
-    
-    color: var(--lightButtonHoverColor);
-	
-	animation-name: iconHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-    
-}
-
-.iconMenuClose:active {
-	
-	animation-name: iconClick;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-	
 }
 
 #iconUpward {
 	
-	user-select: none;
 	cursor: pointer;
-	
-	position: fixed;
-	right: 3vw;
-	bottom: 5vh;
-	margin-left: 95vw;
-	
 	display: none;
-	z-index: 4;
-	
 }
 
-.iconUpward {
+.iconImages {
 	
 	font-family: 'Material Icons';
 	font-size: 2rem;
 	font-style: normal;
-    color: var(--lightButtonColor);
-	text-align: right;
-	
+    color: var(--lightTextColor);
 }
 
-.iconUpward:hover {
+.iconImages:hover {
     
     color: var(--lightButtonHoverColor);
 	
@@ -239,42 +165,50 @@ html,body {
 	animation-duration: 0.25s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-    
 }
 
-.iconUpward:active {
+.iconImages:active {
 	
 	animation-name: iconClick;
 	animation-duration: 0.25s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
 }
 
 #iconAboutClose {
 	
-	user-select: none;
 	cursor: pointer;
-	
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-
-	z-index: 9;
-	
+	display: none;
 }
 
-.iconAboutClose {
+#iconContectClose {
 	
+	cursor: pointer;
+	display: none;
+}
+
+.iconBoxCloseContainer {
+	
+	position: absolute;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	top: 0;
+	right: 0;
+	
+	z-index: 99;
+}
+
+.iconBoxClose {
+	
+	margin: 0;
 	font-family: 'Material Icons';
 	font-size: 2rem;
 	font-style: normal;
     color: var(--lightTextColor);
 	text-align: left;
-	
 }
 
-.iconAboutClose:hover {
+.iconBoxClose:hover {
     
     color: var(--lightButtonHoverColor);
 	
@@ -282,29 +216,14 @@ html,body {
 	animation-duration: 0.25s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
 }
 
-.iconAboutClose:active {
+.iconBoxClose:active {
 	
 	animation-name: iconClick;
 	animation-duration: 0.25s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
-}
-
-#iconContectClose {
-	
-	user-select: none;
-	cursor: pointer;
-	
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-
-	z-index: 9;
-	
 }
 
 @keyframes iconHover{
@@ -315,7 +234,6 @@ html,body {
 	100% {
     transform: scale(1.15, 1.15);
 	}
-	
 }
 
 @keyframes iconClick{
@@ -326,108 +244,65 @@ html,body {
 	100% {
     transform: scale(0.5, 0.5);
 	}
-	
-}
-
-#menuBox {
-	
-	background-color: rgba(100,100,100,0.85);
-	
-    width: 100vw;
-    height: 100vh;
-	
-	position: fixed;
-	display: none;
-	z-index: 5;
-	
-}
-
-.menuBox {
-	
-	margin-top: 2rem;
-	
-}
-
-.menuBox:hover {
-	
-	animation-name: menuHover;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-	
-}
-
-.menuBox:active {
-	
-	animation-name: menuClick;
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-	
-}
-
-.menuBoxText {
-	
-	cursor: pointer;
-	
-	font-family: 'Prompt', sans-serif;
-	font-size: 2rem;
-	font-weight: 600;
-	color: var(--lightTextColor);
-	line-height: 3rem;
-	text-align: left;
-	
-	text-decoration: underline;
-	text-decoration-style: solid;
-	text-decoration-color: var(--lightTextColor);
-	text-decoration-thickness: 0.2rem;
-	
-	margin-left: 3vw;
-	
-	z-index: 6;
-	
-}
-
-.menuBoxText:hover {
-	
-	text-decoration: none;
-	
 }
 
 #menuBar {
 	
 	position: absolute;
-	padding-left: 3vw;
-	
-	z-index: 4;
-	
+	display: block;
 }
 
-.menuBar {
+#menuBox {
 	
-	margin-top: 2rem;
-	
+	top: 0;
+	position: fixed;
+	display: none;
 }
 
-.menuBar:hover {
+#menuBackground {
+	
+	background-color: var(--lightButtonColor);
+	opacity: 0.75;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	
+	position: fixed;
+	z-index: 0;
+}
+
+.menuBoxContainer {
+	
+	top: 2rem;
+	position: fixed;
+	z-index: 1;
+}
+
+.menuButton {
+	
+	margin-top: 1rem;
+	margin-left: 3vw;
+	padding-left: 0.35rem;
+	margin-bottom: 1rem;
+}
+
+.menuButton:hover {
 	
 	animation-name: menuHover;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
 }
 
-.menuBar:active {
+.menuButton:active {
 	
 	animation-name: menuClick;
 	animation-duration: 0.1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
 }
 
-.menuBarText {
+.menuText {
 	
 	cursor: pointer;
 	
@@ -443,10 +318,9 @@ html,body {
 	text-decoration-thickness: 0.2rem;
 }
 
-.menuBarText:hover {
+.menuText:hover {
 	
 	text-decoration: none;
-	
 }
 
 @keyframes menuHover{
@@ -459,7 +333,6 @@ html,body {
 	transform-origin: 1rem 0.5rem;
     transform: rotate(3.5deg) translateX(0.5rem) translateY(-0.75rem);
 	}
-	
 }
 
 @keyframes menuClick{
@@ -472,240 +345,228 @@ html,body {
 	transform-origin: 1rem 0.5rem;
     transform: rotate(3.5deg) translateX(-0.1rem) translateY(0.25rem) scale(0.9,0.9);
 	}
-	
-}
-
-#indexImages {
-	
-	position: absolute;
-	height: 100vh;
-	width: 99vw;
-	
-	display: flex;
-	justify-content: center;
-	
-	z-index: 0;
-	
 }
 
 .title {
 	
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
 	text-align: left;
-	
 }
 
 .titleEnglish {
 	
 	font-family: 'Prompt', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
 	text-align: left;
-	
 }
 
 .text {
 	
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 400;
 	color: var(--lightTextColor);
-	line-height: 1.5rem;
+	line-height: 1.35rem;
 	text-align: left;
 	
-	margin: 2.5rem 0;
+	margin: 0 0 5rem 0;
 }
 
 .textEnglish {
 	
 	font-family: 'Prompt', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 400;
 	color: var(--lightTextColor);
-	line-height: 1.5rem;
+	line-height: 1.35rem;
 	text-align: left;
 	
-	margin: 2.5rem 0;
-	
+	margin: 0 0 5rem 0;
 }
 
 .description {
 	
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	font-weight: 400;
 	color: var(--lightTextColor);
-	line-height: 1.5rem;
+	line-height: 1rem;
 	text-align: left;
-	
 }
 
 .descriptionEnglish {
 	
 	font-family: 'Prompt', sans-serif;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	font-weight: 400;
 	color: var(--lightTextColor);
-	line-height: 1.5rem;
+	line-height: 1rem;
 	text-align: left;
-	
 }
 
-.indexImages {
+.textParagraphContainer {
 	
-	margin-top: 5vh;
-	
+	margin-top: 1rem;
+	margin-bottom: 2.5rem;
 }
 
-.indexImages img{
+.textParagraph {
 	
-	height: 75vh;
-	max-height: calc(99vw * 1.44);
-	max-width: 99.5vw;
-	
+	margin-bottom: 2.5rem;
 }
 
-.name {
+#indexImages {
 	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--lightTextColor);
-	line-height: 2rem;
-	text-align: left;
+	width: 99vw;
 	
-}
-
-.nameEnglish {
-	
-	font-family: 'Prompt', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: var(--lightTextColor);
-	line-height: 1.5rem;
-	text-align: left;
-	
-}
-
-#aboutBackground {
-	
-	cursor: default;
-	background-color: rgba(255,255,255,0.35);
-	
-	width: 100vw;
-    height: 100vh;
-	
-	position: fixed;
-	display: none;
+	display: flex;
 	justify-content: center;
-	
-	z-index: 10;
-	
 }
 
-.aboutBox {
+.indexImagesContainer img{
+
+	width: 10vh;
+}
+
+.snsButtonContainer {
 	
-	
-	background: var(--darkTextColor);
-	border: 0.1rem solid var(--lightTextColor);
-	
-	height: 35vh;
-	width: 15vw;
-	max-height: 80vh;
-	max-width: 80vw;
-	min-height: 35rem;
-	min-width: 25rem;
-	
+	bottom: 0;
 	position: absolute;
-	padding: 1.2rem;
-	margin-top: 5vh;
-	
-	z-index: 11;
-	
+	margin-bottom: 1rem;
 }
 
-.aboutTitle {
+.snsButton {
 	
-	z-index: 12;
+	cursor: pointer;
+	margin-right: 0.15rem;
 }
 
-.aboutText {
+.snsButton img{
 	
-	margin: 2.5rem 0;
-	z-index: 12;
-	
+	height: 2rem;
 }
 
-#contectBackground {
+.snsButton img:hover {
 	
-	cursor: default;
-	background-color: rgba(255,255,255,0.35);
-	
-	width: 100vw;
-    height: 100vh;
-	
-	position: fixed;
-	display: none;
-	justify-content: center;
-	
-	z-index: 10;
-	
-}
-
-.contectButton {
-	
-	background-color: var(--lightButtonColor);
-	text-align: center;
-	height: 1.5rem;
-	width: 6rem;
-	border: 0.1rem solid var(--darkButtonColor);
-	
-	margin: 0.5rem 0;
-	
-	z-index: 4;
-	
-}
-
-.contectButtonText {
-	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	color: var(--darkButtonColor);
-	text-decoration: none;
-	
-}
-
-.contectButton:hover {
-	
-	background-color: var(--lightButtonHoverColor);
-	border: 0.1rem solid var(--darkButtonHoverColor);
 	animation-name: buttonHover;
 	animation-duration: 0.25s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
 }
 
-.contectButton:active {
+.snsButton img:active {
 	
 	animation-name: buttonClick;
 	animation-duration: 0.1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	
 }
 
-.contectButtonText:hover {
+#linkButtonContainer {
 	
-	color: var(--darkButtonHoverColor);
+	margin-top: 6.5rem;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.linkButton {
 	
+	transform-origin: 10rem 0rem;
+	cursor: pointer;
+	width: 20rem;
+	padding-bottom: 3.75rem;
+}
+
+.linkButton:hover {
+	
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonColor));
+	
+	animation-name: buttonHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.linkButton:active {
+	
+	animation-name: buttonClick;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.linkButtonBackground {
+	
+	position: absolute;
+}
+
+.linkButtonBackground img{
+
+	min-width: 20rem;
+	max-width: 24rem;
+}
+
+.linkButtonIcon {
+	
+	position: absolute;
+}
+
+.linkButtonIcon img{
+	
+	height: 2rem;
+	margin-top: 0.6rem;
+	margin-left: 1rem;
+}
+
+.linkButtonText {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	text-decoration: none;
+	
+	margin-top: 0.9rem;
+	margin-left: 8.25rem;
+	
+	position: absolute;
+}
+
+#linkButtonEmail {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	text-decoration: none;
+	
+	margin-top: 0.85rem;
+	margin-left: 4.5rem;
+	
+	position: absolute;
+}
+
+.iconCopy {
+	
+	font-family: 'Material Icons';
+	font-size: 0.9rem;
+	font-style: normal;
+    color: var(--lightTextColor);
+	text-align: left;
+	
+	margin-top: 1.1rem;
+	margin-left: 17.15rem;
+	
+	position: absolute;
 }
 
 @keyframes buttonHover{
@@ -716,7 +577,6 @@ html,body {
 	100% {
     transform: scale(1.05, 1.05);
 	}
-	
 }
 
 @keyframes buttonClick{
@@ -727,14 +587,159 @@ html,body {
 	100% {
     transform: scale(0.9, 0.9);
 	}
+}
+
+.box {
 	
+	background: var(--darkTextColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	height: 45vh;
+	width: 15vw;
+	max-height: 80vh;
+	max-width: 80vw;
+	min-height: 40rem;
+	min-width: 20rem;
+	
+	position: fixed;
+	top: 10vh;
+	padding: 1.5rem;
+	overflow: hidden;
+}
+
+.lightBackground {
+	
+	background-color: var(--darkButtonColor);
+	opacity: 0.5;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	
+	position: fixed;
+}
+
+.darkBackground {
+	
+	background-color: var(--lightButtonColor);
+	opacity: 0.75;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	
+	position: fixed;
+}
+
+#aboutBox {
+	
+	cursor: default;
+	
+	width: 99vw;
+
+	position: fixed;
+	display: none;
+	justify-content: center;
+}
+
+#contectBox {
+	
+	cursor: default;
+	
+	width: 99vw;
+	
+	position: fixed;
+	display: none;
+	justify-content: center;
+}
+
+.aboutHeadshot {
+	
+	position: absolute;
+	right: 0;
+	margin-top: 4.25rem;
+	margin-right: 3.75rem;
+}
+
+.aboutHeadshot img{
+	
+	height: 4.5rem;
+	width: 4.5rem;
+}
+
+.nameParagraph {
+	
+	margin-top: 4rem;
+}
+
+.nameText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 2rem;
+	text-align: left;
+}
+
+.nameTextEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: left;
+}
+
+.contectButton {
+	
+	cursor: pointer;
+	
+	background-color: var(--lightButtonColor);
+	text-align: center;
+	height: 1.5rem;
+	width: 6rem;
+	border: 0.1rem solid var(--darkButtonColor);
+	
+	margin-bottom: 1rem;
+}
+
+.contectButtonText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--darkButtonColor);
+	text-decoration: none;
+}
+
+.contectButton:hover {
+	
+	background-color: var(--lightButtonHoverColor);
+	border: 0.1rem solid var(--darkButtonHoverColor);
+	
+	animation-name: buttonHover;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.contectButton:active {
+	
+	animation-name: buttonClick;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.contectButtonText:hover {
+	
+	color: var(--darkButtonHoverColor);
 }
 
 /*
 #works {
     
-    
-    
+	
 }
 
 .inbox {
@@ -755,8 +760,6 @@ html,body {
 	margin-left: 50px;
 	
     float: left;
-	z-index: 0;
-	
 }
 
 .boxDescription {
@@ -768,21 +771,17 @@ html,body {
     min-width: 20%;
     max-width: 25%;
     height: auto;
-    
 }
 */
 
-#copyright {
+#copyrightContainer {
 	
 	width: 99vw;
 	position: relative;
-	margin-top: 99vh;
-	padding-bottom: 3vh;
+	margin-top: 3vh;
+	
 	display: flex;
 	justify-content: center;
-	
-	z-index: 1;
-	
 }
 
 .copyright {
@@ -792,5 +791,28 @@ html,body {
 	font-weight: 300;
 	color: var(--lightDescriptionColor);
 	text-align: center;
+}
+
+.testText {
 	
+	color: #E0E0E0;
+	z-index: 0;
+}
+
+@media (min-width: 414px){
+}
+
+@media (min-width: 1366px){
+}
+
+@media (max-width: 1920px){
+}
+
+@media (max-width: 414px){
+}
+
+@media (max-width: 1366px){
+}
+
+@media (min-width: 1920px){
 }
