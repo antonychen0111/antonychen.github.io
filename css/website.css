@@ -472,10 +472,10 @@ html,body {
 #linkButtonContainer {
 	
 	margin-top: 6.5rem;
-    position: absolute;
-    top: 50%;
+	position: absolute;
+	top: 50%;
 	left: 50%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .linkButton {
@@ -797,22 +797,4 @@ html,body {
 	
 	color: #E0E0E0;
 	z-index: 0;
-}
-
-@media (min-width: 414px){
-}
-
-@media (min-width: 1366px){
-}
-
-@media (max-width: 1920px){
-}
-
-@media (max-width: 414px){
-}
-
-@media (max-width: 1366px){
-}
-
-@media (min-width: 1920px){
 }
