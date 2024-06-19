@@ -4,16 +4,25 @@
 	if ((host == window.location.host) && (window.location.protocol != "https:"))
 		window.location.protocol = "https";
 
+
 window.onload = setTimeout( function(){
 	
-	document.getElementById("loading").style.display = 'none';
+	window.document.documentElement.scrollTop = 0;
+	document.body.style.overflow = 'hidden';
+	
+	} ,1)
+
+window.onload = setTimeout( function(){
+	
 	document.querySelector("html").style.overflowY= 'scroll';
+	document.body.style.overflow = 'visible';
+	document.getElementById("loadingBar").style.display = 'none';
 	
 	} ,1000)
 
-function menuOpenDisplay() {
+function iconMenuOpen() {
 	
-	if (window.pageYOffset > 300) {
+	if (window.pageYOffset > 320) {
 		
 		document.getElementById("iconMenuOpen").style.display = 'block';
 		
@@ -24,9 +33,9 @@ function menuOpenDisplay() {
 	}
 }
 
-setInterval(menuOpenDisplay, 100);
+setInterval(iconMenuOpen, 100);
 
-function toTopDisplay() {
+function iconToTop() {
 	
 	if (window.pageYOffset > 100) {
 		
@@ -39,61 +48,64 @@ function toTopDisplay() {
 	}
 }
 
+setInterval(iconToTop, 100);
+
 function toTop(){
 		
 		window.document.documentElement.scrollTop = 0;
 		
 }
 
-setInterval(toTopDisplay, 100);
-
 function menuOpen(){
 		
 		document.getElementById("menuBox").style.display = 'block';
+		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconMenuClose").style.display = 'block';
-		document.body.style.overflow = 'hidden';
 		
 }
 
 function menuClose(){
 		
 		document.getElementById("menuBox").style.display = 'none';
+		document.getElementById("menuBar").style.display = 'block';
 		document.getElementById("iconMenuClose").style.display = 'none';
-		document.body.style.overflow = 'visible';
 		
 }
 
 function aboutOpen(){
 		
-		document.getElementById("aboutBackground").style.display = 'flex';
+		document.getElementById("aboutBox").style.display = 'flex';
 		document.getElementById("iconAboutClose").style.display = 'block';
-		document.body.style.overflow = 'hidden';
 		
 }
 
 function aboutClose(){
 		
-		document.getElementById("aboutBackground").style.display = 'none';
+		document.getElementById("aboutBox").style.display = 'none';
 		document.getElementById("iconAboutClose").style.display = 'none';
-		document.body.style.overflow = 'visible';
 		
 }
 
 function contectOpen(){
 		
-		document.getElementById("contectBackground").style.display = 'flex';
-		document.getElementById("iconAboutClose").style.display = 'block';
-		document.body.style.overflow = 'hidden';
+		document.getElementById("contectBox").style.display = 'flex';
+		document.getElementById("iconContectClose").style.display = 'block';
 		
 }
 
 function contectClose(){
 		
-		document.getElementById("contectBackground").style.display = 'none';
-		document.getElementById("iconAboutClose").style.display = 'none';
-		document.body.style.overflow = 'visible';
+		document.getElementById("contectBox").style.display = 'none';
+		document.getElementById("iconContectClose").style.display = 'none';
 		
 }
+
+function iconCopy(){
+		
+		navigator.clipboard.writeText("antony90011199@gmail.com");
+		alert("已複製 Copied the text: " + "antony90011199@gmail.com");
+}
+
 //
 //function createBox(){
 //
