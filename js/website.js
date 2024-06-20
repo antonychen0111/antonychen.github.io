@@ -106,6 +106,20 @@ function iconCopy(){
 		alert("已複製 Copied the text: " + "antony90011199@gmail.com");
 }
 
+function termsOpen(){
+		
+		document.getElementById("termsBox").style.display = 'flex';
+		document.getElementById("iconTermsClose").style.display = 'block';
+		
+}
+
+function termsClose(){
+		
+		document.getElementById("termsBox").style.display = 'none';
+		document.getElementById("iconTermsClose").style.display = 'none';
+		
+}
+
 //
 //function createBox(){
 //
