@@ -11,19 +11,19 @@ html,body {
 	font-size: 16px;
 	
 	--lightBackgroundColor: #F5F5F5;
-	--darkBackgroundColor: #1A1A1A;
-	--lightInventColor: #1A1A1A;
-	--darkInventColor: #F5F5F5;
+	--darkBackgroundColor: #696969;
+	--lightOpacityBackgroundColor: #F5F5F5;
+	--darkOpacityBackgroundColor: #696969;
 	
-	--lightButtonColor: #5A5A5A;
-	--darkButtonColor: #DDDDDD;
-	--lightButtonHoverColor: #8A8A8A;
-	--darkButtonHoverColor: #C0C0C0;
+	--lightButtonColor: #F5F5F5;
+	--darkButtonColor: #3D3D3D;
+	--lightButtonHoverColor: #EDEDED;
+	--darkButtonHoverColor: #8C8C8C;
 	
-	--lightTextColor: #2A2A2A;
+	--lightTextColor: #3D3D3D;
 	--darkTextColor: #C0C0C0;
 	
-	--lightDescriptionColor: #8A8A8A;
+	--lightDescriptionColor: #8C8C8C;
 	--darkDescriptionColor: #505050;
 
 	background-color: var(--lightBackgroundColor);
@@ -36,18 +36,18 @@ html,body {
 
 ::-webkit-scrollbar {
 	
-	background-color: var(--darkButtonColor);
+	background-color: var(--lightBackgroundColor);
 	width: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb {
 	
-    background-color: var(--lightButtonColor);
+    background-color: var(--darkButtonHoverColor);
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	
-    background-color: var(--lightButtonHoverColor);
+    background-color: var(--darkButtonColor);
 }
 
 #loadingBar {
@@ -58,7 +58,7 @@ html,body {
 
 .loadingBarBackground {
 	
-	background-color: var(--darkButtonColor);
+	background-color: var(--lightOpacityBackgroundColor);
 	opacity: 0.85;
 	height: 100vh;
 	width: 99vw;
@@ -70,7 +70,7 @@ html,body {
 .loadingBar {
 	
 	border: 3.5px solid;
-	border-color: var(--lightButtonColor);
+	border-color: var(--lightDescriptionColor);
 	height: 0.5rem;
 	width: 15rem;
 	
@@ -82,7 +82,7 @@ html,body {
 
 .loadingBarLine {
 	
-	background-color: var(--lightButtonColor);
+	background-color: var(--lightDescriptionColor);
 	height: 0.5rem;
 	
 	animation-name: inloading;
@@ -159,7 +159,7 @@ html,body {
 
 .iconImages:hover {
     
-    color: var(--lightButtonHoverColor);
+    color: var(--darkButtonHoverColor);
 	
 	animation-name: iconHover;
 	animation-duration: 0.25s;
@@ -261,7 +261,7 @@ html,body {
 
 #menuBackground {
 	
-	background-color: var(--lightButtonColor);
+	background-color: var(--lightOpacityBackgroundColor);
 	opacity: 0.75;
 	height: 100vh;
 	width: 100vw;
@@ -271,7 +271,7 @@ html,body {
 	z-index: 0;
 }
 
-.menuBoxContainer {
+#menuBoxContainer {
 	
 	top: 2rem;
 	position: fixed;
@@ -354,7 +354,6 @@ html,body {
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
-	text-align: left;
 }
 
 .titleEnglish {
@@ -364,7 +363,6 @@ html,body {
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
-	text-align: left;
 }
 
 .text {
@@ -469,15 +467,6 @@ html,body {
 	animation-timing-function: ease;
 }
 
-#linkButtonContainer {
-	
-	margin-top: 6.5rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 .linkButton {
 	
 	transform-origin: 10rem 0rem;
@@ -488,7 +477,7 @@ html,body {
 
 .linkButton:hover {
 	
-	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonColor));
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
 	
 	animation-name: buttonHover;
 	animation-duration: 0.25s;
@@ -591,7 +580,7 @@ html,body {
 
 .box {
 	
-	background: var(--darkTextColor);
+	background: var(--lightBackgroundColor);
 	border: 0.1rem solid var(--lightTextColor);
 	
 	height: 45vh;
@@ -602,14 +591,14 @@ html,body {
 	min-width: 20rem;
 	
 	position: fixed;
-	top: 10vh;
+	top: 7.5vw;
 	padding: 1.5rem;
 	overflow: hidden;
 }
 
 .lightBackground {
 	
-	background-color: var(--darkButtonColor);
+	background-color: var(--lightOpacityBackgroundColor);
 	opacity: 0.5;
 	height: 100vh;
 	width: 100vw;
@@ -620,7 +609,7 @@ html,body {
 
 .darkBackground {
 	
-	background-color: var(--lightButtonColor);
+	background-color: var(--darkOpacityBackgroundColor);
 	opacity: 0.75;
 	height: 100vh;
 	width: 100vw;
@@ -651,7 +640,7 @@ html,body {
 	justify-content: center;
 }
 
-.aboutHeadshot {
+.headshot {
 	
 	position: absolute;
 	right: 0;
@@ -659,7 +648,7 @@ html,body {
 	margin-right: 3.75rem;
 }
 
-.aboutHeadshot img{
+.headshot img{
 	
 	height: 4.5rem;
 	width: 4.5rem;
@@ -690,32 +679,41 @@ html,body {
 	text-align: left;
 }
 
-.contectButton {
+#contectButtonContainer {
+	
+	margin-top: 6.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button {
 	
 	cursor: pointer;
-	
 	background-color: var(--lightButtonColor);
 	text-align: center;
 	height: 1.5rem;
-	width: 6rem;
-	border: 0.1rem solid var(--darkButtonColor);
+	border: 0.1rem solid var(--lightDescriptionColor);
 	
 	margin-bottom: 1rem;
 }
 
-.contectButtonText {
+.buttonText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
+	font-size: 0.85rem;
 	font-weight: 400;
-	color: var(--darkButtonColor);
+	color: var(--lightDescriptionColor);
 	text-decoration: none;
+	
+	height: 1.5rem;
 }
 
-.contectButton:hover {
+.button:hover {
 	
 	background-color: var(--lightButtonHoverColor);
-	border: 0.1rem solid var(--darkButtonHoverColor);
+	border: 0.1rem solid var(--lightTextColor);
 	
 	animation-name: buttonHover;
 	animation-duration: 0.25s;
@@ -723,7 +721,7 @@ html,body {
 	animation-timing-function: ease;
 }
 
-.contectButton:active {
+.button:active {
 	
 	animation-name: buttonClick;
 	animation-duration: 0.1s;
@@ -731,9 +729,9 @@ html,body {
 	animation-timing-function: ease;
 }
 
-.contectButtonText:hover {
+.buttonText:hover {
 	
-	color: var(--darkButtonHoverColor);
+	color: var(--lightTextColor);
 }
 
 /*
@@ -774,17 +772,47 @@ html,body {
 }
 */
 
-#copyrightContainer {
+#termsButtonContainer {
 	
+	height: 1rem;
 	width: 99vw;
-	position: relative;
 	margin-top: 3vh;
 	
 	display: flex;
 	justify-content: center;
 }
 
-.copyright {
+#termsBox {
+	
+	cursor: default;
+	
+	width: 99vw;
+
+	position: fixed;
+	display: none;
+	justify-content: center;
+}
+
+#termsTextParagraphContainer {
+	
+	height: 95%;
+	width: 100%;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	margin-top: 2rem;
+	padding: 0 0.15rem 0 0;
+}
+
+#copyrightContainer {
+	
+	width: 99vw;
+	display: flex;
+	justify-content: center;
+}
+
+#copyrightText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 1rem;
@@ -795,6 +823,6 @@ html,body {
 
 .testText {
 	
-	color: #E0E0E0;
+	color: var(--lightBackgroundColor);
 	z-index: 0;
 }
