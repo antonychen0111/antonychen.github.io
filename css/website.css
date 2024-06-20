@@ -210,7 +210,7 @@ html,body {
 
 .iconBoxClose:hover {
     
-    color: var(--lightButtonHoverColor);
+    color: var(--darkButtonHoverColor);
 	
     animation-name: iconHover;
 	animation-duration: 0.25s;
