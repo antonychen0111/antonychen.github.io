@@ -5,9 +5,10 @@
     <title>Antony Chen</title>
     <meta name="Author" content="Antony Chen">
     <meta name="Description" content="Works">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
 	<link rel="canonical" href="<%= url %>" />
-    <link rel="shortcut icon" href="favicon_shape.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icons/favicon_shape.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/favicon_shape.ico"/>
     
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
 	
 	<div id="menuBox">
 		<div class="darkBackground"></div>
-		<div class="menuBoxContainer">
+		<div id="menuBoxContainer">
 			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
 			<br><br><br><br><br>
 			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
@@ -40,7 +41,7 @@
 	</div>
 	
 	<div id="menuBar">
-		<div class="menuBarContainer">
+		<div id="menuBarContainer">
 		<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
 		<div class="menuButton"><a href="" target="_blank" class="menuText">3D&thinsp;Works</a></div>
 		<div class="menuButton"><a href="" target="_blank" class="menuText">Graphic Design</a></div>
@@ -55,7 +56,7 @@
 	<div class="lightBackground"></div>
 	<div class="box">
 		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
-		<div class="aboutHeadshot"><img src="images/headshot.webp" alt=""></div>
+		<div class="headshot"><img src="images/headshot.webp" alt=""></div>
 		<div class="textParagraphContainer">
 		<p class="nameParagraph">
 			<span class="nameText">陳盈誌</span><br>
@@ -63,9 +64,9 @@
 		<br><br>
 		<p class="textParagraph">
 			<span class="text">
-			2001,&nbsp;台中人&nbsp;現居台北<br>
-			國立台灣科技大學&nbsp;設計系商業設計組&nbsp;&nbsp;畢<br><br>
-			平面設計&nbsp;/&nbsp;動態設計/&nbsp;3D&thinsp;建模
+			2001, 台中人 現居台北<br>
+			國立台灣科技大學 設計系商業設計組&nbsp;&nbsp;畢<br><br>
+			平面設計 / 動態設計/ 3D&thinsp;建模
 			</span>
 		</p>
 		<p class="textParagraph">
@@ -94,7 +95,7 @@
 	<div class="lightBackground"></div>
 	<div class="box">
 		<div class="iconBoxCloseContainer"><p onclick="contectClose()" id="iconContectClose" class="iconBoxClose">close</p></div>
-		<div class="aboutHeadshot"><img src="images/headshot.webp" alt=""></div>
+		<div class="headshot"><img src="images/headshot.webp" alt=""></div>
 		<div class="textParagraphContainer">
 		<p class="nameParagraph">
 			<span class="nameText">陳盈誌</span><br>
@@ -102,10 +103,10 @@
 		</p>
 		<br>
 		<p class="textParagraph">
-			<span class="text">2001,&nbsp;台中人&nbsp;現居台北</span><br>
+			<span class="text">2001, 台中人 現居台北</span><br>
 			<span class="textEnglish">Born in Taichung and currently based in Taipei.</span>
 		</p></div>
-		<div id="linkButtonContainer">
+		<div id="contectButtonContainer">
 			<div onclick="iconCopy()" class="linkButton">
 				<div class="linkButtonBackground"><img src="icons/radius.svg" alt=""></div>
 				<div class="linkButtonIcon"><img src="icons/icons8-gmail-logo.svg" alt=""></div>
@@ -179,8 +180,31 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
 	</div>
 	
-	<div id="copyrightContainer"><div class="copyright"><p>©&nbsp;&nbsp;2011 – 2024&nbsp;&nbsp;YING-ZHI,&nbsp;CHEN&nbsp;&nbsp;( Antony&nbsp;Chen )&nbsp; &nbsp; &nbsp;</p>
-	</div></div>
+	<div id="termsBox">
+	<div class="lightBackground"></div>
+	<div class="box">
+		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
+		<div id="termsTextParagraphContainer">
+		<p class="textParagraph">
+			<span class="title">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
+			<span class="title">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
+			<span class="title">版權聲明</span><br><br>
+			<span class="text">Copyright © 2024&nbsp;&nbsp;Ying Zhi, Chen.&nbsp;&nbsp;All rights reserved.</span><br>
+			<span class="text">© 2024&nbsp;&nbsp;陳盈誌&nbsp;&nbsp;版權所有。</span><br><br>
+			<span class="text">本網站由陳盈誌（以下簡稱本人）管理。本網站內容可在註明出處的前提下，分享至社群平台，但禁止將內容重製、修改、編輯，或直接、間接作商業用途使用，除非取得本人同意。</span><br><br>
+			<span class="title">免責聲明</span><br><br>
+			<span class="text">本網站內容僅供參考，不對其正確性、完整性、可靠性、適用性及其他方面，提供明示或暗示的任何保證。本網站提供之第三方網站連結，對於該第三方網站內容不承擔任何責任和義務。</span><br><br>
+			<span class="title">修改權利</span><br><br>
+			<span class="text">保留修改、刪除、更新網站內容及條款等一切權利，任何更改於最新版本發佈後立即生效。</span><br><br>
+			<span class="title">法律相關</span><br><br>
+			<span class="text">瀏覽或使用本網站時，視同使用者已完全瞭解並接受本條款。本網站和使用者之權利義務關係，應以國際網路規範及中華民國相關法規為依據處理、解釋。若有任何爭議以臺灣臺北地方法院為第一審管轄法院。條款如有未盡完善之處，應以最大誠意，依誠實信用、平等互惠之原則，共商解決。</span><br><br>
+			<span class="title">西元&nbsp;&nbsp;2024&nbsp;&nbsp;年&nbsp;&nbsp;6&nbsp;&nbsp;月&nbsp;&nbsp;20&nbsp;&nbsp;日</span>
+		</p></div>
+		</div>
+		</div>
+	
+	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;YING-ZHI, CHEN ( Antony Chen )</p></div></div>
 	
 </body>
 </html>
