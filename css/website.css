@@ -9,11 +9,20 @@ html,body {
 	float: left;
 	
 	font-size: 16px;
+	background-color: var(--lightBackgroundColor);
+	
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 99vw;
+}
+
+:root {
 	
 	--lightBackgroundColor: #F5F5F5;
-	--darkBackgroundColor: #696969;
+	--darkBackgroundColor: #828282;
 	--lightOpacityBackgroundColor: #F5F5F5;
-	--darkOpacityBackgroundColor: #696969;
+	--darkOpacityBackgroundColor: #828282;
 	
 	--lightButtonColor: #F5F5F5;
 	--darkButtonColor: #3D3D3D;
@@ -25,13 +34,83 @@ html,body {
 	
 	--lightDescriptionColor: #8C8C8C;
 	--darkDescriptionColor: #505050;
+}
 
-	background-color: var(--lightBackgroundColor);
+.p {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.35rem;
+	text-align: justify;
 	
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	width: 99vw;
+	margin: 0 0 5rem 0;
+}
+
+h1 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
+h2 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
+h3 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
+h4 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
+h5 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
+h6 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
 }
 
 ::-webkit-scrollbar {
@@ -48,6 +127,12 @@ html,body {
 ::-webkit-scrollbar-thumb:hover {
 	
     background-color: var(--darkButtonColor);
+}
+
+.no-scroll {
+	
+	position: fixed;
+	width: 100%;
 }
 
 #loadingBar {
@@ -126,8 +211,16 @@ html,body {
 	margin-right: 2vw;
 	padding-bottom: 1.5rem;
 	padding-right: 0.75rem;
-	right: 0;
 	bottom: 0;
+	right: 0;
+}
+
+#iconBackHomeContainer {
+	
+	position: fixed;
+	margin-top: 0.975vw;
+	margin-left: calc(3rem + (100% - 97vw));
+	padding-left: 0.35rem;
 }
 
 #iconMenuOpen {
@@ -149,30 +242,36 @@ html,body {
 	display: none;
 }
 
+#iconBackHome {
+	
+	cursor: pointer;
+	margin: 0;
+	display: none;
+}
+
 .iconImages {
 	
-	font-family: 'Material Icons';
+	font-family: 'Material Symbols Outlined';
 	font-size: 2rem;
-	font-style: normal;
+	font-weight: 300;
     color: var(--lightTextColor);
+	
+	transition: all 0.25s;
 }
 
 .iconImages:hover {
-    
+	
+    cursor: pointer;
     color: var(--darkButtonHoverColor);
 	
-	animation-name: iconHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+    transform: scale(1.15);
+	transition: all 0.25s ease;
 }
 
 .iconImages:active {
 	
-	animation-name: iconClick;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+    transform: scale(0.5);
+	transition: all 0.25s ease;
 }
 
 #iconAboutClose {
@@ -181,7 +280,7 @@ html,body {
 	display: none;
 }
 
-#iconContectClose {
+#iconContactClose {
 	
 	cursor: pointer;
 	display: none;
@@ -201,55 +300,79 @@ html,body {
 .iconBoxClose {
 	
 	margin: 0;
-	font-family: 'Material Icons';
+	font-family: 'Material Symbols Outlined';
 	font-size: 2rem;
-	font-style: normal;
+	font-weight: 300;
     color: var(--lightTextColor);
-	text-align: left;
+	
+	transition: all 0.25s;
 }
 
 .iconBoxClose:hover {
-    
+	
+    cursor: pointer;
     color: var(--darkButtonHoverColor);
 	
-    animation-name: iconHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+    transform: scale(1.15);
+	transition: all 0.25s ease;
 }
 
 .iconBoxClose:active {
 	
-	animation-name: iconClick;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+    transform: scale(0.5);
+	transition: all 0.25s ease;
 }
 
-@keyframes iconHover{
+#headBarContainer {
 	
-	0% {
-	transform: scale(1, 1);
-	}
-	100% {
-    transform: scale(1.15, 1.15);
-	}
+	background-color: var(--lightBackgroundColor);
+	border: 0.1rem solid var(--lightDescriptionColor);
+	height: 2rem;
+	width: 100vw;
+	bottom: 0;
+	
+	position: fixed;
+	display: flex;
+	justify-content: center;
 }
 
-@keyframes iconClick{
+.headText {
 	
-	0% {
-	transform: scale(1, 1);
-	}
-	100% {
-    transform: scale(0.5, 0.5);
-	}
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--lightDescriptionColor);
+	text-align: center;
+	line-height: 1.8rem;
+	text-decoration: none;
+}
+
+.headBar {
+	
+	transition: all 0.25s ease;
+}
+
+.headBar:hover {
+	
+	cursor: pointer;
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
+	
+	transform: scale(1.05);
+	transition: all 0.25s ease;
+}
+
+.headBar:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
 }
 
 #menuBar {
 	
 	position: absolute;
 	display: block;
+	-webkit-text-stroke: 0.01rem var(--darkTextColor);
+	text-stroke: 0.01rem var(--darkTextColor);
 }
 
 #menuBox {
@@ -288,6 +411,7 @@ html,body {
 
 .menuButton:hover {
 	
+	cursor: pointer;
 	animation-name: menuHover;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
@@ -372,7 +496,7 @@ html,body {
 	font-weight: 400;
 	color: var(--lightTextColor);
 	line-height: 1.35rem;
-	text-align: left;
+	text-align: justify;
 	
 	margin: 0 0 5rem 0;
 }
@@ -394,9 +518,9 @@ html,body {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
-	color: var(--lightTextColor);
+	color: var(--lightDescriptionColor);
 	line-height: 1rem;
-	text-align: left;
+	text-align: justify;
 }
 
 .descriptionEnglish {
@@ -404,7 +528,7 @@ html,body {
 	font-family: 'Prompt', sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
-	color: var(--lightTextColor);
+	color: var(--lightDescriptionColor);
 	line-height: 1rem;
 	text-align: left;
 }
@@ -417,6 +541,7 @@ html,body {
 
 .textParagraph {
 	
+	text-align: justify;
 	margin-bottom: 2.5rem;
 }
 
@@ -441,56 +566,51 @@ html,body {
 }
 
 .snsButton {
-	
+
 	cursor: pointer;
 	margin-right: 0.15rem;
 }
 
 .snsButton img{
-	
+
 	height: 2rem;
+	transition: all 0.25s ease;
 }
 
 .snsButton img:hover {
 	
-	animation-name: buttonHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+	transform: scale(1.05) translateY(-0.3rem);
+	transition: all 0.25s ease;
 }
 
 .snsButton img:active {
 	
-	animation-name: buttonClick;
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+	transform: scale(0.9);
+	transition: all 0.1s ease;
 }
 
 .linkButton {
 	
-	transform-origin: 10rem 0rem;
 	cursor: pointer;
 	width: 20rem;
 	padding-bottom: 3.75rem;
+	
+	transform-origin: 10rem 0rem;
+	transition: all 0.25s ease;
 }
 
 .linkButton:hover {
 	
 	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
 	
-	animation-name: buttonHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+	transform: scale(1.05);
+	transition: all 0.25s ease;
 }
 
 .linkButton:active {
 	
-	animation-name: buttonClick;
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+	transform: scale(0.9);
+	transition: all 0.1s ease;
 }
 
 .linkButtonBackground {
@@ -546,36 +666,15 @@ html,body {
 
 .iconCopy {
 	
-	font-family: 'Material Icons';
+	font-family: 'Material Symbols Outlined';
 	font-size: 0.9rem;
-	font-style: normal;
+	font-weight: 300;
     color: var(--lightTextColor);
-	text-align: left;
 	
-	margin-top: 1.1rem;
+	margin-top: 0.95rem;
 	margin-left: 17.15rem;
 	
 	position: absolute;
-}
-
-@keyframes buttonHover{
-	
-	0% {
-	transform: scale(1, 1);
-	}
-	100% {
-    transform: scale(1.05, 1.05);
-	}
-}
-
-@keyframes buttonClick{
-	
-	0% {
-	transform: scale(1, 1);
-	}
-	100% {
-    transform: scale(0.9, 0.9);
-	}
 }
 
 .box {
@@ -629,7 +728,7 @@ html,body {
 	justify-content: center;
 }
 
-#contectBox {
+#contactBox {
 	
 	cursor: default;
 	
@@ -656,6 +755,7 @@ html,body {
 
 .nameParagraph {
 	
+	text-align: justify;
 	margin-top: 4rem;
 }
 
@@ -666,7 +766,7 @@ html,body {
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 2rem;
-	text-align: left;
+	text-align: justify;
 }
 
 .nameTextEnglish {
@@ -679,7 +779,7 @@ html,body {
 	text-align: left;
 }
 
-#contectButtonContainer {
+#contactButtonContainer {
 	
 	margin-top: 6.5rem;
 	position: absolute;
@@ -697,6 +797,7 @@ html,body {
 	border: 0.1rem solid var(--lightDescriptionColor);
 	
 	margin-bottom: 1rem;
+	transition: all 0.25s ease;
 }
 
 .buttonText {
@@ -715,62 +816,20 @@ html,body {
 	background-color: var(--lightButtonHoverColor);
 	border: 0.1rem solid var(--lightTextColor);
 	
-	animation-name: buttonHover;
-	animation-duration: 0.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+	transform: scale(1.05);
+	transition: all 0.25s ease;
 }
 
 .button:active {
 	
-	animation-name: buttonClick;
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+	transform: scale(0.9);
+	transition: all 0.1s ease;
 }
 
 .buttonText:hover {
 	
 	color: var(--lightTextColor);
 }
-
-/*
-#works {
-    
-	
-}
-
-.inbox {
-    
-    background-color: #FFFFFF;
-	border: 1px #2D2D2D solid;
-	
-    width: 33vw;
-    height: auto;
-	padding: 15px;
-	
-    min-width: 20%;
-    max-width: 25%;
-    min-height: 250px;
-    max-height: auto;
-    
-    margin-top: 50px;
-	margin-left: 50px;
-	
-    float: left;
-}
-
-.boxDescription {
-	
-    background-color: #FFFFFF;
-	
-    font-family: 'Noto Sans TC', sans-serif;
-	
-    min-width: 20%;
-    max-width: 25%;
-    height: auto;
-}
-*/
 
 #termsButtonContainer {
 	
@@ -807,6 +866,7 @@ html,body {
 
 #copyrightContainer {
 	
+	height: 5rem;
 	width: 99vw;
 	display: flex;
 	justify-content: center;
@@ -825,4 +885,153 @@ html,body {
 	
 	color: var(--lightBackgroundColor);
 	z-index: 0;
+}
+
+.worksBoxContainerContainer{
+	
+	width: 99vw;
+	
+	display: flex;
+	justify-content: center;
+}
+
+#worksBoxContainer {
+	
+	width: 100rem;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+	float: left;
+}
+
+.worksBox {
+	
+	cursor: default;
+	
+	margin: 2.5vh 1vh 1vh 1vh;
+	display: flex;
+	justify-content: center;
+}
+
+.worksContainer {
+	
+	background: var(--lightBackgroundColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	max-height: 25.25rem;
+	width: 20vw;
+	max-width: 22.5rem;
+	min-width: 20rem;
+	
+	padding: 0.5rem;
+	overflow: hidden;
+	
+	transition: all 0.25s ease;
+}
+
+.worksContainer:hover {
+	
+	cursor: pointer;
+	filter: drop-shadow(0rem 0rem 0.5rem var(--darkButtonHoverColor));
+	
+	transform: scale(1.05);
+	transition: all 0.25s ease;
+}
+
+.articlesImagesContainer {
+	
+	height: 47.5%;
+	width: 100%;
+}
+
+.articlesImagesContainer img{
+	
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.articlesParagraphContainer {
+	
+	margin-top: 0.1rem;
+	padding: 0.5rem;
+}
+
+.articlesTitleParagraph {
+	
+	margin: 0;
+}
+
+.articlesTitle {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.8rem;
+}
+
+.worksTextParagraph {
+	
+	height: 6.65rem;
+	width: 100%;
+	text-align: justify;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	
+	margin-top: 0.5rem;
+	margin-bottom: 0.65rem;
+}
+
+.worksText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--lightDescriptionColor);
+	line-height: 1.35rem;
+	text-overflow: ellipsis;
+	
+	margin: 0 0 1rem 0;
+}
+
+.worksTimeParagraph {
+	
+	margin: 0;
+	position: absolute;
+}
+
+.worksTimeText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1rem;
+	
+	margin: 0 0 1rem 0;
+}
+
+.worksTagsParagraph {
+	
+	margin: 0;
+	text-align: right;
+}
+
+.worksTagsText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1rem;
+	
+	margin: 0 0 1rem 0;
 }
