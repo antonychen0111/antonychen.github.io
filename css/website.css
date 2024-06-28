@@ -154,9 +154,9 @@ h6 {
 
 .loadingBar {
 	
-	border: 3.5px solid;
-	border-color: var(--lightDescriptionColor);
-	height: 0.5rem;
+	border: 3.5px solid var(--lightDescriptionColor);
+	border-radius: 0.3rem;
+	height: 0.3rem;
 	width: 15rem;
 	
 	position: relative;
@@ -168,7 +168,7 @@ h6 {
 .loadingBarLine {
 	
 	background-color: var(--lightDescriptionColor);
-	height: 0.5rem;
+	height: 0.3rem;
 	
 	animation-name: inloading;
 	animation-duration: 1s;
@@ -323,7 +323,7 @@ h6 {
 	transition: all 0.25s ease;
 }
 
-#headBarContainer {
+#websiteBarContainer {
 	
 	background-color: var(--lightBackgroundColor);
 	border: 0.1rem solid var(--lightDescriptionColor);
@@ -336,7 +336,7 @@ h6 {
 	justify-content: center;
 }
 
-.headText {
+.websiteBarText {
 	
 	font-family: 'Prompt', sans-serif;
 	font-size: 1.2rem;
@@ -347,12 +347,12 @@ h6 {
 	text-decoration: none;
 }
 
-.headBar {
+.websiteBar {
 	
 	transition: all 0.25s ease;
 }
 
-.headBar:hover {
+.websiteBar:hover {
 	
 	cursor: pointer;
 	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
@@ -361,7 +361,7 @@ h6 {
 	transition: all 0.25s ease;
 }
 
-.headBar:active {
+.websiteBar:active {
 	
 	transform: scale(0.9);
 	transition: all 0.1s ease;
@@ -474,7 +474,7 @@ h6 {
 .title {
 	
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
@@ -483,7 +483,7 @@ h6 {
 .titleEnglish {
 	
 	font-family: 'Prompt', sans-serif;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
@@ -535,14 +535,20 @@ h6 {
 
 .textParagraphContainer {
 	
-	margin-top: 1rem;
 	margin-bottom: 2.5rem;
 }
 
 .textParagraph {
 	
 	text-align: justify;
-	margin-bottom: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.descriptionParagraph {
+	
+	text-align: left;
+	margin-top: 0.3rem;
+	margin-bottom: 1.5rem;
 }
 
 #indexImages {
@@ -681,6 +687,7 @@ h6 {
 	
 	background: var(--lightBackgroundColor);
 	border: 0.1rem solid var(--lightTextColor);
+	border-radius: 0.5rem;
 	
 	height: 45vh;
 	width: 15vw;
@@ -698,7 +705,7 @@ h6 {
 .lightBackground {
 	
 	background-color: var(--lightOpacityBackgroundColor);
-	opacity: 0.5;
+	opacity: 0.75;
 	height: 100vh;
 	width: 100vw;
 	top: 0;
@@ -749,6 +756,7 @@ h6 {
 
 .headshot img{
 	
+	border-radius: 0.2rem;
 	height: 4.5rem;
 	width: 4.5rem;
 }
@@ -777,6 +785,12 @@ h6 {
 	color: var(--lightTextColor);
 	line-height: 1.5rem;
 	text-align: left;
+}
+
+.aboutParagraph {
+	
+	text-align: left;
+	margin-bottom: 1.5rem;
 }
 
 #contactButtonContainer {
@@ -864,6 +878,18 @@ h6 {
 	padding: 0 0.15rem 0 0;
 }
 
+.termsText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: var(--lightTextColor);
+	line-height: 1.35rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
 #copyrightContainer {
 	
 	height: 5rem;
@@ -875,7 +901,7 @@ h6 {
 #copyrightText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1rem;
+	font-size: 0.85rem;
 	font-weight: 300;
 	color: var(--lightDescriptionColor);
 	text-align: center;
@@ -887,15 +913,15 @@ h6 {
 	z-index: 0;
 }
 
-.worksBoxContainerContainer{
+#articlesBoxContainer{
 	
 	width: 99vw;
 	
-	display: flex;
+	display: none;
 	justify-content: center;
 }
 
-#worksBoxContainer {
+.worksBoxContainer {
 	
 	width: 100rem;
 	
@@ -921,6 +947,7 @@ h6 {
 	
 	background: var(--lightBackgroundColor);
 	border: 0.1rem solid var(--lightTextColor);
+	border-radius: 0.3rem;
 	
 	max-height: 25.25rem;
 	width: 20vw;
@@ -942,31 +969,32 @@ h6 {
 	transition: all 0.25s ease;
 }
 
-.articlesImagesContainer {
+.articlesBoxImagesContainer {
 	
 	height: 47.5%;
 	width: 100%;
 }
 
-.articlesImagesContainer img{
+.articlesBoxImagesContainer img{
 	
+	border-radius: 0.3rem;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
 
-.articlesParagraphContainer {
+.articlesBoxParagraphContainer {
 	
 	margin-top: 0.1rem;
 	padding: 0.5rem;
 }
 
-.articlesTitleParagraph {
+.articlesBoxTitleParagraph {
 	
 	margin: 0;
 }
 
-.articlesTitle {
+.articlesBoxTitle {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 1.2rem;
@@ -1004,8 +1032,8 @@ h6 {
 
 .worksTimeParagraph {
 	
+	width: 8rem;
 	margin: 0;
-	position: absolute;
 }
 
 .worksTimeText {
@@ -1019,19 +1047,57 @@ h6 {
 	margin: 0 0 1rem 0;
 }
 
-.worksTagsParagraph {
+#articlesContainer {
 	
-	margin: 0;
-	text-align: right;
+	width: 99.3vw;
+	
+	margin-top: 0.5rem;
+	
+	display: none;
+	justify-content: center;
 }
 
-.worksTagsText {
+.articles {
 	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 0.75rem;
-	font-weight: 400;
-	color: var(--lightTextColor);
-	line-height: 1rem;
+	background: var(--lightBackgroundColor);
+	border-top: 0.1rem solid var(--lightTextColor);
+	border-bottom: 0.1rem solid var(--lightTextColor);	
+	border-radius: 0.3rem;
 	
-	margin: 0 0 1rem 0;
+	width: calc(20rem + 15vw);
+	max-width: 35rem;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	padding: 1.6rem 1.5rem 1rem 1.5rem;
+}
+
+.iconArticlesCloseContainer {
+	
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.articlesImagesParagraph {
+	
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.articlesImagesContainer {
+	
+	width: calc(20rem + 15vw);
+	max-width: 35rem;
+}
+
+.articlesImagesContainer img {
+	
+	border-radius: 0.3rem;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
