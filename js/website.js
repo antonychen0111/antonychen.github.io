@@ -143,7 +143,7 @@ function backHome(){
 		iconUpwardMode = 1;
 		menuBoxMode = 0;
 		pages = 0;
-		
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'block';
 		document.getElementById("iconBackHome").style.display = 'none';
@@ -157,7 +157,7 @@ function worksOpen(){
 		iconUpwardMode = 1;
 		menuBoxMode = 0;
 		pages = 1;
-
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconBackHome").style.display = 'block';
@@ -170,7 +170,7 @@ function graphicOpen(){
 		iconUpwardMode = 1;
 		menuBoxMode = 0;
 		pages = 2;
-		
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconBackHome").style.display = 'block';
@@ -182,7 +182,7 @@ function articlesOpen(){
 		iconUpwardMode = 1;
 		menuBoxMode = 0;
 		pages = 3;
-
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconBackHome").style.display = 'block';
@@ -192,6 +192,7 @@ function articlesOpen(){
 }articlesOpen()
 
 function articlesClose(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'flex';
 		document.getElementById("articlesContainer").style.display = 'none';
 		document.getElementById("articles01").style.display = 'none';
@@ -205,48 +206,56 @@ function articlesClose(){
 }articlesClose()
 
 function articlesBox01(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles01").style.display = 'block';
 }articlesBox01()
 
 function articlesBox02(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles02").style.display = 'block';
 }articlesBox02()
 
 function articlesBox03(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles03").style.display = 'block';
 }articlesBox03()
 
 function articlesBox04(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles04").style.display = 'block';
 }articlesBox04()
 
 function articlesBox05(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles05").style.display = 'block';
 }articlesBox05()
 
 function articlesBox06(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles06").style.display = 'block';
 }articlesBox06()
 
 function articlesBox07(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles07").style.display = 'block';
 }articlesBox07()
 
 function articlesBox08(){
+		window.document.documentElement.scrollTop = 0;
 		document.getElementById("articlesBoxContainer").style.display = 'none';
 		document.getElementById("articlesContainer").style.display = 'flex';
 		document.getElementById("articles08").style.display = 'block';
