@@ -863,7 +863,7 @@ h6 {
 	width: 99vw;
 
 	position: fixed;
-	display: flex;
+	display: none;
 	justify-content: center;
 }
 
