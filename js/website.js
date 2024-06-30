@@ -147,6 +147,7 @@ function backHome(){
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'block';
 		document.getElementById("iconBackHome").style.display = 'none';
+		document.getElementById("indexImages").style.display = 'flex';
 		document.querySelector('body').classList.remove('no-scroll');
 		articlesClose();
 		document.getElementById("articlesBoxContainer").style.display = 'none';
@@ -161,6 +162,7 @@ function worksOpen(){
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconBackHome").style.display = 'block';
+		document.getElementById("indexImages").style.display = 'none';
 		document.querySelector('body').classList.remove('no-scroll');
 }worksOpen();
 
@@ -174,6 +176,7 @@ function graphicOpen(){
 		document.getElementById("menuBox").style.display = 'none';
 		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconBackHome").style.display = 'block';
+		document.getElementById("indexImages").style.display = 'none';
 		document.querySelector('body').classList.remove('no-scroll');
 }graphicOpen()
 
@@ -187,6 +190,7 @@ function articlesOpen(){
 		document.getElementById("menuBar").style.display = 'none';
 		document.getElementById("iconBackHome").style.display = 'block';
 		document.querySelector('body').classList.remove('no-scroll');
+		document.getElementById("indexImages").style.display = 'none';
 		document.getElementById("articlesBoxContainer").style.display = 'flex';
 		articlesClose();
 }articlesOpen()
