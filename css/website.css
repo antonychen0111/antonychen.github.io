@@ -194,6 +194,7 @@ h6 {
 	margin-top: 1vw;
 	margin-left: 3vw;
 	padding-left: 0.35rem;
+	z-index: 3;
 }
 
 #iconMenuCloseContainer {
@@ -202,6 +203,7 @@ h6 {
 	margin-top: 1vw;
 	margin-left: 3vw;
 	padding-left: 0.35rem;
+	z-index: 3;
 }
 
 #iconUpwardContainer {
@@ -213,6 +215,7 @@ h6 {
 	padding-right: 0.75rem;
 	bottom: 0;
 	right: 0;
+	z-index: 3;
 }
 
 #iconBackHomeContainer {
@@ -221,6 +224,7 @@ h6 {
 	margin-top: 0.975vw;
 	margin-left: calc(3rem + (100% - 97vw));
 	padding-left: 0.35rem;
+	z-index: 3;
 }
 
 #iconMenuOpen {
@@ -373,6 +377,7 @@ h6 {
 	display: block;
 	-webkit-text-stroke: 0.01rem var(--darkTextColor);
 	text-stroke: 0.01rem var(--darkTextColor);
+	z-index: 1;
 }
 
 #menuBox {
@@ -380,6 +385,7 @@ h6 {
 	top: 0;
 	position: fixed;
 	display: none;
+	z-index: 1;
 }
 
 #menuBackground {
@@ -553,15 +559,39 @@ h6 {
 
 #indexImages {
 	
+	height: 99vh;
 	width: 99vw;
-	
+
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	
+	z-index: 0;
+}
+
+.indexImagesContainer {
+	
+	position: absolute;
+	bottom: 7.5rem;
 }
 
 .indexImagesContainer img{
 
-	width: 10vh;
+	width: calc(11rem + 50vw);
+	max-width: 55rem;
+	
+}
+
+.indexImages2Container {
+	
+	position: absolute;
+	bottom: 3rem;
+}
+
+.indexImages2Container img{
+	
+	border: 0.1rem solid var(--lightTextColor);
+	width: calc(8.5rem + 5vw);
+	max-width: 25rem;
 }
 
 .snsButtonContainer {
@@ -734,6 +764,8 @@ h6 {
 	position: fixed;
 	display: none;
 	justify-content: center;
+	
+	z-index: 3;
 }
 
 #contactBox {
@@ -745,6 +777,8 @@ h6 {
 	position: fixed;
 	display: none;
 	justify-content: center;
+	
+	z-index: 3;
 }
 
 .headshot {
