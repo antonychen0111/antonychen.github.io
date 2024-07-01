@@ -32,10 +32,10 @@ function indexImagesPrevious(){
 }indexImagesPrevious()
 
 function indexImagesChange(){
-	if (indexImages %2 == 1){
+	if (Math.abs(indexImages) %2 == 1){
 		document.getElementById("indexImagesContainerContainer1").style.display = 'flex';
 		document.getElementById("indexImagesContainerContainer2").style.display = 'none';
-	}else if (indexImages %2 == 0){
+	}else if (Math.abs(indexImages) %2 == 0){
 		document.getElementById("indexImagesContainerContainer1").style.display = 'none';
 		document.getElementById("indexImagesContainerContainer2").style.display = 'flex';
 	}
