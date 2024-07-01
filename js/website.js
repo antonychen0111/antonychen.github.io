@@ -5,22 +5,43 @@
 	var pages = 0;
 	var menuBoxMode = 0;
 
+	var indexImages = 1;
+
 	var host = "antonychen.work";
-	if ((host == window.location.host) && (window.location.protocol != "https:"))
+	if ((host == window.location.host) && (window.location.protocol != "https:")){
 		window.location.protocol = "https";
+	}
 
 window.onload = setTimeout( function(){
 	window.document.documentElement.scrollTop = 0;
 	document.body.style.overflow = 'hidden';
-	} ,1)
+},1)
 
 window.onload = setTimeout( function(){
-	document.querySelector("html").style.overflowY= 'scroll';
 	document.body.style.overflow = 'visible';
+	document.querySelector("html").style.overflowY= 'scroll';
 	document.getElementById("loadingBar").style.display = 'none';
-	} ,1000)
+},1000)
 
-function iconMenuOpen() {
+function indexImagesNext(){
+		indexImages ++;
+}indexImagesNext()
+
+function indexImagesPrevious(){
+		indexImages --;
+}indexImagesPrevious()
+
+function indexImagesChange(){
+	if (indexImages %2 == 1){
+		document.getElementById("indexImagesContainerContainer1").style.display = 'flex';
+		document.getElementById("indexImagesContainerContainer2").style.display = 'none';
+	}else if (indexImages %2 == 0){
+		document.getElementById("indexImagesContainerContainer1").style.display = 'none';
+		document.getElementById("indexImagesContainerContainer2").style.display = 'flex';
+	}
+}setInterval(indexImagesChange, 100);
+
+function iconMenuOpen(){
 	if (window.pageYOffset > 320 && pages == 0 && iconMenuOpenMode == 1){
 		document.getElementById("iconMenuOpen").style.display = 'block';
 	}else if (pages > 0 && iconMenuOpenMode == 1 && menuBoxMode == 0){
@@ -32,7 +53,7 @@ function iconMenuOpen() {
 	}
 }setInterval(iconMenuOpen, 100);
 
-function iconToTop() {
+function iconToTop(){
 	if (window.pageYOffset > 100 && iconUpwardMode == 1) {
 		document.getElementById("iconUpward").style.display = 'block';
 	}else if (window.pageYOffset > 100 && iconUpwardMode == 0){
@@ -67,7 +88,7 @@ function menuClose(){
 		document.getElementById("menuBar").style.display = 'block';
 		document.getElementById("iconMenuClose").style.display = 'none';
 		document.querySelector('body').classList.remove('no-scroll');
-	} else if (pages > 0){
+	}else if (pages > 0){
 		iconMenuOpenMode = 1;
 		iconUpwardMode = 1
 		menuBoxMode = 0;
