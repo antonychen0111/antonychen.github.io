@@ -15,6 +15,8 @@ html,body {
 	padding: 0;
 	height: 100vh;
 	width: 99vw;
+	
+	overflow-x: hidden;
 }
 
 :root {
@@ -338,13 +340,67 @@ h6 {
     cursor: pointer;
     color: var(--darkButtonHoverColor);
 	
-    transform: scale(1.15);
+	transform: scale(1.15);
 	transition: all 0.25s ease;
 }
 
 .iconBoxClose:active {
 	
-    transform: scale(0.5);
+	transform: scale(0.5);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesNextContainer {
+	
+	position: fixed;
+	right: 0;
+	margin-right: calc(0rem + 2vw);
+	padding-right: 0.75rem;
+	z-index: 3;
+}
+
+#iconIndexImagesPreviousContainer {
+	
+	position: fixed;
+	right: 0;
+	margin-right: calc(1rem + 8vw);
+	padding-right: 0.75rem;
+	z-index: 3;
+}
+
+#iconIndexImagesNext {
+	
+	margin: 1rem 0 0 0;
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesPrevious {
+	
+	margin: 1rem 0 0 0;
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesNext:hover {
+	
+	transform: translateX(0.15rem) scale(1.05);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesPrevious:hover {
+	
+	transform: translateX(-0.15rem) scale(1.05);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesNext:active {
+	
+	transform: translateX(0.5rem) scale(0.85);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesPrevious:active {
+	
+	transform: translateX(-0.5rem) scale(0.85);
 	transition: all 0.25s ease;
 }
 
@@ -582,51 +638,87 @@ h6 {
 
 #indexImages {
 	
+	display: flex;
+}
+
+#indexImagesContainerContainer1 {
+	
+	height: calc(22.5rem + 62.5vh);
+	width: 99vw;
+	
+	display: flex;
+	justify-content: flex-end;
+	z-index: 0;
+}
+
+#indexImagesContainerContainer2 {
+	
 	height: calc(22.5rem + 62.5vh);
 	width: 99vw;
 
-	display: flex;
+	display: none;
 	justify-content: flex-end;
-	
 	z-index: 0;
+}
+
+@keyframes indexImages{
+	
+	0% {
+		transform: translateX(100rem);
+    }
+    75% {
+		transform: translateX(-0.5rem);
+    }
+	100% {
+		transform: translateX(0rem);
+    }
 }
 
 .indexImagesContainer {
 	
 	position: absolute;
 	bottom: 7.5rem;
+	
+	animation-name: indexImages;
+	animation-duration: 1.25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
 }
 
 .indexImagesContainer img{
 
 	width: calc(11rem + 50vw);
 	max-width: 55rem;
-	
 }
 
-.indexImages2Container {
+.indexImagesContainer2 {
 	
 	position: absolute;
 	bottom: 3rem;
 	transition: all 0.25s ease;
+	
+	animation-name: indexImages;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
 }
 
-.indexImages2Container img{
+.indexImagesContainer2 img{
 	
 	border: 0.1rem solid var(--lightTextColor);
 	width: calc(8.5rem + 5vw);
 	max-width: 25rem;
+	filter: grayscale();
 }
 
-.indexImages2Container:hover {
+.indexImagesContainer2:hover {
 	
 	filter: drop-shadow(0rem 0rem 0.5rem var(--darkButtonHoverColor));
-	
 	transform: scale(1.05);
 	transition: all 0.25s ease;
 }
 
-.indexImages2Container:active {
+.indexImagesContainer2:active {
 	
 	transform: scale(0.9);
 	transition: all 0.1s ease;
