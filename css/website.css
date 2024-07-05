@@ -685,7 +685,7 @@ h6 {
 	animation-timing-function: ease;
 }
 
-.indexImagesContainer video{
+.indexImagesContainer img{
 
 	width: calc(12rem + 52vw);
 	max-width: 55rem;
