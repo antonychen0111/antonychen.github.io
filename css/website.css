@@ -677,7 +677,7 @@ h6 {
 .indexImagesContainer {
 	
 	position: absolute;
-	bottom: 7.5rem;
+	bottom: 6.5rem;
 	
 	animation-name: indexImages;
 	animation-duration: 1.25s;
@@ -685,9 +685,9 @@ h6 {
 	animation-timing-function: ease;
 }
 
-.indexImagesContainer img{
+.indexImagesContainer video{
 
-	width: calc(11rem + 50vw);
+	width: calc(12rem + 52vw);
 	max-width: 55rem;
 }
 
