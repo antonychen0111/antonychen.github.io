@@ -2,16 +2,19 @@
 <html lang="zh-TW">
 <head>
 	<meta charset="utf-8">
+	<!-- 網頁名 -->
     <title>Antony Chen</title>
     <meta name="Author" contact="Antony Chen">
     <meta name="Description" content="Works">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
 	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
     <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
 	<link rel="bookmark" href="./icons/favicon.ico"/>
     
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
@@ -22,58 +25,78 @@
 </head>
 <body>
 	<header>
+	<!-- 讀取條 -->
 <!--	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>-->
 	
+	<!-- 菜單按鈕 -->
 	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
+	<!-- 回到頂端按鈕 -->
 	<div id="iconUpwardContainer"><p onclick="toTop()" id="iconUpward" class="iconImages">arrow_upward</p></div>
 	
+	<!-- 菜單彈窗 -->
 	<div id="menuBox">
 		<div class="darkBackground"></div>
 		<div id="menuBoxContainer">
+			<!-- 菜單按鈕 -->
 			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
 			<div id="iconBackHomeContainer"><p onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div>
 			<br><br><br><br><br>
+			<!-- 菜單項目 -->
 			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
 			<div class="menuButton"><a onclick="worksOpen()" target="_blank" class="menuText">3D&thinsp;Works</a></div>
-			<div class="menuButton"><a onclick="graphicOpen()" class="menuText">Graphic Design</a></div>
+			<div class="menuButton"><a onclick="graphicOpen()" class="menuText">Graphic&thinsp;Arts</a></div>
 			<div class="menuButton"><a onclick="articlesOpen()" class="menuText">Articles</a></div>
 			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
 		</div>
 	</div>
 	
+	<!-- 菜單欄 -->
 	<div id="menuBar">
 		<div id="menuBarContainer">
+		<!-- 菜單項目 -->
 		<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
 		<div class="menuButton"><a onclick="worksOpen()" class="menuText">3D&thinsp;Works</a></div>
-		<div class="menuButton"><a onclick="graphicOpen()" class="menuText">Graphic Design</a></div>
+		<div class="menuButton"><a onclick="graphicOpen()" class="menuText">Graphic&thinsp;Arts</a></div>
 		<div class="menuButton"><a onclick="articlesOpen()" class="menuText">Articles</a></div>
 		<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
 		</div>
 	</div>
 	
+	<!-- 首頁圖 -->
 	<div id="indexImages">
+		<!-- 首頁圖前後按鈕 -->
 		<div id="iconIndexImagesNextContainer"><p onclick="indexImagesNext()" id="iconIndexImagesNext" class="iconImages">East</p></div>
 		<div id="iconIndexImagesPreviousContainer"><p onclick="indexImagesPrevious()" id="iconIndexImagesPrevious" class="iconImages">West</p></div>
+		<!-- 首頁圖1 -->
 		<div id="indexImagesContainerContainer1">
 		<div class="indexImagesContainer"><img src="./images/truck.gif" alt=""></div>
-		<div class="indexImagesContainer2"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="./images/520.webp" alt=""></a><p class="description" style="margin: 0;">520 農民運動　　圖：邱萬興</p></div>
+		<!-- 首頁圖1小圖 -->
+		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="./images/520.webp" alt=""></a><p class="description" style="margin: 0;">520 農民運動　　圖：邱萬興</p></div>
 		</div>
+		<!-- 首頁圖2 -->
 		<div id="indexImagesContainerContainer2">
 		<div class="indexImagesContainer"><img src="./images/taxi.gif" alt=""></div>
-		<div class="indexImagesContainer2"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="./images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0;">公館計程車械鬥　圖：吳景騰</p></div>
+		<!-- 首頁圖2小圖 -->
+		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="./images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0;">公館計程車械鬥　圖：吳景騰</p></div>
 		</div>
 	</div>
 	
+	<!-- 關於彈窗 -->
 	<div id="aboutBox">
+	<!-- 彈窗背景 -->
 	<div class="lightBackground"></div>
 	<div class="box">
+		<!-- 彈窗按鈕 -->
 		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
+		<!-- 頭貼 -->
 		<div class="headshot"><img src="./images/headshot.webp" alt=""></div>
 		<div class="textParagraphContainer">
+		<!-- 名字 -->
 		<p class="nameParagraph">
 			<span class="nameText">陳盈誌</span><br>
 			<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span></p>
 		<br><br>
+		<!-- 關於文字 -->
 		<p class="aboutParagraph">
 			<span class="text">
 			2001, 台中人 現居台北<br>
@@ -88,6 +111,7 @@
 			● Graphic Design<br>● Motion Graphics<br>● 3D Modeling
 			</span>
 		</p>
+		<!-- 連結小按鈕 -->
 		<div class="snsButtonContainer">
 			<a href="mailto:antony90011199@gmail.com" target="_blank" class="snsButton"><img src="./icons/icons8-gmail-logo.svg" alt=""></a>
 			<a href="https://www.behance.net/antonychen0111" target="_blank" class="snsButton"><img src="./icons/icons8-behance.svg" alt=""></a>
@@ -99,21 +123,28 @@
 	</div>
 	</div>
 	
+	<!-- 聯繫彈窗 -->
 	<div id="contactBox">
+	<!-- 彈窗背景 -->
 	<div class="lightBackground"></div>
 	<div class="box">
+		<!-- 彈窗按鈕 -->
 		<div class="iconBoxCloseContainer"><p onclick="contactClose()" id="iconContactClose" class="iconBoxClose">close</p></div>
+		<!-- 頭貼 -->
 		<div class="headshot"><img src="./images/headshot.webp" alt=""></div>
 		<div class="aboutParagraphContainer">
+		<!-- 名字 -->
 		<p class="nameParagraph">
 			<span class="nameText">陳盈誌</span><br>
 			<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
 		</p>
 		<br>
+		<!-- 簡介文字 -->
 		<p class="aboutParagraph">
 			<span class="text">2001, 台中人 現居台北</span><br>
 			<span class="textEnglish">Born in Taichung and currently based in Taipei.</span>
 		</p></div>
+		<!-- 連結樹按鈕 -->
 		<div id="contactButtonContainer">
 			<div onclick="iconCopy()" class="linkButton">
 				<div class="linkButtonBackground"><img src="./icons/radius.svg" alt=""></div>
@@ -144,118 +175,425 @@
 		</div>
 	</div>
 	</div>
-</header>
-
-	<div id="articlesBoxContainer">
+	</header>
+	
+	<!-- 作品列表 -->
+	<div id="worksBox">
+	<div class="worksBoxContainerContainerContainer">
+	
+	<div id="worksBox01" onclick="worksBox01()">
+	<div class="worksBoxContainerContainer">
 	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<!-- 標題 -->
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">Heart</span></p>
+		<!-- 日期 --><!-- 標籤 -->
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2022/01/06<br>Animation</time></span></p></div>
+		<!-- 縮圖 -->
+		<div class="worksBoxImagesContainer"><video autoplay loop muted><source src="./works/Heart/heart.webm" type="video/webm"></video></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="worksBox02" onclick="worksBox02()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">強迫症<br>OCD</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019<br>Animation</time></span></p></div>
+		<div class="worksBoxImagesContainer"><video autoplay loop muted><source src="./works/強迫症 OCD/cover.webm" type="video/webm"></video></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="worksBox03" onclick="worksBox03()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">民主戰車<br>Sound Truck of Democracy</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2021/01/15<br>3D Works</time></span></p></div>
+		<div class="worksBoxImagesContainer"><video autoplay loop muted><source src="./works/民主戰車 Sound Truck of Democracy/truck.webm" type="video/webm"></video></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="worksBox04" onclick="worksBox04()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">看國民黨和民眾黨聯手推出的<br>「國會濫權法案」</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2024/05/26</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="worksBox05" onclick="worksBox05()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">看國民黨和民眾黨聯手推出的<br>「國會濫權法案」</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2024/05/26</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="worksBox06" onclick="worksBox06()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">看國民黨和民眾黨聯手推出的<br>「國會濫權法案」</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2024/05/26</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	<!-- 作品內容 -->
+	<div id="works">
+	<div class="worksContainer">
+		<!-- 內容按鈕 -->
+		<div class="iconWorksCloseContainer"><p onclick="worksClose()" id="iconWorksClose" class="iconBoxClose">close</p></div>
+		
+		<div id="works01" style="display: none">
+			<!-- 作品圖 -->
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"><video loop controls><source src="./works/Heart/heart.webm" type="video/webm"></video></div></div>
+		<div class="worksTextParagraphContainer">
+			<!-- 標題 -->
+			<p class="textParagraph"><span class="title">Heart</span><br></p>
+			<!-- 標籤 --><!-- 格式 --><!-- 日期 -->
+			<p class="descriptionParagraph"><span class="description">Animation<br>16:9 1920 × 1080, 12 sec<br>2022/01/06</span></p>
+			<!-- 備註 -->
+			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
+			<!-- 內容 -->
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/Heart/heart.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/Heart/heart.gif" alt=""></div></div>
+		</div></div>
+		
+		<div id="works02" style="display: none">
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"><video loop controls><source src="./works/強迫症 OCD/OCD.webm" type="video/webm"></video></div></div>
+		<div class="worksTextParagraphContainer">
+			<p class="textParagraph"><span class="title">強迫症<br>OCD</span><br></p>
+			<p class="descriptionParagraph"><span class="description">Animation<br>1000 × 650, 35 sec<br>2019</span></p>
+			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
+		</div></div>
+		
+		<div id="works03" style="display: none">
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"><img src="./works/民主戰車 Sound Truck of Democracy/truck.webp" alt=""></div></div>
+		<div class="worksTextParagraphContainer">
+			<p class="textParagraph"><span class="title">民主戰車<br>Sound Truck of Democracy</span><br></p>
+			<p class="descriptionParagraph"><span class="description">3D Works<br>1:1 2160 × 2160<br>2021/01/15</span></p>
+			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><video muted autoplay loop controls><source src="./works/民主戰車 Sound Truck of Democracy/truck.webm" type="video/webm"></video></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/民主戰車 Sound Truck of Democracy/truck2.webp" alt=""></div></div>
+			<p class="textParagraph"><span class="text">在台灣的民主運動史中，由小貨車改裝而成的廣播車佔有一席之地。這類車輛也被稱作「民主戰車」，用來進行公開演說或指揮人群。</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">In the history of Taiwan's democratic movement, sound trucks, which were modified from small trucks, hold a significant place. Those vehicles, also known as "democracy chariot," were used for public speeches or to direct crowds.</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img style="filter: grayscale() contrast(150%)" src="./works/民主戰車 Sound Truck of Democracy/01.webp" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">1988 年的「520 農民運動」是台灣解嚴後首次爆發激烈衝突的社會運動。（攝影：邱萬興）<br>On May 20, 1988, the first intense social movement erupted in Taiwan after the lifting of martial law.</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img style="filter: grayscale() contrast(150%)" src="./works/民主戰車 Sound Truck of Democracy/02.webp" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">立法院的匾額遭到抗議者詹益樺拆下（圖源：維基百科）<br>The plaque of the Legislative Yuan was removed by Chiam Ek-hôa</span></p>
+		</div></div>
+		
+	</div>
+	</div>
+	
+	<!-- 作品列表 -->
+	<div id="graphicBox">
+	<div class="worksBoxContainerContainerContainer">
+	
+	<div id="graphicBox01" onclick="graphicBox01()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<!-- 標題 -->
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">二〇二〇總統大選<br>Big Brother Xi is Watching You</span></p>
+		<!-- 日期 --><!-- 標籤 -->
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/12/22<br>Poster</time></span></p></div>
+		<!-- 縮圖 -->
+		<div class="worksBoxImagesContainer"><img src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/image.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="graphicBox02" onclick="graphicBox02()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">中華台北人<br>Chinese Taipei People</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2021/01/11<br>Poster</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./works/中華台北人 Chinese Taipei People/image.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="graphicBox03" onclick="graphicBox03()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">全球反極權大遊行<br>Global Anti-Totalitarianism March Taiwan</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/09/29<br>Photography</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/image.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="graphicBox04" onclick="graphicBox04()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">第 17 屆臺灣同志遊行<br>17th Taiwan LGBT Pride</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/10/26<br>Photography</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/image.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="graphicBox05" onclick="graphicBox05()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">看國民黨和民眾黨聯手推出的<br>「國會濫權法案」</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2024/05/26</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="graphicBox06" onclick="graphicBox06()">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">看國民黨和民眾黨聯手推出的<br>「國會濫權法案」</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2024/05/26</time></span></p></div>
+		<div class="worksBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	<!-- 作品內容 -->
+	<div id="graphic">
+	<div class="worksContainer">
+		<!-- 內容按鈕 -->
+		<div class="iconWorksCloseContainer"><p onclick="graphicClose()" id="iconGraphicClose" class="iconBoxClose">close</p></div>
+		
+		<div id="graphic01" style="display: none">
+			<!-- 作品圖 -->
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"><img src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/work.webp" alt=""></div></div>
+		<div class="worksTextParagraphContainer">
+			<!-- 標題 -->
+			<p class="textParagraph"><span class="title">二〇二〇總統大選<br>Big Brother Xi is Watching You</span><br></p>
+			<!-- 標籤 --><!-- 尺寸 --><!-- 日期 -->
+			<p class="descriptionParagraph"><span class="description">Poster<br>A1 594 mm × 841 mm<br>2019/12/22</span></p>
+			<!-- 備註 -->
+			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
+			<!-- 內容 -->
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/01.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img style="filter: grayscale() contrast(150%)" src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/04.webp" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">人群管理特別用途車（水炮車）<br>Specialised crowd management vehicles (Water cannon car)</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img style="filter: grayscale() contrast(150%)" src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/05.webp" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">水炮車所射出的水含有藍色顏料用以標示抗議者，另外有人權團體指稱水中含有使皮膚灼痛的化學藥劑。<br>The water cannons spray water containing blue dye to mark protesters. Additionally, human rights groups claim that the water contains chemicals that cause skin irritation.</span></p><br>
+			<p class="textParagraph"><span class="text">2019 年底，一個粉絲專頁發起平面設計師的串連活動，以「#Graphic Design For Democracy」為主題，針對決定台灣未來的 2020 總統大選進行海報設計。</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">At the end of 2019, a fan page launched a campaign to connect graphic designers under the theme "#Graphic Design For Democracy," creating posters for the 2020 presidential election that would determine Taiwan's future.</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/02.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/二〇二〇總統大選 Big Brother Xi is Watching You/03.webp" alt=""></div></div>
+		</div></div>
+		
+		<div id="graphic02" style="display: none">
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"><img src="./works/中華台北人 Chinese Taipei People/work.webp" alt=""></div></div>
+		<div class="worksTextParagraphContainer">
+			<p class="textParagraph"><span class="title">中華台北人<br>Chinese Taipei People</span><br></p>
+			<p class="descriptionParagraph"><span class="description">Poster<br>A1 594 mm × 841 mm<br>2019/12/22</span></p>
+			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/中華台北人 Chinese Taipei People/01.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/中華台北人 Chinese Taipei People/02.webp" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">2018 年的公民投票，保守派大獲全勝。<br>In the 2018 referendum, the conservatives achieved a sweeping victory.</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img style="filter: grayscale() contrast(150%)" src="./works/中華台北人 Chinese Taipei People/03.jpg" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">網友用公投結果發文自嘲<br>Someone used the referendum results to post self-deprecating comments</span></p>
+		</div></div>
+		
+		<div id="graphic03" style="display: none">
+		<div class="worksTextParagraphContainer">
+			<p class="textParagraph"><span class="title">全球反極權大遊行<br>Global Anti-Totalitarianism March<br>Taiwan</span><br></p>
+			<p class="descriptionParagraph"><span class="description">Photography<br>3:2<br>2019/09/29</span></p>
+			<p class="descriptionParagraph"><span class="description">攝影：陳盈誌<br>Photographer: Ying-Zhi Chen</span></p><br>
+			<p class="textParagraph"><span class="text">2019 年中，香港爆發「反送中運動」。部分示威者於 9/25 呼籲全球認同民主自由價值的民眾，在 9/28 或 9/29 串連上街反對中國共產黨的極權手段。台灣部分，由香港邊城青年和台灣公民陣線等數十個民間團體發起，在台北、台中及高雄等多個地區舉辦遊行，共約有十萬人參與。</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">In 2019, the "Anti-Extradition Law Amendment Bill Movement" erupted in Hong Kong. On September 25, some protesters called on people worldwide to join the streets on September 28 or 29 to oppose the authoritarian actions of the Chinese Communist Party. In Taiwan, several dozen civil groups, including Hong Kong Outlanders and Taiwan Citizen Front, organized marches in multiple locations such as Taipei, Taichung, and Kaohsiung, with a total of around 100,000 participants.</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/01.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/02.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/03.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/04.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/05.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/06.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/07.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/08.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/09.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/10.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/11.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/12.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/13.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/14.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/15.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/16.webp" alt=""></div></div>
+		</div></div>
+		
+		<div id="graphic04" style="display: none">
+		<div class="worksTextParagraphContainer">
+			<p class="textParagraph"><span class="title">第 17 屆臺灣同志遊行<br>17th Taiwan LGBT Pride</span><br></p>
+			<p class="descriptionParagraph"><span class="description">Photography<br>3:2<br>2019/10/26</span></p>
+			<p class="descriptionParagraph"><span class="description">攝影：陳盈誌<br>Photographer: Ying-Zhi Chen</span></p><br>
+			<p class="textParagraph"><span class="text">2019 年底的第 17 屆同志大遊行，是台灣同性婚姻合法化後的第一場全國性同志遊行。</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">The 17th Taiwan LGBT Pride at the end of 2019 was Taiwan's first nationwide LGBT pride after the legalization of same-sex marriage.</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/01.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/02.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/03.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/04.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/05.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/06.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/07.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/08.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/09.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/10.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/11.webp" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/12.webp" alt=""></div></div>
+		</div></div>
+		
+	</div>
+	</div>
+	
+	<!-- 文章列表 -->
+	<div id="articlesBox">
+	<div class="articlesBoxContainerContainerContainer">
 	
 	<div id="articlesBox01" onclick="articlesBox01()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<!-- 縮圖 -->
+		<div class="articlesBoxImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
+		<!-- 標題 -->
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">看國民黨和民眾黨聯手推出的<br>「國會濫權法案」</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">去年選戰期間，國民黨、民眾黨都主張國會改革，國民黨更要求總統未來應依據憲法增修條文，到立法院接受質詢。新一屆立法委員上任後，國、眾兩黨隨即提出自己的國會改革藍圖，主要的項目有：總統赴立法院備詢、聽證調查權、藐視國會罪、強化人事同意權、正副院長選舉記名投票。法案一讀後於四月中進入司法法制委員會審議。國、眾兩黨在未經逐條討論且拒絕納入民進黨委員版本的情況下，將國、眾兩黨委員所提的共 20 案全數保留。民進黨為表抗議多次杯葛提出散會，但協商冷凍期後所有保留的草案版本等同逕付二讀，送交院會表決。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2024/05/26</time></span></p>
+		<!-- 簡述 -->
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">去年選戰期間，國民黨、民眾黨都主張國會改革，國民黨更要求總統未來應依據憲法增修條文，到立法院接受質詢。新一屆立法委員上任後，國、眾兩黨隨即提出自己的國會改革藍圖，主要的項目有：總統赴立法院備詢、聽證調查權、藐視國會罪、強化人事同意權、正副院長選舉記名投票。法案一讀後於四月中進入司法法制委員會審議。國、眾兩黨在未經逐條討論且拒絕納入民進黨委員版本的情況下，將國、眾兩黨委員所提的共 20 案全數保留。民進黨為表抗議多次杯葛提出散會，但協商冷凍期後所有保留的草案版本等同逕付二讀，送交院會表決。</span></p>
+		<!-- 日期 -->
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2024/05/26</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox02" onclick="articlesBox02()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/2024 總統選舉 看柯文哲「非科學、不務實」的能源政策/01.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/2024 總統選舉 看柯文哲「非科學、不務實」的能源政策/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">2024 總統選舉 看柯文哲<br>「非科學、不務實」的能源政策</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">柯文哲在今年 8/9 曾表示 2030 年再生能源佔比要達到 40%，近日可能發現實在太困難又改成了 30%。問題是在經濟部的規劃中，2030 年保守估計本來就能達 27%。至於燃氣取代燃煤，最大阻礙是天然氣接收站太少。柯文哲在基隆外木山蓋四接的議題上不正面表態，說希望台電跟環保團體兩方公開辯論來解決問題，原來大家投票是選辯論主持人而不是政治人物？柯文哲的核能主張更是政治語言的話術。核四重啟至少需要十年的時間，更不用說現在從零開始規劃新的核電廠了。民主化後的台灣選址跟環評時都相當費時，因此要達成 2030 年核能佔比 10% 的目標，只能靠重啟核一或核二加核三繼續延役。然而，現存核電廠也有燃料棒使用後無處安放的問題，藍白合都有問題了，柯文哲能說服新北市長侯友宜嗎？</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2023/11/01</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">柯文哲在今年 8/9 曾表示 2030 年再生能源佔比要達到 40%，近日可能發現實在太困難又改成了 30%。問題是在經濟部的規劃中，2030 年保守估計本來就能達 27%。至於燃氣取代燃煤，最大阻礙是天然氣接收站太少。柯文哲在基隆外木山蓋四接的議題上不正面表態，說希望台電跟環保團體兩方公開辯論來解決問題，原來大家投票是選辯論主持人而不是政治人物？柯文哲的核能主張更是政治語言的話術。核四重啟至少需要十年的時間，更不用說現在從零開始規劃新的核電廠了。民主化後的台灣選址跟環評時都相當費時，因此要達成 2030 年核能佔比 10% 的目標，只能靠重啟核一或核二加核三繼續延役。然而，現存核電廠也有燃料棒使用後無處安放的問題，藍白合都有問題了，柯文哲能說服新北市長侯友宜嗎？</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2023/11/01</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox03" onclick="articlesBox03()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">台南雙警遇襲命案後<br>看張雅琴對廢死聯盟的鄉愿言論</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">有時間指稱廢死聯盟幕後有藏鏡人注金流，不如花一點點時間了解王信福案。此案兇手若要速審速決，同樣殺警的王信福執行與否也會遭受議論，不只廢死聯盟，十幾個非營利組織都在盡力救援。張雅琴拿盛傳的消息作新聞，再指責別人栽贓，和其他拿網路文章、網友意見當新聞的媒體同業一樣，都是為了求快求眼球的小報化，網友都已經議論紛紛了還需要媒體推波助瀾嗎？不需要加以查證嗎？內政部長徐國勇、立法院長游錫堃分別主張大膽用槍和殺警判死，在警方有著儘速緝兇的時間壓力下，內部人員還違反偵查不公開，將嫌疑人照片洩漏媒體，這才是沒有職業道德。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2022/08/26</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">有時間指稱廢死聯盟幕後有藏鏡人注金流，不如花一點點時間了解王信福案。此案兇手若要速審速決，同樣殺警的王信福執行與否也會遭受議論，不只廢死聯盟，十幾個非營利組織都在盡力救援。張雅琴拿盛傳的消息作新聞，再指責別人栽贓，和其他拿網路文章、網友意見當新聞的媒體同業一樣，都是為了求快求眼球的小報化，網友都已經議論紛紛了還需要媒體推波助瀾嗎？不需要加以查證嗎？內政部長徐國勇、立法院長游錫堃分別主張大膽用槍和殺警判死，在警方有著儘速緝兇的時間壓力下，內部人員還違反偵查不公開，將嫌疑人照片洩漏媒體，這才是沒有職業道德。</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2022/08/26</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox04" onclick="articlesBox04()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/數位中介法胎死腹中/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/數位中介法胎死腹中/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">&nbsp;<br>數位中介法胎死腹中</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">大喊言論自由倒退與電信法相提並論，都忽略了當初的立法立意也不討論法案質，只是想撈一筆政治油水。單單寄望平台自律，會讓法律越來越跟不上新科技。現在連公聽會都還沒舉辦，當然還有很多法條不夠明確的問題，像是境外網站執法權、法院與主管機關的權威性、救濟與監管程序是否完善、會不會有不當擴大引用的漏洞。加強平台責任一直是各國想要達成的，日本、歐盟都有相關法規在研擬。而澳洲 2021 年也通過網路媒體法案，要求臉書、Google 等流量巨擘，應消弭平台廣告與國內媒體業者不公平的競爭關係。台灣的數位中介法要求平台上的「違法內容」，例如假訊息機器人、詐騙、私密影像等，業者有責任協助警示、移除。至於內容違法與否的認定應該交由法院、主管機關還是第三方查核機構，以及小型的跨境網站仍然無法可管這些都是問題，解決問題需要人力、資金還有時間，現階段 NCC 預設的太過樂觀。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2022/08/20</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">大喊言論自由倒退與電信法相提並論，都忽略了當初的立法立意也不討論法案質，只是想撈一筆政治油水。單單寄望平台自律，會讓法律越來越跟不上新科技。現在連公聽會都還沒舉辦，當然還有很多法條不夠明確的問題，像是境外網站執法權、法院與主管機關的權威性、救濟與監管程序是否完善、會不會有不當擴大引用的漏洞。加強平台責任一直是各國想要達成的，日本、歐盟都有相關法規在研擬。而澳洲 2021 年也通過網路媒體法案，要求臉書、Google 等流量巨擘，應消弭平台廣告與國內媒體業者不公平的競爭關係。台灣的數位中介法要求平台上的「違法內容」，例如假訊息機器人、詐騙、私密影像等，業者有責任協助警示、移除。至於內容違法與否的認定應該交由法院、主管機關還是第三方查核機構，以及小型的跨境網站仍然無法可管這些都是問題，解決問題需要人力、資金還有時間，現階段 NCC 預設的太過樂觀。</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2022/08/20</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox05" onclick="articlesBox05()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">從「很多孩子走了」<br>看疫情期間媒體塑造的人心惶惶</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">國民黨傾全黨之力護航藝人郭彥均，在這個時候爭吵言論自由而忽視掉政治人物的社會責任，會不會導致染疫幼童的家長更傾向直接到急診看診，壓縮真正需要急救的量能。公眾人物公開發文時更應該再三查證並審視用詞，否則會讓誇大傳聞變成虛假事實。原初大眾在爭論到底哪一家醫院真的有很多孩子病逝，以及從 4/5 開始算是不是有點誇大了時間線。結果到現在在爭論到底幾個小孩才算是郭彥均友人陳述的「這麼多」，「全台灣小孩每個都是命」、「郭彥均說的就是事實」、「蘇貞昌跟陳時中想用國家機器對付說出事實的民眾，掩蓋自己的防疫不力」。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2022/05/28</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">國民黨傾全黨之力護航藝人郭彥均，在這個時候爭吵言論自由而忽視掉政治人物的社會責任，會不會導致染疫幼童的家長更傾向直接到急診看診，壓縮真正需要急救的量能。公眾人物公開發文時更應該再三查證並審視用詞，否則會讓誇大傳聞變成虛假事實。原初大眾在爭論到底哪一家醫院真的有很多孩子病逝，以及從 4/5 開始算是不是有點誇大了時間線。結果到現在在爭論到底幾個小孩才算是郭彥均友人陳述的「這麼多」，「全台灣小孩每個都是命」、「郭彥均說的就是事實」、「蘇貞昌跟陳時中想用國家機器對付說出事實的民眾，掩蓋自己的防疫不力」。</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2022/05/28</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox06" onclick="articlesBox06()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">兩本書破解 俄烏戰爭爆發後<br>台灣的疑美論與失敗主義</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">網路上疑美論與失敗主義又開始發酵。首先，台灣對美國的重要性不能與烏克蘭相比，台灣除了是重要的供應鏈夥伴也是第一島鏈成員。拜登與白宮多次承諾美國「有義務協防台灣」，若是台灣淪為中共一省，將嚴重衝擊日韓等國的貿易利益，以及美國維繫西太平洋和南海和平的印太戰略。就算美國無法派兵來援助，解放軍的實力現階段「完全不可能」大規模登陸，即使強登最有可能的台南或觀音山沿岸，共軍也得轉往攻佔深水港才能讓大量重型裝甲上岸。而台灣並非毫無反擊之力，陸軍的阿帕契武裝直升機隊及砲兵只要還保有戰力，趁著共軍還未得到第二波、第三波補給，便會攻擊稍早他們打下的灘頭。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2022/02/25</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">網路上疑美論與失敗主義又開始發酵。首先，台灣對美國的重要性不能與烏克蘭相比，台灣除了是重要的供應鏈夥伴也是第一島鏈成員。拜登與白宮多次承諾美國「有義務協防台灣」，若是台灣淪為中共一省，將嚴重衝擊日韓等國的貿易利益，以及美國維繫西太平洋和南海和平的印太戰略。就算美國無法派兵來援助，解放軍的實力現階段「完全不可能」大規模登陸，即使強登最有可能的台南或觀音山沿岸，共軍也得轉往攻佔深水港才能讓大量重型裝甲上岸。而台灣並非毫無反擊之力，陸軍的阿帕契武裝直升機隊及砲兵只要還保有戰力，趁著共軍還未得到第二波、第三波補給，便會攻擊稍早他們打下的灘頭。</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2022/02/25</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox07" onclick="articlesBox07()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">七、八月第一期離岸風電廠準備要完工併聯發電了，因為疫情延宕，裝置容量 2000 MW 以上的一、二期電廠原本都早該完工。還好公投延期，不然對於核四公投的辯護會更加困難。核能已經因為新北不同意建貯存池，又關一座核二廠一號機，目前只剩下核二廠二號機跟核三廠仍在發電，預計 2025 年全部停止發電。這些運轉四十年，屆齡除役的核能機組，會由新建的燃氣機組和再生能源填補。其中最具爭識的是，大潭電廠增建三接和台中火力發電廠增設燃氣機組。2018 年時任行政院長賴清德提出深澳燃煤發電廠，要使用乾淨的媒（潔淨媒）跟超超臨界技術，被大批網友譏笑，後來宣佈停建由大潭電廠增建三接取代。大潭電廠未來要擴增燃氣機組，補足北部的電力缺口，這樣的話將取代台中火力發電廠成為台灣第一大火力發電廠，但是大潭電廠並沒有自己的液化天然氣接收站，所以必須興建三接（前兩接分別在高雄永安跟台中梧棲）。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2021/07/04</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">七、八月第一期離岸風電廠準備要完工併聯發電了，因為疫情延宕，裝置容量 2000 MW 以上的一、二期電廠原本都早該完工。還好公投延期，不然對於核四公投的辯護會更加困難。核能已經因為新北不同意建貯存池，又關一座核二廠一號機，目前只剩下核二廠二號機跟核三廠仍在發電，預計 2025 年全部停止發電。這些運轉四十年，屆齡除役的核能機組，會由新建的燃氣機組和再生能源填補。其中最具爭識的是，大潭電廠增建三接和台中火力發電廠增設燃氣機組。2018 年時任行政院長賴清德提出深澳燃煤發電廠，要使用乾淨的媒（潔淨媒）跟超超臨界技術，被大批網友譏笑，後來宣佈停建由大潭電廠增建三接取代。大潭電廠未來要擴增燃氣機組，補足北部的電力缺口，這樣的話將取代台中火力發電廠成為台灣第一大火力發電廠，但是大潭電廠並沒有自己的液化天然氣接收站，所以必須興建三接（前兩接分別在高雄永安跟台中梧棲）。</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2021/07/04</time></span></p>
 	</div>
 	</div>
 	</div>
 	</div>
 	
 	<div id="articlesBox08" onclick="articlesBox08()">
-	<div class="worksBox">
-	<div class="worksContainer">
-		<div class="articlesBoxImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/02.webp" alt=""></div>
+	<div class="articlesBoxContainerContainer">
+	<div class="articlesBoxContainer">
+		<div class="articlesBoxImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/image.webp" alt=""></div>
 		<div class="articlesBoxParagraphContainer">
 		<p class="articlesBoxTitleParagraph"><span class="articlesBoxTitle">2020 九合一選舉<br>總統及不分區立委政黨票 催票文</span></p>
-		<p class="worksTextParagraph">
-			<span class="worksText">#宣告我的投票意志。才剛要滿 19 歲，不過先假設我明天可以投票。政黨票：難得有一個政黨，12 號 綠黨 在同性婚姻、安樂死合法化、再生能源、反核、廢除死刑、墮胎權、醫療用大麻合法化、交通改革，和我個人的立場 100% 相符。但在中共步步進逼下，抗中保台是我目前的第一優先，並且 5 號 台灣基進 是現在最有可能進入國會的小黨，所以政黨票我會留給基進。6 號 時代力量，小黨已經人數不多了，仍然因為先前的路線分歧（是否表態力挺蔡英文連任以及對柯文哲的態度），造成一波波退黨潮，現在可以理解為黃國昌一派掌控的政黨。對比老牌大黨，14 號 民進黨，即使有新潮流、正國會、謝系、蘇系等派系，但透過不斷更新黨綱決議文，確保黨的總體價值貼近台灣主流民意。特別是黨員經歷初選競爭後大多能保持團結，就比國民黨檯面下暗鬥好太多了。大黨雖有許多像柯建銘、管碧玲等蟬聯多屆的立委，形象不比黨內新生代清新，可是他們正是在立法院維持法案與議事品質的關鍵。去年林飛帆、吳濬彥等人的加入注入新血，以及吳怡農、謝佩芬、賴品妤的參選，更是證明他們是有能力走入下個世代的政黨。大黨有許多深耕地方的立委，常因為地方民意而對於進步法案有所顧忌。畢竟身為執政黨必須廣納各界歧見、向中間靠攏，推行政策就常常不太靈活，台獨立場也漸漸淡化成中華民國台灣 （偏華獨）。</span></p>
-		<p class="worksTimeParagraph"><span class="worksTimeText"><time>2020/01/10</time></span></p>
+		<p class="articlesBoxTextParagraph">
+			<span class="articlesBoxText">#宣告我的投票意志。才剛要滿 19 歲，不過先假設我明天可以投票。政黨票：難得有一個政黨，12 號 綠黨 在同性婚姻、安樂死合法化、再生能源、反核、廢除死刑、墮胎權、醫療用大麻合法化、交通改革，和我個人的立場 100% 相符。但在中共步步進逼下，抗中保台是我目前的第一優先，並且 5 號 台灣基進 是現在最有可能進入國會的小黨，所以政黨票我會留給基進。6 號 時代力量，小黨已經人數不多了，仍然因為先前的路線分歧（是否表態力挺蔡英文連任以及對柯文哲的態度），造成一波波退黨潮，現在可以理解為黃國昌一派掌控的政黨。對比老牌大黨，14 號 民進黨，即使有新潮流、正國會、謝系、蘇系等派系，但透過不斷更新黨綱決議文，確保黨的總體價值貼近台灣主流民意。特別是黨員經歷初選競爭後大多能保持團結，就比國民黨檯面下暗鬥好太多了。大黨雖有許多像柯建銘、管碧玲等蟬聯多屆的立委，形象不比黨內新生代清新，可是他們正是在立法院維持法案與議事品質的關鍵。去年林飛帆、吳濬彥等人的加入注入新血，以及吳怡農、謝佩芬、賴品妤的參選，更是證明他們是有能力走入下個世代的政黨。大黨有許多深耕地方的立委，常因為地方民意而對於進步法案有所顧忌。畢竟身為執政黨必須廣納各界歧見、向中間靠攏，推行政策就常常不太靈活，台獨立場也漸漸淡化成中華民國台灣 （偏華獨）。</span></p>
+		<p class="articlesBoxTimeParagraph"><span class="articlesBoxTimeText"><time>2020/01/10</time></span></p>
 	</div>
 	</div>
 	</div>
@@ -264,26 +602,33 @@
 	</div>
 	</div>
 	
-	<div id="articlesContainer">
-	<div class="articles">
-		<div class="iconArticlesCloseContainer"><p onclick="articlesClose()" id="iconArticlesClose" class="iconBoxClose">close</p></div>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<div class="iconWorksCloseContainer"><p onclick="articlesClose()" id="iconArticlesClose" class="iconBoxClose">close</p></div>
 		
 		<div id="articles01" style="display: none"><div class="textParagraphContainer">
+			<!-- 標題 -->
 			<p class="textParagraph"><span class="title">看國民黨和民眾黨聯手推出的「國會濫權法案」</span><br></p>
+			<!-- 作者 --><!-- 日期 -->
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2024/05/26 初稿<br>2024/06/22 修改整理</span></p>
+			<!-- 內文 -->
 			<p class="textParagraph"><span class="text">去年選戰期間，國民黨、民眾黨都主張國會改革，國民黨更要求總統未來應依據憲法增修條文，到立法院接受質詢。新一屆立法委員上任後，國、眾兩黨隨即提出自己的國會改革藍圖，主要的項目有：總統赴立法院備詢、聽證調查權、藐視國會罪、強化人事同意權、正副院長選舉記名投票。</span></p>
 			<p class="textParagraph"><span class="text">法案一讀後於四月中進入司法法制委員會審議。國、眾兩黨在未經逐條討論且拒絕納入民進黨委員版本的情況下，將國、眾兩黨委員所提的共 20 案全數保留。民進黨為表抗議多次杯葛提出散會，但協商冷凍期後所有保留的草案版本等同逕付二讀，送交院會表決。</span></p>
 			<p class="textParagraph"><span class="text">許多人指民進黨利用議事規則提出散會，是民進黨自己沒有要討論的意思。但其實民進黨的鍾佳濱委員對自己的法案版本，曾親自找專家學者來舉辦過兩場公聽會。反觀國民黨的版本僅辦過一次公聽會就送入院會表決，甚至對比 2014 年的服貿協議，後者至少也辦過 16 場的公聽會。</span></p>
 			<p class="textParagraph"><span class="text">〔案外案1〕民進黨范雲委員針對《立法委員行為法》提出修正草案，額外納入立委有性騷嫌疑需送紀律委員會。黃國昌原表態支持，後來卻和國民黨聯手否決併案。范雲上前質疑黃國昌為何做的跟前一天協商的結論不一樣，黃國昌說：「我有欠你哦？你跑到我旁邊來吼什麼？」「這種程序上的逕付二讀，你們自己去玩，我沒有要理你去玩這種程序上面的復議」後來表示民眾黨會提出自己的版本。</span></p>
 			<p class="textParagraph"><span class="text">〔案外案2〕民進黨沈伯洋委員針對傅崐萁前陣子到中國和中共官員見面，提出立法委員比照政府官員，赴中需經政府核准，卻遭國、眾兩黨聯手排除在程序委員會的議程外。民進黨國會過半的八年間未曾有提案被封殺於程序委員會外。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/01.webp" alt=""></div></div>
 			<p class="textParagraph"><span class="text">二讀表決前幾天，傅崐萁、黃國昌等人開始在議場前守夜。黃國昌被媒體記錄到私自和國民黨的翁曉玲委員通話討論法案細節。5/16 二讀表決前夕，國、眾兩黨推翻先前委員會保留下來的各個版本，合作以修正動議方式提出整併版本，以此進行二讀宣讀與表決，並且不在二讀院會上作各委員版本的協商與討論。至於整併版本的內容，黃國昌表示此為「最高機密」。對比 2014 年的服貿協議，後者在表決前也已經上網公告長達 90 日。</span></p>
 			<p class="textParagraph"><span class="text">5/17 二讀表決當天，黨團協商破局，民進黨為杯葛議事，搶佔主席台阻撓韓國瑜院長上台主持。期間沈伯洋委員企圖翻越國民黨組成的人牆時，遭國民黨邱鎮軍委員拉扯，從兩公尺高摔落。Threads上有些人得知消息看不下去，在 5/17 當天晚上九點左右集結在立法院旁的青島東路側門，聲援民進黨的委員。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div></div>
+			<!-- 圖片 -->
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" alt=""></div></div>
+			<!-- 圖片附註 -->
 			<p class="descriptionParagraph"><span class="description">沈伯洋遭邱鎮軍拉扯從兩公尺高摔落</span></p>
 			<p class="textParagraph"><span class="text">當天另一項爭議是國民黨所提的花東三建設草案——「環島高鐵」、「花東快速道路」、「國道六號打通中央山脈延伸至花蓮」，民進黨粗估三項共需兩兆元的建設經費。民進黨及環保團體批評建設應先經過行政院的可行性評估及環境影響評估，不應透過立法逼迫政院執行。國道六號穿過中央山脈通至花蓮，上世紀末當時的政府就曾經評估過該方案，結論是路段九成可能都得挖掘隧道，且路線上方連山路都沒有，從零開始探勘地質的成本也高。即便改建設截面較小的火車隧道難度同樣很大，所以目前國道六號僅僅通車至南投，法案內所要求的十年內完工更是天方夜譚。三項草案 5/17 當天確實有納入院會討論事項及協商的議程，但根據先前黨團協商的共識，需等新政府上台後再邀請新任交通部長來研議。不過黨團協商所做的共識未具有法律效力，仍有重新提案排入院會二讀的可能性。</span></p>
 			<p class="textParagraph"><span class="text">肢體衝突總共導致五名立委因身體受傷或不適轉送至台大醫院，但韓國瑜院長不願暫停議事，持續進行二讀的宣讀與表決。且每條條文宣讀時並未將內容逐字唸出，宣讀後的討論時間，也僅允許一位委員共三分鐘的時間發言，時間到即消音並宣布停止討論，接著進行表決。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/03.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/03.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">國道六號延伸花蓮路線圖</span></p>
 			<p class="textParagraph"><span class="text">國民黨為了防止主席台遭到民進黨委員佔領，決定聽取立法院秘書長周萬來的意見改為舉手表決，這樣就不必回到位子上按表決器再回到主席台這樣來回奔波。舉手表決確實合乎規定，各委員會內沒有表決器都是採舉手表決。但在院會議場上，上一次舉手表決發生在 1989 年，議事人員同樣沒受過舉手表決的訓練，現場一度混亂，包含出席人數和贊成、否決人數兜不起來之外，後續也發生表決前未先清查人數，以及僅點贊成票、未點否決票，遭質疑違反議事規則。</span></p>
 			<p class="textParagraph"><span class="text">還有一個問題是，國、眾兩黨的整併版本沒有人知道確切內容，許多委員只能從先前的 28 個草案版本來推斷。黃國昌聲稱條文內容當天一早就送到各個委員桌上，事實上是晚上七點委員們才拿到，各委員辦公室的法案助理根本來不及做研究，院會就已經在表決了。民進黨團僅能不斷以修正動議、再修正動議等提案拖延二讀審議。</span></p>
@@ -291,7 +636,7 @@
 			<p class="textParagraph"><span class="text">國、眾兩黨的支持者可能會稱這次是「國會改革法案」，反對者則會說這是「國會濫權法案」，較中性的名詞是「國會職權法案」。其實三黨有共識的地方不少，民進黨也有自己的版本，但國、眾兩黨因為程序不正義遭民進黨杯葛，就誣指民進黨是反改革，說「沒做壞事為何要怕別人監督？」事實上大眾在意的是審議過程欠缺討論，法案內容本身的品質也受到許多法律界人士質疑。</span></p>
 			<p class="textParagraph"><span class="text">總統赴立法院的法源依據是依憲法增修條文：「國民大會集會時，得聽取總統國情報告，並檢討國是，提供建言；如一年內未集會，由總統召集會議為之，不受憲法第三十條之限制」、「立法院於每年集會時，得聽取總統國情報告」、「立法院得經全體立法委員四分之一以上提議，院會決議後，由程序委員會排定議程，就國家安全大政方針，聽取總統國情報告」。</span></p>
 			<p class="textParagraph"><span class="text">台灣民主化前，兩位蔣總統未曾到過國民大會或立法院作國情報告。直到李登輝推動總統直選後，國民大會失去選舉總統的職權，為了補償國大，賦予國大代表聽取總統國情報告的權力，李登輝任內也曾多次前往國民大會報告。國大廢除後，這樣的職權同樣跟著轉移至立法院。前總統陳水扁為了爭取在野對其國防、外交政策的支持，曾希望親自到立法院演說，卻遭當時的在野黨拒絕；馬英九任內民進黨團也曾要求總統到立法院接受即問即答的質詢。而去年賴清德在選戰期間曾公開承諾：未來若能擔任總統，立法院希望他去，他便會前往國情報告。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/04.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/04.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">1997年 李登輝前往國民大會國情報告</span></p>
 			<p class="textParagraph"><span class="text">目前國、民兩黨最大的歧見是，總統赴立法院後到底該採何種方式：只作國情報告、接受即問即答質詢，亦或聽取立法委員的國是建言後書面答覆。國民黨主張總統既然都來了那就得接受即問即答的質詢；民進黨改變過往主張，表明即問即答違憲，超出憲法增修條文記載的「立法院得聽取總統國情報告」的範圍。且總統和立法院同樣是人民直選產生的，不同於受總統提名、立法院可對其提出不信案的行政院長，不存在誰向誰負責的關係，總統和行政院長如果都得接受立委質詢的話，豈不是疊床架屋？</span></p>
 			<p class="textParagraph"><span class="text">英國是內閣制國家，首相和部會首長都屬國會的一員，需接受在野黨的質問。美國在三權分立的情況下，總統制的總統本身就是行政權的首腦，且參、眾兩院都沒有「質詢」的制度，行政官員不需應國會議員的要求進到國會備詢。美國總統僅在每年年初前往眾議院作國情咨文，講完馬上離開。法國和台灣一樣採雙首長制，不過直到 2008 年才修法允許法國總統前往國會發表國情演說，和美國一樣不得詢答。</span></p>
@@ -304,7 +649,7 @@
 			<p class="textParagraph"><span class="text">其他國家「藐視國會」的定義通常是指妨礙國會職權行使的行為，例如惡意不出席、不提供資料、作偽證，而不是委員主觀感受認為受到羞辱，或是被反質詢。英國國會的作法較軟，想邀請某人到國會接受詢問需事先與對方溝通，若對方不同意也沒有強制手段，「藐視國會」僅是種概念，只能譴責、沒有處罰。美國國會的作法較硬，「藐視國會」若採取處罰程序就等同刑事訴訟。先由委員會和院會議決對方是否構成藐視，再將案件轉送給檢察官，由檢察官去判斷是否起訴。不過檢察機關大多不願意介入行政與國會間的糾紛，實際成案的起訴比例低。</span></p>
 			<p class="textParagraph"><span class="text">比起美國「藐視國會」僅適用於聽證及調查，國、眾兩黨的版本一併將台灣特有的「質詢」制度，納入了觸發藐視國會罪的範疇。代表未來行政官員對於政策的備詢需更加警惕，不能為了向國會多數黨委員作政策辯護而大動肝火，委員的面子罵不得。</span></p>
 			<p class="textParagraph"><span class="text">5/17 當晚，公投護台灣聯盟（由蔡丁貴教授創立，致力於推動台灣獨立，2008 年起長期在立法院旁搭帳篷陳抗，2018 年遭柯文哲市府強制拆除）和經濟民主連合（前身是 2013 年第一個向大眾示警服貿協議通過會對台灣產業造成衝擊的團體，智庫召集人是賴中強律師，也是本次運動的重要核心人物）便出現在現場表達抗議，後來一同成為後續抗爭的主辦團隊。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/05.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/05.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">5/17 立法院外青島東路上集結聲援的民眾</span></p>
 			<p class="textParagraph"><span class="text">目前的五項訴求整理一下有：一、國會改革不應破壞權力分立，不應破壞人民權利。二、退回法案，回到司法法制委員會重新審查。三、抗議國眾兩黨濫用議事規則，漠視應有的民主討論程序。四、委員會應實質討論各黨提案，停止濫用「逕付二讀」、「全案保留」、「封殺提案」、「散會動議」。五、沒有討論，不是民主；全案保留，等於沒審，封殺提案，威權復辟。</span></p>
 			<p class="textParagraph"><span class="text">現場維持秩序及收發物資主要由基督長老教會（教會立場長期偏向本土陣營）的志工負責。除此之外，因為這次修法會影響到一般人民，許多人權團體也挺身而出表達他們對法案內容的憂慮。站出來的還有時代力量、綠黨、台灣基進、台灣團結聯盟、社會民主黨、小民參政歐巴桑聯盟，其中有些政黨曾在立法院佔有席次甚至擁有過黨團，他們同樣對目前身為關鍵少數的民眾黨感到不解。</span></p>
@@ -316,7 +661,7 @@
 		<div id="articles02" style="display: none"><div class="textParagraphContainer">
 			<p class="textParagraph"><span class="title">2024 總統選舉 看柯文哲「非科學、不務實」的能源政策</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2023/11/01 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2024 總統選舉 看柯文哲「非科學、不務實」的能源政策/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2024 總統選舉 看柯文哲「非科學、不務實」的能源政策/01.webp" alt=""></div></div>
 			<p class="textParagraph"><span class="text">柯文哲在今年 8/9 曾表示 2030 年再生能源佔比要達到 40%，近日可能發現實在太困難又改成了 30%。問題是在經濟部的規劃中，2030 年保守估計本來就能達 27%。至於燃氣取代燃煤，最大阻礙是天然氣接收站太少。柯文哲在基隆外木山蓋四接的議題上不正面表態，說希望台電跟環保團體兩方公開辯論來解決問題，原來大家投票是選辯論主持人而不是政治人物？柯文哲的核能主張更是政治語言的話術。核四重啟至少需要十年的時間，更不用說現在從零開始規劃新的核電廠了。民主化後的台灣選址跟環評時都相當費時，因此要達成 2030 年核能佔比 10% 的目標，只能靠重啟核一或核二加核三繼續延役。然而，現存核電廠也有燃料棒使用後無處安放的問題，藍白合都有問題了，柯文哲能說服新北市長侯友宜嗎？</span></p>
 			<p class="textParagraph"><span class="text">相信柯文哲上任後就會「科學、務實、理性」，選一個地點計畫蓋高階核廢料最終處置場。但其實大家都心裡有數，基本上就會位於東部，先前還曾誤傳選址選項之一在宜蘭、花蓮交界。總之就是西部的工業區、都市人用電，發完電的髒東西往東部送，並且在國、眾兩黨的規劃中髒東西還會越生越多。所以核廢料不僅是科學與環保護題，更是政治問題、是土地正義的問題。蘭嶼人被欺騙、被剝奪選擇權是威權時期的不幸，民主化後的台灣大家沒有這麼好騙了。</span></p>
 		</div></div>
@@ -324,22 +669,22 @@
 		<div id="articles03" style="display: none"><div class="textParagraphContainer">
 			<p class="textParagraph"><span class="title">台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2022/08/26 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/01.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">原文：張雅琴主播 Facebook</span></p>
 			<p class="textParagraph"><span class="text">有時間指稱廢死聯盟幕後有藏鏡人注金流，不如花一點點時間了解王信福案。此案兇手若要速審速決，同樣殺警的王信福執行與否也會遭受議論，不只廢死聯盟，十幾個非營利組織都在盡力救援。張雅琴拿盛傳的消息作新聞，再指責別人栽贓，和其他拿網路文章、網友意見當新聞的媒體同業一樣，都是為了求快求眼球的小報化，網友都已經議論紛紛了還需要媒體推波助瀾嗎？不需要加以查證嗎？內政部長徐國勇、立法院長游錫堃分別主張大膽用槍和殺警判死，在警方有著儘速緝兇的時間壓力下，內部人員還違反偵查不公開，將嫌疑人照片洩漏媒體，這才是沒有職業道德。</span></p>
 			<p class="textParagraph"><span class="text">已開發國家大多早已廢除死刑，難道他們就是道德淪喪嗎？要說文化背景不同、國情不同就更奇怪了，和中國反對西方式民主的那套說法相同，但民主在台灣就不會遇到適應不良的問題。西方國家逐步廢死也是近一百年內的事，除此之外還有女性投票權、性別平權、種族平等、勞工權益等議題，都是台灣社會邁向現代化發展的過程中，必然會產生的一些爭辯。哪一次進步派不被保守派罵背德忘祖、違反傳統禮俗呢？</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/02.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/02.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">圖源：台灣廢除死刑推動聯盟 Facebook</span></p>
 		</div></div>
 		
 		<div id="articles04" style="display: none"><div class="textParagraphContainer">
 			<p class="textParagraph"><span class="title">數位中介法胎死腹中</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2022/08/20 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/數位中介法胎死腹中/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/數位中介法胎死腹中/01.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">原文：政治工作者 周軒 Facebook</span></p>
 			<p class="textParagraph"><span class="text">大喊言論自由倒退與電信法相提並論，都忽略了當初的立法立意也不討論法案質，只是想撈一筆政治油水。單單寄望平台自律，會讓法律越來越跟不上新科技。現在連公聽會都還沒舉辦，當然還有很多法條不夠明確的問題，像是境外網站執法權、法院與主管機關的權威性、救濟與監管程序是否完善、會不會有不當擴大引用的漏洞。</span></p>
 			<p class="textParagraph"><span class="text">加強平台責任一直是各國想要達成的，日本、歐盟都有相關法規在研擬。而澳洲 2021 年也通過網路媒體法案，要求臉書、Google 等流量巨擘，應消弭平台廣告與國內媒體業者不公平的競爭關係。台灣的數位中介法要求平台上的「違法內容」，例如假訊息機器人、詐騙、私密影像等，業者有責任協助警示、移除。至於內容違法與否的認定應該交由法院、主管機關還是第三方查核機構，以及小型的跨境網站仍然無法可管這些都是問題，解決問題需要人力、資金還有時間，現階段 NCC 預設的太過樂觀。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/數位中介法胎死腹中/02.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/數位中介法胎死腹中/02.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">圖源：台灣民眾黨 Facebook</span></p>
 			<p class="textParagraph"><span class="text">特別要提民眾黨。自己高舉「新政治」的大旗，只會用些聳動的字句，去脈絡化地挪揄嘲諷，請問跟舊政治與小報新聞有什麼不同？透過滑坡、貼標籤，拉抬自己的政治聲量，並不會顯得貴黨比較高尚。反對方要求撤回更為奇怪，根本還沒通過行政院院會是要撒回什麼？頂多是主管機關重新研議並延後舉辦公聽會。各黨黨團目前也都在研擬針對 Deepfake 與性私密影像外流的專法，未來數位中介法可能同樣會有政院版以及各黨團版本一起進入委員會審查，像現在這樣預設立場對往後的討論有諸多不利。</span></p>
 		</div></div>
@@ -347,10 +692,10 @@
 		<div id="articles05" style="display: none"><div class="textParagraphContainer">
 			<p class="textParagraph"><span class="title">從「很多孩子走了」看疫情期間媒體塑造的人心惶惶</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2022/05/28 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/01.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">左圖：郭彥均貼出和醫護友人的對話截圖<br>右圖：指揮中心統計圖表</span></p>
 			<p class="textParagraph"><span class="text">國民黨傾全黨之力護航藝人郭彥均，在這個時候爭吵言論自由而忽視掉政治人物的社會責任，會不會導致染疫幼童的家長更傾向直接到急診看診，壓縮真正需要急救的量能。公眾人物公開發文時更應該再三查證並審視用詞，否則會讓誇大傳聞變成虛假事實。原初大眾在爭論到底哪一家醫院真的有很多孩子病逝，以及從 4/5 開始算是不是有點誇大了時間線。結果到現在在爭論到底幾個小孩才算是郭彥均友人陳述的「這麼多」，「全台灣小孩每個都是命」、「郭彥均說的就是事實」、「蘇貞昌跟陳時中想用國家機器對付說出事實的民眾，掩蓋自己的防疫不力」。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/02.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/02.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">大量不知名粉專群發「很多孩子走了」相關報導，增加新聞熱度</span></p>
 			<p class="textParagraph"><span class="text">5/25 郭彥均發文，第一時間台灣媒體以「很多孩子走了」為題報導。5/26 中共統戰部門見縫插針、操作輿論。郭彥均當初的想法是想呼籲大家多體恤醫護人員，他卻原封不動貼出和醫護友人的對話，並未加以修飾與核實，反而讓大眾已經被媒體渲染過的恐慌更加一層，達不到當初想達到的目的了。這也是中共最希望看到的：台灣官方與民間傳遞正確資訊的管道遭到混淆、模糊，雙方互不信任。</span></p>
 			<p class="textParagraph"><span class="text">政府雖然鼓勵大家施打疫苗，卻沒有做太多以疫苗施打劑數差別的出入限制，例如打完三劑才可適用居家隔離 0+7，指揮中心可能是為了不要歧視對疫苗有疑慮的民眾。而弔詭的是媒體記者，一方面還在追問幼兒重症以及腦炎的比率，一方面已經在問台灣什麼時候像日本開放邊境了。</span></p>
@@ -360,56 +705,56 @@
 		<div id="articles06" style="display: none"><div class="textParagraphContainer">
 			<p class="textParagraph"><span class="title">兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2022/02/25 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/01.webp" alt=""></div><div class="articlesImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/02.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/01.webp" alt=""></div><div class="worksImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/02.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">左：《為什麼我們要在意美國？從外交、制度、重大議題全面解析台美關係》——美國台灣觀測站<br>右：《阿共打來怎麼辦：你以為知道但實際一無所知的台海軍事常識》——王立、沈伯洋</span></p>
 			<p class="textParagraph"><span class="text">網路上疑美論與失敗主義又開始發酵。首先，台灣對美國的重要性不能與烏克蘭相比，台灣除了是重要的供應鏈夥伴也是第一島鏈成員。拜登與白宮多次承諾美國「有義務協防台灣」，若是台灣淪為中共一省，將嚴重衝擊日韓等國的貿易利益，以及美國維繫西太平洋和南海和平的印太戰略。就算美國無法派兵來援助，解放軍的實力現階段「完全不可能」大規模登陸，即使強登最有可能的台南或觀音山沿岸，共軍也得轉往攻佔深水港才能讓大量重型裝甲上岸。而台灣並非毫無反擊之力，陸軍的阿帕契武裝直升機隊及砲兵只要還保有戰力，趁著共軍還未得到第二波、第三波補給，便會攻擊稍早他們打下的灘頭。</span></p>
 			<p class="textParagraph"><span class="text">解放軍部屬的飛彈數量（不管有幾千枚），非但無法摧毀台灣所有的軍事目標，當然更不用說派遣空軍空襲掃蕩，光應付可移動的陸基防空飛彈就不敢深入了。而解放軍的航空母艦，因為第一島鏈的宮古海峽及巴士海峽，作戰範圍僅能限制在非常狹窄且可預測的位置。太靠近陸地便有美日的反艦飛彈及空軍、海軍基地等著；太遠離陸地則是還沒能等到上場作戰，可能就需準備返航補給，且會有被台灣海軍攔截的危險。剩下的什麼十萬大軍突襲論和特種部隊斬首論，更是無稽之談。</span></p>
 			<p class="textParagraph"><span class="text">台灣隱藏在新竹、苗栗交界的樂山雷達站，探測距離大概有 2500 至 3000 公里，中國的東南沿岸都在監控之下。更何況還有美國幫忙開圖，只要解放軍一集結便會被提前預警。最有可能的行動反而是強佔金馬以及南海諸島，所以台灣最該擔心的是某些人想用一紙和平協議，或是主張沒人想打仗、解放軍一碰台灣就倒，或是一輛坦克、一架戰機可以換多少營養午餐等言論，削弱了台灣的國力與軍事力量。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/03.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/兩本書破解 俄烏戰爭爆發後 台灣的疑美論與失敗主義/03.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">遠眺山頂的樂山雷達站</span></p>
 		</div></div>
 		
 		<div id="articles07" style="display: none"><div class="textParagraphContainer">
 			<p class="textParagraph"><span class="title">看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2021/07/04 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/01.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">台電各機組發電量 2021/07/03 13:10</span></p>
 			<p class="textParagraph"><span class="text">七、八月第一期離岸風電廠準備要完工併聯發電了，因為疫情延宕，裝置容量 2000 MW 以上的一、二期電廠原本都早該完工。還好公投延期，不然對於核四公投的辯護會更加困難。核能已經因為新北不同意建貯存池，又關一座核二廠一號機，目前只剩下核二廠二號機跟核三廠仍在發電，預計 2025 年全部停止發電。這些運轉四十年，屆齡除役的核能機組，會由新建的燃氣機組和再生能源填補。</span></p>
 			<p class="textParagraph"><span class="text">其中最具爭識的是，大潭電廠增建三接和台中火力發電廠增設燃氣機組。2018 年時任行政院長賴清德提出深澳燃煤發電廠，要使用乾淨的媒（潔淨媒）跟超超臨界技術，被大批網友譏笑，後來宣佈停建由大潭電廠增建三接取代。大潭電廠未來要擴增燃氣機組，補足北部的電力缺口，這樣的話將取代台中火力發電廠成為台灣第一大火力發電廠，但是大潭電廠並沒有自己的液化天然氣接收站，所以必須興建三接（前兩接分別在高雄永安跟台中梧棲）。</span></p>
 			<p class="textParagraph"><span class="text">中火原本要增設燃氣機組，完工之後讓燃煤機組可以在旁待命，平時主要以燃氣發電減少空污。但因為 2018 年主打「市長換人，空氣換新」而勝選的盧秀燕市長，卻堅持中火機組先拆後建，改建案被卡在台中市政府的都審中長達一年半，直到近日經濟部發出特種執照，繞過市府才得以過審。盧秀燕一直放話，中央讓中火改建越蓋越大、中部人承擔全台最大供電量，但是台中近年發展迅速，早已成為全台用電量最大的城市，台中所有的電廠發電量早已不夠自己使用，還需要像是苗栗的通宵火力發電廠支援，難道不僅南電北送，南電還必須中送？</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/02.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/02.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">位於台中市龍井區的台中火力發電廠</span></p>
 			<p class="textParagraph"><span class="text">重啟核四、珍愛藻礁背景：2017 年台電備轉容量率一度非常緊迫，還發生 815 大停電、深澳燃煤電廠和開發綠能的爭議，於是核能流言終結者（核終）的創辦人黃士修提倡重啟核四並發起公投連署。但為了符合公投法的規定「一案決定一事」，僅先在 2018 年通過「以核養綠」公投修改法令，重啟核四直到今年才要公民投票。</span></p>
 			<p class="textParagraph"><span class="text">「您是否同意核四啟封商轉發電？」<br>同意＝核四重新評估、續建；不同意＝核四繼續封存。<br><br>「您是否同意第三天然氣接收遷離桃園大潭藻礁海岸及海域？』<br>同意＝三接停工、另尋氣源；不同意＝三接續建、穩定供氣，影響部分生態。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/03.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/03.webp" alt=""></div></div>
 			<p class="textParagraph"><span class="text">珍愛藻礁（三接遷離）公投由潘忠政提出，要求第三天然氣接收站能遷離桃園外海，避免影響藻礁。</span></p>
 			<p class="textParagraph"><span class="text">首先，台灣未來用電量將逐年攀升，如果什麼都不做真的會缺電。就算是核能支持者也有部分人不支持重啟核四，認為核四已經建造太久，不如建造新的核五、 核六來得安全。但畢竟核一、核二、核三、蘭嶼貯存場都是威權時代下的產物，民主化後的台灣，光是決定核五蓋哪裡、核廢料放哪邊，相信都是很難實現的。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/04.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/04.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">蘭嶼貯存場興建時並未經過當地原住民族人的知情同意</span></p>
 			<p class="textParagraph"><span class="text">核四最大的問題是重啟的不確定性。電廠現址地層下方以及外海，都疑似發現有活動斷層，即便正方認為核四耐震標準相當高，且斷層不一定屬於活動斷層，或者其數萬年才活動一次，這些可能性都必須接受更多的評估。而經過這二十多年建建停停，廠商要重標、零件要重買，測試也得重新做起。種種因素相加起來，我認為將遠遠超出正方宣傳的四年方可重啟，反方陳述的七甚至十年以上的時程可信度更高。</span></p>
 			<p class="textParagraph"><span class="text">就算真的只花七年便將核四商轉，屆時核四也僅占發電量7%左右，對未來的供電缺口幫助不大。與其將這些經費放在成本越來越高的核能上，不如挹注在更有前瞻性的綠能上。近年來各國大力推動再生能源，技術發展使得綠電越來越便宜，效益並不如以往想像地低（綠能不包含核能，指太陽能、風能、地熱等）。許多國際大企業進駐台灣，將遵循「RE100」的標準採購綠電，大國們也把再生能源發展目標訂在 2050 年達 40% 以上。台灣擁有得天獨厚的離岸風電風場，更應該著手發展。第一期離岸風電原本預計年底完工，但因為疫情延至明年。不過太陽光電已能在酷暑冷氣全開的時候，貢獻 12% 左右電力，使得尖峰時段可以不用像以往燒更多煤因應。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/05.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/05.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">2020 至 2050 年 能源佔比趨勢</span></p>
 			<p class="textParagraph"><span class="text">部分人認為綠能不夠穩定，的確如此，所以發展綠能的同時，都會和天然氣相互搭配。雖然天然氣仍然會排放溫室氣體，但造成的空污較燃煤低很多，且最大的優點是機組發電量升到滿載耗時僅需兩個半小時，比燃煤的八小時寬裕得多，可以在用電量驟升時快速調度，始供電更加穩定。</span></p>
 			<p class="textParagraph"><span class="text">而問題是，藻礁真的有必要為了人類用電而犧牲嗎？為什麼三接不能直接遷離？因為燃煤機組陸續替換成燃氣機組，第一和第二接收站（高雄永安和台中港）其實利用率皆已超出原有設計，不只現在的三接，四接（基隆）和五接（台中港)都已在規劃當中。當然北部必須要有自己的接收站，而其他備選地點如台北港，腹地有限，且拉這麼長的管線至大潭電廠並非沒有風險，也需要更多時間評估，可能來不及支應燃氣機組的新建進度，需要維持更久的中氣北送。</span></p>
 			<p class="textParagraph"><span class="text">我家再北一點就是通霄火力發電廠，即將成為台灣第一大火力（天然氣）電廠，一間就可以補足核四廠不重啟的用電缺口，還能讓興達及台中電廠降載。現在台中港接收的天然氣供中部發電已經吃緊，若再分給大潭電廠，台中火力發電廠由燃煤轉為全燃氣的轉型時程將大大減緩。</span></p>
 			<p class="textParagraph"><span class="text">蔡英文政府為了避免三接影響藻礁，已經將馬政府時期擬定的開發面積縮減至十分之一，且外推再外推，希望將船隻和管道的影響減至最輕，剩下的是信不信任政府的問題。台灣最大的幾個環保團體，如地球公民和台灣環境保護聯盟，都支持政府的三階再外推方案了，還呼籲大家投下不同意票，我也沒比他們更懂環保議題，所以我選擇相信他們的專業評估跟監督政府的職責。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/06.webp" alt=""></div></div>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/07.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/06.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/07.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description"><br>地球公民和台灣環境保護聯盟相繼表態支持行政院的折衷方案</span></p>
 			<p class="textParagraph"><span class="text">反萊豬公投，此案領銜人是國民黨立委林為洲。聽起來是食安問題，但其實也關乎到台灣在國際貿易上的誠信。</span></p>
 			<p class="textParagraph"><span class="text">「你是否同意政府應全面禁止進口含有瘦肉精（萊克多巴胺等乙型受體素）豬隻之肉品、內臟及其相關產製品？」<br>同意＝萊豬不可進口，影響國際貿易；不同意＝萊豬繼續進口，依然不可超過國際標準。</span></p>
 			<p class="textParagraph"><span class="text">萊克多巴胺是豬和牛的飼料添加物，可促進動物肌肉生長，使脂肪的生成量減少。萊克多巴胺水溶性高、 代謝快，約 90% 可在 24 小時內經由尿液或糞便排出體外，民進黨在 2020 開放含萊劑的美豬進口。馬英九在 2012 決定開放萊牛進口，當時民進黨大力反對，但後來萊劑國際標準訂定後民進黨就決定退讓。因為兩黨都知道國際標準擺在那，如果想和別人做生意就不能雙標。時至今日，台灣人早就吃了許多萊牛，但現在國民黨為了自己的政治利益，再度把萊克多巴胺搬上檯面，令人費解。</span></p>
 			<p class="textParagraph"><span class="text">部分人認為，為什麼不能像產銷履歷把含有萊劑的豬肉標示出來，而不像現在只標示豬肉產地。因為萊克多巴胺是牲畜的飼料添加物， 而不是人類的食品添加物，不用如成分表一個一個列出來，就如同我們也不會知道農作物灑了什麼種農藥一樣。而部分美豬有使用萊劑，只要不吃美豬便不會吃到萊劑，因此沒必要差別待遇。那為什麼台灣豬不用萊劑？台灣豬好不容易等到口蹄疫能夠拔針出口，為了要和他國做出市場區隔而不用萊克多巴胺。日本和台灣一樣，皆是國內禁止使用萊劑養豬但開放進口，歐盟則因為不遵循國際標準，曾被美國告上 WTO，受到美國每年近三十億台幣的制裁。若是此案通過，可預見的是未來加入 CPTPP 或台美簽訂貿易協定時將更加困難。萊劑風險極小，但拒絕的代價巨大。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/08.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/08.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">圖源：農委會主委 陳吉仲</span></p>
 			<p class="textParagraph"><span class="text">「你是否同意公民投票案公告成立後半年內，若該期間內遇有全國性選舉時，在符合公民投票法規定之情形下，公民投票應與該選舉同日舉行？」</span></p>
 			<p class="textParagraph"><span class="text">公投綁大選，此案領銜人是國民黨前主席江啟臣。公投綁大選這樣的簡稱不太好，仔細審閱題目其實是說，通過的話，大選前六個月內成案的公投應與選舉合併舉行，但如果比六個月更之前就成案的話，一樣得在兩個選舉年之間的八月舉行公投，壓根沒有減少到選務工作，民眾依然要每年回鄉投票。而且不會有領銜人願意在六個月以外的時間送交連署書，這樣只會造成公投的公眾討論時間壓縮到六個月內。若只有兩、三個月，不只公眾討論時間不足，連選務人員都得急急忙忙規劃。</span></p>
 			<p class="textParagraph"><span class="text">部分人認為連署階段就會有公眾討論，事實上媒體對於報導公投興致缺缺。像今年八月原訂要舉行的時間，社會還在因為疫苗和振興吵翻天，十月初大眾也都在討論陳柏惟的罷免案，根本沒什麼人在乎公投。這樣的公投題目在設計上有很大的問題，用公投來決定公投制度本身也是件弔詭的事。有些人表示通過之後應該以公投能夠綁大選作原則性的修法，我相信正、反雙方的出發點都是希望增加投票率，但在 2018 年嘗試實行一次公投綁大選後，人和事分開決定還是有其必要性。公眾討論比較不會聚焦在市長或總統要選誰、他們今天爬樹還是用屁股走路了沒，政治人物也較不會因為所屬政黨而不敢表態個人意見（如侯友宜和林姿妙表態不支持重啟核四）。</span></p>
 			<p class="textParagraph"><span class="text">瑞士一年約有四次公投，同樣是人事脫鉤。我目前認為移轉投票（選前數個月申請居住地附近投票）是解決低投票率的有效作法，日前立法院已在進行初審，期待相關措施能夠更加完善。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/09.webp" alt=""></div><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/10.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/09.webp" alt=""></div><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/10.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">2018 年地方選舉附帶公投多達十案，造成不少亂象</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/11.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/11.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">核一、核二廠所在地的新北市，市長侯友宜不願正面表態支持重啟核四</span></p>
 		</div></div>
 		
@@ -417,73 +762,44 @@
 			<p class="textParagraph"><span class="title">2020 九合一選舉 總統及不分區立委政黨票 催票文</span><br></p>
 			<p class="textParagraph"><span class="text">撰文：陳盈誌<br>2020/01/10 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
 			<p class="textParagraph"><span class="text">#宣告我的投票意志<br>才剛要滿 19 歲，不過先假設我明天可以投票。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/01.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/01.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">大選前多位網紅收到邀約以標籤「宣告我的投票意志」作政治表態，並且能夠獲得邀稿費</span></p>
 			<p class="textParagraph"><span class="text">政黨票：</span></p>
 			<p class="textParagraph"><span class="text">難得有一個政黨，12 號 綠黨 在同性婚姻、安樂死合法化、再生能源、反核、廢除死刑、墮胎權、醫療用大麻合法化、交通改革，和我個人的立場 100% 相符。但在中共步步進逼下，抗中保台是我目前的第一優先，並且 5 號 台灣基進 是現在最有可能進入國會的小黨，所以政黨票我會留給基進。</span></p>
 			<p class="textParagraph"><span class="text">6 號 時代力量，小黨已經人數不多了，仍然因為先前的路線分歧（是否表態力挺蔡英文連任以及對柯文哲的態度），造成一波波退黨潮，現在可以理解為黃國昌一派掌控的政黨。對比老牌大黨，14 號 民進黨，即使有新潮流、正國會、謝系、蘇系等派系，但透過不斷更新黨綱決議文，確保黨的總體價值貼近台灣主流民意。特別是黨員經歷初選競爭後大多能保持團結，就比國民黨檯面下暗鬥好太多了。大黨雖有許多像柯建銘、管碧玲等蟬聯多屆的立委，形象不比黨內新生代清新，可是他們正是在立法院維持法案與議事品質的關鍵。去年林飛帆、吳濬彥等人的加入注入新血，以及吳怡農、謝佩芬、賴品妤的參選，更是證明他們是有能力走入下個世代的政黨。大黨有許多深耕地方的立委，常因為地方民意而對於進步法案有所顧忌。畢竟身為執政黨必須廣納各界歧見、向中間靠攏，推行政策就常常不太靈活，台獨立場也漸漸淡化成中華民國台灣 （偏華獨）。</span></p>
 			<p class="textParagraph"><span class="text">15 號 台灣民眾黨，這個黨足夠讓我花一整段介紹。台北市第五選區，他們派出徐立信對抗現任立委林昶佐，但徐立信去年才剛當選議員馬上落跑，民眾黨不就成為自己口中一樣爛的藍綠了嗎？</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/02.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/02.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">圖源：台灣民眾黨 Facebook</span></p>
 			<p class="textParagraph"><span class="text">民眾黨台北市第七選區立委候選人蔡宜芳：「十五塊的肥皂你敢用嗎？大家敢洗嗎？」暗指民進黨其他選區的吳怡農有賄選嫌疑，結果事實上一顆肥皂根本不到十塊。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/03.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/03.webp" alt=""></div></div>
 			<p class="textParagraph"><span class="text">郭台銘、柯文哲支持的新北市第十選區候選人李縉穎，先前在 PTT 上針對國民黨初選，引用民調指韓國瑜將在初選勝出，呼籲網友力挺郭台銘。民眾黨中評委賴俊銘：「我當過裝甲車領導士官，我可以碾壓民進黨垃圾！」</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/04.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/04.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">圖源：台灣綠黨 Facebook</span></p>
 			<p class="textParagraph"><span class="text">以往我很少提及柯文哲，畢竟年輕人還有一大佔比是柯粉，但他現在已經表態可能參選 2024，所以得特別站出來說「不要再把柯文哲當做政治素人」。2014 年民進黨的借將把柯文哲塑造出突破藍綠高牆的清新形象，現在看來全是笑話。柯文哲好的不學，學起韓國瑜。造謠陳菊債留子孫三千億、影射民進黨養網軍被韓國瑜拿去當證據。想抨擊民進黨人士是新潮流，但對方明明是謝系人馬。前兩天，曾經是柯文哲學生的醫師爆料，在台大醫院時期曾經因為接待中國參訪團爆發一些誤會，柯文哲飆罵護理長。而民眾黨表示沒有這回事，要提告那名醫師，結果護理長的老公跳出來表示一切屬實。如果說 2014 的柯文哲給人的感覺是希望、翻轉，2019 的柯文哲就是仇恨和墮落。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/05.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/05.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">圖源：61Chi Art</span></p>
 			<p class="textParagraph"><span class="text">無論明天結果怎樣，不會單單因為一次選舉「台灣變香港」、或是 2020 成為最後一次總統大選，所以假如韓國瑜當選或者國民黨加民眾黨過半會發生什麼事？美劇《核爆家園》：「謊言的代價是什麼？並不是我們會將它們當成事實，而是當我們聽到夠多謊言之後，就再也認不清事實了。」若韓國瑜沒有徹底大敗代表以後像他操作仇恨選舉、主打對立牌的政治人物將層出不窮。將會更常聽到「那些掛著今日香港、明日台灣的年輕人，都是被操縱的棋子，政客只是顧他們的選情啦！」、「投票幹嘛，跟人家在那邊跟風」、「你又不是同性戀，幹嘛支持同婚？」、「只是因為大家支持而支持，一群盲目的大學生」、「你被〇〇〇洗腦」「你不要那麼偏激」、「藍綠一樣爛」、「你不懂飲水思源，以前國民黨……」。</span></p>
 			<p class="textParagraph"><span class="text">電影《脫歐之戰》講述行銷公司如何利用大數據與投放式廣告，針對各個群體和同溫層下手，用盡一切謊言造謠、假專家假新聞，使得脫歐派贏得公投，相同的情況在美國、巴西都發生了。2016 年美國總統大選前，所有報刊雜誌都篤定希拉蕊會當選，結果都會區的進步派年輕人輕敵不去投票，讓掌握美國中西部的川普勝選。</span></p>
-			<div class="articlesImagesParagraph"><div class="articlesImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/06.webp" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="./articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/06.webp" alt=""></div></div>
 			<p class="descriptionParagraph"><span class="description">電影《脫歐之戰》海報</span></p>
 			<p class="textParagraph"><span class="text">葉丙成教授曾說：「希望畢業的學生，你們能有「我能改變這個世界的信心」。」根據調查，認為自己的一票影響力不大的人，越會認同「藍綠一樣爛」、「統獨是假議題」、「少我一票不會怎樣」、「投誰都沒差」、「政治好髒我不想碰」。所以最後我要跟那些人說，「如果期中期末考都得花了兩三天、一兩個禮拜讀書，怎麼會覺得投誰、投哪個黨進投票所前再決定就好了？」即便這塊島上有著七百萬的反同勢力，以及將近 40% 人口組成的保守陣營，他們可能帶著異樣的眼光、說著不良善的話語，甚至充斥在你我身邊。但他們依舊是台灣人，明天過後，將是社會修補工程的開始。天祐台灣。</span></p>
 		</div></div>
 		
 	</div>
 	</div>
-<!--
-	<div class="testText">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-	</div>
--->
 </body>
 
+<!-- 頁腳 -->
 <footer>
+	<!-- 條款彈窗 -->
 	<div id="termsBox">
+	<!-- 彈窗背景 -->
 	<div class="lightBackground"></div>
 	<div class="box">
+		<!-- 彈窗按鈕 -->
 		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
 		<div id="termsTextParagraphContainer">
+		<!-- 條款內容 -->
 		<p class="textParagraph">
 			<span class="termsText">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
 			<span class="termsText">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
@@ -501,9 +817,11 @@
 		</p></div>
 		</div>
 		</div>
-	
+	<!-- 條款按鈕 -->
 	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<!-- 版權宣告 -->
 	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+	<!-- 頁腳網址 -->
 	<head><div id="websiteBarContainer"><div class="websiteBar"><a href="" target="_blank" class="websiteBarText">antonychen.work</a></div></div></head>
 </footer>
 </html>
