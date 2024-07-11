@@ -8,16 +8,18 @@ html,body {
 	overflow: visible;
 	float: left;
 	
-	font-size: 16px;
-	background-color: var(--lightBackgroundColor);
+	font-size: 16px; /* 文字大小 */
+	background-color: var(--lightBackgroundColor); /* 背景顏色 */
 	
 	margin: 0;
 	padding: 0;
 	height: 100vh;
 	width: 99vw;
 	
-	overflow-x: hidden;
+	overflow-x: hidden; /* 橫向隱藏 */
 }
+
+/* 色票庫 */
 
 :root {
 	
@@ -32,11 +34,13 @@ html,body {
 	--darkButtonHoverColor: #8C8C8C;
 	
 	--lightTextColor: #3D3D3D;
-	--darkTextColor: #C0C0C0;
+	--darkTextColor: #ebebeb;
 	
 	--lightDescriptionColor: #8C8C8C;
 	--darkDescriptionColor: #505050;
 }
+
+/* 預設文字 */
 
 .p {
 	font-family: 'Noto Sans TC', sans-serif;
@@ -115,6 +119,136 @@ h6 {
 	margin: 0 0 5rem 0;
 }
 
+/* 標題文字 */
+.title {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+}
+
+/* 標題文字英文 */
+.titleEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--lightTextColor);
+	line-height: 1.5rem;
+}
+
+/* 內文 */
+.text {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.35rem;
+	text-align: justify;
+	
+	margin: 0 0 5rem 0;
+}
+
+/* 內文英文 */
+.textEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--lightTextColor);
+	line-height: 1.15rem;
+	text-align: left;
+	
+	margin: 0 0 5rem 0;
+}
+
+/* 附註 */
+.description {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--lightDescriptionColor);
+	line-height: 1rem;
+	text-align: justify;
+}
+
+/* 附註英文 */
+.descriptionEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--lightDescriptionColor);
+	line-height: 1rem;
+	text-align: left;
+}
+
+/* 內文段落區塊 */
+.textParagraphContainer {
+	
+	margin-bottom: 2.5rem;
+}
+
+/* 內文段落區塊 */
+.worksBoxTextParagraphContainer {
+	
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+	padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+/* 內文段落 */
+.textParagraph {
+	
+	text-align: justify;
+	margin-bottom: 1.5rem;
+}
+
+/* 內文段落英文 */
+.textParagraphEnglish {
+	
+	text-align: left;
+	margin-bottom: 1.5rem;
+}
+
+/* 附註段落 */
+.descriptionParagraph {
+	
+	text-align: left;
+	margin-top: 0.3rem;
+	margin-bottom: 1.5rem;
+}
+
+/* 半透明背景 */
+
+.lightBackground {
+	
+	background-color: var(--lightOpacityBackgroundColor);
+	opacity: 0.75;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	
+	position: fixed;
+}
+
+.darkBackground {
+	
+	background-color: var(--darkOpacityBackgroundColor);
+	opacity: 0.75;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	
+	position: fixed;
+}
+
+/* Scrollbar */
+
 ::-webkit-scrollbar {
 	
 	background-color: var(--lightBackgroundColor);
@@ -136,6 +270,8 @@ h6 {
 	position: fixed;
 	width: 100%;
 }
+
+/* 進度條 */
 
 #loadingBar {
 
@@ -167,6 +303,7 @@ h6 {
 	z-index: 99;
 }
 
+/* 進度條動畫 */
 .loadingBarLine {
 	
 	background-color: var(--lightDescriptionColor);
@@ -190,6 +327,7 @@ h6 {
     }
 }
 
+/* 菜單開啟按鈕 */
 #iconMenuOpenContainer {
 	
 	position: fixed;
@@ -199,6 +337,7 @@ h6 {
 	z-index: 3;
 }
 
+/* 菜單關閉按鈕 */
 #iconMenuCloseContainer {
 	
 	position: fixed;
@@ -208,6 +347,7 @@ h6 {
 	z-index: 3;
 }
 
+/* 回到頂端按鈕 */
 #iconUpwardContainer {
 	
 	position: fixed;
@@ -220,27 +360,7 @@ h6 {
 	z-index: 3;
 }
 
-#iconUpward {
-	
-	animation-name: iconUpward;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-}
-
-@keyframes iconUpward{
-	
-    0% {
-		transform: translateX(100rem);
-    }
-    75% {
-		transform: translateX(-0.3rem);
-    }
-	100% {
-		transform: translateX(0rem);
-    }
-}
-
+/* 首頁按鈕 */
 #iconBackHomeContainer {
 	
 	position: fixed;
@@ -263,18 +383,38 @@ h6 {
 	display: none;
 }
 
-#iconUpward {
-	
-	cursor: pointer;
-	display: none;
-}
-
 #iconBackHome {
 	
 	cursor: pointer;
 	margin: 0;
 	display: none;
 }
+
+/* 回到頂端按鈕動畫 */
+#iconUpward {
+	
+	cursor: pointer;
+	display: none;
+	animation-name: iconUpward;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes iconUpward{
+	
+    0% {
+		transform: translateX(100rem);
+    }
+    75% {
+		transform: translateX(-0.3rem);
+    }
+	100% {
+		transform: translateX(0rem);
+    }
+}
+
+/* 按鈕 */
 
 .iconImages {
 	
@@ -285,6 +425,8 @@ h6 {
 	
 	transition: all 0.25s;
 }
+
+/* 按鈕動畫 */
 
 .iconImages:hover {
 	
@@ -301,18 +443,21 @@ h6 {
 	transition: all 0.25s ease;
 }
 
+/* 關於彈窗關閉按鈕 */
 #iconAboutClose {
 	
 	cursor: pointer;
 	display: none;
 }
 
+/* 聯繫彈窗關閉按鈕 */
 #iconContactClose {
 	
 	cursor: pointer;
 	display: none;
 }
 
+/* 關閉按鈕位置 */
 .iconBoxCloseContainer {
 	
 	position: absolute;
@@ -324,6 +469,8 @@ h6 {
 	z-index: 99;
 }
 
+/* 關閉按鈕 */
+
 .iconBoxClose {
 	
 	margin: 0;
@@ -334,6 +481,8 @@ h6 {
 	
 	transition: all 0.25s;
 }
+
+/* 關閉按鈕動畫 */
 
 .iconBoxClose:hover {
 	
@@ -349,6 +498,8 @@ h6 {
 	transform: scale(0.5);
 	transition: all 0.25s ease;
 }
+
+/* 首頁圖前後按鈕位置 */
 
 #iconIndexImagesNextContainer {
 	
@@ -368,88 +519,7 @@ h6 {
 	z-index: 3;
 }
 
-#iconIndexImagesNext {
-	
-	margin: 1rem 0 0 0;
-	transition: all 0.25s ease;
-}
-
-#iconIndexImagesPrevious {
-	
-	margin: 1rem 0 0 0;
-	transition: all 0.25s ease;
-}
-
-#iconIndexImagesNext:hover {
-	
-	transform: translateX(0.15rem) scale(1.05);
-	transition: all 0.25s ease;
-}
-
-#iconIndexImagesPrevious:hover {
-	
-	transform: translateX(-0.15rem) scale(1.05);
-	transition: all 0.25s ease;
-}
-
-#iconIndexImagesNext:active {
-	
-	transform: translateX(0.5rem) scale(0.85);
-	transition: all 0.25s ease;
-}
-
-#iconIndexImagesPrevious:active {
-	
-	transform: translateX(-0.5rem) scale(0.85);
-	transition: all 0.25s ease;
-}
-
-#websiteBarContainer {
-	
-	background-color: var(--lightBackgroundColor);
-	border: 0.1rem solid var(--lightDescriptionColor);
-	height: 2rem;
-	width: 100vw;
-	bottom: 0;
-	
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	
-	z-index: 5;
-}
-
-.websiteBarText {
-	
-	font-family: 'Prompt', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 400;
-	color: var(--lightDescriptionColor);
-	text-align: center;
-	line-height: 1.8rem;
-	text-decoration: none;
-}
-
-.websiteBar {
-	
-	transition: all 0.25s ease;
-}
-
-.websiteBar:hover {
-	
-	cursor: pointer;
-	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
-	
-	transform: scale(1.05);
-	transition: all 0.25s ease;
-}
-
-.websiteBar:active {
-	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
-}
-
+/* 菜單欄 */
 #menuBar {
 	
 	position: absolute;
@@ -459,24 +529,13 @@ h6 {
 	z-index: 1;
 }
 
+/* 菜單彈窗 */
 #menuBox {
 	
 	top: 0;
 	position: fixed;
 	display: none;
 	z-index: 1;
-}
-
-#menuBackground {
-	
-	background-color: var(--lightOpacityBackgroundColor);
-	opacity: 0.75;
-	height: 100vh;
-	width: 100vw;
-	top: 0;
-	
-	position: fixed;
-	z-index: 0;
 }
 
 #menuBoxContainer {
@@ -486,6 +545,8 @@ h6 {
 	z-index: 1;
 }
 
+/* 菜單項目 */
+
 .menuButton {
 	
 	margin-top: 1rem;
@@ -493,6 +554,8 @@ h6 {
 	padding-left: 0.35rem;
 	margin-bottom: 1rem;
 }
+
+/* 菜單項目動畫 */
 
 .menuButton:hover {
 	
@@ -510,6 +573,8 @@ h6 {
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 }
+
+/* 菜單文字動畫 */
 
 .menuText {
 	
@@ -556,91 +621,14 @@ h6 {
 	}
 }
 
-.title {
-	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: var(--lightTextColor);
-	line-height: 1.5rem;
-}
-
-.titleEnglish {
-	
-	font-family: 'Prompt', sans-serif;
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: var(--lightTextColor);
-	line-height: 1.5rem;
-}
-
-.text {
-	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 0.9rem;
-	font-weight: 400;
-	color: var(--lightTextColor);
-	line-height: 1.35rem;
-	text-align: justify;
-	
-	margin: 0 0 5rem 0;
-}
-
-.textEnglish {
-	
-	font-family: 'Prompt', sans-serif;
-	font-size: 0.9rem;
-	font-weight: 400;
-	color: var(--lightTextColor);
-	line-height: 1.35rem;
-	text-align: left;
-	
-	margin: 0 0 5rem 0;
-}
-
-.description {
-	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 0.75rem;
-	font-weight: 400;
-	color: var(--lightDescriptionColor);
-	line-height: 1rem;
-	text-align: justify;
-}
-
-.descriptionEnglish {
-	
-	font-family: 'Prompt', sans-serif;
-	font-size: 0.75rem;
-	font-weight: 400;
-	color: var(--lightDescriptionColor);
-	line-height: 1rem;
-	text-align: left;
-}
-
-.textParagraphContainer {
-	
-	margin-bottom: 2.5rem;
-}
-
-.textParagraph {
-	
-	text-align: justify;
-	margin-bottom: 1.5rem;
-}
-
-.descriptionParagraph {
-	
-	text-align: left;
-	margin-top: 0.3rem;
-	margin-bottom: 1.5rem;
-}
+/* 首頁圖 */
 
 #indexImages {
 	
 	display: flex;
 }
 
+/* 首頁圖1 */
 #indexImagesContainerContainer1 {
 	
 	height: calc(22.5rem + 62.5vh);
@@ -651,6 +639,7 @@ h6 {
 	z-index: 0;
 }
 
+/* 首頁圖2 */
 #indexImagesContainerContainer2 {
 	
 	height: calc(22.5rem + 62.5vh);
@@ -661,18 +650,7 @@ h6 {
 	z-index: 0;
 }
 
-@keyframes indexImages{
-	
-	0% {
-		transform: translateX(100rem);
-    }
-    75% {
-		transform: translateX(-0.5rem);
-    }
-	100% {
-		transform: translateX(0rem);
-    }
-}
+/* 首頁圖大圖 */
 
 .indexImagesContainer {
 	
@@ -691,7 +669,9 @@ h6 {
 	max-width: 55rem;
 }
 
-.indexImagesContainer2 {
+/* 首頁圖小圖 */
+
+.indexImagesContainerSmall {
 	
 	position: absolute;
 	bottom: 3rem;
@@ -703,7 +683,7 @@ h6 {
 	animation-timing-function: ease;
 }
 
-.indexImagesContainer2 img{
+.indexImagesContainerSmall img{
 	
 	border: 0.1rem solid var(--lightTextColor);
 	width: calc(8.5rem + 5vw);
@@ -711,23 +691,127 @@ h6 {
 	filter: grayscale();
 }
 
-.indexImagesContainer2:hover {
+.indexImagesContainerSmall:hover {
 	
 	filter: drop-shadow(0rem 0rem 0.5rem var(--darkButtonHoverColor));
 	transform: scale(1.05);
 	transition: all 0.25s ease;
 }
 
-.indexImagesContainer2:active {
+.indexImagesContainerSmall:active {
 	
 	transform: scale(0.9);
 	transition: all 0.1s ease;
 }
 
+/* 首頁圖動畫 */
+@keyframes indexImages{
+	
+	0% {
+		transform: translateX(100rem);
+    }
+    75% {
+		transform: translateX(-0.5rem);
+    }
+	100% {
+		transform: translateX(0rem);
+    }
+}
+
+/* 首頁圖前後按鈕 */
+
+#iconIndexImagesNext {
+	
+	margin: 1rem 0 0 0;
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesPrevious {
+	
+	margin: 1rem 0 0 0;
+	transition: all 0.25s ease;
+}
+
+/* 首頁圖前後按鈕動畫 */
+
+#iconIndexImagesNext:hover {
+	
+	transform: translateX(0.15rem) scale(1.05);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesPrevious:hover {
+	
+	transform: translateX(-0.15rem) scale(1.05);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesNext:active {
+	
+	transform: translateX(0.5rem) scale(0.85);
+	transition: all 0.25s ease;
+}
+
+#iconIndexImagesPrevious:active {
+	
+	transform: translateX(-0.5rem) scale(0.85);
+	transition: all 0.25s ease;
+}
+
+/* 按鈕 */
+
+.button {
+	
+	cursor: pointer;
+	background-color: var(--lightButtonColor);
+	text-align: center;
+	height: 1.5rem;
+	border: 0.1rem solid var(--lightDescriptionColor);
+	
+	margin-bottom: 1rem;
+	transition: all 0.25s ease;
+}
+
+/* 按鈕文字 */
+.buttonText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: var(--lightDescriptionColor);
+	text-decoration: none;
+	
+	height: 1.5rem;
+}
+
+/* 按鈕動畫 */
+
+.button:hover {
+	
+	background-color: var(--lightButtonHoverColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	transform: scale(1.05);
+	transition: all 0.25s ease;
+}
+
+.button:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
+}
+
+.buttonText:hover {
+	
+	color: var(--lightTextColor);
+}
+
+/* 連結小按鈕 */
+
 .snsButtonContainer {
 	
-	bottom: 0;
 	position: absolute;
+	bottom: 0;
 	margin-bottom: 1rem;
 }
 
@@ -736,6 +820,8 @@ h6 {
 	cursor: pointer;
 	margin-right: 0.15rem;
 }
+
+/* 連結小按鈕動畫 */
 
 .snsButton img{
 
@@ -754,6 +840,8 @@ h6 {
 	transform: scale(0.9);
 	transition: all 0.1s ease;
 }
+
+/* 連結樹按鈕 */
 
 .linkButton {
 	
@@ -779,6 +867,8 @@ h6 {
 	transition: all 0.1s ease;
 }
 
+/* 連結樹按鈕背景 */
+
 .linkButtonBackground {
 	
 	position: absolute;
@@ -789,6 +879,8 @@ h6 {
 	min-width: 20rem;
 	max-width: 24rem;
 }
+
+/* 連結樹按鈕圖示 */
 
 .linkButtonIcon {
 	
@@ -802,6 +894,7 @@ h6 {
 	margin-left: 1rem;
 }
 
+/* 連結樹按鈕文字 */
 .linkButtonText {
 	
 	font-family: 'Prompt', sans-serif;
@@ -816,6 +909,7 @@ h6 {
 	position: absolute;
 }
 
+/* 連結樹按鈕電子信箱 */
 #linkButtonEmail {
 	
 	font-family: 'Prompt', sans-serif;
@@ -830,6 +924,7 @@ h6 {
 	position: absolute;
 }
 
+/* 連結樹按鈕複製 */
 .iconCopy {
 	
 	font-family: 'Material Symbols Outlined';
@@ -837,12 +932,13 @@ h6 {
 	font-weight: 300;
     color: var(--lightTextColor);
 	
-	margin-top: 0.95rem;
-	margin-left: 17.15rem;
-	
 	position: absolute;
+	margin-top: 0.95rem;
+	margin-right: 2rem;
+	right: 0;
 }
 
+/* 彈窗樣式 */
 .box {
 	
 	background: var(--lightBackgroundColor);
@@ -862,13 +958,14 @@ h6 {
 	padding: 1.5rem;
 	overflow: hidden;
 	
-	animation-name: boxOpen;
+	animation-name: box;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 }
 
-@keyframes boxOpen{
+/* 彈窗動畫 */
+@keyframes box{
 	
     0% {
 		transform: translateY(100rem);
@@ -881,28 +978,7 @@ h6 {
     }
 }
 
-.lightBackground {
-	
-	background-color: var(--lightOpacityBackgroundColor);
-	opacity: 0.75;
-	height: 100vh;
-	width: 100vw;
-	top: 0;
-	
-	position: fixed;
-}
-
-.darkBackground {
-	
-	background-color: var(--darkOpacityBackgroundColor);
-	opacity: 0.75;
-	height: 100vh;
-	width: 100vw;
-	top: 0;
-	
-	position: fixed;
-}
-
+/* 關於彈窗 */
 #aboutBox {
 	
 	cursor: default;
@@ -916,6 +992,7 @@ h6 {
 	z-index: 3;
 }
 
+/* 聯繫彈窗 */
 #contactBox {
 	
 	cursor: default;
@@ -929,6 +1006,7 @@ h6 {
 	z-index: 3;
 }
 
+/* 頭貼位置 */
 .headshot {
 	
 	position: absolute;
@@ -937,6 +1015,7 @@ h6 {
 	margin-right: 3.75rem;
 }
 
+/* 頭貼 */
 .headshot img{
 	
 	border-radius: 0.2rem;
@@ -944,12 +1023,14 @@ h6 {
 	width: 4.5rem;
 }
 
+/* 名字段落 */
 .nameParagraph {
 	
 	text-align: justify;
 	margin-top: 4rem;
 }
 
+/* 名字文字 */
 .nameText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
@@ -960,6 +1041,7 @@ h6 {
 	text-align: justify;
 }
 
+/* 名字文字英文 */
 .nameTextEnglish {
 	
 	font-family: 'Prompt', sans-serif;
@@ -970,6 +1052,7 @@ h6 {
 	text-align: left;
 }
 
+/* 關於段落 */
 .aboutParagraph {
 	
 	text-align: left;
@@ -977,6 +1060,7 @@ h6 {
 	margin-bottom: 1.5rem;
 }
 
+/* 聯繫按鈕 */
 #contactButtonContainer {
 	
 	margin-top: 6.5rem;
@@ -986,49 +1070,7 @@ h6 {
 	transform: translate(-50%, -50%);
 }
 
-.button {
-	
-	cursor: pointer;
-	background-color: var(--lightButtonColor);
-	text-align: center;
-	height: 1.5rem;
-	border: 0.1rem solid var(--lightDescriptionColor);
-	
-	margin-bottom: 1rem;
-	transition: all 0.25s ease;
-}
-
-.buttonText {
-	
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 0.85rem;
-	font-weight: 400;
-	color: var(--lightDescriptionColor);
-	text-decoration: none;
-	
-	height: 1.5rem;
-}
-
-.button:hover {
-	
-	background-color: var(--lightButtonHoverColor);
-	border: 0.1rem solid var(--lightTextColor);
-	
-	transform: scale(1.05);
-	transition: all 0.25s ease;
-}
-
-.button:active {
-	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
-}
-
-.buttonText:hover {
-	
-	color: var(--lightTextColor);
-}
-
+/* 條款按鈕 */
 #termsButtonContainer {
 	
 	height: 1rem;
@@ -1038,6 +1080,8 @@ h6 {
 	display: flex;
 	justify-content: center;
 }
+
+/* 條款彈窗 */
 
 #termsBox {
 	
@@ -1052,6 +1096,7 @@ h6 {
 	z-index: 3;
 }
 
+/* 條款文字區塊 */
 #termsTextParagraphContainer {
 	
 	height: 95%;
@@ -1064,6 +1109,7 @@ h6 {
 	padding: 0 1.5rem 0 0;
 }
 
+/* 條款文字 */
 .termsText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
@@ -1076,6 +1122,7 @@ h6 {
 	margin: 0 0 5rem 0;
 }
 
+/* 版權宣告區塊 */
 #copyrightContainer {
 	
 	height: 5rem;
@@ -1084,6 +1131,7 @@ h6 {
 	justify-content: center;
 }
 
+/* 版權宣告文字 */
 #copyrightText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
@@ -1093,21 +1141,79 @@ h6 {
 	text-align: center;
 }
 
-.testText {
+/* 頁腳網址 */
+
+#websiteBarContainer {
 	
-	color: var(--lightBackgroundColor);
-	z-index: 0;
+	background-color: var(--lightBackgroundColor);
+	border: 0.1rem solid var(--lightDescriptionColor);
+	height: 2rem;
+	width: 100vw;
+	bottom: 0;
+	
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	
+	z-index: 5;
 }
 
-#articlesBoxContainer{
+/* 頁腳網址文字 */
+.websiteBarText {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--lightDescriptionColor);
+	text-align: center;
+	line-height: 1.8rem;
+	text-decoration: none;
+}
+
+/* 頁腳網址動畫 */
+
+.websiteBar {
+	
+	transition: all 0.25s ease;
+}
+
+.websiteBar:hover {
+	
+	cursor: pointer;
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
+	
+	transform: scale(1.05);
+	transition: all 0.25s ease;
+}
+
+.websiteBar:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
+}
+
+/* 作品列表 */
+
+#worksBox {
 	
 	width: 99vw;
+	margin-top: 2.5vh;
 	
 	display: none;
 	justify-content: center;
 }
 
-.worksBoxContainer {
+#graphicBox {
+	
+	width: 99vw;
+	margin-top: 2.5vh;
+	
+	display: none;
+	justify-content: center;
+}
+
+/* 作品列表排列 */
+.worksBoxContainerContainerContainer {
 	
 	width: 100rem;
 	
@@ -1120,7 +1226,297 @@ h6 {
 	float: left;
 }
 
-.worksBox {
+/* 作品列表卡片區塊 */
+.worksBoxContainerContainer {
+	
+	cursor: default;
+	
+	margin: 0.1vh 0.1vh 0.1vh 0.1vh;
+	display: flex;
+	justify-content: center;
+}
+
+/* 作品列表卡片 */
+.worksBoxContainer {
+	
+	background: var(--lightBackgroundColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	height: 20vw;
+	max-height: 22.25rem;
+	min-height: 20rem;
+	width: 20vw;
+	max-width: 22.5rem;
+	min-width: 20rem;
+	
+	position: relative;
+	overflow: hidden;
+	
+	transition: all 0.25s ease;
+}
+
+/* 作品列表卡片動畫 */
+
+.worksBoxContainer:hover {
+	
+	cursor: pointer;
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
+}
+
+.worksBoxContainer:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
+}
+
+/* 作品列表縮圖 */
+
+.worksBoxImagesContainer {
+	
+	height: 100%;
+	width: 100%;
+}
+
+.worksBoxImagesContainer img{
+	
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.worksBoxImagesContainer video{
+	
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* 作品列表縮圖漸層 */
+.worksBoxImagesCover {
+	
+	height: 20vw;
+	max-height: 22.25rem;
+	min-height: 20rem;
+	width: 20vw;
+	max-width: 22.5rem;
+	min-width: 20rem;
+	
+	position: absolute;
+	background-image: linear-gradient(transparent 75%, #000000);
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+
+/* 作品列表文字區塊 */
+.worksBoxParagraphContainer {
+	
+	width: 95%;	
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	padding: 0.5rem;
+}
+
+/* 作品列表標題段落 */
+.worksBoxTitleParagraph {
+	
+	margin: 0;
+}
+
+/* 作品列表標題 */
+.worksBoxTitle {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: var(--darkTextColor);
+	line-height: 1.2rem;
+	
+	text-shadow: 0.1rem 0.1rem 0.1rem var(--lightTextColor);
+}
+
+/* 作品列表標籤段落 */
+.worksBoxTagParagraph {
+	
+	position: absolute;
+	display: flex;
+	right: 0.5rem;
+	bottom: 0;
+	margin: 0;
+}
+
+/* 作品列表標籤文字 */
+.worksBoxTagText {
+	
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 0.65rem;
+	font-weight: 300;
+	color: var(--darkTextColor);
+	line-height: 1rem;
+	text-align: right;
+	
+	margin: 0 0 0.65rem 0;
+	text-shadow: 0.1rem 0.1rem 0.1rem var(--lightTextColor);
+}
+
+/* 作品內容 */
+
+#works {
+	
+	width: 99.3vw;
+	
+	margin-top: 0.5rem;
+	
+	display: none;
+	justify-content: center;
+}
+
+#graphic {
+	
+	width: 99.3vw;
+	
+	margin-top: 0.5rem;
+	
+	display: none;
+	justify-content: center;
+}
+
+/* 作品內容區塊 */
+.worksContainer {
+	
+	background: var(--lightBackgroundColor);
+	border-top: 0.1rem solid var(--lightTextColor);
+	border-bottom: 0.1rem solid var(--lightTextColor);	
+	border-radius: 0.3rem;
+	
+	min-height: 92.5vh;
+	width: calc(20rem + 15vw);
+	max-width: 50rem;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	padding: 1.6rem 0rem 1rem 0rem;
+	
+	animation-name: worksOpen;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+/* 作品內容動畫 */
+@keyframes worksOpen{
+	
+    0% {
+		transform: translateY(100rem);
+    }
+    75% {
+		transform: translateY(-0.5rem);
+    }
+	100% {
+		transform: translateY(0rem);
+    }
+}
+
+/* 作品內容關閉按鈕 */
+.iconWorksCloseContainer {
+	
+	margin-bottom: 1.2rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* 作品圖區塊 */
+.worksImagesCoverContainer {
+
+	margin-bottom: 0.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* 作品圖 */
+
+.worksImagesCover {
+	
+	width: calc(20rem + 15vw);
+	max-width: 50rem;
+}
+
+.worksImagesCover img {
+	
+	border-radius: 0.3rem;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.worksImagesCover video {
+	
+	border-radius: 0.3rem;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* 作品內容圖段落 */
+
+.worksImagesParagraph {
+	
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* 作品內容圖 */
+
+.worksImagesContainer {
+	
+	width: calc(20rem + 15vw);
+	max-width: 50rem;
+}
+
+.worksImagesContainer img {
+	
+	border-radius: 0.3rem;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.worksImagesContainer video {
+	
+	border-radius: 0.3rem;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* 文章列表 */
+#articlesBox {
+	
+	width: 99vw;
+	
+	display: none;
+	justify-content: center;
+}
+
+/* 文章列表排列 */
+.articlesBoxContainerContainerContainer {
+	
+	width: 100rem;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+	float: left;
+}
+
+/* 文章列表卡片區塊 */
+.articlesBoxContainerContainer {
 	
 	cursor: default;
 	
@@ -1129,7 +1525,8 @@ h6 {
 	justify-content: center;
 }
 
-.worksContainer {
+/* 文章列表卡片 */
+.articlesBoxContainer {
 	
 	background: var(--lightBackgroundColor);
 	border: 0.1rem solid var(--lightTextColor);
@@ -1146,7 +1543,9 @@ h6 {
 	transition: all 0.25s ease;
 }
 
-.worksContainer:hover {
+/* 文章列表卡片動畫 */
+
+.articlesBoxContainer:hover {
 	
 	cursor: pointer;
 	filter: drop-shadow(0rem 0rem 0.5rem var(--darkButtonHoverColor));
@@ -1155,11 +1554,13 @@ h6 {
 	transition: all 0.25s ease;
 }
 
-.worksContainer:active {
+.articlesBoxContainer:active {
 	
 	transform: scale(0.9);
 	transition: all 0.1s ease;
 }
+
+/* 文章列表縮圖 */
 
 .articlesBoxImagesContainer {
 	
@@ -1175,17 +1576,20 @@ h6 {
 	object-fit: cover;
 }
 
+/* 文章列表文字區塊 */
 .articlesBoxParagraphContainer {
 	
 	margin-top: 0.1rem;
 	padding: 0.5rem;
 }
 
+/* 文章列表標題段落 */
 .articlesBoxTitleParagraph {
 	
 	margin: 0;
 }
 
+/* 文章列表標題 */
 .articlesBoxTitle {
 	
 	font-family: 'Noto Sans TC', sans-serif;
@@ -1195,7 +1599,8 @@ h6 {
 	line-height: 1.8rem;
 }
 
-.worksTextParagraph {
+/* 文章列表簡述段落 */
+.articlesBoxTextParagraph {
 	
 	height: 6.65rem;
 	width: 100%;
@@ -1210,7 +1615,8 @@ h6 {
 	margin-bottom: 0.65rem;
 }
 
-.worksText {
+/* 文章列表簡述文字 */
+.articlesBoxText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 0.9rem;
@@ -1222,13 +1628,15 @@ h6 {
 	margin: 0 0 1rem 0;
 }
 
-.worksTimeParagraph {
+/* 文章列表日期段落 */
+.articlesBoxTimeParagraph {
 	
 	width: 8rem;
 	margin: 0;
 }
 
-.worksTimeText {
+/* 文章列表日期文字 */
+.articlesBoxTimeText {
 	
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 0.75rem;
@@ -1239,7 +1647,8 @@ h6 {
 	margin: 0 0 1rem 0;
 }
 
-#articlesContainer {
+/* 文章內容 */
+#articles {
 	
 	width: 99.3vw;
 	
@@ -1249,13 +1658,15 @@ h6 {
 	justify-content: center;
 }
 
-.articles {
+/* 文章內容區塊 */
+.articlesContainer {
 	
 	background: var(--lightBackgroundColor);
 	border-top: 0.1rem solid var(--lightTextColor);
 	border-bottom: 0.1rem solid var(--lightTextColor);	
 	border-radius: 0.3rem;
 	
+	min-height: 90vh;
 	width: calc(20rem + 15vw);
 	max-width: 35rem;
 	
@@ -1264,25 +1675,13 @@ h6 {
 	
 	padding: 1.6rem 1.5rem 1rem 1.5rem;
 	
-	animation-name: articlesOpen;
+	animation-name: worksOpen;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 }
 
-@keyframes articlesOpen{
-	
-    0% {
-		transform: translateY(100rem);
-    }
-    75% {
-		transform: translateY(-0.5rem);
-    }
-	100% {
-		transform: translateY(0rem);
-    }
-}
-
+/* 文章內容關閉按鈕 */
 .iconArticlesCloseContainer {
 	
 	margin-bottom: 2rem;
@@ -1290,24 +1689,11 @@ h6 {
 	justify-content: flex-end;
 }
 
+/* 文章內容圖段落 */
 .articlesImagesParagraph {
 	
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
 	display: flex;
 	justify-content: center;
-}
-
-.articlesImagesContainer {
-	
-	width: calc(20rem + 15vw);
-	max-width: 35rem;
-}
-
-.articlesImagesContainer img {
-	
-	border-radius: 0.3rem;
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
 }
