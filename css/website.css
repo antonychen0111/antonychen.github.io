@@ -668,6 +668,7 @@ h6 {
 	
 	width: calc(12rem + 52vw);
 	max-width: 55rem;
+	-webkit-backface-visibility: hidden;
 }
 
 /* 首頁圖小圖 */
