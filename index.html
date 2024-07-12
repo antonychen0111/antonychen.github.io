@@ -26,7 +26,7 @@
 <body>
 	<header>
 	<!-- 讀取條 -->
-	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>
+<!--	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>-->
 	
 	<!-- 菜單按鈕 -->
 	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
@@ -69,13 +69,13 @@
 		<div id="iconIndexImagesPreviousContainer"><p onclick="indexImagesPrevious()" id="iconIndexImagesPrevious" class="iconImages">West</p></div>
 		<!-- 首頁圖1 -->
 		<div id="indexImagesContainerContainer1">
-		<div class="indexImagesContainer"><img src="./images/truck.webp" alt=""></div>
+		<div class="indexImagesContainer"><img src="./images/truck.gif" alt=""></div>
 		<!-- 首頁圖1小圖 -->
 		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="./images/520.webp" alt=""></a><p class="description" style="margin: 0;">520 農民運動　　圖：邱萬興</p></div>
 		</div>
 		<!-- 首頁圖2 -->
 		<div id="indexImagesContainerContainer2">
-		<div class="indexImagesContainer"><img src="./images/taxi.webp" alt=""></div>
+		<div class="indexImagesContainer"><img src="./images/taxi.gif" alt=""></div>
 		<!-- 首頁圖2小圖 -->
 		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="./images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0;">公館計程車械鬥　圖：吳景騰</p></div>
 		</div>
@@ -191,7 +191,7 @@
 		<!-- 日期 --><!-- 標籤 -->
 		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2022/01/06<br>Animation</time></span></p></div>
 		<!-- 縮圖 -->
-		<div class="worksBoxImagesContainer"><img src="./works/Heart/image.webp" loading="lazy" alt=""></div>
+		<div class="worksBoxImagesContainer"><video autoplay muted loop preload="none" poster="./works/Heart/image.webp"><source src="./works/Heart/heart.webm" type="video/webm"></video></div>
 	</div>
 	</div>
 	</div>
@@ -203,7 +203,7 @@
 		<div class="worksBoxParagraphContainer">
 		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">強迫症<br>OCD</span></p>
 		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019<br>Animation</time></span></p></div>
-		<div class="worksBoxImagesContainer"><img src="./works/強迫症 OCD/image.webp" loading="lazy" alt=""></div>
+		<div class="worksBoxImagesContainer"><video autoplay muted loop preload="none" poster="./works/強迫症 OCD/image.webp"><source src="./works/強迫症 OCD/image.webm" type="video/webm"></video></div>
 	</div>
 	</div>
 	</div>
@@ -215,7 +215,7 @@
 		<div class="worksBoxParagraphContainer">
 		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">民主戰車<br>Sound Truck of Democracy</span></p>
 		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2021/01/15<br>3D Works</time></span></p></div>
-		<div class="worksBoxImagesContainer"><img src="./works/民主戰車 Sound Truck of Democracy/image.webp" loading="lazy" alt=""></div>
+		<div class="worksBoxImagesContainer"><video autoplay muted loop preload="none" poster="./works/民主戰車 Sound Truck of Democracy/truck.webp"><source src="./works/民主戰車 Sound Truck of Democracy/truck.webm" type="video/webm"></video></div>
 	</div>
 	</div>
 	</div>
@@ -277,6 +277,7 @@
 			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
 			<!-- 內容 -->
 			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/Heart/heart.webp" loading="lazy" alt=""></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/Heart/heart.gif" loading="lazy" alt=""></div></div>
 		</div></div>
 		
 		<div id="works02" style="display: none">
@@ -294,7 +295,7 @@
 			<p class="descriptionParagraph"><span class="description">3D Works<br>1:1 2160 × 2160<br>2021/01/15</span></p>
 			<p class="descriptionParagraph"><span class="description">設計：陳盈誌<br>Design: Ying-Zhi Chen</span></p>
 			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="./works/民主戰車 Sound Truck of Democracy/truck2.webp" loading="lazy" alt=""></div></div>
-			<div class="worksImagesParagraph"><div class="worksImagesContainer"><video loop controls preload="none" poster="./works/民主戰車 Sound Truck of Democracy/truck3.webp"><source src="./works/民主戰車 Sound Truck of Democracy/truck.webm" type="video/webm"></video></div></div>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><video autoplay muted loop controls preload="none" poster="./works/民主戰車 Sound Truck of Democracy/truck3.webp"><source src="./works/民主戰車 Sound Truck of Democracy/truck.webm" type="video/webm"></video></div></div>
 			<p class="textParagraph"><span class="text">在台灣的民主運動史中，由小貨車改裝而成的廣播車佔有一席之地。這類車輛也被稱作「民主戰車」，用來進行公開演說或指揮人群。</span></p>
 			<p class="textParagraphEnglish"><span class="textEnglish">In the history of Taiwan's democratic movement, sound trucks, which were modified from small trucks, hold a significant place. Those vehicles, also known as "democracy chariot," were used for public speeches or to direct crowds.</span></p>
 			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img style="filter: grayscale() contrast(150%)" src="./works/民主戰車 Sound Truck of Democracy/01.webp" loading="lazy" alt=""></div></div>
