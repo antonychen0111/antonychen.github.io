@@ -17,13 +17,13 @@
 window.onload = setTimeout( function(){
 	window.document.documentElement.scrollTop = 0;
 	document.body.style.overflow = 'hidden';
-},1)
+}, 1)
 
 window.onload = setTimeout( function(){
 	document.body.style.overflow = 'visible';
 	document.querySelector("html").style.overflowY= 'scroll';
 	document.getElementById("loadingBar").style.display = 'none';
-},1000)
+}, 1000)
 
 // 首頁圖前後按鈕
 function indexImagesNext(){
@@ -35,7 +35,7 @@ function indexImagesPrevious(){
 }
 
 // 首頁圖切換
-function indexImagesChange(){
+setInterval( function indexImagesChange(){
 	if (Math.abs(indexImages) %2 == 1){
 		document.getElementById("indexImagesContainerContainer1").style.display = 'flex';
 		document.getElementById("indexImagesContainerContainer2").style.display = 'none';
@@ -43,10 +43,10 @@ function indexImagesChange(){
 		document.getElementById("indexImagesContainerContainer1").style.display = 'none';
 		document.getElementById("indexImagesContainerContainer2").style.display = 'flex';
 	}
-}setInterval(indexImagesChange, 10000);
+}, 100);
 
 // 菜單按鈕
-function iconMenuOpen(){
+setInterval( function iconMenuOpen(){
 	if (window.pageYOffset > 320 && pages == 0 && iconMenuOpenMode == 1){ // 滾動高度 + 首頁 + 按鈕顯示
 		document.getElementById("iconMenuOpen").style.display = 'block';
 	}else if (pages > 0 && iconMenuOpenMode == 1 && menuBoxMode == 0){ // 非首頁 + 菜單彈窗關閉
@@ -56,10 +56,10 @@ function iconMenuOpen(){
 	}else {
 		document.getElementById("iconMenuOpen").style.display = 'none';
 	}
-}setInterval(iconMenuOpen, 10000);
+}, 100);
 
 // 回到頂端按鈕
-function iconToTop(){
+setInterval( function iconToTop(){
 	if (window.pageYOffset > 100 && iconUpwardMode == 1) { // 滾動高度 + 按鈕顯示
 		document.getElementById("iconUpward").style.display = 'block';
 	}else if (window.pageYOffset > 100 && iconUpwardMode == 0){ // 滾動高度 + 按鈕隱藏
@@ -67,7 +67,7 @@ function iconToTop(){
 	}else {
 		document.getElementById("iconUpward").style.display = 'none';
 	}
-}setInterval(iconToTop, 10000);
+}, 100);
 
 // 回到頂端高度
 function toTop(){
