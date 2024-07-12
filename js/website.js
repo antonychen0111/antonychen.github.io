@@ -43,7 +43,7 @@ function indexImagesChange(){
 		document.getElementById("indexImagesContainerContainer1").style.display = 'none';
 		document.getElementById("indexImagesContainerContainer2").style.display = 'flex';
 	}
-}setInterval(indexImagesChange, 100);
+}setInterval(indexImagesChange, 10000);
 
 // 菜單按鈕
 function iconMenuOpen(){
@@ -56,7 +56,7 @@ function iconMenuOpen(){
 	}else {
 		document.getElementById("iconMenuOpen").style.display = 'none';
 	}
-}setInterval(iconMenuOpen, 100);
+}setInterval(iconMenuOpen, 10000);
 
 // 回到頂端按鈕
 function iconToTop(){
@@ -67,7 +67,7 @@ function iconToTop(){
 	}else {
 		document.getElementById("iconUpward").style.display = 'none';
 	}
-}setInterval(iconToTop, 100);
+}setInterval(iconToTop, 10000);
 
 // 回到頂端高度
 function toTop(){
