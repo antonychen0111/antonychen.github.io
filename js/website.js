@@ -28,11 +28,11 @@ window.onload = setTimeout( function(){
 // 首頁圖前後按鈕
 function indexImagesNext(){
 		indexImages ++;
-}indexImagesNext()
+}
 
 function indexImagesPrevious(){
 		indexImages --;
-}indexImagesPrevious()
+}
 
 // 首頁圖切換
 function indexImagesChange(){
@@ -72,7 +72,7 @@ function iconToTop(){
 // 回到頂端高度
 function toTop(){
 		window.document.documentElement.scrollTop = 0;
-}toTop()
+}
 
 // 菜單彈窗開啟
 function menuOpen(){
@@ -84,7 +84,7 @@ function menuOpen(){
 		document.getElementById("menuBar").style.display = 'none'; // 菜單欄隱藏
 		document.getElementById("iconMenuClose").style.display = 'block'; // 彈窗按鈕顯示
 		document.querySelector('body').classList.add('no-scroll'); // 禁止滾動
-}menuOpen()
+}
 
 // 菜單彈窗關閉
 function menuClose(){
@@ -107,7 +107,7 @@ function menuClose(){
 		document.getElementById("iconMenuClose").style.display = 'none'; // 彈窗按鈕隱藏
 		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
 	}
-}menuClose()
+}
 
 // 關於彈窗開啟
 function aboutOpen(){
@@ -117,7 +117,7 @@ function aboutOpen(){
 		document.getElementById("aboutBox").style.display = 'flex'; // 彈窗開啟
 		document.getElementById("iconAboutClose").style.display = 'block'; // 彈窗按鈕顯示
 		document.querySelector('body').classList.add('no-scroll'); // 禁止滾動
-}aboutOpen()
+}
 
 // 關於彈窗關閉
 function aboutClose(){
@@ -127,7 +127,7 @@ function aboutClose(){
 		document.getElementById("aboutBox").style.display = 'none'; // 彈窗關閉
 		document.getElementById("iconAboutClose").style.display = 'none'; // 彈窗按鈕隱藏
 		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
-}aboutClose()
+}
 
 // 聯繫彈窗開啟
 function contactOpen(){
@@ -137,7 +137,7 @@ function contactOpen(){
 		document.getElementById("contactBox").style.display = 'flex'; // 彈窗開啟
 		document.getElementById("iconContactClose").style.display = 'block'; // 彈窗按鈕顯示
 		document.querySelector('body').classList.add('no-scroll'); // 禁止滾動
-}contactOpen()
+}
 
 // 聯繫彈窗關閉
 function contactClose(){
@@ -147,13 +147,13 @@ function contactClose(){
 		document.getElementById("contactBox").style.display = 'none'; // 彈窗關閉
 		document.getElementById("iconContactClose").style.display = 'none'; // 彈窗按鈕隱藏
 		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
-}contactClose()
+}
 
 // 複製按鈕
 function iconCopy(){
 		navigator.clipboard.writeText("antony90011199@gmail.com"); // 電子信箱地址
 		alert("已複製 Copied the text: " + "antony90011199@gmail.com"); // 已複製提醒
-}iconCopy()
+}
 
 // 條款彈窗開啟
 function termsOpen(){
@@ -163,7 +163,7 @@ function termsOpen(){
 		document.getElementById("termsBox").style.display = 'flex'; // 彈窗開啟
 		document.getElementById("iconTermsClose").style.display = 'block'; // 彈窗按鈕顯示
 		document.querySelector('body').classList.add('no-scroll'); // 禁止滾動
-}termsOpen()
+}
 
 // 條款彈窗關閉
 function termsClose(){
@@ -173,7 +173,7 @@ function termsClose(){
 		document.getElementById("termsBox").style.display = 'none'; // 彈窗關閉
 		document.getElementById("iconTermsClose").style.display = 'none'; // 彈窗按鈕隱藏
 		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
-}termsClose()
+}
 
 function backHome(){
 		iconMenuOpenMode = 1; // 菜單按鈕顯示
