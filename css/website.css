@@ -656,6 +656,7 @@ h6 {
 	
 	position: absolute;
 	bottom: 6.5rem;
+	-webkit-backface-visibility: hidden;
 	
 	animation-name: indexImages;
 	animation-duration: 1.25s;
@@ -664,7 +665,7 @@ h6 {
 }
 
 .indexImagesContainer img{
-
+	
 	width: calc(12rem + 52vw);
 	max-width: 55rem;
 }
