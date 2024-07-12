@@ -34,16 +34,16 @@ function indexImagesPrevious(){
 		indexImages --;
 }indexImagesPrevious()
 
-// 首頁圖切換
-function indexImagesChange(){
-	if (Math.abs(indexImages) %2 == 1){
-		document.getElementById("indexImagesContainerContainer1").style.display = 'flex';
-		document.getElementById("indexImagesContainerContainer2").style.display = 'none';
-	}else if (Math.abs(indexImages) %2 == 0){
-		document.getElementById("indexImagesContainerContainer1").style.display = 'none';
-		document.getElementById("indexImagesContainerContainer2").style.display = 'flex';
-	}
-}setInterval(indexImagesChange, 100);
+//// 首頁圖切換
+//function indexImagesChange(){
+//	if (Math.abs(indexImages) %2 == 1){
+//		document.getElementById("indexImagesContainerContainer1").style.display = 'flex';
+//		document.getElementById("indexImagesContainerContainer2").style.display = 'none';
+//	}else if (Math.abs(indexImages) %2 == 0){
+//		document.getElementById("indexImagesContainerContainer1").style.display = 'none';
+//		document.getElementById("indexImagesContainerContainer2").style.display = 'flex';
+//	}
+//}setInterval(indexImagesChange, 100);
 
 // 菜單按鈕
 function iconMenuOpen(){
