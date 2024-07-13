@@ -309,11 +309,6 @@ h6 {
 	background-color: var(--lightDescriptionColor);
 	height: 0.3rem;
 	
-	animation-name: loadingBar;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-	
 	z-index: 99;
 }
 
@@ -395,10 +390,6 @@ h6 {
 	
 	cursor: pointer;
 	display: none;
-	animation-name: iconUpward;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 @keyframes iconUpward{
@@ -423,7 +414,6 @@ h6 {
 	font-weight: 300;
     color: var(--lightTextColor);
 	
-	transition: all 0.25s;
 }
 
 /* 按鈕動畫 */
@@ -433,14 +423,10 @@ h6 {
     cursor: pointer;
     color: var(--darkButtonHoverColor);
 	
-    transform: scale(1.15);
-	transition: all 0.25s ease;
 }
 
 .iconImages:active {
 	
-    transform: scale(0.5);
-	transition: all 0.25s ease;
 }
 
 /* 關於彈窗關閉按鈕 */
@@ -479,7 +465,6 @@ h6 {
 	font-weight: 300;
     color: var(--lightTextColor);
 	
-	transition: all 0.25s;
 }
 
 /* 關閉按鈕動畫 */
@@ -489,14 +474,10 @@ h6 {
     cursor: pointer;
     color: var(--darkButtonHoverColor);
 	
-	transform: scale(1.15);
-	transition: all 0.25s ease;
 }
 
 .iconBoxClose:active {
 	
-	transform: scale(0.5);
-	transition: all 0.25s ease;
 }
 
 /* 首頁圖前後按鈕位置 */
@@ -560,18 +541,10 @@ h6 {
 .menuButton:hover {
 	
 	cursor: pointer;
-	animation-name: menuHover;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 .menuButton:active {
 	
-	animation-name: menuClick;
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 /* 菜單文字動畫 */
@@ -599,26 +572,11 @@ h6 {
 
 @keyframes menuHover{
 	
-	0% {
-	transform-origin: 1rem 0.5rem;
-	transform: rotate(0deg) translateX(0rem) translateY(0rem);
-	}
-	100% {
-	transform-origin: 1rem 0.5rem;
-    transform: rotate(3.5deg) translateX(0.5rem) translateY(-0.75rem);
 	}
 }
 
 @keyframes menuClick{
 	
-	0% {
-	transform-origin: 1rem 0.5rem;
-	transform: rotate(0deg) translateX(0rem) translateY(0rem) scale(1,1);
-	}
-	100% {
-	transform-origin: 1rem 0.5rem;
-    transform: rotate(3.5deg) translateX(-0.1rem) translateY(0.25rem) scale(0.9,0.9);
-	}
 }
 
 /* 首頁圖 */
@@ -657,10 +615,6 @@ h6 {
 	position: absolute;
 	bottom: 6.5rem;
 	
-	animation-name: indexImages;
-	animation-duration: 1.25s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 .indexImagesContainer img{
@@ -677,10 +631,6 @@ h6 {
 	bottom: 3rem;
 	transition: all 0.25s ease;
 	
-	animation-name: indexImages;
-	animation-duration: 1.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 .indexImagesContainerSmall img{
@@ -694,14 +644,12 @@ h6 {
 .indexImagesContainerSmall:hover {
 	
 	filter: drop-shadow(0rem 0rem 0.5rem var(--darkButtonHoverColor));
-	transform: scale(1.05);
-	transition: all 0.25s ease;
+
 }
 
 .indexImagesContainerSmall:active {
 	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
+
 }
 
 /* 首頁圖動畫 */
@@ -722,40 +670,28 @@ h6 {
 
 #iconIndexImagesNext {
 	
-	margin: 1rem 0 0 0;
-	transition: all 0.25s ease;
 }
 
 #iconIndexImagesPrevious {
 	
-	margin: 1rem 0 0 0;
-	transition: all 0.25s ease;
 }
 
 /* 首頁圖前後按鈕動畫 */
 
 #iconIndexImagesNext:hover {
 	
-	transform: translateX(0.15rem) scale(1.05);
-	transition: all 0.25s ease;
 }
 
 #iconIndexImagesPrevious:hover {
 	
-	transform: translateX(-0.15rem) scale(1.05);
-	transition: all 0.25s ease;
 }
 
 #iconIndexImagesNext:active {
 	
-	transform: translateX(0.5rem) scale(0.85);
-	transition: all 0.25s ease;
 }
 
 #iconIndexImagesPrevious:active {
 	
-	transform: translateX(-0.5rem) scale(0.85);
-	transition: all 0.25s ease;
 }
 
 /* 按鈕 */
@@ -769,7 +705,6 @@ h6 {
 	border: 0.1rem solid var(--lightDescriptionColor);
 	
 	margin-bottom: 1rem;
-	transition: all 0.25s ease;
 }
 
 /* 按鈕文字 */
@@ -791,14 +726,10 @@ h6 {
 	background-color: var(--lightButtonHoverColor);
 	border: 0.1rem solid var(--lightTextColor);
 	
-	transform: scale(1.05);
-	transition: all 0.25s ease;
 }
 
 .button:active {
 	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
 }
 
 .buttonText:hover {
@@ -825,20 +756,14 @@ h6 {
 
 .snsButton img{
 
-	height: 2rem;
-	transition: all 0.25s ease;
 }
 
 .snsButton img:hover {
 	
-	transform: scale(1.05) translateY(-0.3rem);
-	transition: all 0.25s ease;
 }
 
 .snsButton img:active {
 	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
 }
 
 /* 連結樹按鈕 */
@@ -848,23 +773,15 @@ h6 {
 	cursor: pointer;
 	width: 20rem;
 	padding-bottom: 3.75rem;
-	
-	transform-origin: 10rem 0rem;
-	transition: all 0.25s ease;
 }
 
 .linkButton:hover {
 	
 	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
 	
-	transform: scale(1.05);
-	transition: all 0.25s ease;
 }
 
 .linkButton:active {
-	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
 }
 
 /* 連結樹按鈕背景 */
@@ -958,10 +875,6 @@ h6 {
 	padding: 1.5rem;
 	overflow: hidden;
 	
-	animation-name: box;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 /* 彈窗動畫 */
@@ -1067,7 +980,6 @@ h6 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 /* 條款按鈕 */
@@ -1173,8 +1085,6 @@ h6 {
 /* 頁腳網址動畫 */
 
 .websiteBar {
-	
-	transition: all 0.25s ease;
 }
 
 .websiteBar:hover {
@@ -1182,14 +1092,10 @@ h6 {
 	cursor: pointer;
 	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
 	
-	transform: scale(1.05);
-	transition: all 0.25s ease;
 }
 
 .websiteBar:active {
 	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
 }
 
 /* 作品列表 */
@@ -1251,13 +1157,7 @@ h6 {
 	
 	position: relative;
 	overflow: hidden;
-	
-	transition: all 0.25s ease;
-	
-	animation-name: worksBoxOpen;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
+
 }
 
 /* 作品列表卡片動畫 */
@@ -1270,8 +1170,6 @@ h6 {
 
 .worksBoxContainer:active {
 	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
 }
 
 /* 作品列表縮圖 */
@@ -1403,10 +1301,6 @@ h6 {
 	
 	padding: 1.6rem 0rem 1rem 0rem;
 	
-	animation-name: worksOpen;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 /* 作品內容動畫 */
@@ -1545,7 +1439,6 @@ h6 {
 	padding: 0.5rem;
 	overflow: hidden;
 	
-	transition: all 0.25s ease;
 }
 
 /* 文章列表卡片動畫 */
@@ -1555,14 +1448,10 @@ h6 {
 	cursor: pointer;
 	filter: drop-shadow(0rem 0rem 0.5rem var(--darkButtonHoverColor));
 	
-	transform: scale(1.05);
-	transition: all 0.25s ease;
 }
 
 .articlesBoxContainer:active {
 	
-	transform: scale(0.9);
-	transition: all 0.1s ease;
 }
 
 /* 文章列表縮圖 */
@@ -1680,10 +1569,6 @@ h6 {
 	
 	padding: 1.6rem 1.5rem 1rem 1.5rem;
 	
-	animation-name: worksOpen;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
 }
 
 /* 文章內容關閉按鈕 */
