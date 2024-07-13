@@ -175,3 +175,337 @@ function termsClose(){
 		document.getElementById("iconTermsClose").style.display = 'none'; // 彈窗按鈕隱藏
 		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
 }
+
+function backHome(){
+		iconMenuOpenMode = 1; // 菜單按鈕顯示
+		iconUpwardMode = 1; // 回到頂端按鈕顯示
+		menuBoxMode = 0; // 菜單彈窗關閉
+		pages = 0; // 首頁
+		
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("menuBox").style.display = 'none'; // 菜單彈窗關閉
+		document.getElementById("menuBar").style.display = 'block'; // 菜單欄顯示
+		document.getElementById("iconBackHome").style.display = 'none'; // 首頁按鈕隱藏
+		document.getElementById("indexImages").style.display = 'flex'; // 首頁圖顯示
+		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
+		
+		document.getElementById("worksBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("graphicBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("articlesBox").style.display = 'none'; // 文章列表關閉
+		
+		document.getElementById("works").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic").style.display = 'none'; // 作品內容關閉
+		document.getElementById("articles").style.display = 'none'; // 文章內容關閉
+		
+		document.getElementById("works01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("works02").style.display = 'none';
+		document.getElementById("works03").style.display = 'none';
+		
+		document.getElementById("graphic01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic02").style.display = 'none';
+		document.getElementById("graphic03").style.display = 'none';
+		document.getElementById("graphic04").style.display = 'none';
+		
+		document.getElementById("articles01").style.display = 'none'; // 文章內容關閉
+		document.getElementById("articles02").style.display = 'none';
+		document.getElementById("articles03").style.display = 'none';
+		document.getElementById("articles04").style.display = 'none';
+		document.getElementById("articles05").style.display = 'none';
+		document.getElementById("articles06").style.display = 'none';
+		document.getElementById("articles07").style.display = 'none';
+		document.getElementById("articles08").style.display = 'none';
+}
+
+function worksOpen(){
+		iconMenuOpenMode = 1; // 菜單按鈕顯示
+		iconUpwardMode = 1; // 回到頂端按鈕顯示
+		menuBoxMode = 0; // 菜單彈窗關閉
+		pages = 1; // 3D Works
+		
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("menuBox").style.display = 'none'; // 菜單彈窗關閉
+		document.getElementById("menuBar").style.display = 'none'; // 菜單欄隱藏
+		document.getElementById("iconBackHome").style.display = 'block'; // 首頁按鈕顯示
+		document.getElementById("indexImages").style.display = 'none'; // 首頁圖隱藏
+		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
+		
+		document.getElementById("worksBox").style.display = 'flex'; // 作品列表開啟
+		document.getElementById("graphicBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("articlesBox").style.display = 'none'; // 文章列表關閉
+		
+		document.getElementById("works").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic").style.display = 'none'; // 作品內容關閉
+		document.getElementById("articles").style.display = 'none'; // 文章內容關閉
+		
+		document.getElementById("works01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("works02").style.display = 'none';
+		document.getElementById("works03").style.display = 'none';
+		
+		document.getElementById("graphic01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic02").style.display = 'none';
+		document.getElementById("graphic03").style.display = 'none';
+		document.getElementById("graphic04").style.display = 'none';
+		
+		document.getElementById("articles01").style.display = 'none'; // 文章內容關閉
+		document.getElementById("articles02").style.display = 'none';
+		document.getElementById("articles03").style.display = 'none';
+		document.getElementById("articles04").style.display = 'none';
+		document.getElementById("articles05").style.display = 'none';
+		document.getElementById("articles06").style.display = 'none';
+		document.getElementById("articles07").style.display = 'none';
+		document.getElementById("articles08").style.display = 'none';
+}
+
+function worksClose(){
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("worksBox").style.display = 'flex'; // 作品列表開啟
+		document.getElementById("works").style.display = 'none'; // 作品內容關閉
+		document.getElementById("works01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("works02").style.display = 'none';
+		document.getElementById("works03").style.display = 'none';
+}
+
+function worksBox01(){
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("worksBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("works").style.display = 'flex'; // 作品內容開啟
+		document.getElementById("works01").style.display = 'block'; // 作品內容開啟
+}
+
+function worksBox02(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = 'none';
+		document.getElementById("works").style.display = 'flex';
+		document.getElementById("works02").style.display = 'block';
+}
+
+function worksBox03(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = 'none';
+		document.getElementById("works").style.display = 'flex';
+		document.getElementById("works03").style.display = 'block';
+}
+
+function worksBox04(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = 'none';
+		document.getElementById("works").style.display = 'flex';
+		document.getElementById("works04").style.display = 'block';
+}
+
+function worksBox05(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = 'none';
+		document.getElementById("works").style.display = 'flex';
+		document.getElementById("works05").style.display = 'block';
+}
+
+function worksBox06(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = 'none';
+		document.getElementById("works").style.display = 'flex';
+		document.getElementById("works06").style.display = 'block';
+}
+
+function graphicOpen(){
+		iconMenuOpenMode = 1; // 菜單按鈕顯示
+		iconUpwardMode = 1; // 回到頂端按鈕顯示
+		menuBoxMode = 0; // 菜單彈窗關閉
+		pages = 2; // Graphic Arts
+		
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("menuBox").style.display = 'none'; // 菜單彈窗關閉
+		document.getElementById("menuBar").style.display = 'none'; // 菜單欄隱藏
+		document.getElementById("iconBackHome").style.display = 'block'; // 首頁按鈕顯示
+		document.getElementById("indexImages").style.display = 'none'; // 首頁圖隱藏
+		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
+		
+		document.getElementById("worksBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("graphicBox").style.display = 'flex'; // 作品列表開啟
+		document.getElementById("articlesBox").style.display = 'none'; // 文章列表關閉
+		
+		document.getElementById("works").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic").style.display = 'none'; // 作品內容關閉
+		document.getElementById("articles").style.display = 'none'; // 文章內容關閉
+		
+		document.getElementById("works01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("works02").style.display = 'none';
+		document.getElementById("works03").style.display = 'none';
+		
+		document.getElementById("graphic01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic02").style.display = 'none';
+		document.getElementById("graphic03").style.display = 'none';
+		document.getElementById("graphic04").style.display = 'none';
+		
+		document.getElementById("articles01").style.display = 'none'; // 文章內容關閉
+		document.getElementById("articles02").style.display = 'none';
+		document.getElementById("articles03").style.display = 'none';
+		document.getElementById("articles04").style.display = 'none';
+		document.getElementById("articles05").style.display = 'none';
+		document.getElementById("articles06").style.display = 'none';
+		document.getElementById("articles07").style.display = 'none';
+		document.getElementById("articles08").style.display = 'none';
+}
+
+
+function graphicClose(){
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("graphicBox").style.display = 'flex'; // 作品列表開啟
+		document.getElementById("graphic").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic02").style.display = 'none';
+		document.getElementById("graphic03").style.display = 'none';
+		document.getElementById("graphic04").style.display = 'none';
+}
+
+function graphicBox01(){
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("graphicBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("graphic").style.display = 'flex'; // 作品內容開啟
+		document.getElementById("graphic01").style.display = 'block'; // 作品內容開啟
+}
+
+function graphicBox02(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = 'none';
+		document.getElementById("graphic").style.display = 'flex';
+		document.getElementById("graphic02").style.display = 'block';
+}
+
+function graphicBox03(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = 'none';
+		document.getElementById("graphic").style.display = 'flex';
+		document.getElementById("graphic03").style.display = 'block';
+}
+
+function graphicBox04(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = 'none';
+		document.getElementById("graphic").style.display = 'flex';
+		document.getElementById("graphic04").style.display = 'block';
+}
+
+function graphicBox05(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = 'none';
+		document.getElementById("graphic").style.display = 'flex';
+		document.getElementById("graphic05").style.display = 'block';
+}
+
+function graphicBox06(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = 'none';
+		document.getElementById("graphic").style.display = 'flex';
+		document.getElementById("graphic06").style.display = 'block';
+}
+
+function articlesOpen(){
+		iconMenuOpenMode = 1; // 菜單按鈕顯示
+		iconUpwardMode = 1; // 回到頂端按鈕顯示
+		menuBoxMode = 0; // 菜單彈窗關閉
+		pages = 3; // Articles
+		
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("menuBox").style.display = 'none'; // 菜單彈窗關閉
+		document.getElementById("menuBar").style.display = 'none'; // 菜單欄隱藏
+		document.getElementById("iconBackHome").style.display = 'block'; // 首頁按鈕顯示
+		document.getElementById("indexImages").style.display = 'none'; // 首頁圖隱藏
+		document.querySelector('body').classList.remove('no-scroll'); // 允許滾動
+		
+		document.getElementById("worksBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("graphicBox").style.display = 'none'; // 作品列表關閉
+		document.getElementById("articlesBox").style.display = 'flex'; // 文章列表開啟
+		
+		document.getElementById("works").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic").style.display = 'none'; // 作品內容關閉
+		document.getElementById("articles").style.display = 'none'; // 文章內容關閉
+		
+		document.getElementById("works01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("works02").style.display = 'none';
+		document.getElementById("works03").style.display = 'none';
+		
+		document.getElementById("graphic01").style.display = 'none'; // 作品內容關閉
+		document.getElementById("graphic02").style.display = 'none';
+		document.getElementById("graphic03").style.display = 'none';
+		document.getElementById("graphic04").style.display = 'none';
+		
+		document.getElementById("articles01").style.display = 'none'; // 文章內容關閉
+		document.getElementById("articles02").style.display = 'none';
+		document.getElementById("articles03").style.display = 'none';
+		document.getElementById("articles04").style.display = 'none';
+		document.getElementById("articles05").style.display = 'none';
+		document.getElementById("articles06").style.display = 'none';
+		document.getElementById("articles07").style.display = 'none';
+		document.getElementById("articles08").style.display = 'none';
+}
+
+function articlesClose(){
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("articlesBox").style.display = 'flex'; // 文章列表開啟
+		document.getElementById("articles").style.display = 'none'; // 文章內容關閉
+		document.getElementById("articles01").style.display = 'none'; // 文章內容關閉
+		document.getElementById("articles02").style.display = 'none';
+		document.getElementById("articles03").style.display = 'none';
+		document.getElementById("articles04").style.display = 'none';
+		document.getElementById("articles05").style.display = 'none';
+		document.getElementById("articles06").style.display = 'none';
+		document.getElementById("articles07").style.display = 'none';
+		document.getElementById("articles08").style.display = 'none';
+}
+
+function articlesBox01(){
+		window.document.documentElement.scrollTop = 0; // 回到頂端
+		document.getElementById("articlesBox").style.display = 'none'; // 文章列表關閉
+		document.getElementById("articles").style.display = 'flex'; // 文章內容開啟
+		document.getElementById("articles01").style.display = 'block'; // 文章內容開啟
+}
+
+function articlesBox02(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles02").style.display = 'block';
+}
+
+function articlesBox03(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles03").style.display = 'block';
+}
+
+function articlesBox04(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles04").style.display = 'block';
+}
+
+function articlesBox05(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles05").style.display = 'block';
+}
+
+function articlesBox06(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles06").style.display = 'block';
+}
+
+function articlesBox07(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles07").style.display = 'block';
+}
+
+function articlesBox08(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("articlesBox").style.display = 'none';
+		document.getElementById("articles").style.display = 'flex';
+		document.getElementById("articles08").style.display = 'block';
+}
