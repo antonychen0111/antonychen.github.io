@@ -7,6 +7,25 @@
 
 	var indexImages = 1; // 首頁圖前後按鈕
 
+	// 轉址到 https:
+	var host = "antonychen.work";
+	if ((host == window.location.host) && (window.location.protocol != "https:")){
+		window.location.protocol = "https";
+	}
+
+// 載入網站進度條
+window.onload = function() {
+    setTimeout( function() {
+        window.document.documentElement.scrollTop = 0;
+        document.body.style.overflow = "hidden";
+    }, 1);
+    setTimeout( function() {
+        document.body.style.overflow = "visible";
+        document.querySelector("html").style.overflowY = "scroll";
+        document.getElementById("loadingBar").style.display = "none";
+    }, 1000);
+}
+
 // 首頁圖前後按鈕
 function indexImagesNext(){
 		indexImages ++;
