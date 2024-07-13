@@ -4,7 +4,7 @@
 html,body {
 	
 	scroll-behavior: smooth;
-	user-select: none;
+/*	user-select: none;*/
 	overflow: visible;
 	float: left;
 	
@@ -589,7 +589,7 @@ h6 {
 	text-decoration: underline;
 	text-decoration-style: solid;
 	text-decoration-color: var(--lightTextColor);
-	text-decoration-thickness: 0.2rem;
+/*	text-decoration-thickness: 0.2rem;*/
 }
 
 .menuText:hover {
