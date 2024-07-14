@@ -4,8 +4,12 @@
 	var iconUpwardMode = 1; // 回到頂端按鈕：1 = 顯示 ; 0 = 隱藏
 	var pages = 0; // 0 = 首頁 ; 1 = 3D Works ; 2 = Graphic Arts ; 3 = Contact
 	var menuBoxMode = 0; // 菜單彈窗：1 = 顯示 ; 0 = 隱藏
-
+	
 	var indexImages = 1; // 首頁圖前後按鈕
+	
+//	var works = ;
+//	var graphic = ;
+//	var articles = ;
 
 	// 轉址到 https:
 	var host = "antonychen.work";
@@ -14,16 +18,45 @@
 	}
 
 // 載入網站進度條
-window.onload = function() {
-    setTimeout( function() {
+
+window.onload = setTimeout( function() {
         window.document.documentElement.scrollTop = 0;
         document.body.style.overflow = "hidden";
     }, 1);
-    setTimeout( function() {
+
+window.onload = setTimeout( function() {
         document.body.style.overflow = "visible";
         document.querySelector("html").style.overflowY = "scroll";
         document.getElementById("loadingBar").style.display = "none";
     }, 1000);
+
+// 菜單按鈕
+setInterval( function iconMenuOpen(){
+	if (window.pageYOffset > 320 && pages == 0 && iconMenuOpenMode == 1){ // 滾動高度 + 首頁 + 按鈕顯示
+		document.getElementById("iconMenuOpen").style.display = "block";
+	}else if (pages > 0 && iconMenuOpenMode == 1 && menuBoxMode == 0){ // 非首頁 + 菜單彈窗關閉
+		document.getElementById("iconMenuOpen").style.display = "block";
+	}else if (iconMenuOpenMode == 0) { // 按鈕隱藏
+		document.getElementById("iconMenuOpen").style.display = "none";
+	}else {
+		document.getElementById("iconMenuOpen").style.display = "none";
+	}
+}, 100);
+
+// 回到頂端按鈕
+setInterval( function iconToTop(){
+	if (window.pageYOffset > 100 && iconUpwardMode == 1) { // 滾動高度 + 按鈕顯示
+		document.getElementById("iconUpward").style.display = "block";
+	}else if (window.pageYOffset > 100 && iconUpwardMode == 0){ // 滾動高度 + 按鈕隱藏
+		document.getElementById("iconUpward").style.display = "none";
+	}else {
+		document.getElementById("iconUpward").style.display = "none";
+	}
+}, 100);
+
+// 回到頂端高度
+function toTop(){
+		window.document.documentElement.scrollTop = 0;
 }
 
 // 首頁圖前後按鈕
@@ -44,36 +77,7 @@ setInterval( function indexImagesChange(){
 		document.getElementById("indexImagesContainerContainer1").style.display = "none";
 		document.getElementById("indexImagesContainerContainer2").style.display = "flex";
 	}
-}, 500);
-
-// 菜單按鈕
-setInterval( function iconMenuOpen(){
-	if (window.pageYOffset > 320 && pages == 0 && iconMenuOpenMode == 1){ // 滾動高度 + 首頁 + 按鈕顯示
-		document.getElementById("iconMenuOpen").style.display = "block";
-	}else if (pages > 0 && iconMenuOpenMode == 1 && menuBoxMode == 0){ // 非首頁 + 菜單彈窗關閉
-		document.getElementById("iconMenuOpen").style.display = "block";
-	}else if (iconMenuOpenMode == 0) { // 按鈕隱藏
-		document.getElementById("iconMenuOpen").style.display = "none";
-	}else {
-		document.getElementById("iconMenuOpen").style.display = "none";
-	}
-}, 500);
-
-// 回到頂端按鈕
-setInterval( function iconToTop(){
-	if (window.pageYOffset > 100 && iconUpwardMode == 1) { // 滾動高度 + 按鈕顯示
-		document.getElementById("iconUpward").style.display = "block";
-	}else if (window.pageYOffset > 100 && iconUpwardMode == 0){ // 滾動高度 + 按鈕隱藏
-		document.getElementById("iconUpward").style.display = "none";
-	}else {
-		document.getElementById("iconUpward").style.display = "none";
-	}
-}, 500);
-
-// 回到頂端高度
-function toTop(){
-		window.document.documentElement.scrollTop = 0;
-}
+}, 100);
 
 // 菜單彈窗開啟
 function menuOpen(){
