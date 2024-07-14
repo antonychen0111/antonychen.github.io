@@ -5,7 +5,7 @@ html,body {
 	
 	scroll-behavior: smooth;
 	user-select: none;
-	overflow: visible;
+	overflow-y: visible;
 	float: left;
 	
 	font-size: 16px; /* 文字大小 */
@@ -13,8 +13,8 @@ html,body {
 	
 	margin: 0;
 	padding: 0;
-	height: 100vh;
-	width: 99vw;
+	height: 100%;
+	width: 100%;
 	
 	overflow-x: hidden; /* 橫向隱藏 */
 }
@@ -229,8 +229,8 @@ h6 {
 	
 	background-color: var(--lightOpacityBackgroundColor);
 	opacity: 0.75;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	top: 0;
 	
 	position: fixed;
@@ -240,8 +240,8 @@ h6 {
 	
 	background-color: var(--darkOpacityBackgroundColor);
 	opacity: 0.75;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	top: 0;
 	
 	position: fixed;
@@ -283,8 +283,8 @@ h6 {
 	
 	background-color: var(--lightOpacityBackgroundColor);
 	opacity: 0.85;
-	height: 100vh;
-	width: 99vw;
+	height: 100%;
+	width: 100%;
 	
 	position: fixed;
 	z-index: 99;
@@ -310,7 +310,7 @@ h6 {
 	height: 0.3rem;
 	
 	animation-name: loadingBar;
-	animation-duration: 1s;
+	animation-duration: 0.95s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 	
@@ -396,7 +396,7 @@ h6 {
 	cursor: pointer;
 	display: none;
 	animation-name: iconUpward;
-	animation-duration: 0.5s;
+	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 }
@@ -589,7 +589,7 @@ h6 {
 	text-decoration: underline;
 	text-decoration-style: solid;
 	text-decoration-color: var(--lightTextColor);
-	text-decoration-thickness: 0.2rem;
+	text-decoration-thickness: 0.25rem;
 }
 
 .menuText:hover {
@@ -632,7 +632,7 @@ h6 {
 #indexImagesContainerContainer1 {
 	
 	height: calc(22.5rem + 62.5vh);
-	width: 99vw;
+	width: 100%;
 	
 	display: flex;
 	justify-content: flex-end;
@@ -643,7 +643,7 @@ h6 {
 #indexImagesContainerContainer2 {
 	
 	height: calc(22.5rem + 62.5vh);
-	width: 99vw;
+	width: 100%;
 
 	display: none;
 	justify-content: flex-end;
@@ -983,7 +983,7 @@ h6 {
 	
 	cursor: default;
 	
-	width: 99vw;
+	width: 100%;
 
 	position: fixed;
 	display: none;
@@ -997,7 +997,7 @@ h6 {
 	
 	cursor: default;
 	
-	width: 99vw;
+	width: 100%;
 	
 	position: fixed;
 	display: none;
@@ -1074,7 +1074,7 @@ h6 {
 #termsButtonContainer {
 	
 	height: 1rem;
-	width: 99vw;
+	width: 100%;
 	margin-top: 3vh;
 	
 	display: flex;
@@ -1087,7 +1087,7 @@ h6 {
 	
 	cursor: default;
 	
-	width: 99vw;
+	width: 100%;
 
 	position: fixed;
 	display: none;
@@ -1126,7 +1126,7 @@ h6 {
 #copyrightContainer {
 	
 	height: 5rem;
-	width: 99vw;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -1148,7 +1148,7 @@ h6 {
 	background-color: var(--lightBackgroundColor);
 	border: 0.1rem solid var(--lightDescriptionColor);
 	height: 2rem;
-	width: 100vw;
+	width: 100%;
 	bottom: 0;
 	
 	position: fixed;
@@ -1196,7 +1196,7 @@ h6 {
 
 #worksBox {
 	
-	width: 99vw;
+	width: 100%;
 	margin-top: 2.5vh;
 	
 	display: none;
@@ -1205,7 +1205,7 @@ h6 {
 
 #graphicBox {
 	
-	width: 99vw;
+	width: 100%;
 	margin-top: 2.5vh;
 	
 	display: none;
@@ -1368,7 +1368,7 @@ h6 {
 
 #works {
 	
-	width: 99.3vw;
+	width: 100%;
 	
 	margin-top: 0.5rem;
 	
@@ -1378,7 +1378,7 @@ h6 {
 
 #graphic {
 	
-	width: 99.3vw;
+	width: 100%;
 	
 	margin-top: 0.5rem;
 	
@@ -1500,7 +1500,7 @@ h6 {
 /* 文章列表 */
 #articlesBox {
 	
-	width: 99vw;
+	width: 100%;
 	
 	display: none;
 	justify-content: center;
@@ -1543,6 +1543,7 @@ h6 {
 	min-width: 20rem;
 	
 	padding: 0.5rem;
+	position: relative;
 	overflow: hidden;
 	
 	transition: all 0.25s ease;
@@ -1655,7 +1656,7 @@ h6 {
 /* 文章內容 */
 #articles {
 	
-	width: 99.3vw;
+	width: 100%;
 	
 	margin-top: 0.5rem;
 	
