@@ -833,6 +833,7 @@ h6 {
 #linkButtonContainer {
 	
 	width: 100%;
+	
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -844,9 +845,9 @@ h6 {
 .linkButton {
 	
 	cursor: pointer;
-	height: 0.5rem;
+	height: auto;
 	width: 100%;
-	margin: 0 0 3.75rem 0;
+	margin-bottom: calc(3.5rem + 0.5vw);
 	
 	position: relative;
 	transition: all 0.25s ease;
@@ -870,30 +871,26 @@ h6 {
 
 .linkButtonBackground {
 	
-	margin: 0;
-	top: 0;
 	width: 100%;
 	position: absolute;
 }
 
 .linkButtonBackground img{
-
-	object-fit: contain;	
-	object-position: center;
+	
+	width: 100%;
 }
 
 /* 連結樹按鈕圖示 */
 
 .linkButtonIcon {
 	
-	height: 100%;
 	position: absolute;
 }
 
 .linkButtonIcon img{
 	
 	height: 2rem;
-	margin-top: 25%;
+	margin-top: calc(0.45rem + 0.25vw);
 	margin-left: 1rem;
 }
 
@@ -904,11 +901,11 @@ h6 {
 	font-size: 1rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
+	text-align: center;
 	text-decoration: none;
 	
-	margin-top: 0.9rem;
-	margin-left: 8.25rem;
-	
+	width: 100%;
+	top: calc(-0.25rem + 0.25vw);
 	position: absolute;
 }
 
@@ -919,11 +916,11 @@ h6 {
 	font-size: 0.9rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
+	text-align: center;
 	text-decoration: none;
 	
-	margin-top: 0.85rem;
-	margin-left: 4.5rem;
-	
+	width: 100%;
+	top: calc(-0.1rem + 0.25vw);
 	position: absolute;
 }
 
@@ -935,10 +932,9 @@ h6 {
 	font-weight: 300;
     color: var(--lightTextColor);
 	
-	margin-top: 0.95rem;
-	margin-right: 2rem;
 	right: 0;
-	
+	margin-top: 0.95rem;
+	margin-right: calc(2rem + 1.5vw);
 	position: absolute;
 }
 
