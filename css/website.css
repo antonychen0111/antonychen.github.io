@@ -833,7 +833,7 @@ h6 {
 #linkButtonContainer {
 	
 	width: 100%;
-	margin-top: 0.5rem; 
+	margin-bottom: 1rem;
 	
 	display: flex;
 	justify-content: center;
@@ -858,7 +858,7 @@ h6 {
 	
 	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
 	
-	transform: scale(1.05);
+	transform: translateY(-0.3rem);
 	transition: all 0.25s ease;
 }
 
@@ -956,8 +956,6 @@ h6 {
 	
 	top: 5vw;
 	padding: 1.5rem;
-	overflow-x: hidden;
-	overflow-y: auto;
 	position: fixed;
 	
 	animation-name: box;
@@ -978,6 +976,18 @@ h6 {
 	100% {
 		transform: translateY(0rem);
     }
+}
+
+.boxContainer{
+		
+	height: 92.5%;
+	width: 100%;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	margin: 2.5rem 0 0 0;
+	padding: 0 1.5rem 0 0;
 }
 
 /* 關於彈窗 */
@@ -1004,13 +1014,19 @@ h6 {
 	z-index: 3;
 }
 
+.nameHeadshotContainer {
+	
+	margin-top: 1.5rem;
+	
+	display: flex;
+	justify-content: space-between;
+}
+
 /* 頭貼位置 */
 .headshot {
 	
-	right: 0;
-	margin-top: 4.25rem;
-	margin-right: 3.75rem;
-	position: absolute;
+	margin-left: 1rem;
+	padding-right: 1rem;
 }
 
 /* 頭貼 */
@@ -1024,7 +1040,7 @@ h6 {
 /* 名字段落 */
 .nameParagraph {
 	
-	margin-top: 4rem;
+	margin: 0;
 }
 
 /* 名字文字 */
@@ -1051,7 +1067,7 @@ h6 {
 .aboutParagraph {
 	
 	text-align: left;
-	margin-right: 2.5rem;
+	margin-right: 1rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -1088,7 +1104,7 @@ h6 {
 	overflow-x: hidden;
 	overflow-y: auto;
 	
-	margin-top: 2.5rem 0 0 0;
+	margin: 2.5rem 0 0 0;
 	padding: 0 1.5rem 0 0;
 }
 
