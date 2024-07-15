@@ -230,8 +230,9 @@ h6 {
 	height: 100%;
 	width: 100%;
 	
-	position: fixed;
 	top: 0;
+	margin: 0;
+	position: fixed;
 }
 
 .darkBackground {
@@ -241,8 +242,9 @@ h6 {
 	height: 100%;
 	width: 100%;
 	
-	position: fixed;
 	top: 0;
+	margin: 0;
+	position: fixed;
 }
 
 /* Scrollbar */
@@ -796,6 +798,7 @@ h6 {
 .snsButtonContainer {
 	
 	bottom: 0;
+	margin-top: 3rem; 
 	margin-bottom: 1rem;
 }
 
@@ -827,13 +830,25 @@ h6 {
 
 /* 連結樹按鈕 */
 
+#linkButtonContainer {
+	
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	float: left;
+}
+
 .linkButton {
 	
 	cursor: pointer;
-	width: 20rem;
-	padding-bottom: 3.75rem;
+	height: 0.5rem;
+	width: 100%;
+	margin: 0 0 3.75rem 0;
 	
-	transform-origin: 10rem 0rem;
+	position: relative;
 	transition: all 0.25s ease;
 }
 
@@ -855,26 +870,30 @@ h6 {
 
 .linkButtonBackground {
 	
+	margin: 0;
+	top: 0;
+	width: 100%;
 	position: absolute;
 }
 
 .linkButtonBackground img{
 
-	min-width: 20rem;
-	max-width: 24rem;
+	object-fit: contain;	
+	object-position: center;
 }
 
 /* 連結樹按鈕圖示 */
 
 .linkButtonIcon {
 	
+	height: 100%;
 	position: absolute;
 }
 
 .linkButtonIcon img{
 	
 	height: 2rem;
-	margin-top: 0.6rem;
+	margin-top: 25%;
 	margin-left: 1rem;
 }
 
@@ -933,10 +952,10 @@ h6 {
 	
 	height: 45vh;
 	width: 15vw;
-	max-height: 75vh;
-	max-width: 80vw;
 	min-height: 35rem;
+	max-height: 75vh;
 	min-width: 20rem;
+	max-width: 80vw;
 	
 	top: 5vw;
 	padding: 1.5rem;
@@ -1037,16 +1056,6 @@ h6 {
 	text-align: left;
 	margin-right: 2.5rem;
 	margin-bottom: 1.5rem;
-}
-
-/* 聯繫按鈕 */
-#contactButtonContainer {
-	
-	margin-top: 6.5rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 /* 條款按鈕 */
