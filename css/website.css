@@ -833,6 +833,7 @@ h6 {
 #linkButtonContainer {
 	
 	width: 100%;
+	margin-top: 0.5rem; 
 	
 	display: flex;
 	justify-content: center;
@@ -946,12 +947,12 @@ h6 {
 	border-radius: 0.5rem;
 	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
 	
-	height: 45vh;
+	height: calc(25rem + 25vw);
 	width: 15vw;
 	min-height: 35rem;
-	max-height: 75vh;
+	max-height: 50rem;
 	min-width: 20rem;
-	max-width: 80vw;
+	max-width: 25rem;
 	
 	top: 5vw;
 	padding: 1.5rem;
@@ -1087,7 +1088,7 @@ h6 {
 	overflow-x: hidden;
 	overflow-y: auto;
 	
-	margin-top: 2rem 0 0 0;
+	margin-top: 2.5rem 0 0 0;
 	padding: 0 1.5rem 0 0;
 }
 
