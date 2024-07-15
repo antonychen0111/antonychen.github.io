@@ -6,10 +6,6 @@
 	var menuBoxMode = 0; // 菜單彈窗：1 = 顯示 ; 0 = 隱藏
 	
 	var indexImages = 1; // 首頁圖前後按鈕
-	
-//	var works = ;
-//	var graphic = ;
-//	var articles = ;
 
 	// 轉址到 https:
 	var host = "antonychen.work";
@@ -180,6 +176,45 @@ function termsClose(){
 		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
 }
 
+// 暫停重載所有影片
+//function pauseAndReloadVideo(){
+//		document.querySelectorAll('.worksImagesCover').pause();
+//		document.querySelectorAll('worksImagesContainer').pause();
+//		document.querySelectorAll('.worksImagesCover').load();
+//		document.querySelectorAll('worksImagesContainer').load();
+//}
+
+// 作品內容關閉
+function worksAllClose(){
+		document.getElementById("works").style.display = "none"; // 作品內容關閉
+		document.getElementById("works01").style.display = "none"; // 作品內容關閉
+		document.getElementById("works02").style.display = "none";
+		document.getElementById("works03").style.display = "none";
+}
+
+// 作品內容關閉
+function graphicAllClose(){
+		document.getElementById("graphic").style.display = "none"; // 作品內容關閉
+		document.getElementById("graphic01").style.display = "none"; // 作品內容關閉
+		document.getElementById("graphic02").style.display = "none";
+		document.getElementById("graphic03").style.display = "none";
+		document.getElementById("graphic04").style.display = "none";
+}
+
+// 文章內容關閉
+function articlesAllClose(){
+		document.getElementById("articles").style.display = "none"; // 文章內容關閉
+		document.getElementById("articles01").style.display = "none"; // 文章內容關閉
+		document.getElementById("articles02").style.display = "none";
+		document.getElementById("articles03").style.display = "none";
+		document.getElementById("articles04").style.display = "none";
+		document.getElementById("articles05").style.display = "none";
+		document.getElementById("articles06").style.display = "none";
+		document.getElementById("articles07").style.display = "none";
+		document.getElementById("articles08").style.display = "none";
+}
+
+// 回到首頁
 function backHome(){
 		iconMenuOpenMode = 1; // 菜單按鈕顯示
 		iconUpwardMode = 1; // 回到頂端按鈕顯示
@@ -192,34 +227,17 @@ function backHome(){
 		document.getElementById("iconBackHome").style.display = "none"; // 首頁按鈕隱藏
 		document.getElementById("indexImages").style.display = "flex"; // 首頁圖顯示
 		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
+//		pauseAndReloadVideo(); // 暫停重載所有影片
 		
 		document.getElementById("worksBox").style.display = "none"; // 作品列表關閉
 		document.getElementById("graphicBox").style.display = "none"; // 作品列表關閉
 		document.getElementById("articlesBox").style.display = "none"; // 文章列表關閉
-		
-		document.getElementById("works").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic").style.display = "none"; // 作品內容關閉
-		document.getElementById("articles").style.display = "none"; // 文章內容關閉
-		
-		document.getElementById("works01").style.display = "none"; // 作品內容關閉
-		document.getElementById("works02").style.display = "none";
-		document.getElementById("works03").style.display = "none";
-		
-		document.getElementById("graphic01").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic02").style.display = "none";
-		document.getElementById("graphic03").style.display = "none";
-		document.getElementById("graphic04").style.display = "none";
-		
-		document.getElementById("articles01").style.display = "none"; // 文章內容關閉
-		document.getElementById("articles02").style.display = "none";
-		document.getElementById("articles03").style.display = "none";
-		document.getElementById("articles04").style.display = "none";
-		document.getElementById("articles05").style.display = "none";
-		document.getElementById("articles06").style.display = "none";
-		document.getElementById("articles07").style.display = "none";
-		document.getElementById("articles08").style.display = "none";
+		worksAllClose(); // 作品內容關閉
+		graphicAllClose(); // 作品內容關閉
+		articlesAllClose(); // 文章內容關閉
 }
 
+// 開啟作品列表
 function worksOpen(){
 		iconMenuOpenMode = 1; // 菜單按鈕顯示
 		iconUpwardMode = 1; // 回到頂端按鈕顯示
@@ -232,42 +250,25 @@ function worksOpen(){
 		document.getElementById("iconBackHome").style.display = "block"; // 首頁按鈕顯示
 		document.getElementById("indexImages").style.display = "none"; // 首頁圖隱藏
 		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
+//		pauseAndReloadVideo(); // 暫停重載所有影片
 		
 		document.getElementById("worksBox").style.display = "flex"; // 作品列表開啟
 		document.getElementById("graphicBox").style.display = "none"; // 作品列表關閉
 		document.getElementById("articlesBox").style.display = "none"; // 文章列表關閉
-		
-		document.getElementById("works").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic").style.display = "none"; // 作品內容關閉
-		document.getElementById("articles").style.display = "none"; // 文章內容關閉
-		
-		document.getElementById("works01").style.display = "none"; // 作品內容關閉
-		document.getElementById("works02").style.display = "none";
-		document.getElementById("works03").style.display = "none";
-		
-		document.getElementById("graphic01").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic02").style.display = "none";
-		document.getElementById("graphic03").style.display = "none";
-		document.getElementById("graphic04").style.display = "none";
-		
-		document.getElementById("articles01").style.display = "none"; // 文章內容關閉
-		document.getElementById("articles02").style.display = "none";
-		document.getElementById("articles03").style.display = "none";
-		document.getElementById("articles04").style.display = "none";
-		document.getElementById("articles05").style.display = "none";
-		document.getElementById("articles06").style.display = "none";
-		document.getElementById("articles07").style.display = "none";
-		document.getElementById("articles08").style.display = "none";
+		worksAllClose(); // 作品內容關閉
+		graphicAllClose(); // 作品內容關閉
+		articlesAllClose(); // 文章內容關閉
 }
 
+// 回到作品列表
 function worksClose(){
 		window.document.documentElement.scrollTop = 0; // 回到頂端
 		document.getElementById("worksBox").style.display = "flex"; // 作品列表開啟
-		document.getElementById("works").style.display = "none"; // 作品內容關閉
-		document.getElementById("works01").style.display = "none"; // 作品內容關閉
-		document.getElementById("works02").style.display = "none";
-		document.getElementById("works03").style.display = "none";
+//		pauseAndReloadVideo(); // 暫停重載所有影片
+		worksAllClose(); // 作品內容關閉
 }
+
+// 作品內容
 
 function worksBox01(){
 		window.document.documentElement.scrollTop = 0; // 回到頂端
@@ -311,6 +312,7 @@ function worksBox06(){
 		document.getElementById("works06").style.display = "block";
 }
 
+// 開啟作品列表
 function graphicOpen(){
 		iconMenuOpenMode = 1; // 菜單按鈕顯示
 		iconUpwardMode = 1; // 回到頂端按鈕顯示
@@ -323,44 +325,25 @@ function graphicOpen(){
 		document.getElementById("iconBackHome").style.display = "block"; // 首頁按鈕顯示
 		document.getElementById("indexImages").style.display = "none"; // 首頁圖隱藏
 		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
+//		pauseAndReloadVideo(); // 暫停重載所有影片
 		
 		document.getElementById("worksBox").style.display = "none"; // 作品列表關閉
 		document.getElementById("graphicBox").style.display = "flex"; // 作品列表開啟
 		document.getElementById("articlesBox").style.display = "none"; // 文章列表關閉
-		
-		document.getElementById("works").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic").style.display = "none"; // 作品內容關閉
-		document.getElementById("articles").style.display = "none"; // 文章內容關閉
-		
-		document.getElementById("works01").style.display = "none"; // 作品內容關閉
-		document.getElementById("works02").style.display = "none";
-		document.getElementById("works03").style.display = "none";
-		
-		document.getElementById("graphic01").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic02").style.display = "none";
-		document.getElementById("graphic03").style.display = "none";
-		document.getElementById("graphic04").style.display = "none";
-		
-		document.getElementById("articles01").style.display = "none"; // 文章內容關閉
-		document.getElementById("articles02").style.display = "none";
-		document.getElementById("articles03").style.display = "none";
-		document.getElementById("articles04").style.display = "none";
-		document.getElementById("articles05").style.display = "none";
-		document.getElementById("articles06").style.display = "none";
-		document.getElementById("articles07").style.display = "none";
-		document.getElementById("articles08").style.display = "none";
+		worksAllClose(); // 作品內容關閉
+		graphicAllClose(); // 作品內容關閉
+		articlesAllClose(); // 文章內容關閉
 }
 
-
+// 回到作品列表
 function graphicClose(){
 		window.document.documentElement.scrollTop = 0; // 回到頂端
 		document.getElementById("graphicBox").style.display = "flex"; // 作品列表開啟
-		document.getElementById("graphic").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic01").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic02").style.display = "none";
-		document.getElementById("graphic03").style.display = "none";
-		document.getElementById("graphic04").style.display = "none";
+//		pauseAndReloadVideo(); // 暫停重載所有影片
+		graphicAllClose(); // 作品內容關閉
 }
+
+// 作品內容
 
 function graphicBox01(){
 		window.document.documentElement.scrollTop = 0; // 回到頂端
@@ -404,6 +387,7 @@ function graphicBox06(){
 		document.getElementById("graphic06").style.display = "block";
 }
 
+// 開啟文章列表
 function articlesOpen(){
 		iconMenuOpenMode = 1; // 菜單按鈕顯示
 		iconUpwardMode = 1; // 回到頂端按鈕顯示
@@ -416,47 +400,25 @@ function articlesOpen(){
 		document.getElementById("iconBackHome").style.display = "block"; // 首頁按鈕顯示
 		document.getElementById("indexImages").style.display = "none"; // 首頁圖隱藏
 		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
+//		pauseAndReloadVideo(); // 暫停重載所有影片
 		
 		document.getElementById("worksBox").style.display = "none"; // 作品列表關閉
 		document.getElementById("graphicBox").style.display = "none"; // 作品列表關閉
 		document.getElementById("articlesBox").style.display = "flex"; // 文章列表開啟
-		
-		document.getElementById("works").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic").style.display = "none"; // 作品內容關閉
-		document.getElementById("articles").style.display = "none"; // 文章內容關閉
-		
-		document.getElementById("works01").style.display = "none"; // 作品內容關閉
-		document.getElementById("works02").style.display = "none";
-		document.getElementById("works03").style.display = "none";
-		
-		document.getElementById("graphic01").style.display = "none"; // 作品內容關閉
-		document.getElementById("graphic02").style.display = "none";
-		document.getElementById("graphic03").style.display = "none";
-		document.getElementById("graphic04").style.display = "none";
-		
-		document.getElementById("articles01").style.display = "none"; // 文章內容關閉
-		document.getElementById("articles02").style.display = "none";
-		document.getElementById("articles03").style.display = "none";
-		document.getElementById("articles04").style.display = "none";
-		document.getElementById("articles05").style.display = "none";
-		document.getElementById("articles06").style.display = "none";
-		document.getElementById("articles07").style.display = "none";
-		document.getElementById("articles08").style.display = "none";
+		worksAllClose(); // 作品內容關閉
+		graphicAllClose(); // 作品內容關閉
+		articlesAllClose(); // 文章內容關閉
 }
 
+// 回到文章列表
 function articlesClose(){
 		window.document.documentElement.scrollTop = 0; // 回到頂端
 		document.getElementById("articlesBox").style.display = "flex"; // 文章列表開啟
-		document.getElementById("articles").style.display = "none"; // 文章內容關閉
-		document.getElementById("articles01").style.display = "none"; // 文章內容關閉
-		document.getElementById("articles02").style.display = "none";
-		document.getElementById("articles03").style.display = "none";
-		document.getElementById("articles04").style.display = "none";
-		document.getElementById("articles05").style.display = "none";
-		document.getElementById("articles06").style.display = "none";
-		document.getElementById("articles07").style.display = "none";
-		document.getElementById("articles08").style.display = "none";
+//		pauseAndReloadVideo(); // 暫停重載所有影片
+		articlesAllClose(); // 文章內容關閉
 }
+
+// 文章內容
 
 function articlesBox01(){
 		window.document.documentElement.scrollTop = 0; // 回到頂端
