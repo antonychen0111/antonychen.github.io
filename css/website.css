@@ -126,7 +126,7 @@ h6 {
 	font-size: 1.2rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
-	line-height: 1.5rem;
+	line-height: 1.6rem;
 }
 
 /* 標題文字英文 */
@@ -134,9 +134,9 @@ h6 {
 	
 	font-family: 'Prompt', sans-serif;
 	font-size: 1.2rem;
-	font-weight: bold;
+	font-weight: 600;
 	color: var(--lightTextColor);
-	line-height: 1.5rem;
+	line-height: 1.2rem;
 }
 
 /* 內文 */
@@ -1548,7 +1548,7 @@ h6 {
 /* 文章列表文字區塊 */
 .articlesBoxParagraphContainer {
 	
-	margin-top: 0.1rem;
+	margin-top: 0.5rem;
 	padding: 0.5rem;
 }
 
@@ -1565,13 +1565,13 @@ h6 {
 	font-size: 1.2rem;
 	font-weight: bold;
 	color: var(--lightTextColor);
-	line-height: 1.8rem;
+	line-height: 1.6rem;
 }
 
 /* 文章列表簡述段落 */
 .articlesBoxTextParagraph {
 	
-	height: 6.65rem;
+	height: 6.5rem;
 	width: 100%;
 	overflow: hidden;
 	text-align: justify;
@@ -1581,7 +1581,7 @@ h6 {
 	-webkit-line-clamp: 5;
 	
 	margin-top: 0.5rem;
-	margin-bottom: 0.65rem;
+	margin-bottom: 0.5rem;
 }
 
 /* 文章列表簡述文字 */
@@ -1591,7 +1591,7 @@ h6 {
 	font-size: 0.9rem;
 	font-weight: 400;
 	color: var(--lightDescriptionColor);
-	line-height: 1.35rem;
+	line-height: 1.25rem;
 	text-overflow: ellipsis;
 	
 	margin: 0 0 1rem 0;
