@@ -199,6 +199,10 @@ function graphicAllClose(){
 		document.getElementById("graphic02").style.display = "none";
 		document.getElementById("graphic03").style.display = "none";
 		document.getElementById("graphic04").style.display = "none";
+		document.getElementById("graphic05").style.display = "none";
+		document.getElementById("graphic06").style.display = "none";
+		document.getElementById("graphic07").style.display = "none";
+		document.getElementById("graphic08").style.display = "none";
 }
 
 // 文章內容關閉
@@ -312,6 +316,76 @@ function worksBox06(){
 		document.getElementById("works06").style.display = "block";
 }
 
+function worksBox07(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works07").style.display = "block";
+}
+
+function worksBox08(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works08").style.display = "block";
+}
+
+function worksBox09(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works09").style.display = "block";
+}
+
+function worksBox10(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works10").style.display = "block";
+}
+
+function worksBox11(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works11").style.display = "block";
+}
+
+function worksBox12(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works12").style.display = "block";
+}
+
+function worksBox13(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works13").style.display = "block";
+}
+
+function worksBox14(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works14").style.display = "block";
+}
+
+function worksBox15(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works15").style.display = "block";
+}
+
+function worksBox16(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works16").style.display = "block";
+}
+
 // 開啟作品列表
 function graphicOpen(){
 		iconMenuOpenMode = 1; // 菜單按鈕顯示
@@ -385,6 +459,83 @@ function graphicBox06(){
 		document.getElementById("graphicBox").style.display = "none";
 		document.getElementById("graphic").style.display = "flex";
 		document.getElementById("graphic06").style.display = "block";
+}
+
+function graphicBox07(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic07").style.display = "block";
+}
+
+function graphicBox08(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic08").style.display = "block";
+}
+
+function graphicBox09(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic09").style.display = "block";
+}
+
+function graphicBox10(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic10").style.display = "block";
+}
+
+function graphicBox11(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic11").style.display = "block";
+}
+
+function graphicBox12(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic12").style.display = "block";
+}
+
+function graphicBox13(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic13").style.display = "block";
+}
+
+function graphicBox14(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic14").style.display = "block";
+}
+
+function graphicBox15(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic15").style.display = "block";
+}
+
+function graphicBox16(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic16").style.display = "block";
+}
+
+function graphicBox17(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("graphicBox").style.display = "none";
+		document.getElementById("graphic").style.display = "flex";
+		document.getElementById("graphic17").style.display = "block";
 }
 
 // 開啟文章列表
