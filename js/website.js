@@ -207,6 +207,11 @@ function graphicAllClose(){
 		document.getElementById("graphic10").style.display = "none";
 		document.getElementById("graphic11").style.display = "none";
 		document.getElementById("graphic12").style.display = "none";
+		document.getElementById("graphic13").style.display = "none";
+		document.getElementById("graphic14").style.display = "none";
+		document.getElementById("graphic15").style.display = "none";
+		document.getElementById("graphic16").style.display = "none";
+		document.getElementById("graphic17").style.display = "none";
 }
 
 // 文章內容關閉
