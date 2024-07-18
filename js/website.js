@@ -203,6 +203,10 @@ function graphicAllClose(){
 		document.getElementById("graphic06").style.display = "none";
 		document.getElementById("graphic07").style.display = "none";
 		document.getElementById("graphic08").style.display = "none";
+		document.getElementById("graphic09").style.display = "none";
+		document.getElementById("graphic10").style.display = "none";
+		document.getElementById("graphic11").style.display = "none";
+		document.getElementById("graphic12").style.display = "none";
 }
 
 // 文章內容關閉
