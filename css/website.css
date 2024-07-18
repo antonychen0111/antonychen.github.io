@@ -204,6 +204,7 @@ h6 {
 .textParagraph {
 	
 	text-align: justify;
+	margin-top: 1rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -1326,7 +1327,6 @@ h6 {
 	font-weight: 400;
 	color: var(--darkTextColor);
 	line-height: 1.2rem;
-	
 	text-shadow: 0.1rem 0.1rem 0.1rem var(--lightTextColor);
 }
 
