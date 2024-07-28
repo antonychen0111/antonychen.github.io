@@ -190,6 +190,19 @@ function worksAllClose(){
 		document.getElementById("works01").style.display = "none"; // 作品內容關閉
 		document.getElementById("works02").style.display = "none";
 		document.getElementById("works03").style.display = "none";
+		document.getElementById("works04").style.display = "none";
+		document.getElementById("works05").style.display = "none";
+		document.getElementById("works06").style.display = "none";
+		document.getElementById("works07").style.display = "none";
+		document.getElementById("works08").style.display = "none";
+		document.getElementById("works09").style.display = "none";
+		document.getElementById("works10").style.display = "none";
+		document.getElementById("works11").style.display = "none";
+		document.getElementById("works12").style.display = "none";
+		document.getElementById("works13").style.display = "none";
+		document.getElementById("works14").style.display = "none";
+		document.getElementById("works15").style.display = "none";
+		document.getElementById("works16").style.display = "none";
 }
 
 // 作品內容關閉
