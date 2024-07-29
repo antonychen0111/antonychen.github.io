@@ -203,6 +203,7 @@ function worksAllClose(){
 		document.getElementById("works14").style.display = "none";
 		document.getElementById("works15").style.display = "none";
 		document.getElementById("works16").style.display = "none";
+		document.getElementById("works17").style.display = "none";
 }
 
 // 作品內容關閉
@@ -406,6 +407,13 @@ function worksBox16(){
 		document.getElementById("worksBox").style.display = "none";
 		document.getElementById("works").style.display = "flex";
 		document.getElementById("works16").style.display = "block";
+}
+
+function worksBox17(){
+		window.document.documentElement.scrollTop = 0;
+		document.getElementById("worksBox").style.display = "none";
+		document.getElementById("works").style.display = "flex";
+		document.getElementById("works17").style.display = "block";
 }
 
 // 開啟作品列表
