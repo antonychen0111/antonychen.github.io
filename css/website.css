@@ -641,7 +641,7 @@ h6 {
 /* 首頁圖1 */
 #indexImagesContainerContainer1 {
 	
-	height: calc(22.5rem + 62.5vh);
+	height: calc(22.5rem + 67.5vh);
 	width: 100%;
 	
 	display: flex;
@@ -652,7 +652,7 @@ h6 {
 /* 首頁圖2 */
 #indexImagesContainerContainer2 {
 	
-	height: calc(22.5rem + 62.5vh);
+	height: calc(22.5rem + 67.5vh);
 	width: 100%;
 
 	display: none;
@@ -675,8 +675,10 @@ h6 {
 
 .indexImagesContainer img{
 	
+	max-height: 85vh;
 	width: calc(12rem + 52vw);
 	max-width: 55rem;
+	object-fit: contain;
 }
 
 /* 首頁圖小圖 */
@@ -974,7 +976,7 @@ h6 {
 	height: calc(25rem + 25vw);
 	width: 15vw;
 	min-height: 35rem;
-	max-height: 50rem;
+	max-height: 56.5vh;
 	min-width: 20rem;
 	max-width: 25rem;
 	
