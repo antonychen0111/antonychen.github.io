@@ -20,13 +20,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
     
 	<link href="css/website.css" rel="stylesheet" type="text/css">
-	<script src="javascript/index.js"></script>
+	<script src="javascript/website.js"></script>
 </head>
 <body>
 <header>
-	<!-- 讀取條 -->
-	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>
-	
 	<!-- 菜單按鈕 -->
 	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
 	<!-- 回到頂端按鈕 -->
@@ -38,6 +35,7 @@
 		<div id="menuBoxContainer">
 			<!-- 菜單按鈕 -->
 			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
 			<br><br><br><br><br>
 			<!-- 菜單項目 -->
 			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
@@ -47,37 +45,6 @@
 			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
 		</div>
 	</div></nav>
-	
-	<!-- 菜單欄 -->
-	<nav><div id="menuBar">
-		<div id="menuBarContainer">
-		<!-- 菜單項目 -->
-		<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
-		<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText" style="text-decoration: ">3D&thinsp;Works</a></div>
-		<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
-		<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
-		<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
-		</div>
-	</div></nav>
-	
-	<!-- 首頁圖 -->
-	<div id="indexImages">
-		<!-- 首頁圖前後按鈕 -->
-		<div id="iconIndexImagesNextContainer"><p onclick="indexImagesNext()" id="iconIndexImagesNext" class="iconImages">East</p></div>
-		<div id="iconIndexImagesPreviousContainer"><p onclick="indexImagesPrevious()" id="iconIndexImagesPrevious" class="iconImages">West</p></div>
-		<!-- 首頁圖1 -->
-		<div id="indexImagesContainerContainer1">
-		<div class="indexImagesContainer"><img src="images/truck.gif" alt=""></div>
-		<!-- 首頁圖1小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="images/520.webp" alt=""></a><p class="description" style="margin: 0">520 農民運動　　圖：邱萬興</p></div>
-		</div>
-		<!-- 首頁圖2 -->
-		<div id="indexImagesContainerContainer2">
-		<div class="indexImagesContainer"><img src="images/taxi.gif" alt=""></div>
-		<!-- 首頁圖2小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0">公館計程車械鬥　圖：吳景騰</p></div>
-		</div>
-	</div>
 	
 	<!-- 關於彈窗 -->
 	<div id="aboutBox">
@@ -179,6 +146,31 @@
 		</div>
 	</div></div></div>
 </header>
+<!-- 主要內容 -->
+<main>
+	<!-- 作品內容 -->
+	<div id="graphic">
+	<div class="worksContainer">
+		<!-- 內容按鈕 -->
+		<a href="GraphicArts.html" target="_self" style="text-decoration: none">
+		<div class="iconWorksCloseContainer"><p style="display: flex" id="iconGraphicClose" class="iconBoxClose">close</p></div></a>
+		
+		<div id="graphic17">
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"><img src="works/臺中高工圖文傳播科 108 級科學會 TCIVS GAC 2017-2018 Student Association/work.webp" alt=""></div></div>
+		<div class="worksTextParagraphContainer">
+			<p class="textParagraph"><span class="title"><br>臺中高工圖文傳播科 108 級科學會</span></p>
+			<p class="textParagraph" style="text-align: left"><span class="title">National Taichung Industrial Senior High School Department of Graphic Arts Communication 2017-2018 Student Association</span><br><br></p>
+			<p class="descriptionParagraph"><span class="description">Key Visual<br>16:9 1920 × 1080<br><time>2017/09/16 - 2018/06/12</time></span></p>
+			<p class="descriptionParagraph"><span class="description">設計：陳盈誌、黃郁翔<br>Design: Ying-Zhi Chen, Yu-Hsiang Huang</span></p><br>
+			<p class="textParagraph"><span class="text">以圖文傳播科最具代表的「傳」字，結合 Facebook 大頭貼形成的人臉作為主要意象。</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">Using the character "傳," which is most representative of the Department of Graphic Communication, combined with the Facebook profile picture as the main imagery.</span></p><br>
+			<div class="videoContainer"><iframe class="video" src="https://www.youtube.com/embed/ZS0KhBGbthg?color=white&rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe></div>
+			<p class="descriptionParagraph"><span class="description">粉絲專頁封面動畫影片<br>Facebook Page Banner Video</span></p>
+			<div class="worksImagesParagraph"><div class="worksImagesContainer"><img src="works/臺中高工圖文傳播科 108 級科學會 TCIVS GAC 2017-2018 Student Association/01.webp" loading="lazy" alt=""></div></div>
+		</div></div>
+		
+	</div></div>
+</main>
 <!-- 頁腳 -->
 <footer>
 	<!-- 條款彈窗 -->

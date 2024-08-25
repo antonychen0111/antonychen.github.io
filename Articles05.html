@@ -20,13 +20,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
     
 	<link href="css/website.css" rel="stylesheet" type="text/css">
-	<script src="javascript/index.js"></script>
+	<script src="javascript/website.js"></script>
 </head>
 <body>
 <header>
-	<!-- 讀取條 -->
-	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>
-	
 	<!-- 菜單按鈕 -->
 	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
 	<!-- 回到頂端按鈕 -->
@@ -38,6 +35,7 @@
 		<div id="menuBoxContainer">
 			<!-- 菜單按鈕 -->
 			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
 			<br><br><br><br><br>
 			<!-- 菜單項目 -->
 			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
@@ -47,37 +45,6 @@
 			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
 		</div>
 	</div></nav>
-	
-	<!-- 菜單欄 -->
-	<nav><div id="menuBar">
-		<div id="menuBarContainer">
-		<!-- 菜單項目 -->
-		<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
-		<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText" style="text-decoration: ">3D&thinsp;Works</a></div>
-		<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
-		<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
-		<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
-		</div>
-	</div></nav>
-	
-	<!-- 首頁圖 -->
-	<div id="indexImages">
-		<!-- 首頁圖前後按鈕 -->
-		<div id="iconIndexImagesNextContainer"><p onclick="indexImagesNext()" id="iconIndexImagesNext" class="iconImages">East</p></div>
-		<div id="iconIndexImagesPreviousContainer"><p onclick="indexImagesPrevious()" id="iconIndexImagesPrevious" class="iconImages">West</p></div>
-		<!-- 首頁圖1 -->
-		<div id="indexImagesContainerContainer1">
-		<div class="indexImagesContainer"><img src="images/truck.gif" alt=""></div>
-		<!-- 首頁圖1小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="images/520.webp" alt=""></a><p class="description" style="margin: 0">520 農民運動　　圖：邱萬興</p></div>
-		</div>
-		<!-- 首頁圖2 -->
-		<div id="indexImagesContainerContainer2">
-		<div class="indexImagesContainer"><img src="images/taxi.gif" alt=""></div>
-		<!-- 首頁圖2小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0">公館計程車械鬥　圖：吳景騰</p></div>
-		</div>
-	</div>
 	
 	<!-- 關於彈窗 -->
 	<div id="aboutBox">
@@ -179,6 +146,30 @@
 		</div>
 	</div></div></div>
 </header>
+<!-- 主要內容 -->
+<main>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<a href="Articles.html" target="_self" style="text-decoration: none">
+		<div class="iconWorksCloseContainer"><p style="display: flex" id="iconArticlesClose" class="iconBoxClose">close</p></div></a>
+		
+		<div id="articles05"><div class="textParagraphContainer">
+			<p class="textParagraph"><span class="title">從「很多孩子走了」看疫情期間媒體塑造的人心惶惶</span><br></p>
+			<p class="textParagraph"><span class="text">撰文：陳盈誌<br><time>2022/05/28</time> 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/01.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">左圖：郭彥均貼出和醫護友人的對話截圖<br>右圖：指揮中心統計圖表</span></p>
+			<p class="textParagraph"><span class="text">國民黨傾全黨之力護航藝人郭彥均，在這個時候爭吵言論自由而忽視掉政治人物的社會責任，會不會導致染疫幼童的家長更傾向直接到急診看診，壓縮真正需要急救的量能。公眾人物公開發文時更應該再三查證並審視用詞，否則會讓誇大傳聞變成虛假事實。原初大眾在爭論到底哪一家醫院真的有很多孩子病逝，以及從 4/5 開始算是不是有點誇大了時間線。結果到現在在爭論到底幾個小孩才算是郭彥均友人陳述的「這麼多」，「全台灣小孩每個都是命」、「郭彥均說的就是事實」、「蘇貞昌跟陳時中想用國家機器對付說出事實的民眾，掩蓋自己的防疫不力」。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/從「很多孩子走了」看疫情期間媒體塑造的人心惶惶/02.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">大量不知名粉專群發「很多孩子走了」相關報導，增加新聞熱度</span></p>
+			<p class="textParagraph"><span class="text">5/25 郭彥均發文，第一時間台灣媒體以「很多孩子走了」為題報導。5/26 中共統戰部門見縫插針、操作輿論。郭彥均當初的想法是想呼籲大家多體恤醫護人員，他卻原封不動貼出和醫護友人的對話，並未加以修飾與核實，反而讓大眾已經被媒體渲染過的恐慌更加一層，達不到當初想達到的目的了。這也是中共最希望看到的：台灣官方與民間傳遞正確資訊的管道遭到混淆、模糊，雙方互不信任。</span></p>
+			<p class="textParagraph"><span class="text">政府雖然鼓勵大家施打疫苗，卻沒有做太多以疫苗施打劑數差別的出入限制，例如打完三劑才可適用居家隔離 0+7，指揮中心可能是為了不要歧視對疫苗有疑慮的民眾。而弔詭的是媒體記者，一方面還在追問幼兒重症以及腦炎的比率，一方面已經在問台灣什麼時候像日本開放邊境了。</span></p>
+			<p class="textParagraph"><span class="text">大多數的人都是轉發消息或是被動接收資訊，也不清楚這些來源（媒體或親友）正不正確，除非真的是造謠源頭不然很難處罰到一般人。但民眾應該還是要有公德心作基本的查證，不然會造成身邊的人，乃至整個社會都惶恐不安，一窩蜂搶口罩、搶衛生紙、搶疫苗、搶快篩、搶酒精、搶防疫茶、搶清冠一號。</span></p>
+		</div></div>
+		
+	</div></div>
+</main>
 <!-- 頁腳 -->
 <footer>
 	<!-- 條款彈窗 -->

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<!-- 網頁名 -->
+    <title>Antony Chen</title>
+    <meta name="Author" contact="Antony Chen">
+    <meta name="Description" content="Walcome to my website! 3D Works, Graphic Arts, Articles...">
+	<meta name="viewport" content="width= device-width, initial-scale = 1">
+	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/favicon.ico"/>
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+	<link href="css/website.css" rel="stylesheet" type="text/css">
+	<script src="javascript/website.js"></script>
+</head>
+<body>
+<header>
+	<!-- 菜單按鈕 -->
+	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
+	<!-- 回到頂端按鈕 -->
+	<div id="iconUpwardContainer"><p onclick="toTop()" id="iconUpward" class="iconImages">arrow_upward</p></div>
+	
+	<!-- 菜單彈窗 -->
+	<nav><div id="menuBox">
+		<div class="darkBackground"></div>
+		<div id="menuBoxContainer">
+			<!-- 菜單按鈕 -->
+			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
+			<br><br><br><br><br>
+			<!-- 菜單項目 -->
+			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
+			<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText">3D&thinsp;Works</a></div>
+			<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
+			<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
+			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
+		</div>
+	</div></nav>
+	
+	<!-- 關於彈窗 -->
+	<div id="aboutBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>國立台灣科技大學 設計系商業設計組&nbsp;&nbsp;畢<br><br>平面設計 / 動態設計/ 3D&thinsp;建模</span>
+			</p>
+			<p class="aboutParagraph">
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house. I Graduated from Taiwan Tech, majoring in commercial design.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 貓咪照片 -->
+		<div class="worksImagesParagraph">
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat1.webp" alt=""></div>
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat2.webp" alt=""></div></div>
+		<!-- 連結小按鈕 -->
+		<div class="snsButtonContainer">
+			<a href="mailto:antony90011199@gmail.com" target="_blank" class="snsButton"><img src="icons/icons8-gmail-logo.svg" alt=""></a>
+			<a href="https://www.behance.net/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-behance.svg" alt=""></a>
+			<a href="http://instagram.com/antonychen_0111" target="_blank" class="snsButton"><img src="icons/icons8-instagram.svg" alt=""></a>
+			<a href="https://www.facebook.com/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-facebook.svg" alt=""></a>
+			<a href="https://www.youtube.com/@antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-youtube.svg" alt=""></a>
+		</div>
+	</div></div></div>
+	
+	<!-- 聯繫彈窗 -->
+	<div id="contactBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="contactClose()" id="iconContactClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<!-- 簡介文字 -->
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>平面設計 / 動態設計/ 3D&thinsp;建模</span><br><br>
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 連結樹按鈕 -->
+		<div id="linkButtonContainer">
+			<div onclick="iconCopy()" class="linkButton">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-gmail-logo.svg" alt=""></div>
+				<p id="linkButtonEmail">antony90011199@gmail.com</p>
+				<p class="iconCopy">content_copy</p>
+			</div>
+			<div class="linkButton"><a href="https://www.behance.net/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-behance.svg" alt=""></div>
+				<p class="linkButtonText">Bēhance</p>
+			</a></div>
+			<div class="linkButton"><a href="http://instagram.com/antonychen_0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-instagram.svg" alt=""></div>
+				<p class="linkButtonText">Instagram</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.facebook.com/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-facebook.svg" alt=""></div>
+				<p class="linkButtonText">Facebook</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.youtube.com/@antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-youtube.svg" alt=""></div>
+				<p class="linkButtonText">Youtube</p>
+			</a></div>
+		</div>
+	</div></div></div>
+</header>
+<!-- 主要內容 -->
+<main>
+	<!-- 作品內容 -->
+	<div id="works">
+	<div class="worksContainer">
+		<!-- 內容按鈕 -->
+		<a href="3DWorks.html" target="_self" style="text-decoration: none">
+		<div class="iconWorksCloseContainer"><p style="display: flex" id="iconWorksClose" class="iconBoxClose">close</p></div></a>
+		
+		<div id="works01">
+			<!-- 作品圖 -->
+			<div class="worksImagesCoverContainer"><div class="worksImagesCover"></div></div>
+		<div class="worksTextParagraphContainer">
+			<!-- 標題 -->
+			<p class="textParagraph"><span class="title">盤車--ê (puânn-tshia--ê)<br>Transfer to the Taxi</span><br></p>
+			<!-- 標籤 --><!-- 格式 --><!-- 日期 -->
+			<p class="descriptionParagraph"><span class="description">Animation<br>2.37:1 2370 × 1000, 4 mins<br><time>2023/05/10</time></span></p><br>
+			<p class="descriptionParagraph"><span class="description">對白：臺灣台語、臺灣華語<br>字幕：臺灣台語、臺灣華語<br><br>Dialogues: Taiwanese, Mandarin<br>Subtitles: Taiwanese, Mandarin</span></p><br>
+			<!-- 備註 -->
+			<p class="descriptionParagraph"><span class="description">製作：陳盈誌<br>配音：陳盈誌<br>標準字：陳蓉霈<br>海報：陳蓉霈<br><br>A Film by Ying-Zhi Chen<br>Voice Actor: Ying-Zhi Chen<br>Poster &amp; Logotype: Jung-Pei Chen</span></p><br>
+			<!-- 內容 -->
+			<p class="textParagraph"><span class="text">「插播一起重大消息，稍早我們得知昨日深夜在台北市與台北縣交界的中興橋上，發生了一起襲警事件。車輛行經橋上的檢查哨時，由於不明原因與憲警發生衝突。目前警方……滋……滋……大規模搜捕……滋……滋……呼籲民眾嚴格遵守宵禁規定，保持高度警覺。若有任何可疑情況，請務必立即聯繫當地警局。我們也會持續……滋……滋……。」</span></p>
+			<p class="textParagraph"><span class="text">一九九六年．三月．台北。冷風刺骨的冬天暗暝，一个予逐家號作「盤車--ê」的運將先生，喙哺一支賰袂到吋半的薰頭，徙動伊已經[立在]咧遐誠久的身軀轉來車頂。突兀的是，一跤魚櫥仔竟然放佇咧副駕駛的位。內面彼尾紅龍魚，每展一擺魚翅，攏再再表現出伊佮淡水河彼款凊彩就釣會著的鱸魚，完全毋是仝階級的……。</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">In March 1996, on a cold winter night in Taipei, the taxi driver known as "puânn-tshia--ê" returned to his car with an almost finished cigarette in his mouth. Strangely, a fish tank was placed on the passenger seat. The Asian Arowana inside moved the fins, and its beauty was totally incomparable to the bass caught in the Tamsui River...</span></p>
+			<p class="descriptionParagraph"><span class="description">〔中文〕一九九六年．三月．台北。寒風刺骨的冬夜，一個被大家稱作「puânn-tshia--ê」的計程車司機，嘴叼著所剩不多的菸頭，移動他早已僵在那許久的身軀回到車裡。突兀的是，一整個魚缸竟然就放在副駕駛座上。缸中的那尾紅龍魚，每擺動一下魚鰭，都再再顯現出他和淡水河裡那種隨隨便便就釣得到的鱸魚，完全不是同等級的……。</span></p>
+			<p class="textParagraph"><span class="text">〈風在吹 Hong Teh Tshue〉</span></p>
+			<p class="descriptionParagraph"><span class="description">演唱／林強<br>作詞／林強<br>作曲／伍佰<br>歌詞整理／W.b. Chen</span></p>
+			<p class="descriptionParagraph"><span class="description">Singer: Lim Giong<br>Lyricist: Lim Giong<br>Composer: Wu Bai<br>Lyrics translation: W.b. Chen</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">有一陣風共我捲去一个混沌的所在<br>看起來若像真生份 閣淡薄仔熟似</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">ū tsi̍t-tsūn hong<br>kā guá kńg khì tsi̍t-ê hūn-tūn ê sóo-tsāi<br>khuànn--khíâi ná-tshiūnn tsin senn-hūn<br>koh tām-po̍h-á si̍k-sāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">真正有真濟代誌 予你無法度通理解<br>真正有真濟物件 看起來攏東倒西歪</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tsin-tsiànn ū tsin tsuē tāi-tsì<br>hōo lí bô-huat-tōo thang lí-kái<br>tsin-tsiànn ū tsin tsuē mi̍h-kiānn<br>khuànn--khí-lâi lóng tang-tó-sai-uai</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">有一陣風共我𤆬去一个茫茫的世界<br>你若欲看愈清楚 你就感覺愈無奈</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">ū tsi̍t-tsūn hong<br>kā guá tshuā khì tsi̍t-ê bông-bông ê sè-kài<br>lí nā beh khuànn jú tshing-tshó<br>lí tiō kám-kak jú bô-nāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">真正有很多代誌 予你莫名的憤慨<br>真正有很多物件 看起來攏無實在</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tsin-tsiànn ū tsin tsuē tāi-tsì<br>hōo lí bo̍k-bîng ê hùn-khài<br>tsin-tsiànn ū tsin tsuē mi̍h-kiānn<br>khuànn--khí-lâi lóng bô si̍t-tsāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">東南西北看乎詳細 毋好予家己失去控制</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tang-sai lâm-pak khuànn hōo siông-sè<br>m̄-hó hōo ka-kī sit-khì khòng-tsè</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">想欲揣出啥物問題 毋知影原因到底啥關係</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">siūnn-beh tshuē-tshut siánn-mih būn-tê<br>m̄ tsai-iánn guân-in tàu-té siánn kuan-hē</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">局勢變遷風聲咧亂吹 愛知影變竅愛把握機會</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">kio̍k-sè piàn-tshian hong-siann luān tshue<br>ài tsai-iánn piàn-khiàu ài tsióng-ak ki-huē</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">生存的條件到底欠啥貨 水 風 塗 佮 火</span></p>
+			<p class="textParagraphEnglish"><span class="textEnglish">sing-tsûn ê tiâu-kiānn tàu-té khiàm siánn-huè<br>tsuí hong thôo kah hué</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">有一陣風共我𤆬去一个茫茫的世界<br>你若欲看愈清楚 你就感覺愈無奈</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">ū tsi̍t-tsūn hong<br>kā guá tshuā khì tsi̍t-ê bông-bông ê sè-kài<br>lí nā beh khuànn jú tshing-tshó<br>lí tiō kám-kak jú bô-nāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">真正有很多代誌 予你莫名的憤慨<br>真正有很多物件 看起來攏無實在</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tsin-tsiànn ū tsin tsuē tāi-tsì<br>hōo lí bo̍k-bîng ê hùn-khài<br>tsin-tsiànn ū tsin tsuē mi̍h-kiānn<br>khuànn--khí-lâi lóng bô si̍t-tsāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">風咧吹 吹共你亂亂飛<br>毋知到底欲相信啥人的話</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">hong leh tshue tshue kah lí luān-luān pue<br>m̄-tsai tàu-té beh siong-sìn siánn-lâng ê uē</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">風咧吹 吹共你目睭花<br>予你頭眩目暗捎咧戇戇踅</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">hong leh tshue tshue kah lí ba̍k-tsiu hue<br>hōo lí thâu-hînn ba̍k-àm sa teh gōng-gōng se̍h</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">風咧吹 吹共你亂亂飛</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">hong leh tshue tshue kah lí luān-luān pue</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">風咧吹 吹共你目睭花</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">hong leh tshue tshue kah lí ba̍k-tsiu hue</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">東南西北看乎詳細 毋好予家己失去控制</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tang-sai lâm-pak khuànn hōo siông-sè<br>m̄-hó hōo ka-kī sit-khì khòng-tsè</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">想欲揣出啥物問題 毋知影原因到底啥關係</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">siūnn-beh tshuē-tshut siánn-mih būn-tê<br>m̄ tsai-iánn guân-in tàu-té siánn kuan-hē</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">局勢變遷風聲咧亂吹 愛知影變竅愛把握機會</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">kio̍k-sè piàn-tshian hong-siann luān tshue<br>ài tsai-iánn piàn-khiàu ài tsióng-ak ki-huē</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">生存的條件到底欠啥貨<br>水 風 塗 佮 火</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">sing-tsûn ê tiâu-kiānn tàu-té khiàm siánn-huè<br>tsuí hong thôo kah hué</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">有一陣風共我捲去一个混沌的所在<br>看起來若像真生份 閣淡薄仔熟似</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">ū tsi̍t-tsūn hong<br>kā guá kńg khì tsi̍t-ê hūn-tūn ê sóo-tsāi<br>khuànn--khíâi ná-tshiūnn tsin senn-hūn<br>koh tām-po̍h-á si̍k-sāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">真正有真濟代誌 予你無法度通理解<br>真正有真濟物件 看起來攏東倒西歪</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tsin-tsiànn ū tsin tsuē tāi-tsì<br>hōo lí bô-huat-tōo thang lí-kái<br>tsin-tsiànn ū tsin tsuē mi̍h-kiānn<br>khuànn--khí-lâi lóng tang-tó-sai-uai</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">有一陣風共我𤆬去一个茫茫的世界<br>你若欲看愈清楚 你就感覺愈無奈</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">ū tsi̍t-tsūn hong<br>kā guá tshuā khì tsi̍t-ê bông-bông ê sè-kài<br>lí nā beh khuànn jú tshing-tshó<br>lí tiō kám-kak jú bô-nāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">真正有很多代誌 予你莫名的憤慨<br>真正有很多物件 看起來攏無實在</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">tsin-tsiànn ū tsin tsuē tāi-tsì<br>hōo lí bo̍k-bîng ê hùn-khài<br>tsin-tsiànn ū tsin tsuē mi̍h-kiānn<br>khuànn--khí-lâi lóng bô si̍t-tsāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">古早的道德正義無合這馬的時代</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">kóo-tsá ê tō-tik tsìng-gī bô ha̍p tsit-má ê sî-tāi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">問我是非黑白 我已經攏分袂出來</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">mn̄g guá sī-hui oo-pe̍h<br>guá í-king lóng hun bē tshut-lâi</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">予我一粒善良的心 佮一寡仔愛</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">hōo guá tsi̍t-lia̍p siān-liông ê sim<br>kah tsi̍t-kuá-á ài</span></p>
+			<p class="textParagraph" style="margin-top: 1rem; margin-bottom: 1rem"><span class="text">予我一个活落去的希望 佮期待</span></p>
+			<p class="textParagraphEnglish" style="margin-top: 1rem; margin-bottom: 1rem"><span class="textEnglish">hōo guá tsi̍t-ê ua̍h--lueh ê hi-bāng<br>kah kî-thāi</span></p><br>
+			<p class="descriptionParagraph"><span class="description">〈風在吹 Hong Teh Tshue〉</span></p>
+			<p class="descriptionParagraph"><span class="description">由 滾石國際音樂股份有限公司 授權提供<br>錄音著作為 滾石國際音樂股份有限公司 所有</span></p>
+			<p class="descriptionParagraph"><span class="descriptionEnglish">OP : Rock Music Publishing Co., Ltd.<br>OP : Moonlight Music Co., Ltd.<br>SP : Rock Music Publishing Co., Ltd.</span></p><br>
+			<p class="descriptionParagraph"><span class="description">本片由濟个真人真事改編，但世界觀奠定咧佮現實不同的時空。故人名、地名、機關名等等，部分佮真實歷史相仝。另外因劇情需要所創造的設定，佮現實存在的任何組織、實體、個人毫無關聯，皆屬虛構，毋意針對。</span></p>
+			<p class="descriptionParagraph"><span class="descriptionEnglish">The film is based on a few true stories, but the worldview is different from reality. All names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons, places, buildings, and products is intended or should be inferred.</span></p><br>
+			<p class="descriptionParagraph"><span class="reference">參考資料（References）：</span></p>
+			<ul class="referenceParagraph">
+				<li><span class="reference">[1]&nbsp;&nbsp;&thinsp;&thinsp;陳俊文（2019）。華麗計程車。聯合文學。</span></li>
+				<li><span class="reference">[2]&nbsp;&nbsp;&thinsp;&thinsp;王國春（2020）。我只是個計程車司機：運轉手的小黃日記。凱信企業集團。</span></li>
+				<li><span class="reference">[3]&nbsp;&nbsp;&thinsp;&thinsp;李瓊淑（小辣椒）、詹云茜（Cici）（2020）。計程人生：23 段用愛跳表的旅程。商周出版。</span></li>
+				<li><span class="reference">[4]&nbsp;&nbsp;&thinsp;&thinsp;小野寺史宜（2020）。タクジョ！。実業之日本社。</span></li>
+				<li><span class="reference">[5]&nbsp;&nbsp;&thinsp;&thinsp;張辰漁、莊岳燊、曾沅芷、許雅玲、吳昌峻、陳力航（2021）。社會事—權勢者的勝利手冊：台灣地方政治史的 50 個關鍵字。前衛出版社。</span></li>
+				<li><span class="reference">[6]&nbsp;&nbsp;&thinsp;&thinsp;森山大道（2015）。記録 28 号。Akio Nagasawa Publishing。</span></li>
+				<li><span class="reference">[7]&nbsp;&nbsp;&thinsp;&thinsp;手塚治虫（2004）。ミッドナイト。秋田書店。</span></li>
+				<li><span class="reference">[8]&nbsp;&nbsp;&thinsp;&thinsp;侯孝賢、萬仁、曾壯祥（1983）。兒子的大玩偶。中央電影公司。</span></li>
+				<li><span class="reference">[9]&nbsp;&nbsp;&thinsp;&thinsp;王童（1987）。稻草人。中央電影公司。</span></li>
+				<li><span class="reference">[10] 侯孝賢（1989）。悲情城市。年代有限公司。</span></li>
+				<li><span class="reference">[11] 楊德昌（1991）。牯嶺街少年殺人事件。中央電影公司。</span></li>
+				<li><span class="reference">[12] 陳國富（1993）。只要為你活一天。城市國際有限公司。</span></li>
+				<li><span class="reference">[13] 陳以文、張華坤（2000）。運轉手之戀。中央電影公司。</span></li>
+				<li><span class="reference">[14] 黃信堯（2005）。唬爛 3 小。同喜文化。</span></li>
+				<li><span class="reference">[15] 鍾孟宏（2016）。一路順風。甲上娛樂。</span></li>
+				<li><span class="reference">[16] 黃信堯（2017）。大佛普拉斯。甲上娛樂。</span></li>
+				<li><span class="reference">[17] 장훈（2017）。택시운전사。The Lamp。</span></li>
+				<li><span class="reference">[18] 濱口竜介（2021）。ドライブ・マイ・カー。『ドライブ・マイ・カー』製作委員会。</span></li>
+				<li><span class="reference">[19] 木下麦（2021）。オッドタクシー。P.I.C.S.、OLM。</span></li>
+				<li><span class="reference">[20] Martin Charles Scorsese. (1976). Taxi Driver. Columbia Pictures.</span></li>
+				<li><span class="reference">[21] Patrick Osborne. (2017). Pearl. Evil Eye Pictures, Baraboom Studios, Steelwool Games, Google Spotlight Stories, Google ATAP.</span></li>
+			</ul>
+		</div></div>
+		
+	</div></div>
+</main>
+<!-- 頁腳 -->
+<footer>
+	<!-- 條款彈窗 -->
+	<div id="termsBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
+		<div id="termsTextParagraphContainer">
+		<!-- 條款內容 -->
+		<p class="textParagraph">
+			<span class="termsText">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
+			<span class="termsText">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
+			<span class="termsText">版權聲明</span><br><br>
+			<span class="text">Copyright © 2024&nbsp;&nbsp;Ying-Zhi Chen.<br>All rights reserved.</span><br><br>
+			<span class="text">© 2024&nbsp;&nbsp;陳盈誌&nbsp;&nbsp;版權所有。</span><br><br>
+			<span class="text">本網站由陳盈誌（以下簡稱本人）管理。本網站內容可在註明出處的前提下，分享至社群平台，但禁止將內容重製、修改、編輯，或直接、間接作商業用途使用，除非取得本人同意。</span><br><br>
+			<span class="termsText">免責聲明</span><br><br>
+			<span class="text">本網站內容僅供參考，不對其正確性、完整性、可靠性、適用性及其他方面，提供明示或暗示的任何保證。本網站提供之第三方網站連結，對於該第三方網站內容不承擔任何責任和義務。</span><br><br>
+			<span class="termsText">修改權利</span><br><br>
+			<span class="text">保留修改、刪除、更新網站內容及條款等一切權利，任何更改於最新版本發佈後立即生效。</span><br><br>
+			<span class="termsText">法律相關</span><br><br>
+			<span class="text">瀏覽或使用本網站時，視同使用者已完全瞭解並接受本條款。本網站和使用者之權利義務關係，應以國際網路規範及中華民國相關法規為依據處理、解釋。若有任何爭議以臺灣臺北地方法院為第一審管轄法院。條款如有未盡完善之處，應以最大誠意，依誠實信用、平等互惠之原則，共商解決。</span><br><br>
+			<span class="termsText">西元&nbsp;&nbsp;2024&nbsp;&nbsp;年&nbsp;&nbsp;6&nbsp;&nbsp;月&nbsp;&nbsp;20&nbsp;&nbsp;日</span>
+		</p></div>
+		</div>
+		</div>
+	<!-- 條款按鈕 -->
+	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<!-- 版權宣告 -->
+	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+</footer>
+<!-- 頁腳網址 -->
+<header><div id="websiteBarContainer"><div class="websiteBar"><a href="" target="_self" class="websiteBarText">antonychen.work</a></div></div></header>
+</body>
+</html>

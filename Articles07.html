@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<!-- 網頁名 -->
+    <title>Antony Chen</title>
+    <meta name="Author" contact="Antony Chen">
+    <meta name="Description" content="Walcome to my website! 3D Works, Graphic Arts, Articles...">
+	<meta name="viewport" content="width= device-width, initial-scale = 1">
+	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/favicon.ico"/>
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+	<link href="css/website.css" rel="stylesheet" type="text/css">
+	<script src="javascript/website.js"></script>
+</head>
+<body>
+<header>
+	<!-- 菜單按鈕 -->
+	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
+	<!-- 回到頂端按鈕 -->
+	<div id="iconUpwardContainer"><p onclick="toTop()" id="iconUpward" class="iconImages">arrow_upward</p></div>
+	
+	<!-- 菜單彈窗 -->
+	<nav><div id="menuBox">
+		<div class="darkBackground"></div>
+		<div id="menuBoxContainer">
+			<!-- 菜單按鈕 -->
+			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
+			<br><br><br><br><br>
+			<!-- 菜單項目 -->
+			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
+			<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText">3D&thinsp;Works</a></div>
+			<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
+			<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
+			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
+		</div>
+	</div></nav>
+	
+	<!-- 關於彈窗 -->
+	<div id="aboutBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>國立台灣科技大學 設計系商業設計組&nbsp;&nbsp;畢<br><br>平面設計 / 動態設計/ 3D&thinsp;建模</span>
+			</p>
+			<p class="aboutParagraph">
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house. I Graduated from Taiwan Tech, majoring in commercial design.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 貓咪照片 -->
+		<div class="worksImagesParagraph">
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat1.webp" alt=""></div>
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat2.webp" alt=""></div></div>
+		<!-- 連結小按鈕 -->
+		<div class="snsButtonContainer">
+			<a href="mailto:antony90011199@gmail.com" target="_blank" class="snsButton"><img src="icons/icons8-gmail-logo.svg" alt=""></a>
+			<a href="https://www.behance.net/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-behance.svg" alt=""></a>
+			<a href="http://instagram.com/antonychen_0111" target="_blank" class="snsButton"><img src="icons/icons8-instagram.svg" alt=""></a>
+			<a href="https://www.facebook.com/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-facebook.svg" alt=""></a>
+			<a href="https://www.youtube.com/@antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-youtube.svg" alt=""></a>
+		</div>
+	</div></div></div>
+	
+	<!-- 聯繫彈窗 -->
+	<div id="contactBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="contactClose()" id="iconContactClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<!-- 簡介文字 -->
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>平面設計 / 動態設計/ 3D&thinsp;建模</span><br><br>
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 連結樹按鈕 -->
+		<div id="linkButtonContainer">
+			<div onclick="iconCopy()" class="linkButton">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-gmail-logo.svg" alt=""></div>
+				<p id="linkButtonEmail">antony90011199@gmail.com</p>
+				<p class="iconCopy">content_copy</p>
+			</div>
+			<div class="linkButton"><a href="https://www.behance.net/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-behance.svg" alt=""></div>
+				<p class="linkButtonText">Bēhance</p>
+			</a></div>
+			<div class="linkButton"><a href="http://instagram.com/antonychen_0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-instagram.svg" alt=""></div>
+				<p class="linkButtonText">Instagram</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.facebook.com/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-facebook.svg" alt=""></div>
+				<p class="linkButtonText">Facebook</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.youtube.com/@antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-youtube.svg" alt=""></div>
+				<p class="linkButtonText">Youtube</p>
+			</a></div>
+		</div>
+	</div></div></div>
+</header>
+<!-- 主要內容 -->
+<main>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<a href="Articles.html" target="_self" style="text-decoration: none">
+		<div class="iconWorksCloseContainer"><p style="display: flex" id="iconArticlesClose" class="iconBoxClose">close</p></div></a>
+		
+		<div id="articles07"><div class="textParagraphContainer">
+			<p class="textParagraph"><span class="title">看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）</span><br></p>
+			<p class="textParagraph"><span class="text">撰文：陳盈誌<br><time>2021/07/04</time> 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/01.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">台電各機組發電量 2021/07/03 13:10</span></p>
+			<p class="textParagraph"><span class="text">七、八月第一期離岸風電廠準備要完工併聯發電了，因為疫情延宕，裝置容量 2000 MW 以上的一、二期電廠原本都早該完工。還好公投延期，不然對於核四公投的辯護會更加困難。核能已經因為新北不同意建貯存池，又關一座核二廠一號機，目前只剩下核二廠二號機跟核三廠仍在發電，預計 2025 年全部停止發電。這些運轉四十年，屆齡除役的核能機組，會由新建的燃氣機組和再生能源填補。</span></p>
+			<p class="textParagraph"><span class="text">其中最具爭識的是，大潭電廠增建三接和台中火力發電廠增設燃氣機組。2018 年時任行政院長賴清德提出深澳燃煤發電廠，要使用乾淨的媒（潔淨媒）跟超超臨界技術，被大批網友譏笑，後來宣佈停建由大潭電廠增建三接取代。大潭電廠未來要擴增燃氣機組，補足北部的電力缺口，這樣的話將取代台中火力發電廠成為台灣第一大火力發電廠，但是大潭電廠並沒有自己的液化天然氣接收站，所以必須興建三接（前兩接分別在高雄永安跟台中梧棲）。</span></p>
+			<p class="textParagraph"><span class="text">中火原本要增設燃氣機組，完工之後讓燃煤機組可以在旁待命，平時主要以燃氣發電減少空污。但因為 2018 年主打「市長換人，空氣換新」而勝選的盧秀燕市長，卻堅持中火機組先拆後建，改建案被卡在台中市政府的都審中長達一年半，直到近日經濟部發出特種執照，繞過市府才得以過審。盧秀燕一直放話，中央讓中火改建越蓋越大、中部人承擔全台最大供電量，但是台中近年發展迅速，早已成為全台用電量最大的城市，台中所有的電廠發電量早已不夠自己使用，還需要像是苗栗的通宵火力發電廠支援，難道不僅南電北送，南電還必須中送？</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/02.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">位於台中市龍井區的台中火力發電廠</span></p>
+			<p class="textParagraph"><span class="text">重啟核四、珍愛藻礁背景：2017 年台電備轉容量率一度非常緊迫，還發生 815 大停電、深澳燃煤電廠和開發綠能的爭議，於是核能流言終結者（核終）的創辦人黃士修提倡重啟核四並發起公投連署。但為了符合公投法的規定「一案決定一事」，僅先在 2018 年通過「以核養綠」公投修改法令，重啟核四直到今年才要公民投票。</span></p>
+			<p class="textParagraph"><span class="text">「您是否同意核四啟封商轉發電？」<br>同意＝核四重新評估、續建；不同意＝核四繼續封存。<br><br>「您是否同意第三天然氣接收遷離桃園大潭藻礁海岸及海域？』<br>同意＝三接停工、另尋氣源；不同意＝三接續建、穩定供氣，影響部分生態。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/03.webp" loading="lazy" alt=""></div></div>
+			<p class="textParagraph"><span class="text">珍愛藻礁（三接遷離）公投由潘忠政提出，要求第三天然氣接收站能遷離桃園外海，避免影響藻礁。</span></p>
+			<p class="textParagraph"><span class="text">首先，台灣未來用電量將逐年攀升，如果什麼都不做真的會缺電。就算是核能支持者也有部分人不支持重啟核四，認為核四已經建造太久，不如建造新的核五、 核六來得安全。但畢竟核一、核二、核三、蘭嶼貯存場都是威權時代下的產物，民主化後的台灣，光是決定核五蓋哪裡、核廢料放哪邊，相信都是很難實現的。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/04.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">蘭嶼貯存場興建時並未經過當地原住民族人的知情同意</span></p>
+			<p class="textParagraph"><span class="text">核四最大的問題是重啟的不確定性。電廠現址地層下方以及外海，都疑似發現有活動斷層，即便正方認為核四耐震標準相當高，且斷層不一定屬於活動斷層，或者其數萬年才活動一次，這些可能性都必須接受更多的評估。而經過這二十多年建建停停，廠商要重標、零件要重買，測試也得重新做起。種種因素相加起來，我認為將遠遠超出正方宣傳的四年方可重啟，反方陳述的七甚至十年以上的時程可信度更高。</span></p>
+			<p class="textParagraph"><span class="text">就算真的只花七年便將核四商轉，屆時核四也僅占發電量7%左右，對未來的供電缺口幫助不大。與其將這些經費放在成本越來越高的核能上，不如挹注在更有前瞻性的綠能上。近年來各國大力推動再生能源，技術發展使得綠電越來越便宜，效益並不如以往想像地低（綠能不包含核能，指太陽能、風能、地熱等）。許多國際大企業進駐台灣，將遵循「RE100」的標準採購綠電，大國們也把再生能源發展目標訂在 2050 年達 40% 以上。台灣擁有得天獨厚的離岸風電風場，更應該著手發展。第一期離岸風電原本預計年底完工，但因為疫情延至明年。不過太陽光電已能在酷暑冷氣全開的時候，貢獻 12% 左右電力，使得尖峰時段可以不用像以往燒更多煤因應。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/05.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">2020 至 2050 年 能源佔比趨勢</span></p>
+			<p class="textParagraph"><span class="text">部分人認為綠能不夠穩定，的確如此，所以發展綠能的同時，都會和天然氣相互搭配。雖然天然氣仍然會排放溫室氣體，但造成的空污較燃煤低很多，且最大的優點是機組發電量升到滿載耗時僅需兩個半小時，比燃煤的八小時寬裕得多，可以在用電量驟升時快速調度，始供電更加穩定。</span></p>
+			<p class="textParagraph"><span class="text">而問題是，藻礁真的有必要為了人類用電而犧牲嗎？為什麼三接不能直接遷離？因為燃煤機組陸續替換成燃氣機組，第一和第二接收站（高雄永安和台中港）其實利用率皆已超出原有設計，不只現在的三接，四接（基隆）和五接（台中港)都已在規劃當中。當然北部必須要有自己的接收站，而其他備選地點如台北港，腹地有限，且拉這麼長的管線至大潭電廠並非沒有風險，也需要更多時間評估，可能來不及支應燃氣機組的新建進度，需要維持更久的中氣北送。</span></p>
+			<p class="textParagraph"><span class="text">我家再北一點就是通霄火力發電廠，即將成為台灣第一大火力（天然氣）電廠，一間就可以補足核四廠不重啟的用電缺口，還能讓興達及台中電廠降載。現在台中港接收的天然氣供中部發電已經吃緊，若再分給大潭電廠，台中火力發電廠由燃煤轉為全燃氣的轉型時程將大大減緩。</span></p>
+			<p class="textParagraph"><span class="text">蔡英文政府為了避免三接影響藻礁，已經將馬政府時期擬定的開發面積縮減至十分之一，且外推再外推，希望將船隻和管道的影響減至最輕，剩下的是信不信任政府的問題。台灣最大的幾個環保團體，如地球公民和台灣環境保護聯盟，都支持政府的三階再外推方案了，還呼籲大家投下不同意票，我也沒比他們更懂環保議題，所以我選擇相信他們的專業評估跟監督政府的職責。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/06.webp" loading="lazy" alt=""></div></div>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/07.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description"><br>地球公民和台灣環境保護聯盟相繼表態支持行政院的折衷方案</span></p>
+			<p class="textParagraph"><span class="text">反萊豬公投，此案領銜人是國民黨立委林為洲。聽起來是食安問題，但其實也關乎到台灣在國際貿易上的誠信。</span></p>
+			<p class="textParagraph"><span class="text">「你是否同意政府應全面禁止進口含有瘦肉精（萊克多巴胺等乙型受體素）豬隻之肉品、內臟及其相關產製品？」<br>同意＝萊豬不可進口，影響國際貿易；不同意＝萊豬繼續進口，依然不可超過國際標準。</span></p>
+			<p class="textParagraph"><span class="text">萊克多巴胺是豬和牛的飼料添加物，可促進動物肌肉生長，使脂肪的生成量減少。萊克多巴胺水溶性高、 代謝快，約 90% 可在 24 小時內經由尿液或糞便排出體外，民進黨在 2020 開放含萊劑的美豬進口。馬英九在 2012 決定開放萊牛進口，當時民進黨大力反對，但後來萊劑國際標準訂定後民進黨就決定退讓。因為兩黨都知道國際標準擺在那，如果想和別人做生意就不能雙標。時至今日，台灣人早就吃了許多萊牛，但現在國民黨為了自己的政治利益，再度把萊克多巴胺搬上檯面，令人費解。</span></p>
+			<p class="textParagraph"><span class="text">部分人認為，為什麼不能像產銷履歷把含有萊劑的豬肉標示出來，而不像現在只標示豬肉產地。因為萊克多巴胺是牲畜的飼料添加物， 而不是人類的食品添加物，不用如成分表一個一個列出來，就如同我們也不會知道農作物灑了什麼種農藥一樣。而部分美豬有使用萊劑，只要不吃美豬便不會吃到萊劑，因此沒必要差別待遇。那為什麼台灣豬不用萊劑？台灣豬好不容易等到口蹄疫能夠拔針出口，為了要和他國做出市場區隔而不用萊克多巴胺。日本和台灣一樣，皆是國內禁止使用萊劑養豬但開放進口，歐盟則因為不遵循國際標準，曾被美國告上 WTO，受到美國每年近三十億台幣的制裁。若是此案通過，可預見的是未來加入 CPTPP 或台美簽訂貿易協定時將更加困難。萊劑風險極小，但拒絕的代價巨大。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/08.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">圖源：農委會主委 陳吉仲</span></p>
+			<p class="textParagraph"><span class="text">「你是否同意公民投票案公告成立後半年內，若該期間內遇有全國性選舉時，在符合公民投票法規定之情形下，公民投票應與該選舉同日舉行？」</span></p>
+			<p class="textParagraph"><span class="text">公投綁大選，此案領銜人是國民黨前主席江啟臣。公投綁大選這樣的簡稱不太好，仔細審閱題目其實是說，通過的話，大選前六個月內成案的公投應與選舉合併舉行，但如果比六個月更之前就成案的話，一樣得在兩個選舉年之間的八月舉行公投，壓根沒有減少到選務工作，民眾依然要每年回鄉投票。而且不會有領銜人願意在六個月以外的時間送交連署書，這樣只會造成公投的公眾討論時間壓縮到六個月內。若只有兩、三個月，不只公眾討論時間不足，連選務人員都得急急忙忙規劃。</span></p>
+			<p class="textParagraph"><span class="text">部分人認為連署階段就會有公眾討論，事實上媒體對於報導公投興致缺缺。像今年八月原訂要舉行的時間，社會還在因為疫苗和振興吵翻天，十月初大眾也都在討論陳柏惟的罷免案，根本沒什麼人在乎公投。這樣的公投題目在設計上有很大的問題，用公投來決定公投制度本身也是件弔詭的事。有些人表示通過之後應該以公投能夠綁大選作原則性的修法，我相信正、反雙方的出發點都是希望增加投票率，但在 2018 年嘗試實行一次公投綁大選後，人和事分開決定還是有其必要性。公眾討論比較不會聚焦在市長或總統要選誰、他們今天爬樹還是用屁股走路了沒，政治人物也較不會因為所屬政黨而不敢表態個人意見（如侯友宜和林姿妙表態不支持重啟核四）。</span></p>
+			<p class="textParagraph"><span class="text">瑞士一年約有四次公投，同樣是人事脫鉤。我目前認為移轉投票（選前數個月申請居住地附近投票）是解決低投票率的有效作法，日前立法院已在進行初審，期待相關措施能夠更加完善。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/09.webp" loading="lazy" alt=""></div><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/10.webp" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">2018 年地方選舉附帶公投多達十案，造成不少亂象</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看 2021 四大公投案（重啟核四、珍愛藻礁、反萊豬、公投綁大選）/11.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">核一、核二廠所在地的新北市，市長侯友宜不願正面表態支持重啟核四</span></p>
+		</div></div>
+		
+	</div></div>
+</main>
+<!-- 頁腳 -->
+<footer>
+	<!-- 條款彈窗 -->
+	<div id="termsBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
+		<div id="termsTextParagraphContainer">
+		<!-- 條款內容 -->
+		<p class="textParagraph">
+			<span class="termsText">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
+			<span class="termsText">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
+			<span class="termsText">版權聲明</span><br><br>
+			<span class="text">Copyright © 2024&nbsp;&nbsp;Ying-Zhi Chen.<br>All rights reserved.</span><br><br>
+			<span class="text">© 2024&nbsp;&nbsp;陳盈誌&nbsp;&nbsp;版權所有。</span><br><br>
+			<span class="text">本網站由陳盈誌（以下簡稱本人）管理。本網站內容可在註明出處的前提下，分享至社群平台，但禁止將內容重製、修改、編輯，或直接、間接作商業用途使用，除非取得本人同意。</span><br><br>
+			<span class="termsText">免責聲明</span><br><br>
+			<span class="text">本網站內容僅供參考，不對其正確性、完整性、可靠性、適用性及其他方面，提供明示或暗示的任何保證。本網站提供之第三方網站連結，對於該第三方網站內容不承擔任何責任和義務。</span><br><br>
+			<span class="termsText">修改權利</span><br><br>
+			<span class="text">保留修改、刪除、更新網站內容及條款等一切權利，任何更改於最新版本發佈後立即生效。</span><br><br>
+			<span class="termsText">法律相關</span><br><br>
+			<span class="text">瀏覽或使用本網站時，視同使用者已完全瞭解並接受本條款。本網站和使用者之權利義務關係，應以國際網路規範及中華民國相關法規為依據處理、解釋。若有任何爭議以臺灣臺北地方法院為第一審管轄法院。條款如有未盡完善之處，應以最大誠意，依誠實信用、平等互惠之原則，共商解決。</span><br><br>
+			<span class="termsText">西元&nbsp;&nbsp;2024&nbsp;&nbsp;年&nbsp;&nbsp;6&nbsp;&nbsp;月&nbsp;&nbsp;20&nbsp;&nbsp;日</span>
+		</p></div>
+		</div>
+		</div>
+	<!-- 條款按鈕 -->
+	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<!-- 版權宣告 -->
+	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+</footer>
+<!-- 頁腳網址 -->
+<header><div id="websiteBarContainer"><div class="websiteBar"><a href="" target="_self" class="websiteBarText">antonychen.work</a></div></div></header>
+</body>
+</html>

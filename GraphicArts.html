@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<!-- 網頁名 -->
+    <title>Antony Chen</title>
+    <meta name="Author" contact="Antony Chen">
+    <meta name="Description" content="Walcome to my website! 3D Works, Graphic Arts, Articles...">
+	<meta name="viewport" content="width= device-width, initial-scale = 1">
+	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/favicon.ico"/>
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+	<link href="css/website.css" rel="stylesheet" type="text/css">
+	<script src="javascript/website.js"></script>
+</head>
+<body>
+<header>
+	<!-- 菜單按鈕 -->
+	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
+	<!-- 回到頂端按鈕 -->
+	<div id="iconUpwardContainer"><p onclick="toTop()" id="iconUpward" class="iconImages">arrow_upward</p></div>
+	
+	<!-- 菜單彈窗 -->
+	<nav><div id="menuBox">
+		<div class="darkBackground"></div>
+		<div id="menuBoxContainer">
+			<!-- 菜單按鈕 -->
+			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
+			<br><br><br><br><br>
+			<!-- 菜單項目 -->
+			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
+			<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText">3D&thinsp;Works</a></div>
+			<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
+			<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
+			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
+		</div>
+	</div></nav>
+	
+	<!-- 關於彈窗 -->
+	<div id="aboutBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>國立台灣科技大學 設計系商業設計組&nbsp;&nbsp;畢<br><br>平面設計 / 動態設計/ 3D&thinsp;建模</span>
+			</p>
+			<p class="aboutParagraph">
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house. I Graduated from Taiwan Tech, majoring in commercial design.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 貓咪照片 -->
+		<div class="worksImagesParagraph">
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat1.webp" alt=""></div>
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat2.webp" alt=""></div></div>
+		<!-- 連結小按鈕 -->
+		<div class="snsButtonContainer">
+			<a href="mailto:antony90011199@gmail.com" target="_blank" class="snsButton"><img src="icons/icons8-gmail-logo.svg" alt=""></a>
+			<a href="https://www.behance.net/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-behance.svg" alt=""></a>
+			<a href="http://instagram.com/antonychen_0111" target="_blank" class="snsButton"><img src="icons/icons8-instagram.svg" alt=""></a>
+			<a href="https://www.facebook.com/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-facebook.svg" alt=""></a>
+			<a href="https://www.youtube.com/@antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-youtube.svg" alt=""></a>
+		</div>
+	</div></div></div>
+	
+	<!-- 聯繫彈窗 -->
+	<div id="contactBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="contactClose()" id="iconContactClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<!-- 簡介文字 -->
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>平面設計 / 動態設計/ 3D&thinsp;建模</span><br><br>
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 連結樹按鈕 -->
+		<div id="linkButtonContainer">
+			<div onclick="iconCopy()" class="linkButton">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-gmail-logo.svg" alt=""></div>
+				<p id="linkButtonEmail">antony90011199@gmail.com</p>
+				<p class="iconCopy">content_copy</p>
+			</div>
+			<div class="linkButton"><a href="https://www.behance.net/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-behance.svg" alt=""></div>
+				<p class="linkButtonText">Bēhance</p>
+			</a></div>
+			<div class="linkButton"><a href="http://instagram.com/antonychen_0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-instagram.svg" alt=""></div>
+				<p class="linkButtonText">Instagram</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.facebook.com/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-facebook.svg" alt=""></div>
+				<p class="linkButtonText">Facebook</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.youtube.com/@antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-youtube.svg" alt=""></div>
+				<p class="linkButtonText">Youtube</p>
+			</a></div>
+		</div>
+	</div></div></div>
+</header>
+<!-- 主要內容 -->
+<main>
+	<!-- 作品列表 -->
+	<div id="graphicBox">
+	<div class="worksBoxContainerContainerContainer">
+	
+	<div id="graphicBox01">
+	<a href="GraphicArts01.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<!-- 標題 -->
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">灣流音樂祭<br>Uân-liû Native Languages<br>Music Festival</span></p>
+		<!-- 日期 --><!-- 標籤 -->
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2020/10/17</time><br>Visual Identity</span></p></div>
+		<!-- 縮圖 -->
+		<div class="worksBoxImagesContainer"><img src="works/灣流音樂祭 Uân-liû Native Languages Music Festival/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox02">
+	<a href="GraphicArts02.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">熱天酣眠 舞台劇<br>Summertime Daze Theater</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2022/06/27</time><br>Visual Identity</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/熱天酣眠 舞台劇 Summertime Daze Theater/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox03">
+	<a href="GraphicArts03.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">秀鳳中式婚紗<br>Siou Fong Chinese Wedding Dress</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2021/01/11</time><br>Visual Identity</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/秀鳳中式婚紗 Siou Fong Chinese Wedding Dress/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox04">
+	<a href="GraphicArts04.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">國會現況<br>Political Cartoon about Legislative Yuan</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2024/05/21</time><br>Poster</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/國會現況 Political Cartoon about Taiwan's Legislative Yuan/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox05">
+	<a href="GraphicArts05.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">二〇二〇總統大選<br>Big Brother Xi is Watching You</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/12/22</time><br>Poster</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/二〇二〇總統大選 Big Brother Xi is Watching You/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox06">
+	<a href="GraphicArts06.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">中華台北人<br>Chinese Taipei People</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2021/01/11</time><br>Poster</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/中華台北人 Chinese Taipei People/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox07">
+	<a href="GraphicArts07.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">全球反極權大遊行<br>Global Anti-Totalitarianism March</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/09/29</time><br>Photography</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/全球反極權大遊行 Global Anti-Totalitarianism March Taiwan/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox08">
+	<a href="GraphicArts08.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">第 17 屆臺灣同志遊行<br>17th Taiwan LGBT Pride</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/10/26</time><br>Photography</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/第17屆臺灣同志遊行 17th Taiwan LGBT Pride/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox09">
+	<a href="GraphicArts09.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">臺科大設計系新生宿營<br>NTUST TTDD Orientation Camp</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2020/10/09</time><br>Key Visual</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/臺科大設計系新生宿營 NTUST TTDD Orientation Camp/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox10">
+	<a href="GraphicArts10.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">臺科大設計系新生週<br>NTUST TTDD Frashman Week</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2020/09/10</time><br>Key Visual</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/臺科大設計系新生週 NTUST TTDD Frashman Week/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox11">
+	<a href="GraphicArts11.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">習維尼<br>Winnie the Pooh and the Virus</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2020/05/07</time><br>Phenakistoscope</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/習維尼 Winnie the Pooh and the Virus/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox12">
+	<a href="GraphicArts12.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">Doraemon Font</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2020/06/16</time><br>Font Design</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/Doraemon Font/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox13">
+	<a href="GraphicArts13.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">吃人的陋塾 —— 台灣補習文化互動繪本<br>Thought Crime: About the<br>Cram School Industry in Taiwan</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2018/12/24</time><br>Picture Book</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/吃人的陋塾 Thought Crime/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox14">
+	<a href="GraphicArts14.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">臺中高工 108 級畢業紀念冊封面設計<br>TCIVS 2019 Yearbook's Cover Design</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/03/04</time><br>Cover Design</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/臺中高工 108 級畢業紀念冊封面設計 TCIVS 2019 Yearbook's Cover Design/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox15">
+	<a href="GraphicArts15.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">臺中高工 周年紀念大學 T、紀念 T 恤<br>TCIVS 80th &amp; 81st Anniversary<br>Sweatshirt and T-shirt</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2019/03/29<br>2018/03/12</time><br>Graphic Design</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/臺中高工 81 周年紀念大學T、80周年紀念T恤 TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox16">
+	<a href="GraphicArts16.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">臺中高工圖文傳播科 107 級送舊<br>TCIVS GAC Farewell Party</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2018/04/27</time><br>Visual Identity</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/臺中高工圖文傳播科 107 級送舊 TCIVS GAC Farewell Party/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+	
+	<div id="graphicBox17">
+	<a href="GraphicArts17.html" style="text-decoration: none">
+	<div class="worksBoxContainerContainer">
+	<div class="worksBoxContainer">
+		<div class="worksBoxImagesCover"></div>
+		<div class="worksBoxParagraphContainer">
+		<p class="worksBoxTitleParagraph"><span class="worksBoxTitle">臺中高工圖文傳播科 108 級科學會<br>TCIVS GAC 2017-2018<br>Student Association</span></p>
+		<p class="worksBoxTagParagraph"><span class="worksBoxTagText"><time>2017/09/16 -<br>2018/06/12</time><br>Key Visual</span></p></div>
+		<div class="worksBoxImagesContainer"><img src="works/臺中高工圖文傳播科 108 級科學會 TCIVS GAC 2017-2018 Student Association/image.webp" loading="lazy" alt=""></div>
+	</div></div></a></div>
+		
+	</div></div>
+</main>
+<!-- 頁腳 -->
+<footer>
+	<!-- 條款彈窗 -->
+	<div id="termsBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
+		<div id="termsTextParagraphContainer">
+		<!-- 條款內容 -->
+		<p class="textParagraph">
+			<span class="termsText">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
+			<span class="termsText">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
+			<span class="termsText">版權聲明</span><br><br>
+			<span class="text">Copyright © 2024&nbsp;&nbsp;Ying-Zhi Chen.<br>All rights reserved.</span><br><br>
+			<span class="text">© 2024&nbsp;&nbsp;陳盈誌&nbsp;&nbsp;版權所有。</span><br><br>
+			<span class="text">本網站由陳盈誌（以下簡稱本人）管理。本網站內容可在註明出處的前提下，分享至社群平台，但禁止將內容重製、修改、編輯，或直接、間接作商業用途使用，除非取得本人同意。</span><br><br>
+			<span class="termsText">免責聲明</span><br><br>
+			<span class="text">本網站內容僅供參考，不對其正確性、完整性、可靠性、適用性及其他方面，提供明示或暗示的任何保證。本網站提供之第三方網站連結，對於該第三方網站內容不承擔任何責任和義務。</span><br><br>
+			<span class="termsText">修改權利</span><br><br>
+			<span class="text">保留修改、刪除、更新網站內容及條款等一切權利，任何更改於最新版本發佈後立即生效。</span><br><br>
+			<span class="termsText">法律相關</span><br><br>
+			<span class="text">瀏覽或使用本網站時，視同使用者已完全瞭解並接受本條款。本網站和使用者之權利義務關係，應以國際網路規範及中華民國相關法規為依據處理、解釋。若有任何爭議以臺灣臺北地方法院為第一審管轄法院。條款如有未盡完善之處，應以最大誠意，依誠實信用、平等互惠之原則，共商解決。</span><br><br>
+			<span class="termsText">西元&nbsp;&nbsp;2024&nbsp;&nbsp;年&nbsp;&nbsp;6&nbsp;&nbsp;月&nbsp;&nbsp;20&nbsp;&nbsp;日</span>
+		</p></div>
+		</div>
+		</div>
+	<!-- 條款按鈕 -->
+	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<!-- 版權宣告 -->
+	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+</footer>
+<!-- 頁腳網址 -->
+<header><div id="websiteBarContainer"><div class="websiteBar"><a href="" target="_self" class="websiteBarText">antonychen.work</a></div></div></header>
+</body>
+</html>

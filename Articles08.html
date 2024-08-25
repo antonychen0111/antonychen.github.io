@@ -20,13 +20,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
     
 	<link href="css/website.css" rel="stylesheet" type="text/css">
-	<script src="javascript/index.js"></script>
+	<script src="javascript/website.js"></script>
 </head>
 <body>
 <header>
-	<!-- 讀取條 -->
-	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>
-	
 	<!-- 菜單按鈕 -->
 	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
 	<!-- 回到頂端按鈕 -->
@@ -38,6 +35,7 @@
 		<div id="menuBoxContainer">
 			<!-- 菜單按鈕 -->
 			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
 			<br><br><br><br><br>
 			<!-- 菜單項目 -->
 			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
@@ -47,37 +45,6 @@
 			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
 		</div>
 	</div></nav>
-	
-	<!-- 菜單欄 -->
-	<nav><div id="menuBar">
-		<div id="menuBarContainer">
-		<!-- 菜單項目 -->
-		<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
-		<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText" style="text-decoration: ">3D&thinsp;Works</a></div>
-		<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
-		<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
-		<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
-		</div>
-	</div></nav>
-	
-	<!-- 首頁圖 -->
-	<div id="indexImages">
-		<!-- 首頁圖前後按鈕 -->
-		<div id="iconIndexImagesNextContainer"><p onclick="indexImagesNext()" id="iconIndexImagesNext" class="iconImages">East</p></div>
-		<div id="iconIndexImagesPreviousContainer"><p onclick="indexImagesPrevious()" id="iconIndexImagesPrevious" class="iconImages">West</p></div>
-		<!-- 首頁圖1 -->
-		<div id="indexImagesContainerContainer1">
-		<div class="indexImagesContainer"><img src="images/truck.gif" alt=""></div>
-		<!-- 首頁圖1小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="images/520.webp" alt=""></a><p class="description" style="margin: 0">520 農民運動　　圖：邱萬興</p></div>
-		</div>
-		<!-- 首頁圖2 -->
-		<div id="indexImagesContainerContainer2">
-		<div class="indexImagesContainer"><img src="images/taxi.gif" alt=""></div>
-		<!-- 首頁圖2小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0">公館計程車械鬥　圖：吳景騰</p></div>
-		</div>
-	</div>
 	
 	<!-- 關於彈窗 -->
 	<div id="aboutBox">
@@ -179,6 +146,44 @@
 		</div>
 	</div></div></div>
 </header>
+<!-- 主要內容 -->
+<main>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<a href="Articles.html" target="_self" style="text-decoration: none">
+		<div class="iconWorksCloseContainer"><p style="display: flex" id="iconArticlesClose" class="iconBoxClose">close</p></div></a>
+		
+		<div id="articles08"><div class="textParagraphContainer">
+			<p class="textParagraph"><span class="title">2020 九合一選舉 總統及不分區立委政黨票 催票文</span><br></p>
+			<p class="textParagraph"><span class="text">撰文：陳盈誌<br><time>2020/01/10</time> 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
+			<p class="textParagraph"><span class="text">#宣告我的投票意志<br>才剛要滿 19 歲，不過先假設我明天可以投票。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/01.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">大選前多位網紅收到邀約以標籤「宣告我的投票意志」作政治表態，並且能夠獲得邀稿費</span></p>
+			<p class="textParagraph"><span class="text">政黨票：</span></p>
+			<p class="textParagraph"><span class="text">難得有一個政黨，12 號 綠黨 在同性婚姻、安樂死合法化、再生能源、反核、廢除死刑、墮胎權、醫療用大麻合法化、交通改革，和我個人的立場 100% 相符。但在中共步步進逼下，抗中保台是我目前的第一優先，並且 5 號 台灣基進 是現在最有可能進入國會的小黨，所以政黨票我會留給基進。</span></p>
+			<p class="textParagraph"><span class="text">6 號 時代力量，小黨已經人數不多了，仍然因為先前的路線分歧（是否表態力挺蔡英文連任以及對柯文哲的態度），造成一波波退黨潮，現在可以理解為黃國昌一派掌控的政黨。對比老牌大黨，14 號 民進黨，即使有新潮流、正國會、謝系、蘇系等派系，但透過不斷更新黨綱決議文，確保黨的總體價值貼近台灣主流民意。特別是黨員經歷初選競爭後大多能保持團結，就比國民黨檯面下暗鬥好太多了。大黨雖有許多像柯建銘、管碧玲等蟬聯多屆的立委，形象不比黨內新生代清新，可是他們正是在立法院維持法案與議事品質的關鍵。去年林飛帆、吳濬彥等人的加入注入新血，以及吳怡農、謝佩芬、賴品妤的參選，更是證明他們是有能力走入下個世代的政黨。大黨有許多深耕地方的立委，常因為地方民意而對於進步法案有所顧忌。畢竟身為執政黨必須廣納各界歧見、向中間靠攏，推行政策就常常不太靈活，台獨立場也漸漸淡化成中華民國台灣 （偏華獨）。</span></p>
+			<p class="textParagraph"><span class="text">15 號 台灣民眾黨，這個黨足夠讓我花一整段介紹。台北市第五選區，他們派出徐立信對抗現任立委林昶佐，但徐立信去年才剛當選議員馬上落跑，民眾黨不就成為自己口中一樣爛的藍綠了嗎？</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/02.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">圖源：台灣民眾黨 Facebook</span></p>
+			<p class="textParagraph"><span class="text">民眾黨台北市第七選區立委候選人蔡宜芳：「十五塊的肥皂你敢用嗎？大家敢洗嗎？」暗指民進黨其他選區的吳怡農有賄選嫌疑，結果事實上一顆肥皂根本不到十塊。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/03.webp" loading="lazy" alt=""></div></div>
+			<p class="textParagraph"><span class="text">郭台銘、柯文哲支持的新北市第十選區候選人李縉穎，先前在 PTT 上針對國民黨初選，引用民調指韓國瑜將在初選勝出，呼籲網友力挺郭台銘。民眾黨中評委賴俊銘：「我當過裝甲車領導士官，我可以碾壓民進黨垃圾！」</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/04.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">圖源：台灣綠黨 Facebook</span></p>
+			<p class="textParagraph"><span class="text">以往我很少提及柯文哲，畢竟年輕人還有一大佔比是柯粉，但他現在已經表態可能參選 2024，所以得特別站出來說「不要再把柯文哲當做政治素人」。2014 年民進黨的借將把柯文哲塑造出突破藍綠高牆的清新形象，現在看來全是笑話。柯文哲好的不學，學起韓國瑜。造謠陳菊債留子孫三千億、影射民進黨養網軍被韓國瑜拿去當證據。想抨擊民進黨人士是新潮流，但對方明明是謝系人馬。前兩天，曾經是柯文哲學生的醫師爆料，在台大醫院時期曾經因為接待中國參訪團爆發一些誤會，柯文哲飆罵護理長。而民眾黨表示沒有這回事，要提告那名醫師，結果護理長的老公跳出來表示一切屬實。如果說 2014 的柯文哲給人的感覺是希望、翻轉，2019 的柯文哲就是仇恨和墮落。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/05.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">圖源：61Chi Art</span></p>
+			<p class="textParagraph"><span class="text">無論明天結果怎樣，不會單單因為一次選舉「台灣變香港」、或是 2020 成為最後一次總統大選，所以假如韓國瑜當選或者國民黨加民眾黨過半會發生什麼事？美劇《核爆家園》：「謊言的代價是什麼？並不是我們會將它們當成事實，而是當我們聽到夠多謊言之後，就再也認不清事實了。」若韓國瑜沒有徹底大敗代表以後像他操作仇恨選舉、主打對立牌的政治人物將層出不窮。將會更常聽到「那些掛著今日香港、明日台灣的年輕人，都是被操縱的棋子，政客只是顧他們的選情啦！」、「投票幹嘛，跟人家在那邊跟風」、「你又不是同性戀，幹嘛支持同婚？」、「只是因為大家支持而支持，一群盲目的大學生」、「你被〇〇〇洗腦」「你不要那麼偏激」、「藍綠一樣爛」、「你不懂飲水思源，以前國民黨……」。</span></p>
+			<p class="textParagraph"><span class="text">電影《脫歐之戰》講述行銷公司如何利用大數據與投放式廣告，針對各個群體和同溫層下手，用盡一切謊言造謠、假專家假新聞，使得脫歐派贏得公投，相同的情況在美國、巴西都發生了。2016 年美國總統大選前，所有報刊雜誌都篤定希拉蕊會當選，結果都會區的進步派年輕人輕敵不去投票，讓掌握美國中西部的川普勝選。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2020 九合一選舉 總統及不分區立委政黨票 催票文/06.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">電影《脫歐之戰》海報</span></p>
+			<p class="textParagraph"><span class="text">葉丙成教授曾說：「希望畢業的學生，你們能有「我能改變這個世界的信心」。」根據調查，認為自己的一票影響力不大的人，越會認同「藍綠一樣爛」、「統獨是假議題」、「少我一票不會怎樣」、「投誰都沒差」、「政治好髒我不想碰」。所以最後我要跟那些人說，「如果期中期末考都得花了兩三天、一兩個禮拜讀書，怎麼會覺得投誰、投哪個黨進投票所前再決定就好了？」即便這塊島上有著七百萬的反同勢力，以及將近 40% 人口組成的保守陣營，他們可能帶著異樣的眼光、說著不良善的話語，甚至充斥在你我身邊。但他們依舊是台灣人，明天過後，將是社會修補工程的開始。天祐台灣。</span></p>
+		</div></div>
+		
+	</div></div>
+</main>
 <!-- 頁腳 -->
 <footer>
 	<!-- 條款彈窗 -->

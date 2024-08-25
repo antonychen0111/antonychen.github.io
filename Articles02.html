@@ -20,13 +20,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
     
 	<link href="css/website.css" rel="stylesheet" type="text/css">
-	<script src="javascript/index.js"></script>
+	<script src="javascript/website.js"></script>
 </head>
 <body>
 <header>
-	<!-- 讀取條 -->
-	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>
-	
 	<!-- 菜單按鈕 -->
 	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
 	<!-- 回到頂端按鈕 -->
@@ -38,6 +35,7 @@
 		<div id="menuBoxContainer">
 			<!-- 菜單按鈕 -->
 			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="index.html" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
 			<br><br><br><br><br>
 			<!-- 菜單項目 -->
 			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
@@ -47,37 +45,6 @@
 			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
 		</div>
 	</div></nav>
-	
-	<!-- 菜單欄 -->
-	<nav><div id="menuBar">
-		<div id="menuBarContainer">
-		<!-- 菜單項目 -->
-		<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
-		<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText" style="text-decoration: ">3D&thinsp;Works</a></div>
-		<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
-		<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
-		<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
-		</div>
-	</div></nav>
-	
-	<!-- 首頁圖 -->
-	<div id="indexImages">
-		<!-- 首頁圖前後按鈕 -->
-		<div id="iconIndexImagesNextContainer"><p onclick="indexImagesNext()" id="iconIndexImagesNext" class="iconImages">East</p></div>
-		<div id="iconIndexImagesPreviousContainer"><p onclick="indexImagesPrevious()" id="iconIndexImagesPrevious" class="iconImages">West</p></div>
-		<!-- 首頁圖1 -->
-		<div id="indexImagesContainerContainer1">
-		<div class="indexImagesContainer"><img src="images/truck.gif" alt=""></div>
-		<!-- 首頁圖1小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/1988年臺灣農民運動" target="_blank"><img src="images/520.webp" alt=""></a><p class="description" style="margin: 0">520 農民運動　　圖：邱萬興</p></div>
-		</div>
-		<!-- 首頁圖2 -->
-		<div id="indexImagesContainerContainer2">
-		<div class="indexImagesContainer"><img src="images/taxi.gif" alt=""></div>
-		<!-- 首頁圖2小圖 -->
-		<div class="indexImagesContainerSmall"><a href="https://zh.wikipedia.org/zh-tw/臺北計程車騷亂" target="_blank"><img src="images/taxi_19950817.webp" alt=""></a><p class="description" style="margin: 0">公館計程車械鬥　圖：吳景騰</p></div>
-		</div>
-	</div>
 	
 	<!-- 關於彈窗 -->
 	<div id="aboutBox">
@@ -179,6 +146,25 @@
 		</div>
 	</div></div></div>
 </header>
+<!-- 主要內容 -->
+<main>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<a href="Articles.html" target="_self" style="text-decoration: none">
+		<div class="iconWorksCloseContainer"><p style="display: flex" id="iconArticlesClose" class="iconBoxClose">close</p></div></a>
+		
+		<div id="articles02"><div class="textParagraphContainer">
+			<p class="textParagraph"><span class="title">2024 總統選舉 看柯文哲「非科學、不務實」的能源政策</span><br></p>
+			<p class="textParagraph"><span class="text">撰文：陳盈誌<br><time>2023/11/01</time> 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/2024 總統選舉 看柯文哲「非科學、不務實」的能源政策/01.webp" loading="lazy" alt=""></div></div>
+			<p class="textParagraph"><span class="text">柯文哲在今年 8/9 曾表示 2030 年再生能源佔比要達到 40%，近日可能發現實在太困難又改成了 30%。問題是在經濟部的規劃中，2030 年保守估計本來就能達 27%。至於燃氣取代燃煤，最大阻礙是天然氣接收站太少。柯文哲在基隆外木山蓋四接的議題上不正面表態，說希望台電跟環保團體兩方公開辯論來解決問題，原來大家投票是選辯論主持人而不是政治人物？柯文哲的核能主張更是政治語言的話術。核四重啟至少需要十年的時間，更不用說現在從零開始規劃新的核電廠了。民主化後的台灣選址跟環評時都相當費時，因此要達成 2030 年核能佔比 10% 的目標，只能靠重啟核一或核二加核三繼續延役。然而，現存核電廠也有燃料棒使用後無處安放的問題，藍白合都有問題了，柯文哲能說服新北市長侯友宜嗎？</span></p>
+			<p class="textParagraph"><span class="text">相信柯文哲上任後就會「科學、務實、理性」，選一個地點計畫蓋高階核廢料最終處置場。但其實大家都心裡有數，基本上就會位於東部，先前還曾誤傳選址選項之一在宜蘭、花蓮交界。總之就是西部的工業區、都市人用電，發完電的髒東西往東部送，並且在國、眾兩黨的規劃中髒東西還會越生越多。所以核廢料不僅是科學與環保護題，更是政治問題、是土地正義的問題。蘭嶼人被欺騙、被剝奪選擇權是威權時期的不幸，民主化後的台灣大家沒有這麼好騙了。</span></p>
+		</div></div>
+		
+	</div></div>
+</main>
 <!-- 頁腳 -->
 <footer>
 	<!-- 條款彈窗 -->
