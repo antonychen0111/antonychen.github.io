@@ -32,7 +32,7 @@ setInterval( function iconMenuOpen(){
 
 // 回到頂端按鈕
 setInterval( function iconToTop(){
-	if (window.pageYOffset > 100) { // 滾動高度按鈕顯示
+	if (window.pageYOffset > 100 || document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { // 滾動高度按鈕顯示
 		document.getElementById("iconUpward").style.display = "block";
 	}else {
 		document.getElementById("iconUpward").style.display = "none";
@@ -41,7 +41,9 @@ setInterval( function iconToTop(){
 
 // 回到頂端高度
 function toTop(){
-		window.document.documentElement.scrollTop = 0;
+		window.pageYOffset = 0;
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
 }
 
 // 首頁圖前後按鈕
@@ -128,13 +130,4 @@ function termsClose(){
 function iconCopy(){
 		navigator.clipboard.writeText("antony90011199@gmail.com"); // 電子信箱地址
 		alert("已複製 Copied the text: " + "antony90011199@gmail.com"); // 已複製提醒
-}
-
-// 暫停所有影片
-function pauseVideo(){
-		var iframes = document.querySelectorAll('iframe[src*="youtube.com/embed/"]');
-		iframes.forEach(function(iframe) {
-			var iframeSrc = iframe.src;
-			iframe.src = iframeSrc;
-			});
 }
