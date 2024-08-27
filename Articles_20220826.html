@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<!-- 網頁名 -->
+    <title>Articles - Antony Chen</title>
+    <meta name="Author" contact="Antony Chen">
+    <meta name="Description" content="Walcome to my website! 3D Works, Graphic Arts, Articles...">
+	<meta name="viewport" content="width= device-width, initial-scale = 1">
+	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/favicon.ico"/>
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+	<link href="css/website.css" rel="stylesheet" type="text/css">
+	<script src="javascript/website.js"></script>
+</head>
+<body>
+<header>
+	<!-- 菜單按鈕 -->
+	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
+	<!-- 回到頂端按鈕 -->
+	<div id="iconUpwardContainer"><p onclick="toTop()" id="iconUpward" class="iconImages">arrow_upward</p></div>
+	
+	<!-- 菜單彈窗 -->
+	<nav><div id="menuBox">
+		<div class="darkBackground"></div>
+		<div id="menuBoxContainer">
+			<!-- 菜單按鈕 -->
+			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="https://www.antonychen.work" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
+			<br><br><br><br><br>
+			<!-- 菜單項目 -->
+			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
+			<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText">3D&thinsp;Works</a></div>
+			<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
+			<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
+			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
+		</div>
+	</div></nav>
+	
+	<!-- 關於彈窗 -->
+	<div id="aboutBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>國立台灣科技大學 設計系商業設計組&nbsp;&nbsp;畢<br><br>平面設計 / 動態設計/ 3D&thinsp;建模</span>
+			</p>
+			<p class="aboutParagraph">
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house. I Graduated from Taiwan Tech, majoring in commercial design.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 貓咪照片 -->
+		<div class="worksImagesParagraph">
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat1.webp" alt=""></div>
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat2.webp" alt=""></div></div>
+		<!-- 連結小按鈕 -->
+		<div class="snsButtonContainer">
+			<a href="mailto:antony90011199@gmail.com" target="_blank" class="snsButton"><img src="icons/icons8-gmail-logo.svg" alt=""></a>
+			<a href="https://www.behance.net/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-behance.svg" alt=""></a>
+			<a href="http://instagram.com/antonychen_0111" target="_blank" class="snsButton"><img src="icons/icons8-instagram.svg" alt=""></a>
+			<a href="https://www.facebook.com/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-facebook.svg" alt=""></a>
+			<a href="https://www.youtube.com/@antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-youtube.svg" alt=""></a>
+		</div>
+	</div></div></div>
+	
+	<!-- 聯繫彈窗 -->
+	<div id="contactBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="contactClose()" id="iconContactClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<!-- 簡介文字 -->
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>平面設計 / 動態設計/ 3D&thinsp;建模</span><br><br>
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 連結樹按鈕 -->
+		<div id="linkButtonContainer">
+			<div onclick="iconCopy()" class="linkButton">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-gmail-logo.svg" alt=""></div>
+				<p id="linkButtonEmail">antony90011199@gmail.com</p>
+				<p class="iconCopy">content_copy</p>
+			</div>
+			<div class="linkButton"><a href="https://www.behance.net/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-behance.svg" alt=""></div>
+				<p class="linkButtonText">Bēhance</p>
+			</a></div>
+			<div class="linkButton"><a href="http://instagram.com/antonychen_0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-instagram.svg" alt=""></div>
+				<p class="linkButtonText">Instagram</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.facebook.com/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-facebook.svg" alt=""></div>
+				<p class="linkButtonText">Facebook</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.youtube.com/@antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-youtube.svg" alt=""></div>
+				<p class="linkButtonText">Youtube</p>
+			</a></div>
+		</div>
+	</div></div></div>
+</header>
+<!-- 主要內容 -->
+<main>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<div class="iconWorksCloseContainer"><a href="Articles.html" target="_self" style="text-decoration: none"><p style="display: flex" id="iconArticlesClose" class="iconBoxClose">close</p></a></div>
+		
+		<div class="textParagraphContainer">
+			<p class="textParagraph"><span class="title">台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論</span><br></p>
+			<p class="textParagraph"><span class="text">撰文：陳盈誌<br><time>2022/08/26</time> 發表於 Instagram Stories<br>2024/06/22 修改整理</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/01.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">原文：張雅琴主播 Facebook</span></p>
+			<p class="textParagraph"><span class="text">有時間指稱廢死聯盟幕後有藏鏡人注金流，不如花一點點時間了解王信福案。此案兇手若要速審速決，同樣殺警的王信福執行與否也會遭受議論，不只廢死聯盟，十幾個非營利組織都在盡力救援。張雅琴拿盛傳的消息作新聞，再指責別人栽贓，和其他拿網路文章、網友意見當新聞的媒體同業一樣，都是為了求快求眼球的小報化，網友都已經議論紛紛了還需要媒體推波助瀾嗎？不需要加以查證嗎？內政部長徐國勇、立法院長游錫堃分別主張大膽用槍和殺警判死，在警方有著儘速緝兇的時間壓力下，內部人員還違反偵查不公開，將嫌疑人照片洩漏媒體，這才是沒有職業道德。</span></p>
+			<p class="textParagraph"><span class="text">已開發國家大多早已廢除死刑，難道他們就是道德淪喪嗎？要說文化背景不同、國情不同就更奇怪了，和中國反對西方式民主的那套說法相同，但民主在台灣就不會遇到適應不良的問題。西方國家逐步廢死也是近一百年內的事，除此之外還有女性投票權、性別平權、種族平等、勞工權益等議題，都是台灣社會邁向現代化發展的過程中，必然會產生的一些爭辯。哪一次進步派不被保守派罵背德忘祖、違反傳統禮俗呢？</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/台南雙警遇襲命案後 看張雅琴對廢死聯盟的鄉愿言論/02.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">圖源：台灣廢除死刑推動聯盟 Facebook</span></p>
+		</div>
+		
+	</div></div>
+</main>
+<!-- 頁腳 -->
+<footer>
+	<!-- 條款彈窗 -->
+	<div id="termsBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
+		<div id="termsTextParagraphContainer">
+		<!-- 條款內容 -->
+		<p class="textParagraph">
+			<span class="termsText">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
+			<span class="termsText">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
+			<span class="termsText">版權聲明</span><br><br>
+			<span class="text">Copyright © 2024&nbsp;&nbsp;Ying-Zhi Chen.<br>All rights reserved.</span><br><br>
+			<span class="text">© 2024&nbsp;&nbsp;陳盈誌&nbsp;&nbsp;版權所有。</span><br><br>
+			<span class="text">本網站由陳盈誌（以下簡稱本人）管理。本網站內容可在註明出處的前提下，分享至社群平台，但禁止將內容重製、修改、編輯，或直接、間接作商業用途使用，除非取得本人同意。</span><br><br>
+			<span class="termsText">免責聲明</span><br><br>
+			<span class="text">本網站內容僅供參考，不對其正確性、完整性、可靠性、適用性及其他方面，提供明示或暗示的任何保證。本網站提供之第三方網站連結，對於該第三方網站內容不承擔任何責任和義務。</span><br><br>
+			<span class="termsText">修改權利</span><br><br>
+			<span class="text">保留修改、刪除、更新網站內容及條款等一切權利，任何更改於最新版本發佈後立即生效。</span><br><br>
+			<span class="termsText">法律相關</span><br><br>
+			<span class="text">瀏覽或使用本網站時，視同使用者已完全瞭解並接受本條款。本網站和使用者之權利義務關係，應以國際網路規範及中華民國相關法規為依據處理、解釋。若有任何爭議以臺灣臺北地方法院為第一審管轄法院。條款如有未盡完善之處，應以最大誠意，依誠實信用、平等互惠之原則，共商解決。</span><br><br>
+			<span class="termsText">西元&nbsp;&nbsp;2024&nbsp;&nbsp;年&nbsp;&nbsp;6&nbsp;&nbsp;月&nbsp;&nbsp;20&nbsp;&nbsp;日</span>
+		</p></div>
+		</div>
+		</div>
+	<!-- 條款按鈕 -->
+	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<!-- 版權宣告 -->
+	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+</footer>
+<!-- 頁腳網址 -->
+<header><div id="websiteBarContainer"><div class="websiteBar"><a href="https://www.antonychen.work" target="_self" class="websiteBarText">antonychen.work</a></div></div></header>
+</body>
+</html>

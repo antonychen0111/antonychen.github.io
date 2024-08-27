@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<!-- 網頁名 -->
+    <title>Articles - Antony Chen</title>
+    <meta name="Author" contact="Antony Chen">
+    <meta name="Description" content="Walcome to my website! 3D Works, Graphic Arts, Articles...">
+	<meta name="viewport" content="width= device-width, initial-scale = 1">
+	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/favicon.ico"/>
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+	<link href="css/website.css" rel="stylesheet" type="text/css">
+	<script src="javascript/website.js"></script>
+</head>
+<body>
+<header>
+	<!-- 菜單按鈕 -->
+	<div id="iconMenuOpenContainer"><p onclick="menuOpen()" id="iconMenuOpen" class="iconImages">menu</p></div>
+	<!-- 回到頂端按鈕 -->
+	<div id="iconUpwardContainer"><p onclick="toTop()" id="iconUpward" class="iconImages">arrow_upward</p></div>
+	
+	<!-- 菜單彈窗 -->
+	<nav><div id="menuBox">
+		<div class="darkBackground"></div>
+		<div id="menuBoxContainer">
+			<!-- 菜單按鈕 -->
+			<div id="iconMenuCloseContainer"><p onclick="menuClose()" id="iconMenuClose" class="iconImages">close</p></div>
+			<a href="https://www.antonychen.work" target="_self" style="text-decoration: none"><div id="iconBackHomeContainer"><p style="display: flex" onclick="backHome()" id="iconBackHome" class="iconImages">home</p></div></a>
+			<br><br><br><br><br>
+			<!-- 菜單項目 -->
+			<div class="menuButton"><a onclick="aboutOpen()" class="menuText">About</a></div>
+			<div class="menuButton"><a href="3DWorks.html" target="_self" class="menuText">3D&thinsp;Works</a></div>
+			<div class="menuButton"><a href="GraphicArts.html" target="_self" class="menuText">Graphic&thinsp;Arts</a></div>
+			<div class="menuButton"><a href="Articles.html" target="_self" class="menuText">Articles</a></div>
+			<div class="menuButton"><a onclick="contactOpen()" class="menuText">Contact</a></div>
+		</div>
+	</div></nav>
+	
+	<!-- 關於彈窗 -->
+	<div id="aboutBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="aboutClose()" id="iconAboutClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>國立台灣科技大學 設計系商業設計組&nbsp;&nbsp;畢<br><br>平面設計 / 動態設計/ 3D&thinsp;建模</span>
+			</p>
+			<p class="aboutParagraph">
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house. I Graduated from Taiwan Tech, majoring in commercial design.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 貓咪照片 -->
+		<div class="worksImagesParagraph">
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat1.webp" alt=""></div>
+			<div class="worksImagesContainer" style="filter: grayscale()"><img src="images/cat2.webp" alt=""></div></div>
+		<!-- 連結小按鈕 -->
+		<div class="snsButtonContainer">
+			<a href="mailto:antony90011199@gmail.com" target="_blank" class="snsButton"><img src="icons/icons8-gmail-logo.svg" alt=""></a>
+			<a href="https://www.behance.net/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-behance.svg" alt=""></a>
+			<a href="http://instagram.com/antonychen_0111" target="_blank" class="snsButton"><img src="icons/icons8-instagram.svg" alt=""></a>
+			<a href="https://www.facebook.com/antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-facebook.svg" alt=""></a>
+			<a href="https://www.youtube.com/@antonychen0111" target="_blank" class="snsButton"><img src="icons/icons8-youtube.svg" alt=""></a>
+		</div>
+	</div></div></div>
+	
+	<!-- 聯繫彈窗 -->
+	<div id="contactBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="contactClose()" id="iconContactClose" class="iconBoxClose">close</p></div>
+		<div class="boxContainer">
+		<div class="nameHeadshotContainer">
+			<!-- 名字 -->
+			<p class="nameParagraph">
+				<span class="nameText">陳盈誌</span><br>
+				<span class="nameTextEnglish">Ying-Zhi&thinsp;Chen</span>
+			</p>
+			<!-- 頭貼 -->
+			<div class="headshot"><img src="images/headshot.webp" alt=""></div>
+		</div>
+		<!-- 關於文字 -->
+		<div class="textParagraphContainer">
+			<!-- 簡介文字 -->
+			<p class="aboutParagraph">
+				<span class="text">2001, 台中人 現居台北<br>平面設計 / 動態設計/ 3D&thinsp;建模</span><br><br>
+				<span class="textEnglish">
+				Born in Taichung and currently based in Taipei, there lives a dark gray cat in my house.<br><br>
+				● Graphic Design<br>● Motion Graphics<br>● 3D Modeling</span>
+			</p>
+		</div>
+		<!-- 連結樹按鈕 -->
+		<div id="linkButtonContainer">
+			<div onclick="iconCopy()" class="linkButton">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-gmail-logo.svg" alt=""></div>
+				<p id="linkButtonEmail">antony90011199@gmail.com</p>
+				<p class="iconCopy">content_copy</p>
+			</div>
+			<div class="linkButton"><a href="https://www.behance.net/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-behance.svg" alt=""></div>
+				<p class="linkButtonText">Bēhance</p>
+			</a></div>
+			<div class="linkButton"><a href="http://instagram.com/antonychen_0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-instagram.svg" alt=""></div>
+				<p class="linkButtonText">Instagram</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.facebook.com/antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-facebook.svg" alt=""></div>
+				<p class="linkButtonText">Facebook</p>
+			</a></div>
+			<div class="linkButton"><a href="https://www.youtube.com/@antonychen0111" target="_blank">
+				<div class="linkButtonBackground"><img src="icons/radius.webp" alt=""></div>
+				<div class="linkButtonIcon"><img src="icons/icons8-youtube.svg" alt=""></div>
+				<p class="linkButtonText">Youtube</p>
+			</a></div>
+		</div>
+	</div></div></div>
+</header>
+<!-- 主要內容 -->
+<main>
+	<!-- 文章內容 -->
+	<div id="articles">
+	<div class="articlesContainer">
+		<!-- 內容按鈕 -->
+		<div class="iconWorksCloseContainer"><a href="Articles.html" target="_self" style="text-decoration: none"><p style="display: flex" id="iconArticlesClose" class="iconBoxClose">close</p></a></div>
+		
+		<div class="textParagraphContainer">
+			<p class="textParagraph"><span class="title">看國民黨和民眾黨聯手推出的「國會濫權法案」</span><br></p>
+			<p class="textParagraph"><span class="text">撰文：陳盈誌<br><time>2024/05/26</time> 初稿<br>2024/06/22 修改整理</span></p>
+			<p class="textParagraph"><span class="text">去年選戰期間，國民黨、民眾黨都主張國會改革，國民黨更要求總統未來應依據憲法增修條文，到立法院接受質詢。新一屆立法委員上任後，國、眾兩黨隨即提出自己的國會改革藍圖，主要的項目有：總統赴立法院備詢、聽證調查權、藐視國會罪、強化人事同意權、正副院長選舉記名投票。</span></p>
+			<p class="textParagraph"><span class="text">法案一讀後於四月中進入司法法制委員會審議。國、眾兩黨在未經逐條討論且拒絕納入民進黨委員版本的情況下，將國、眾兩黨委員所提的共 20 案全數保留。民進黨為表抗議多次杯葛提出散會，但協商冷凍期後所有保留的草案版本等同逕付二讀，送交院會表決。</span></p>
+			<p class="textParagraph"><span class="text">許多人指民進黨利用議事規則提出散會，是民進黨自己沒有要討論的意思。但其實民進黨的鍾佳濱委員對自己的法案版本，曾親自找專家學者來舉辦過兩場公聽會。反觀國民黨的版本僅辦過一次公聽會就送入院會表決，甚至對比 2014 年的服貿協議，後者至少也辦過 16 場的公聽會。</span></p>
+			<p class="textParagraph"><span class="text">〔案外案1〕民進黨范雲委員針對《立法委員行為法》提出修正草案，額外納入立委有性騷嫌疑需送紀律委員會。黃國昌原表態支持，後來卻和國民黨聯手否決併案。范雲上前質疑黃國昌為何做的跟前一天協商的結論不一樣，黃國昌說：「我有欠你哦？你跑到我旁邊來吼什麼？」「這種程序上的逕付二讀，你們自己去玩，我沒有要理你去玩這種程序上面的復議」後來表示民眾黨會提出自己的版本。</span></p>
+			<p class="textParagraph"><span class="text">〔案外案2〕民進黨沈伯洋委員針對傅崐萁前陣子到中國和中共官員見面，提出立法委員比照政府官員，赴中需經政府核准，卻遭國、眾兩黨聯手排除在程序委員會的議程外。民進黨國會過半的八年間未曾有提案被封殺於程序委員會外。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/01.webp" loading="lazy" alt=""></div></div>
+			<p class="textParagraph"><span class="text">二讀表決前幾天，傅崐萁、黃國昌等人開始在議場前守夜。黃國昌被媒體記錄到私自和國民黨的翁曉玲委員通話討論法案細節。5/16 二讀表決前夕，國、眾兩黨推翻先前委員會保留下來的各個版本，合作以修正動議方式提出整併版本，以此進行二讀宣讀與表決，並且不在二讀院會上作各委員版本的協商與討論。至於整併版本的內容，黃國昌表示此為「最高機密」。對比 2014 年的服貿協議，後者在表決前也已經上網公告長達 90 日。</span></p>
+			<p class="textParagraph"><span class="text">5/17 二讀表決當天，黨團協商破局，民進黨為杯葛議事，搶佔主席台阻撓韓國瑜院長上台主持。期間沈伯洋委員企圖翻越國民黨組成的人牆時，遭國民黨邱鎮軍委員拉扯，從兩公尺高摔落。Threads上有些人得知消息看不下去，在 5/17 當天晚上九點左右集結在立法院旁的青島東路側門，聲援民進黨的委員。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/02.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">沈伯洋遭邱鎮軍拉扯從兩公尺高摔落</span></p>
+			<p class="textParagraph"><span class="text">當天另一項爭議是國民黨所提的花東三建設草案——「環島高鐵」、「花東快速道路」、「國道六號打通中央山脈延伸至花蓮」，民進黨粗估三項共需兩兆元的建設經費。民進黨及環保團體批評建設應先經過行政院的可行性評估及環境影響評估，不應透過立法逼迫政院執行。國道六號穿過中央山脈通至花蓮，上世紀末當時的政府就曾經評估過該方案，結論是路段九成可能都得挖掘隧道，且路線上方連山路都沒有，從零開始探勘地質的成本也高。即便改建設截面較小的火車隧道難度同樣很大，所以目前國道六號僅僅通車至南投，法案內所要求的十年內完工更是天方夜譚。三項草案 5/17 當天確實有納入院會討論事項及協商的議程，但根據先前黨團協商的共識，需等新政府上台後再邀請新任交通部長來研議。不過黨團協商所做的共識未具有法律效力，仍有重新提案排入院會二讀的可能性。</span></p>
+			<p class="textParagraph"><span class="text">肢體衝突總共導致五名立委因身體受傷或不適轉送至台大醫院，但韓國瑜院長不願暫停議事，持續進行二讀的宣讀與表決。且每條條文宣讀時並未將內容逐字唸出，宣讀後的討論時間，也僅允許一位委員共三分鐘的時間發言，時間到即消音並宣布停止討論，接著進行表決。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/03.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">國道六號延伸花蓮路線圖</span></p>
+			<p class="textParagraph"><span class="text">國民黨為了防止主席台遭到民進黨委員佔領，決定聽取立法院秘書長周萬來的意見改為舉手表決，這樣就不必回到位子上按表決器再回到主席台這樣來回奔波。舉手表決確實合乎規定，各委員會內沒有表決器都是採舉手表決。但在院會議場上，上一次舉手表決發生在 1989 年，議事人員同樣沒受過舉手表決的訓練，現場一度混亂，包含出席人數和贊成、否決人數兜不起來之外，後續也發生表決前未先清查人數，以及僅點贊成票、未點否決票，遭質疑違反議事規則。</span></p>
+			<p class="textParagraph"><span class="text">還有一個問題是，國、眾兩黨的整併版本沒有人知道確切內容，許多委員只能從先前的 28 個草案版本來推斷。黃國昌聲稱條文內容當天一早就送到各個委員桌上，事實上是晚上七點委員們才拿到，各委員辦公室的法案助理根本來不及做研究，院會就已經在表決了。民進黨團僅能不斷以修正動議、再修正動議等提案拖延二讀審議。</span></p>
+			<p class="textParagraph"><span class="text">明明喊著國會改革的口號，卻採取最黑箱的程序、最落伍的表決；正、副院長選舉希望改成記名投票向選民負責，卻在改革時沒有記名向歷史負責。黃國昌在 2014 年反對黑箱，要求服貿協議退回委員會逐條實質審查，如今卻拿不出相同的標準看待自己所提的法案。</span></p>
+			<p class="textParagraph"><span class="text">國、眾兩黨的支持者可能會稱這次是「國會改革法案」，反對者則會說這是「國會濫權法案」，較中性的名詞是「國會職權法案」。其實三黨有共識的地方不少，民進黨也有自己的版本，但國、眾兩黨因為程序不正義遭民進黨杯葛，就誣指民進黨是反改革，說「沒做壞事為何要怕別人監督？」事實上大眾在意的是審議過程欠缺討論，法案內容本身的品質也受到許多法律界人士質疑。</span></p>
+			<p class="textParagraph"><span class="text">總統赴立法院的法源依據是依憲法增修條文：「國民大會集會時，得聽取總統國情報告，並檢討國是，提供建言；如一年內未集會，由總統召集會議為之，不受憲法第三十條之限制」、「立法院於每年集會時，得聽取總統國情報告」、「立法院得經全體立法委員四分之一以上提議，院會決議後，由程序委員會排定議程，就國家安全大政方針，聽取總統國情報告」。</span></p>
+			<p class="textParagraph"><span class="text">台灣民主化前，兩位蔣總統未曾到過國民大會或立法院作國情報告。直到李登輝推動總統直選後，國民大會失去選舉總統的職權，為了補償國大，賦予國大代表聽取總統國情報告的權力，李登輝任內也曾多次前往國民大會報告。國大廢除後，這樣的職權同樣跟著轉移至立法院。前總統陳水扁為了爭取在野對其國防、外交政策的支持，曾希望親自到立法院演說，卻遭當時的在野黨拒絕；馬英九任內民進黨團也曾要求總統到立法院接受即問即答的質詢。而去年賴清德在選戰期間曾公開承諾：未來若能擔任總統，立法院希望他去，他便會前往國情報告。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/04.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">1997年 李登輝前往國民大會國情報告（圖源：國家文化記憶庫）</span></p>
+			<p class="textParagraph"><span class="text">目前國、民兩黨最大的歧見是，總統赴立法院後到底該採何種方式：只作國情報告、接受即問即答質詢，亦或聽取立法委員的國是建言後書面答覆。國民黨主張總統既然都來了那就得接受即問即答的質詢；民進黨改變過往主張，表明即問即答違憲，超出憲法增修條文記載的「立法院得聽取總統國情報告」的範圍。且總統和立法院同樣是人民直選產生的，不同於受總統提名、立法院可對其提出不信案的行政院長，不存在誰向誰負責的關係，總統和行政院長如果都得接受立委質詢的話，豈不是疊床架屋？</span></p>
+			<p class="textParagraph"><span class="text">英國是內閣制國家，首相和部會首長都屬國會的一員，需接受在野黨的質問。美國在三權分立的情況下，總統制的總統本身就是行政權的首腦，且參、眾兩院都沒有「質詢」的制度，行政官員不需應國會議員的要求進到國會備詢。美國總統僅在每年年初前往眾議院作國情咨文，講完馬上離開。法國和台灣一樣採雙首長制，不過直到 2008 年才修法允許法國總統前往國會發表國情演說，和美國一樣不得詢答。</span></p>
+			<p class="textParagraph"><span class="text">聽證調查權的部分稍微提幾個較大的問題點。國、眾兩黨在調查權上希望更有權力調取到想要的資料（目的是針對疫情政策、疫苗採購、雞蛋進口等爭議），但相較於民進黨所提的版本，被調查的對象將不限於行政機關，國、眾兩黨共推的版本額外納入「法人、部隊、團體、社會有關人士」。對方拒絕或拖延，經院會決議可處以罰鍰且得連續處罰，若對方不服處分則可提行政訴訟。</span></p>
+			<p class="textParagraph"><span class="text">雖然國、眾兩黨的版本載明「逾越調查範圍、涉及個人隱私或與公共事務無關，經主席同意可拒絕接受調查」，不過民進黨主張應採取更積極的保障，只要有正當理由或其他法律限制即可拒絕。另外民進黨認為，拒絕提供資料或出席聽證只要經院會議決就可連續裁罰容易淪為國會多數黨的政治工具。行政機關或被調查對象，一拒絕調查或聽證，便會受到大眾的輿論壓力，不需立法院透過裁罰手段三催四請。且如果調查對象有涉及弊案，應直接向檢察機關告發，由檢察官啟動調查，或是像美國一樣不接受聽證，經國會議決可轉交檢察官評估是否起訴；德國國會則可以向聯邦法官申請拘提，由法官來判斷是否採取強制手段。</span></p>
+			<p class="textParagraph"><span class="text">國、眾兩黨的版本有一條是受詢問之人員需經主席同意，才能有律師或專業人士陪同。民進黨認為這樣對行政官員外的一般人保護不夠。對此，黃國昌的說法是法院出庭作證時同樣不可帶律師陪同。</span></p>
+			<p class="textParagraph"><span class="text">民進黨過去常被人詬病執政八年對改革不夠積極，特別是國會改革只做到透明國會：議事資料上網、建立國會頻道、黨團協商直播。一方面是執政權握在手上，沒人會想搬石頭砸自己的腳，另外就是想先提出修憲廢除考試、監察兩院。如此一來，監察院的調查權自然而然會回歸到立法院。游錫堃擔任立法院長時曾成立修憲委員會擴大討論，後來因為國民黨堅守五權憲法，最後僅有十八歲公民權送交公民複決。</span></p>
+			<p class="textParagraph"><span class="text">最後最有爭議的是藐視國會罪，相關條文有「質詢之答復，不得超過質詢範圍之外，並不得反質詢」、「被質詢人除為避免國防、外交明顯立即之危害或依法應秘密之事項者並經主席同意者外，不得拒絕答復、拒絕提供資料、隱匿資訊、虛偽答復或有其他藐視國會之行為」、「被質詢人非經立法院院會或各委員會之同意，不得缺席」、「被質詢人違反第一項至第三項規定，主席得予制止、命出席，並得要求被質詢人為答復」、「被質詢人經主席依前項規定制止、命出席或要求答復卻仍違反者，由主席或質詢委員提議，出席委員五人以上連署或附議，經院會決議，處被質詢人二萬元以上二十萬元以下罰鍰」、「前項情形，經限期改正，逾期仍不改正者，得按次連續課處罰鍰」、「前二項罰鍰處分，受處分者如有不服，得於處分書送達之次日起二個月內，向立法院所在地之行政法院提起行政訴訟」、「違反第一項至第三項規定之政府人員，由主席或質詢委員提議，出席委員五人以上連署或附議，經院會決議，移送彈劾或懲戒」、「政府人員於立法院受質詢時，為虛偽陳述者，依法追訴其刑事責任」。</span></p>
+			<p class="textParagraph"><span class="text">民進黨委員要求國、眾兩黨解釋「反質詢」的定義，國民黨籍的司法法制委員會召委吳宗憲表示「立法完成後會再跟大家報告」，黃國昌則說：像蘇貞昌回嗆立委在那邊叫什麼叫。「藐視國會之行為」、「虛偽答覆」、「虛偽陳述」，民進黨認為這些文字缺少更加嚴謹的定義，違反了法律「明確性原則」。且僅需委員會內多數黨的委員、國會多數黨主觀認定，容易形成政治口水戰的工具。國、眾兩黨版本的支持者則覺得官員只要不要說謊根本不用怕被罰。</span></p>
+			<p class="textParagraph"><span class="text">其他國家「藐視國會」的定義通常是指妨礙國會職權行使的行為，例如惡意不出席、不提供資料、作偽證，而不是委員主觀感受認為受到羞辱，或是被反質詢。英國國會的作法較軟，想邀請某人到國會接受詢問需事先與對方溝通，若對方不同意也沒有強制手段，「藐視國會」僅是種概念，只能譴責、沒有處罰。美國國會的作法較硬，「藐視國會」若採取處罰程序就等同刑事訴訟。先由委員會和院會議決對方是否構成藐視，再將案件轉送給檢察官，由檢察官去判斷是否起訴。不過檢察機關大多不願意介入行政與國會間的糾紛，實際成案的起訴比例低。</span></p>
+			<p class="textParagraph"><span class="text">比起美國「藐視國會」僅適用於聽證及調查，國、眾兩黨的版本一併將台灣特有的「質詢」制度，納入了觸發藐視國會罪的範疇。代表未來行政官員對於政策的備詢需更加警惕，不能為了向國會多數黨委員作政策辯護而大動肝火，委員的面子罵不得。</span></p>
+			<p class="textParagraph"><span class="text">5/17 當晚，公投護台灣聯盟（由蔡丁貴教授創立，致力於推動台灣獨立，2008 年起長期在立法院旁搭帳篷陳抗，2018 年遭柯文哲市府強制拆除）和經濟民主連合（前身是 2013 年第一個向大眾示警服貿協議通過會對台灣產業造成衝擊的團體，智庫召集人是賴中強律師，也是本次運動的重要核心人物）便出現在現場表達抗議，後來一同成為後續抗爭的主辦團隊。</span></p>
+			<div class="articlesImagesParagraph"><div class="worksImagesContainer"><img src="articles/看國民黨和民眾黨聯手推出的「國會濫權法案」/05.webp" loading="lazy" alt=""></div></div>
+			<p class="descriptionParagraph"><span class="description">5/17 立法院外青島東路上集結聲援的民眾</span></p>
+			<p class="textParagraph"><span class="text">目前的五項訴求整理一下有：一、國會改革不應破壞權力分立，不應破壞人民權利。二、退回法案，回到司法法制委員會重新審查。三、抗議國眾兩黨濫用議事規則，漠視應有的民主討論程序。四、委員會應實質討論各黨提案，停止濫用「逕付二讀」、「全案保留」、「封殺提案」、「散會動議」。五、沒有討論，不是民主；全案保留，等於沒審，封殺提案，威權復辟。</span></p>
+			<p class="textParagraph"><span class="text">現場維持秩序及收發物資主要由基督長老教會（教會立場長期偏向本土陣營）的志工負責。除此之外，因為這次修法會影響到一般人民，許多人權團體也挺身而出表達他們對法案內容的憂慮。站出來的還有時代力量、綠黨、台灣基進、台灣團結聯盟、社會民主黨、小民參政歐巴桑聯盟，其中有些政黨曾在立法院佔有席次甚至擁有過黨團，他們同樣對目前身為關鍵少數的民眾黨感到不解。</span></p>
+			<p class="textParagraph"><span class="text">為什麼國、眾兩黨加起來已是國會多數，有想過的法案沒有不過的道理，卻需要這樣強渡關山，甚至把舉手表決拿出來用，令場面變得極其難看。難道為了趕在賴清德上任前後給新政府挫挫銳氣，就可以一路趕、一路壓，讓國會改革的正當性蒙上一層陰影？韓國瑜主持黨團協商的能力不足、公平性不足，未能先就有共識的條文讓雙方作意見交換，再另行決定爭議條文是否擇期表決，反而聽從國民黨團的建議包裹進院會一條一條二讀過去。</span></p>
+			<p class="textParagraph"><span class="text">當數萬人已經集結在外頭抗議，裡頭的人仍在繼續表決。或許是因為近期沒有選舉，或許是覺得等到風頭過了，人民都會忘了當初訂定這些規則時的不透明。國、眾兩黨就想著，到時可以利用擴權而得的武器高喊查弊、肅貪的口號，擴大自己的政治影響力，而黃國昌也可以繼續開直播當支持者心中的揭弊戰神。但像這種茲事體大、影響憲法權力分立原則的修法，卻在獲得人民高度共識前就倉促完成。往後有昭一日執政黨肯定會輪替，如今的立法者在立場反過來時，還會信服這樣的國會濫權嗎？</span></p>
+			<p class="textParagraph"><span class="text">承認爭議太大、退回委員會討論不是多困難的事，民進黨在審議前瞻基礎建設計畫相關條例時，也曾碾壓式逕付二讀，隔一天因為輿論反彈太大向大眾道歉並退回委員會重審。未來還有花東三建設條例、罷免門檻提高的修正草案，甚至有傳聞國民黨認為民進黨先前訂定的國安五法有違憲疑慮，想鬆綁反滲透法。今天公民若不站出來，國、眾兩黨食髓知味，將繼續肆無忌憚的用黨的意志，在人民發覺不對、施以民意壓力前，就將法案送上院會的主席台，趁著輿論還發酵就表決通過了。如果現在的法案三讀，行政院將提出覆議，民進黨團同時會將爭議條文送交憲法訴訟。</span></p>
+		</div>
+		
+	</div></div>
+</main>
+<!-- 頁腳 -->
+<footer>
+	<!-- 條款彈窗 -->
+	<div id="termsBox">
+	<!-- 彈窗背景 -->
+	<div class="lightBackground"></div>
+	<div class="box">
+		<!-- 彈窗按鈕 -->
+		<div class="iconBoxCloseContainer"><p onclick="termsClose()" id="iconTermsClose" class="iconBoxClose">close</p></div>
+		<div id="termsTextParagraphContainer">
+		<!-- 條款內容 -->
+		<p class="textParagraph">
+			<span class="termsText">網站使用條款&nbsp;&nbsp;&amp;&nbsp;&nbsp;免責聲明</span><br>
+			<span class="termsText">Terms of Use&nbsp;&nbsp;&amp;&nbsp;&nbsp;Disclaimer</span><br><br>
+			<span class="termsText">版權聲明</span><br><br>
+			<span class="text">Copyright © 2024&nbsp;&nbsp;Ying-Zhi Chen.<br>All rights reserved.</span><br><br>
+			<span class="text">© 2024&nbsp;&nbsp;陳盈誌&nbsp;&nbsp;版權所有。</span><br><br>
+			<span class="text">本網站由陳盈誌（以下簡稱本人）管理。本網站內容可在註明出處的前提下，分享至社群平台，但禁止將內容重製、修改、編輯，或直接、間接作商業用途使用，除非取得本人同意。</span><br><br>
+			<span class="termsText">免責聲明</span><br><br>
+			<span class="text">本網站內容僅供參考，不對其正確性、完整性、可靠性、適用性及其他方面，提供明示或暗示的任何保證。本網站提供之第三方網站連結，對於該第三方網站內容不承擔任何責任和義務。</span><br><br>
+			<span class="termsText">修改權利</span><br><br>
+			<span class="text">保留修改、刪除、更新網站內容及條款等一切權利，任何更改於最新版本發佈後立即生效。</span><br><br>
+			<span class="termsText">法律相關</span><br><br>
+			<span class="text">瀏覽或使用本網站時，視同使用者已完全瞭解並接受本條款。本網站和使用者之權利義務關係，應以國際網路規範及中華民國相關法規為依據處理、解釋。若有任何爭議以臺灣臺北地方法院為第一審管轄法院。條款如有未盡完善之處，應以最大誠意，依誠實信用、平等互惠之原則，共商解決。</span><br><br>
+			<span class="termsText">西元&nbsp;&nbsp;2024&nbsp;&nbsp;年&nbsp;&nbsp;6&nbsp;&nbsp;月&nbsp;&nbsp;20&nbsp;&nbsp;日</span>
+		</p></div>
+		</div>
+		</div>
+	<!-- 條款按鈕 -->
+	<div id="termsButtonContainer"><button onclick="termsOpen()" type="button" class="button"><div class="buttonText">&nbsp;Terms of Use &amp; Disclaimer&nbsp;</div></button></div>
+	<!-- 版權宣告 -->
+	<div id="copyrightContainer"><div id="copyrightText"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+</footer>
+<!-- 頁腳網址 -->
+<header><div id="websiteBarContainer"><div class="websiteBar"><a href="https://www.antonychen.work" target="_self" class="websiteBarText">antonychen.work</a></div></div></header>
+</body>
+</html>
