@@ -1236,13 +1236,34 @@ h6 {
 	transition: all 0.1s ease;
 }
 
+/* 分頁標題 */
+.pagesTitleContainer {
+	
+	width: 100%;
+	margin-top: calc(1vw + 1.5rem);
+	
+	display: flex;
+	justify-content: center;
+}
+
+/* 分頁標題文字 */
+.pagesTitleEnglish {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--lightTextColor);
+	line-height: 1.2rem;
+}
+
 /* 作品列表 */
 
 #worksBox,
 #graphicBox {
 	
 	width: 100%;
-	margin-top: 3.5vh;
+	margin-top: 1.25vh;
+	margin-bottom: 5vh;
 	
 	display: flex;
 	justify-content: center;
@@ -1509,7 +1530,7 @@ h6 {
 #articlesBox {
 	
 	width: 100%;
-	margin-top: 2.5vh;
+	margin-bottom: 5vh;
 	
 	display: flex;
 	justify-content: center;
