@@ -41,12 +41,16 @@ function portfolioPagesClose(){
 function portfolioNext(){
 	if (pages < 2){
 		pages ++;
+	}else if (pages == 2){
+		pages = 1;
 	}
 }
 
 function portfolioPrevious(){
 		if (pages > 1){
 		pages --;
+	}else if (pages == 1){
+		pages = 2;
 	}
 }
 
