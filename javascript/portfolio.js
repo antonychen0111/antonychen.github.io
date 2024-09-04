@@ -90,7 +90,7 @@ function pagesBoxMobile01(){
 	document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
 	document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
-	window.scrollTo(0, 0);
+	document.getElementById("pages01").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function pagesBoxMobile02(){
@@ -98,7 +98,7 @@ function pagesBoxMobile02(){
 	document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
 	document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
-	window.scrollTo(0, 800*1);
+	document.getElementById("pages02").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function pagesBoxMobile03(){
@@ -106,5 +106,5 @@ function pagesBoxMobile03(){
 	document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
 	document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
-	window.scrollTo(0, 800*2);
+	document.getElementById("pages03").scrollIntoView({behavior: "smooth", block: "center"});
 }
