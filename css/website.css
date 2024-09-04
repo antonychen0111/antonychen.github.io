@@ -1345,13 +1345,6 @@ h6 {
 	object-fit: cover;
 }
 
-.worksBoxImagesContainer video{
-	
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
 /* 作品列表縮圖漸層 */
 .worksBoxImagesCover {
 	
@@ -1491,8 +1484,7 @@ h6 {
 	max-width: 50rem;
 }
 
-.worksImagesCover img,
-.worksImagesCover video {
+.worksImagesCover img {
 	
 	border-radius: 0.3rem;
 	height: 100%;
@@ -1517,8 +1509,7 @@ h6 {
 	max-width: 50rem;
 }
 
-.worksImagesContainer img,
-.worksImagesContainer video {
+.worksImagesContainer img {
 	
 	border-radius: 0.3rem;
 	height: 100%;
@@ -1728,6 +1719,316 @@ h6 {
 	
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* 作品集網頁 */
+
+/* 作品集區塊 */
+
+#portfolioContainer {
+	
+	margin: 1.5rem;
+	
+	display: flex;
+	justify-content: center;
+}
+
+#portfolioContainer img {
+	
+	height: 90vh;
+	width: 90vw;
+	
+	object-fit: contain;
+}
+
+/* 作品集區塊手機版 */
+
+.portfolioMobileContainer {
+	
+	height: 90vh;
+	margin-bottom: 1rem;
+	
+	display: flex;
+	justify-content: center;
+}
+
+.portfolioMobileContainer img {
+	
+	width: 100vw;
+	object-fit: contain;
+}
+
+/* 作品集按鈕位置 */
+
+#portfolioIconContainerContainer {
+	
+	width: 100vw;
+	bottom: 0;
+	margin-bottom: 3vh;
+	
+	position: fixed;
+	display: flex;
+	justify-content: center;
+}
+
+#portfolioIconContainer {
+	
+	width: 85vw;
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+#iconPortfolioPreviousContainer,
+#iconPortfolioNextContainer{
+	
+	margin-left: 8.5vw;
+	margin-right: 10vw;
+}
+
+#iconClosePagesContainer {
+	
+	width: 100vw;
+	bottom: 0;
+	margin-bottom: 3vh;
+	
+	position: fixed;
+	display: flex;
+	justify-content: center;
+
+	z-index: 99;
+}
+
+/* 作品集按鈕 */
+
+#iconPortfolioPrevious,
+#iconPortfolioNext,
+#iconPortfolioMobile,
+#iconPortfolioPages,
+#iconPortfolioWebsite {
+	
+	margin: 1rem 0 0 0;
+	transition: all 0.25s ease;
+}
+
+#iconPortfolioClosePages {
+		
+	margin: 1rem 0 0 0;
+	transition: all 0.25s ease;
+	display: none;
+}
+
+/* 作品集按鈕動畫 */
+
+#iconPortfolioPrevious:hover {
+	
+	transform: translateX(-0.15rem) scale(1.05);
+	transition: all 0.25s ease;
+}
+
+#iconPortfolioPrevious:active {
+	
+	transform: translateX(-0.5rem) scale(0.85);
+	transition: all 0.25s ease;
+}
+
+#iconPortfolioNext:hover {
+	
+	transform: translateX(0.15rem) scale(1.05);
+	transition: all 0.25s ease;
+}
+
+#iconPortfolioNext:active {
+	
+	transform: translateX(0.5rem) scale(0.85);
+	transition: all 0.25s ease;
+}
+
+/* 頁面列表 */
+#pagesBox {
+	
+	height: 87.5%;
+	width: 100%;
+	margin-top: 3.5vh;
+	margin-bottom: 5vh;
+	
+	position: fixed;
+	display: none;
+	justify-content: center;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* 頁面列表排列 */
+.pagesBoxContainer {
+	
+	height: 10rem;
+	width: 100rem;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* 頁面列表卡片區塊 */
+.pagesContainerContainer {
+	
+	margin: 1vh 0.5vh 1vh 0.5vh;
+	display: flex;
+	justify-content: center;
+}
+
+/* 頁面列表卡片 */
+.pagesContainer {
+	
+	background: var(--lightBackgroundColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	height: 10rem;
+	width: 14.4rem;
+	
+	position: relative;
+	overflow: hidden;
+	
+	transition: all 0.25s ease;
+}
+
+/* 頁面列表卡片手機版 */
+.pagesMobileContainer {
+	
+	background: var(--lightBackgroundColor);
+	border: 0.1rem solid var(--lightTextColor);
+	
+	height: 14.4rem;
+	width: 10rem;
+	
+	position: relative;
+	overflow: hidden;
+	
+	transition: all 0.25s ease;
+}
+
+/* 頁面列表卡片動畫 */
+
+.pagesContainer:hover {
+	
+	cursor: pointer;
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
+	
+	transform: scale(1.05);
+	transition: all 0.25s ease;
+	
+	z-index: 99;
+}
+
+.pagesContainer:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
+	
+	z-index: 99;
+}
+
+/* 頁面列表卡片手機版動畫 */
+
+.pagesMobileContainer:hover {
+	
+	cursor: pointer;
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
+	
+	transform: scale(1.05);
+	transition: all 0.25s ease;
+	
+	z-index: 99;
+}
+
+.pagesMobileContainer:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
+	
+	z-index: 99;
+}
+
+.pagesImagesCover {
+	
+	height: 10rem;
+	width: 14.4rem;
+	
+	position: absolute;
+	background-color: var(--darkBackgroundColor);
+	background-size: cover;
+	opacity: 0.4;
+}
+
+.pagesMobileImagesCover {
+	
+	height: 14.4rem;
+	width: 10rem;
+	
+	position: absolute;
+	background-color: var(--darkBackgroundColor);
+	background-size: cover;
+	opacity: 0.4;
+}
+
+.pagesImagesContainer {
+	
+	height: 100%;
+	width: 100%;
+}
+
+.pagesImagesContainer img{
+	
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* 頁面列表卡片頁數數字 */
+
+.pagesNumber {
+	
+	width: 95%;
+	right: 3%;
+	bottom: 0;
+	padding: 0.5rem;
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.pagesNumberParagraph {
+	
+	margin: 0;
+}
+
+.pagesNumberText {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 3rem;
+	font-weight: 200;
+	font-style: italic;
+	color: var(--lightTextColor);
+	line-height: 1.2rem;
+	text-shadow: 0.1rem 0.1rem 0.15rem var(--darkTextColor);
+}
+
+/* 作品集版權宣告區塊 */
+#copyrightContainer {
+	
+	height: 5rem;
+	width: 100%;
+	
+	bottom: 0rem;
+	
+	position: fixed;
 	display: flex;
 	justify-content: center;
 }
