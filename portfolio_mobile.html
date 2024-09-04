@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<!-- 網頁名 -->
+    <title>Portfolio - Antony Chen</title>
+    <meta name="Author" contact="Antony Chen">
+    <meta name="Description" content="Walcome to my website! 3D Works, Graphic Arts, Articles...">
+	<meta name="viewport" content="width= device-width, initial-scale = 1">
+	<link rel="canonical" href="<%= url %>" />
+	<!-- 網頁圖示 -->
+    <link rel="shortcut icon" href="icons/website.ico" type="image/x-icon">
+	<link rel="bookmark" href="icons/website.ico"/>
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+	<link href="css/website.css" rel="stylesheet" type="text/css">
+	<script src="javascript/portfolio.js"></script>
+</head>
+<body>
+<header>
+	<!-- 讀取條 -->
+<!--	<div id="loadingBar"><div class="loadingBarBackground"></div><div class="loadingBar"><div class="loadingBarLine"></div></div></div>-->
+</header>
+<!-- 主要內容 -->
+<main>
+	<!-- 作品集按鈕 -->
+	<div id="portfolioIconContainerContainer">
+	<div id="portfolioIconContainer">
+	<div id="iconPortfolioMobileContainer"><a href="portfolio.html" target="_blank" style="text-decoration: none"><p id="iconPortfolioMobile" class="iconImages">tv</p></a></div>
+	<div id="iconPortfolioPagesContainer"><p onclick="portfolioPagesOpen()" id="iconPortfolioPages" class="iconImages">grid_view</p></div>
+	<div id="iconPortfolioWebsiteContainer"><a href="https://www.antonychen.work" target="_blank" style="text-decoration: none"><p id="iconPortfolioWebsite" class="iconImages">language</p></a></div>
+	</div></div>
+	<!-- 頁面列表關閉按鈕 -->
+	<div id="iconClosePagesContainer"><p onclick="portfolioPagesClose()" id="iconPortfolioClosePages" class="iconImages">close</p></div>
+	<!-- 頁面列表 -->
+	<div id="pagesBox">
+	<div class="lightBackground"></div>
+	<div class="pagesBoxContainer">
+	
+	<div id="pagesBoxMobile01" onClick="pagesBoxMobile01()">
+	<div class="pagesContainerContainer">
+	<div class="pagesMobileContainer">
+		<div class="pagesMobileImagesCover"></div>
+		<!-- 頁數 -->
+		<div class="pagesNumber"><p class="pagesNumberParagraph"><span class="pagesNumberText">01</span></p></div>
+		<!-- 縮圖 -->
+		<div class="pagesImagesContainer"><img src="portfolio/mobile/about.webp" loading="lazy" alt=""></div>
+	</div></div></div>
+	
+	<div id="pagesBoxMobile02" onclick="pagesBoxMobile02()">
+	<div class="pagesContainerContainer">
+	<div class="pagesMobileContainer">
+		<div class="pagesMobileImagesCover"></div>
+		<div class="pagesNumber"><p class="pagesNumberParagraph"><span class="pagesNumberText">02</span></p></div>
+		<div class="pagesImagesContainer"><img src="portfolio/mobile/Sound Truck of Democracy 01.webp" loading="lazy" alt=""></div>
+	</div></div></div>
+	
+	<div id="pagesBoxMobile03" onclick="pagesBoxMobile03()">
+	<div class="pagesContainerContainer">
+	<div class="pagesMobileContainer">
+		<div class="pagesMobileImagesCover"></div>
+		<div class="pagesNumber"><p class="pagesNumberParagraph"><span class="pagesNumberText">03</span></p></div>
+		<div class="pagesImagesContainer"><img src="portfolio/mobile/Sound Truck of Democracy 02.webp" loading="lazy" alt=""></div>
+	</div></div></div>
+	
+	</div>
+	<div id="copyrightContainer" style="padding-bottom: 3rem"><div id="copyrightText" style="text-shadow: 0.05rem 0.05rem 0.05rem #FFFFFF"><p>&nbsp;&nbsp;&nbsp;© 2024&nbsp;&nbsp;Ying-Zhi Chen ( Antony Chen )</p></div></div>
+	</div>
+	<!-- 作品集內容 -->
+	<div id="pages01"><div class="portfolioMobileContainer"><img src="portfolio/mobile/about.webp" alt=""></div></div>
+	<div id="pages02"><div class="portfolioMobileContainer"><img src="portfolio/mobile/Sound Truck of Democracy 01.webp" loading="lazy" alt=""></div></div>
+	<div id="pages03"><div class="portfolioMobileContainer"><img src="portfolio/mobile/Sound Truck of Democracy 02.webp" loading="lazy" alt=""></div></div>
+</main>
+</body>
+</html>
