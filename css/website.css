@@ -1782,7 +1782,7 @@ h6 {
 }
 
 #iconPortfolioPreviousContainer,
-#iconPortfolioNextContainer{
+#iconPortfolioNextContainer {
 	
 	margin-left: 8.5vw;
 	margin-right: 10vw;
@@ -2021,7 +2021,7 @@ h6 {
 }
 
 /* 作品集版權宣告區塊 */
-#copyrightContainer {
+#portfolioCopyrightContainer {
 	
 	height: 5rem;
 	width: 100%;
