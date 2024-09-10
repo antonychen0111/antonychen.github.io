@@ -23,20 +23,20 @@ window.onload = setTimeout( function() {
 
 // 頁面彈窗開啟
 function portfolioPagesOpen(){
-		document.getElementById("pagesBox").style.display = "flex"; // 彈窗開啟
+		document.querySelector("body").classList.add("no-scroll"); // 禁止滾動
 		document.getElementById("pagesBoxBackground").style.display = "flex"; // 彈窗背景顯示
+		document.getElementById("pagesBox").style.display = "flex"; // 彈窗開啟
 		document.getElementById("iconPortfolioClosePages").style.display = "flex"; // 彈窗按鈕顯示
 		document.getElementById("portfolioIconContainerContainer").style.display = "none"; // 按鈕隱藏
-		document.querySelector("body").classList.add("no-scroll"); // 禁止滾動
 }
 
 // 頁面彈窗關閉
 function portfolioPagesClose(){
-		document.getElementById("pagesBox").style.display = "none"; // 彈窗關閉
+		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
 		document.getElementById("pagesBoxBackground").style.display = "none"; // 彈窗背景隱藏
+		document.getElementById("pagesBox").style.display = "none"; // 彈窗關閉
 		document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 		document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
-		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
 }
 
 // 頁面前後按鈕
