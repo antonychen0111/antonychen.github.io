@@ -1862,6 +1862,11 @@ h6 {
 	overflow-y: auto;
 }
 
+#pagesBoxBackground {
+	
+	display: none;
+}
+
 /* 頁面列表排列 */
 .pagesBoxContainer {
 	
