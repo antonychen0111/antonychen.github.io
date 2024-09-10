@@ -24,6 +24,7 @@ window.onload = setTimeout( function() {
 // 頁面彈窗開啟
 function portfolioPagesOpen(){
 		document.getElementById("pagesBox").style.display = "flex"; // 彈窗開啟
+		document.getElementById("pagesBoxBackground").style.display = "flex"; // 彈窗背景顯示
 		document.getElementById("iconPortfolioClosePages").style.display = "flex"; // 彈窗按鈕顯示
 		document.getElementById("portfolioIconContainerContainer").style.display = "none"; // 按鈕隱藏
 		document.querySelector("body").classList.add("no-scroll"); // 禁止滾動
@@ -32,6 +33,7 @@ function portfolioPagesOpen(){
 // 頁面彈窗關閉
 function portfolioPagesClose(){
 		document.getElementById("pagesBox").style.display = "none"; // 彈窗關閉
+		document.getElementById("pagesBoxBackground").style.display = "none"; // 彈窗背景隱藏
 		document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 		document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
 		document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
@@ -58,10 +60,10 @@ function portfolioPrevious(){
 setInterval( function portfolioPagesChange(){
 	if (pages == 1){
 		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/about.webp" loading="lazy" alt="">';
+		'<img src="portfolio/A4/portfolio_A4_About.webp" loading="lazy" alt="">';
 	}else if (pages == 2){
 		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/Sound Truck of Democracy 01.webp" loading="lazy" alt="">';
+		'<img src="portfolio/A4/portfolio_A4_Sound Truck of Democracy 01.webp" loading="lazy" alt="">';
 	}
 }, 100);
 
@@ -70,6 +72,7 @@ setInterval( function portfolioPagesChange(){
 function pagesBox01(){
 	pages = 1;
 	document.getElementById("pagesBox").style.display = "none"; // 彈窗關閉
+	document.getElementById("pagesBoxBackground").style.display = "none"; // 彈窗背景隱藏
 	document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
 	document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
@@ -78,6 +81,7 @@ function pagesBox01(){
 function pagesBox02(){
 	pages = 2;
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -87,6 +91,7 @@ function pagesBox02(){
 
 function pagesBoxMobile01(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -95,6 +100,7 @@ function pagesBoxMobile01(){
 
 function pagesBoxMobile02(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -103,6 +109,7 @@ function pagesBoxMobile02(){
 
 function pagesBoxMobile03(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -111,6 +118,7 @@ function pagesBoxMobile03(){
 
 function pagesBoxMobile04(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -119,6 +127,7 @@ function pagesBoxMobile04(){
 
 function pagesBoxMobile05(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -127,6 +136,7 @@ function pagesBoxMobile05(){
 
 function pagesBoxMobile06(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -135,6 +145,7 @@ function pagesBoxMobile06(){
 
 function pagesBoxMobile07(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -143,6 +154,7 @@ function pagesBoxMobile07(){
 
 function pagesBoxMobile08(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -151,6 +163,7 @@ function pagesBoxMobile08(){
 
 function pagesBoxMobile09(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -159,6 +172,7 @@ function pagesBoxMobile09(){
 
 function pagesBoxMobile10(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -167,6 +181,7 @@ function pagesBoxMobile10(){
 
 function pagesBoxMobile11(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -175,6 +190,7 @@ function pagesBoxMobile11(){
 
 function pagesBoxMobile12(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -183,6 +199,7 @@ function pagesBoxMobile12(){
 
 function pagesBoxMobile13(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -191,6 +208,7 @@ function pagesBoxMobile13(){
 
 function pagesBoxMobile14(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -199,6 +217,7 @@ function pagesBoxMobile14(){
 
 function pagesBoxMobile15(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -207,6 +226,7 @@ function pagesBoxMobile15(){
 
 function pagesBoxMobile16(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -215,6 +235,7 @@ function pagesBoxMobile16(){
 
 function pagesBoxMobile17(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -223,6 +244,7 @@ function pagesBoxMobile17(){
 
 function pagesBoxMobile18(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -231,6 +253,7 @@ function pagesBoxMobile18(){
 
 function pagesBoxMobile19(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -239,6 +262,7 @@ function pagesBoxMobile19(){
 
 function pagesBoxMobile20(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -247,6 +271,7 @@ function pagesBoxMobile20(){
 
 function pagesBoxMobile21(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -255,6 +280,7 @@ function pagesBoxMobile21(){
 
 function pagesBoxMobile22(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -263,6 +289,7 @@ function pagesBoxMobile22(){
 
 function pagesBoxMobile23(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -271,6 +298,7 @@ function pagesBoxMobile23(){
 
 function pagesBoxMobile24(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -279,6 +307,7 @@ function pagesBoxMobile24(){
 
 function pagesBoxMobile25(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -287,6 +316,7 @@ function pagesBoxMobile25(){
 
 function pagesBoxMobile26(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -295,6 +325,7 @@ function pagesBoxMobile26(){
 
 function pagesBoxMobile27(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -303,6 +334,7 @@ function pagesBoxMobile27(){
 
 function pagesBoxMobile28(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -311,6 +343,7 @@ function pagesBoxMobile28(){
 
 function pagesBoxMobile29(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -319,6 +352,7 @@ function pagesBoxMobile29(){
 
 function pagesBoxMobile30(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -327,6 +361,7 @@ function pagesBoxMobile30(){
 
 function pagesBoxMobile31(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -335,6 +370,7 @@ function pagesBoxMobile31(){
 
 function pagesBoxMobile32(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -343,6 +379,7 @@ function pagesBoxMobile32(){
 
 function pagesBoxMobile33(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -351,6 +388,7 @@ function pagesBoxMobile33(){
 
 function pagesBoxMobile34(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -359,6 +397,7 @@ function pagesBoxMobile34(){
 
 function pagesBoxMobile35(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -367,6 +406,7 @@ function pagesBoxMobile35(){
 
 function pagesBoxMobile36(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -375,6 +415,7 @@ function pagesBoxMobile36(){
 
 function pagesBoxMobile37(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -383,6 +424,7 @@ function pagesBoxMobile37(){
 
 function pagesBoxMobile38(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -391,6 +433,7 @@ function pagesBoxMobile38(){
 
 function pagesBoxMobile39(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -399,6 +442,7 @@ function pagesBoxMobile39(){
 
 function pagesBoxMobile40(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -407,6 +451,7 @@ function pagesBoxMobile40(){
 
 function pagesBoxMobile41(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -415,6 +460,7 @@ function pagesBoxMobile41(){
 
 function pagesBoxMobile42(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -423,6 +469,7 @@ function pagesBoxMobile42(){
 
 function pagesBoxMobile43(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -431,6 +478,7 @@ function pagesBoxMobile43(){
 
 function pagesBoxMobile44(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -439,6 +487,7 @@ function pagesBoxMobile44(){
 
 function pagesBoxMobile45(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -447,6 +496,7 @@ function pagesBoxMobile45(){
 
 function pagesBoxMobile46(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -455,6 +505,7 @@ function pagesBoxMobile46(){
 
 function pagesBoxMobile47(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -463,6 +514,7 @@ function pagesBoxMobile47(){
 
 function pagesBoxMobile48(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -471,6 +523,7 @@ function pagesBoxMobile48(){
 
 function pagesBoxMobile49(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -479,6 +532,7 @@ function pagesBoxMobile49(){
 
 function pagesBoxMobile50(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -487,6 +541,7 @@ function pagesBoxMobile50(){
 
 function pagesBoxMobile51(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -495,6 +550,7 @@ function pagesBoxMobile51(){
 
 function pagesBoxMobile52(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -503,6 +559,7 @@ function pagesBoxMobile52(){
 
 function pagesBoxMobile53(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -511,6 +568,7 @@ function pagesBoxMobile53(){
 
 function pagesBoxMobile54(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -519,6 +577,7 @@ function pagesBoxMobile54(){
 
 function pagesBoxMobile55(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -527,6 +586,7 @@ function pagesBoxMobile55(){
 
 function pagesBoxMobile56(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -535,6 +595,7 @@ function pagesBoxMobile56(){
 
 function pagesBoxMobile57(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -543,6 +604,7 @@ function pagesBoxMobile57(){
 
 function pagesBoxMobile58(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
@@ -551,6 +613,7 @@ function pagesBoxMobile58(){
 
 function pagesBoxMobile59(){
 	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
 	document.querySelector("body").classList.remove("no-scroll");
