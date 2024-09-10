@@ -28,6 +28,7 @@ function portfolioPagesOpen(){
 		document.getElementById("pagesBox").style.display = "flex"; // 彈窗開啟
 		document.getElementById("iconPortfolioClosePages").style.display = "flex"; // 彈窗按鈕顯示
 		document.getElementById("portfolioIconContainerContainer").style.display = "none"; // 按鈕隱藏
+		document.getElementById("pagesTitleContainerContainer").style.display = "flex"; // 作品集標題顯示
 }
 
 // 頁面彈窗關閉
@@ -37,6 +38,7 @@ function portfolioPagesClose(){
 		document.getElementById("pagesBox").style.display = "none"; // 彈窗關閉
 		document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 		document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
+		document.getElementById("pagesTitleContainerContainer").style.display = "none"; // 作品集標題隱藏
 }
 
 // 頁面前後按鈕
