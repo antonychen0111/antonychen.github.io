@@ -1747,7 +1747,8 @@ h6 {
 
 .portfolioMobileContainer {
 	
-	height: 90vh;
+	height: 50rem;
+	margin-bottom: 1rem;
 	
 	display: flex;
 	justify-content: center;
