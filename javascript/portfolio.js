@@ -244,3 +244,315 @@ function pagesBoxMobile20(){
 	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pages20").scrollIntoView({behavior: "smooth", block: "center"});
 }
+
+function pagesBoxMobile21(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages21").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile22(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages22").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile23(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages23").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile24(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages24").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile25(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages25").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile26(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages26").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile27(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages27").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile28(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages28").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile29(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages29").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile30(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages30").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile31(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages31").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile32(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages32").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile33(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages33").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile34(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages34").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile35(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages35").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile36(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages36").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile37(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages37").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile38(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages38").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile39(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages39").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile40(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages40").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile41(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages41").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile42(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages42").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile43(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages43").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile44(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages44").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile45(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages45").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile46(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages46").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile47(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages47").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile48(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages48").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile49(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages49").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile50(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages50").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile51(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages51").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile52(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages52").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile53(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages53").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile54(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages54").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile55(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages55").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile56(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages56").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile57(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages57").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile58(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages58").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function pagesBoxMobile59(){
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("pages59").scrollIntoView({behavior: "smooth", block: "center"});
+}
