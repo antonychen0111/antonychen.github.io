@@ -59,220 +59,187 @@ function portfolioPrevious(){
 	}
 }
 
-// 頁面前後切換
+// 頁面切換
 
 var portfolioNextPages = document.getElementById("iconPortfolioNext");
 var portfolioPreviousPages = document.getElementById("iconPortfolioPrevious");
 
-	portfolioNextPages.addEventListener("click", function (){
+var pages01 = '<img src="portfolio/A4/portfolio_A4_About.webp" loading="lazy" alt="">';
+var pages02 = '<img src="portfolio/A4/portfolio_A4_Sound Truck of Democracy 01.webp" loading="lazy" alt="">';
+var pages03 = '<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 01.webp" loading="lazy" alt="">';
+var pages04 = '<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 02.webp" loading="lazy" alt="">';
+var pages05 = '<img src="portfolio/A4/portfolio_A4_Streets in Taiwan 01.webp" loading="lazy" alt="">';
+var pages06 = '<img src="portfolio/A4/portfolio_A4_NON DIZZY MAN 01.webp" loading="lazy" alt="">';
+var pages07 = '<img src="portfolio/A4/portfolio_A4_Three Shorts Room at Night 01.webp" loading="lazy" alt="">';
+var pages08 = '<img src="portfolio/A4/portfolio_A4_Feng Shui 01.webp" loading="lazy" alt="">';
+var pages09 = '<img src="portfolio/A4/portfolio_A4_Running Dot 01.webp" loading="lazy" alt="">';
+var pages10 = '<img src="portfolio/A4/portfolio_A4_3D Works Collection 01.webp" loading="lazy" alt="">';
+var pages11 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 01.webp" loading="lazy" alt="">';
+var pages12 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 02.webp" loading="lazy" alt="">';
+var pages13 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 03.webp" loading="lazy" alt="">';
+var pages14 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
+var pages15 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
+var pages16 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
+var pages17 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 02.webp" loading="lazy" alt="">';
+var pages18 = '<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 01.webp" loading="lazy" alt="">';
+var pages19 = '<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 02.webp" loading="lazy" alt="">';
+var pages20 = '<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 01.webp" loading="lazy" alt="">';
+var pages21 = '<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 02.webp" loading="lazy" alt="">';
+var pages22 = '<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 01.webp" loading="lazy" alt="">';
+var pages23 = '<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 02.webp" loading="lazy" alt="">';
+var pages24 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Orientation Camp 01.webp" loading="lazy" alt="">';
+var pages25 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 01.webp" loading="lazy" alt="">';
+var pages26 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 02.webp" loading="lazy" alt="">';
+var pages27 = '<img src="portfolio/A4/portfolio_A4_Doraemon Font 01.webp" loading="lazy" alt="">';
+var pages28 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 01.webp" loading="lazy" alt="">';
+var pages29 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 02.webp" loading="lazy" alt="">';
+var pages30 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 03.webp" loading="lazy" alt="">';
+var pages31 = '<img src="portfolio/A4/portfolio_A4_TCIVS 2019 Yearbook\'s Cover Design 01.webp" loading="lazy" alt="">';
+var pages32 = '<img src="portfolio/A4/portfolio_A4_TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt 01.webp" loading="lazy" alt="">';
+var pages33 = '<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 01.webp" loading="lazy" alt="">';
+var pages34 = '<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
+
+portfolioNextPages.addEventListener("click", function (){
 	if (pages == 1){
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_About.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages01;
 	}else if (pages == 2) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Sound Truck of Democracy 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages02;
 	}else if (pages == 3) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages03;
 	}else if (pages == 4) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages04;
 	}else if (pages == 5) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Streets in Taiwan 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages05;
 	}else if (pages == 6) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NON DIZZY MAN 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages06;
 	}else if (pages == 7) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Three Shorts Room at Night 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages07;
 	}else if (pages == 8) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Feng Shui 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages08;
 	}else if (pages == 9) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Running Dot 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages09;
 	}else if (pages == 10) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_3D Works Collection 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages10;
 	}else if (pages == 11) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages11;
 	}else if (pages == 12) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages12;
 	}else if (pages == 13) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 03.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages13;
 	}else if (pages == 14) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages14;
 	}else if (pages == 15) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages15;
 	}else if (pages == 16) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages16;
 	}else if (pages == 17) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages17;
 	}else if (pages == 18) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages18;
 	}else if (pages == 19) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages19;
 	}else if (pages == 20) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages20;
 	}else if (pages == 21) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages21;
 	}else if (pages == 22) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages22;
 	}else if (pages == 23) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages23;
 	}else if (pages == 24) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Orientation Camp 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages24;
 	}else if (pages == 25) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages25;
 	}else if (pages == 26) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages26;
 	}else if (pages == 27) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Doraemon Font 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages27;
 	}else if (pages == 28) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Thought Crime 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages28;
 	}else if (pages == 29) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Thought Crime 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages29;
 	}else if (pages == 30) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Thought Crime 03.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages30;
 	}else if (pages == 31) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS 2019 Yearbook\'s Cover Design 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages31;
 	}else if (pages == 32) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages32;
 	}else if (pages == 33) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages33;
 	}else if (pages == 34) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages34;
 	}
 }, false);
 
-	portfolioPreviousPages.addEventListener("click", function (){
+portfolioPreviousPages.addEventListener("click", function (){
 	if (pages == 1){
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_About.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages01;
 	}else if (pages == 2) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Sound Truck of Democracy 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages02;
 	}else if (pages == 3) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages03;
 	}else if (pages == 4) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages04;
 	}else if (pages == 5) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Streets in Taiwan 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages05;
 	}else if (pages == 6) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NON DIZZY MAN 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages06;
 	}else if (pages == 7) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Three Shorts Room at Night 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages07;
 	}else if (pages == 8) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Feng Shui 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages08;
 	}else if (pages == 9) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Running Dot 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages09;
 	}else if (pages == 10) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_3D Works Collection 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages10;
 	}else if (pages == 11) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages11;
 	}else if (pages == 12) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages12;
 	}else if (pages == 13) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 03.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages13;
 	}else if (pages == 14) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages14;
 	}else if (pages == 15) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages15;
 	}else if (pages == 16) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages16;
 	}else if (pages == 17) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages17;
 	}else if (pages == 18) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages18;
 	}else if (pages == 19) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages19;
 	}else if (pages == 20) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages20;
 	}else if (pages == 21) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages21;
 	}else if (pages == 22) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages22;
 	}else if (pages == 23) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages23;
 	}else if (pages == 24) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Orientation Camp 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages24;
 	}else if (pages == 25) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages25;
 	}else if (pages == 26) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages26;
 	}else if (pages == 27) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Doraemon Font 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages27;
 	}else if (pages == 28) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Thought Crime 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages28;
 	}else if (pages == 29) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Thought Crime 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages29;
 	}else if (pages == 30) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_Thought Crime 03.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages30;
 	}else if (pages == 31) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS 2019 Yearbook\'s Cover Design 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages31;
 	}else if (pages == 32) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages32;
 	}else if (pages == 33) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 01.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages33;
 	}else if (pages == 34) {
-		document.getElementById("portfolioContainer").innerHTML =
-		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
+		document.getElementById("portfolioContainer").innerHTML = pages34;
 	}
 }, false);
 
@@ -284,8 +251,9 @@ function pagesBox01(){
 	document.getElementById("pagesBoxBackground").style.display = "none"; // 彈窗背景隱藏
 	document.getElementById("iconPortfolioClosePages").style.display = "none"; // 彈窗按鈕隱藏
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex"; // 按鈕顯示
-	document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
 	document.getElementById("pagesTitleContainerContainer").style.display = "none"; // 作品集標題隱藏
+	document.querySelector("body").classList.remove("no-scroll"); // 允許滾動
+	document.getElementById("portfolioContainer").innerHTML = pages01; // 頁面切換
 }
 
 function pagesBox02(){
@@ -294,8 +262,9 @@ function pagesBox02(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages02;
 }
 
 function pagesBox03(){
@@ -304,8 +273,9 @@ function pagesBox03(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages03;
 }
 
 function pagesBox04(){
@@ -314,8 +284,9 @@ function pagesBox04(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages04;
 }
 
 function pagesBox05(){
@@ -324,8 +295,9 @@ function pagesBox05(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages05;
 }
 
 function pagesBox06(){
@@ -334,8 +306,9 @@ function pagesBox06(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages06;
 }
 
 function pagesBox07(){
@@ -344,8 +317,9 @@ function pagesBox07(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages07;
 }
 
 function pagesBox08(){
@@ -354,8 +328,9 @@ function pagesBox08(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages08;
 }
 
 function pagesBox09(){
@@ -364,8 +339,9 @@ function pagesBox09(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages09;
 }
 
 function pagesBox10(){
@@ -374,8 +350,9 @@ function pagesBox10(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages10;
 }
 
 function pagesBox11(){
@@ -384,8 +361,9 @@ function pagesBox11(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages11;
 }
 
 function pagesBox12(){
@@ -394,8 +372,9 @@ function pagesBox12(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages12;
 }
 
 function pagesBox13(){
@@ -404,8 +383,9 @@ function pagesBox13(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages13;
 }
 
 function pagesBox14(){
@@ -414,8 +394,9 @@ function pagesBox14(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages14;
 }
 
 function pagesBox15(){
@@ -424,8 +405,9 @@ function pagesBox15(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages15;
 }
 
 function pagesBox16(){
@@ -434,8 +416,9 @@ function pagesBox16(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages16;
 }
 
 function pagesBox17(){
@@ -444,8 +427,9 @@ function pagesBox17(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages17;
 }
 
 function pagesBox18(){
@@ -454,8 +438,9 @@ function pagesBox18(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages18;
 }
 
 function pagesBox19(){
@@ -464,8 +449,9 @@ function pagesBox19(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages19;
 }
 
 function pagesBox20(){
@@ -474,8 +460,9 @@ function pagesBox20(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages20;
 }
 
 function pagesBox21(){
@@ -484,8 +471,9 @@ function pagesBox21(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages21;
 }
 
 function pagesBox22(){
@@ -494,8 +482,9 @@ function pagesBox22(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages22;
 }
 
 function pagesBox23(){
@@ -504,8 +493,9 @@ function pagesBox23(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages23;
 }
 
 function pagesBox24(){
@@ -514,8 +504,9 @@ function pagesBox24(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages24;
 }
 
 function pagesBox25(){
@@ -524,8 +515,9 @@ function pagesBox25(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages25;
 }
 
 function pagesBox26(){
@@ -534,8 +526,9 @@ function pagesBox26(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages26;
 }
 
 function pagesBox27(){
@@ -544,8 +537,9 @@ function pagesBox27(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages27;
 }
 
 function pagesBox28(){
@@ -554,8 +548,9 @@ function pagesBox28(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages28;
 }
 
 function pagesBox29(){
@@ -564,8 +559,9 @@ function pagesBox29(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages29;
 }
 
 function pagesBox30(){
@@ -574,8 +570,9 @@ function pagesBox30(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages30;
 }
 
 function pagesBox31(){
@@ -584,8 +581,9 @@ function pagesBox31(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages31;
 }
 
 function pagesBox32(){
@@ -594,8 +592,9 @@ function pagesBox32(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages32;
 }
 
 function pagesBox33(){
@@ -604,8 +603,9 @@ function pagesBox33(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages33;
 }
 
 function pagesBox34(){
@@ -614,8 +614,9 @@ function pagesBox34(){
 	document.getElementById("pagesBoxBackground").style.display = "none";
 	document.getElementById("iconPortfolioClosePages").style.display = "none";
 	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
-	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages34;
 }
 
 // 頁面彈窗跳轉手機版
