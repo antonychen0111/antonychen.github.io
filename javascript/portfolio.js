@@ -59,7 +59,10 @@ function portfolioPrevious(){
 }
 
 // 頁面前後切換
-setInterval( function portfolioPagesChange(){
+
+var portfolioNextPages = document.getElementById("iconPortfolioNext");
+var portfolioPreviousPages = document.getElementById("iconPortfolioPrevious");
+	portfolioNextPages.addEventListener("click", function (){
 	if (pages == 1){
 		document.getElementById("portfolioContainer").innerHTML =
 		'<img src="portfolio/A4/portfolio_A4_About.webp" loading="lazy" alt="">';
@@ -163,7 +166,116 @@ setInterval( function portfolioPagesChange(){
 		document.getElementById("portfolioContainer").innerHTML =
 		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
 	}
-}, 100);
+  },
+  false
+);
+	portfolioPreviousPages.addEventListener("click", function (){
+	if (pages == 1){
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_About.webp" loading="lazy" alt="">';
+	}else if (pages == 2) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Sound Truck of Democracy 01.webp" loading="lazy" alt="">';
+	}else if (pages == 3) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 01.webp" loading="lazy" alt="">';
+	}else if (pages == 4) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Transfer to the Taxi 02.webp" loading="lazy" alt="">';
+	}else if (pages == 5) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Streets in Taiwan 01.webp" loading="lazy" alt="">';
+	}else if (pages == 6) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_NON DIZZY MAN 01.webp" loading="lazy" alt="">';
+	}else if (pages == 7) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Three Shorts Room at Night 01.webp" loading="lazy" alt="">';
+	}else if (pages == 8) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Feng Shui 01.webp" loading="lazy" alt="">';
+	}else if (pages == 9) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Running Dot 01.webp" loading="lazy" alt="">';
+	}else if (pages == 10) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_3D Works Collection 01.webp" loading="lazy" alt="">';
+	}else if (pages == 11) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 01.webp" loading="lazy" alt="">';
+	}else if (pages == 12) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 02.webp" loading="lazy" alt="">';
+	}else if (pages == 13) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 03.webp" loading="lazy" alt="">';
+	}else if (pages == 14) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
+	}else if (pages == 15) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
+	}else if (pages == 16) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
+	}else if (pages == 17) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 02.webp" loading="lazy" alt="">';
+	}else if (pages == 18) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 01.webp" loading="lazy" alt="">';
+	}else if (pages == 19) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 02.webp" loading="lazy" alt="">';
+	}else if (pages == 20) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 01.webp" loading="lazy" alt="">';
+	}else if (pages == 21) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 02.webp" loading="lazy" alt="">';
+	}else if (pages == 22) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 01.webp" loading="lazy" alt="">';
+	}else if (pages == 23) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 02.webp" loading="lazy" alt="">';
+	}else if (pages == 24) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Orientation Camp 01.webp" loading="lazy" alt="">';
+	}else if (pages == 25) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 01.webp" loading="lazy" alt="">';
+	}else if (pages == 26) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 02.webp" loading="lazy" alt="">';
+	}else if (pages == 27) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Doraemon Font 01.webp" loading="lazy" alt="">';
+	}else if (pages == 28) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Thought Crime 01.webp" loading="lazy" alt="">';
+	}else if (pages == 29) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Thought Crime 02.webp" loading="lazy" alt="">';
+	}else if (pages == 30) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_Thought Crime 03.webp" loading="lazy" alt="">';
+	}else if (pages == 31) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_TCIVS 2019 Yearbook\'s Cover Design 01.webp" loading="lazy" alt="">';
+	}else if (pages == 32) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt 01.webp" loading="lazy" alt="">';
+	}else if (pages == 33) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 01.webp" loading="lazy" alt="">';
+	}else if (pages == 34) {
+		document.getElementById("portfolioContainer").innerHTML =
+		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
+	}
+  },
+  false
+);
 
 // 頁面彈窗跳轉
 
