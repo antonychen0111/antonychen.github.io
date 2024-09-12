@@ -658,7 +658,7 @@ h6 {
 }
 
 /* 首頁圖1 */
-#indexImagesContainerContainer1 {
+#indexImagesContainerContainer01 {
 	
 	height: calc(22.5rem + 67.5vh);
 	width: 100%;
@@ -669,7 +669,7 @@ h6 {
 }
 
 /* 首頁圖2 */
-#indexImagesContainerContainer2 {
+#indexImagesContainerContainer02 {
 	
 	height: calc(22.5rem + 67.5vh);
 	width: 100%;
