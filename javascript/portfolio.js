@@ -1,7 +1,5 @@
 // JavaScript Document
 
-	var pages = 1; // 頁數
-
 	// 轉址到 https:
 	var host = "antonychen.work";
 	if ((host == window.location.host) && (window.location.protocol != "https:")){
@@ -42,6 +40,9 @@ function portfolioPagesClose(){
 }
 
 // 頁面前後按鈕
+
+var pages = 1; // 頁數
+
 function portfolioNext(){
 	if (pages < 34){
 		pages ++;
@@ -62,6 +63,7 @@ function portfolioPrevious(){
 
 var portfolioNextPages = document.getElementById("iconPortfolioNext");
 var portfolioPreviousPages = document.getElementById("iconPortfolioPrevious");
+
 	portfolioNextPages.addEventListener("click", function (){
 	if (pages == 1){
 		document.getElementById("portfolioContainer").innerHTML =
@@ -166,9 +168,8 @@ var portfolioPreviousPages = document.getElementById("iconPortfolioPrevious");
 		document.getElementById("portfolioContainer").innerHTML =
 		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
 	}
-  },
-  false
-);
+}, false);
+
 	portfolioPreviousPages.addEventListener("click", function (){
 	if (pages == 1){
 		document.getElementById("portfolioContainer").innerHTML =
@@ -273,9 +274,7 @@ var portfolioPreviousPages = document.getElementById("iconPortfolioPrevious");
 		document.getElementById("portfolioContainer").innerHTML =
 		'<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
 	}
-  },
-  false
-);
+}, false);
 
 // 頁面彈窗跳轉
 

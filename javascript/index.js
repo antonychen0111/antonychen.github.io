@@ -1,7 +1,5 @@
 // JavaScript Document
 
-	var indexImages = 1; // 首頁圖前後按鈕
-
 	// 轉址到 https:
 	var host = "antonychen.work";
 	if ((host == window.location.host) && (window.location.protocol != "https:")){
@@ -47,24 +45,49 @@ function toTop(){
 }
 
 // 首頁圖前後按鈕
+
+var indexImages = 1; // 首頁圖前後按鈕
+
 function indexImagesNext(){
+	if (indexImages < 2){
 		indexImages ++;
+	}else if (indexImages == 2){
+		indexImages = 1;
+	}
 }
 
 function indexImagesPrevious(){
+		if (indexImages > 1){
 		indexImages --;
+	}else if (indexImages == 1){
+		indexImages = 2;
+	}
 }
 
 // 首頁圖切換
-setInterval( function indexImagesChange(){
-	if (Math.abs(indexImages) %2 == 1){
+
+var ImagesNext = document.getElementById("iconIndexImagesNext");
+var ImagesPrevious = document.getElementById("iconIndexImagesPrevious");
+
+ImagesNext.addEventListener("click", function (){
+	if (indexImages == 1){
 		document.getElementById("indexImagesContainerContainer1").style.display = "flex";
 		document.getElementById("indexImagesContainerContainer2").style.display = "none";
-	}else if (Math.abs(indexImages) %2 == 0){
+	}else if (indexImages == 2){
 		document.getElementById("indexImagesContainerContainer1").style.display = "none";
 		document.getElementById("indexImagesContainerContainer2").style.display = "flex";
 	}
-}, 100);
+}, false);
+
+ImagesPrevious.addEventListener("click", function (){
+	if (indexImages == 1){
+		document.getElementById("indexImagesContainerContainer1").style.display = "flex";
+		document.getElementById("indexImagesContainerContainer2").style.display = "none";
+	}else if (indexImages == 2){
+		document.getElementById("indexImagesContainerContainer1").style.display = "none";
+		document.getElementById("indexImagesContainerContainer2").style.display = "flex";
+	}
+}, false);
 
 // 菜單彈窗開啟
 function menuOpen(){
