@@ -71,21 +71,21 @@ var ImagesPrevious = document.getElementById("iconIndexImagesPrevious");
 
 ImagesNext.addEventListener("click", function (){
 	if (indexImages == 1){
-		document.getElementById("indexImagesContainerContainer1").style.display = "flex";
-		document.getElementById("indexImagesContainerContainer2").style.display = "none";
+		document.getElementById("indexImagesContainerContainer01").style.display = "flex";
+		document.getElementById("indexImagesContainerContainer02").style.display = "none";
 	}else if (indexImages == 2){
-		document.getElementById("indexImagesContainerContainer1").style.display = "none";
-		document.getElementById("indexImagesContainerContainer2").style.display = "flex";
+		document.getElementById("indexImagesContainerContainer01").style.display = "none";
+		document.getElementById("indexImagesContainerContainer02").style.display = "flex";
 	}
 }, false);
 
 ImagesPrevious.addEventListener("click", function (){
 	if (indexImages == 1){
-		document.getElementById("indexImagesContainerContainer1").style.display = "flex";
-		document.getElementById("indexImagesContainerContainer2").style.display = "none";
+		document.getElementById("indexImagesContainerContainer01").style.display = "flex";
+		document.getElementById("indexImagesContainerContainer02").style.display = "none";
 	}else if (indexImages == 2){
-		document.getElementById("indexImagesContainerContainer1").style.display = "none";
-		document.getElementById("indexImagesContainerContainer2").style.display = "flex";
+		document.getElementById("indexImagesContainerContainer01").style.display = "none";
+		document.getElementById("indexImagesContainerContainer02").style.display = "flex";
 	}
 }, false);
 
