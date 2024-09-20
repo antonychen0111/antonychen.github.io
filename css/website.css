@@ -119,6 +119,14 @@ h6 {
 	margin: 0 0 5rem 0;
 }
 
+/* 分隔線 */
+
+hr {
+	
+    border: 0;
+    border-top: 0.1rem solid var(--lightTextColor);
+}
+
 /* 標題文字 */
 .title {
 	
