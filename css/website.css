@@ -2043,3 +2043,175 @@ h6 {
 	display: flex;
 	justify-content: center;
 }
+
+/* 履歷網頁 */
+
+#resume {
+	
+	width: 100%;
+	margin-top: 0.5rem;
+	
+	display: flex;
+	justify-content: center;
+}
+
+/* 履歷連結樹按鈕 */
+
+.resumeLinkButtonContainer {
+	
+	width: 100%;
+	margin-bottom: 1rem;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	float: left;
+}
+
+.resumeLinkButton {
+	
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 0.75rem;
+	
+	position: relative;
+	transition: all 0.25s ease;
+}
+
+.resumeLinkButton:hover {
+	
+	filter: drop-shadow(0rem 0rem 1rem var(--darkButtonHoverColor));
+	
+	transform: translateY(-0.3rem);
+	transition: all 0.25s ease;
+}
+
+.resumeLinkButton:active {
+	
+	transform: scale(0.9);
+	transition: all 0.1s ease;
+}
+
+/* 連結樹按鈕背景 */
+
+.resumeLinkButtonBackground {
+	
+	height: 3rem;
+	width: 97.5%;
+	border: 0.1rem solid var(--lightTextColor);
+	border-radius: 0.3rem;
+}
+
+/* 履歷連結樹按鈕圖示 */
+
+.resumeLinkButtonIcon {
+	
+	position: absolute;
+}
+
+.resumeLinkButtonIcon img{
+	
+	height: 2rem;
+	margin-top: 25%;
+	margin-left: 25%;
+}
+
+/* 履歷連結樹按鈕文字 */
+.resumeLinkButtonText {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--lightTextColor);
+	text-align: center;
+	text-decoration: none;
+	
+	width: 100%;
+	margin-top: 0.75rem;
+	position: absolute;
+}
+
+/* 履歷連結樹按鈕電子信箱 */
+#resumeLinkButtonEmail {
+	
+	font-family: 'Prompt', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--lightTextColor);
+	text-align: center;
+	text-decoration: none;
+	
+	width: 100%;
+	margin-top: 0.75rem;
+	position: absolute;
+}
+
+/* 履歷內容區塊 */
+.resumeContainer{
+		
+	height: auto;
+	width: 92%;
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+	margin: 1.5rem 0 1.5rem 0;
+	padding: 0 2.5rem 0 1rem;
+}
+
+/* 履歷頭貼位置 */
+.resumeHeadshot {
+	
+	margin-left: 1rem;
+	padding-right: 1.5rem;
+}
+
+/* 履歷頭貼 */
+.resumeHeadshot img{
+	
+	height: auto;
+	width: calc(5rem + 1.5vw);
+	border: 0.1rem solid var(--lightDescriptionColor);
+	border-radius: 0.2rem;
+}
+
+/* 列表區塊 */
+
+.listParagraph {
+	
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	float: left;
+	
+	margin: 0.5rem 0 2.5rem 0;
+}
+
+.listContainer {
+	
+	border: 0.1rem solid var(--lightTextColor);
+	border-radius: 0.3rem;
+	
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.75rem;
+	padding: 0.75rem;
+}
+
+/* 分欄區塊 */
+
+.columnParagraph {
+	
+	display: flex;
+	justify-content: space-between;
+	margin: 0.5rem 0 2.5rem 0;
+}
+
+.columnContainer {
+	
+	margin-bottom: 0.75rem;
+}
