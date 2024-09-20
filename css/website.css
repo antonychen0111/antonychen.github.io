@@ -883,7 +883,7 @@ hr {
 
 /* 連結樹按鈕 */
 
-#linkButtonContainer {
+.linkButtonContainer {
 	
 	width: 100%;
 	margin-bottom: 1rem;
@@ -1032,7 +1032,7 @@ hr {
 }
 
 .boxContainer{
-		
+	
 	height: 92.5%;
 	width: 100%;
 	
