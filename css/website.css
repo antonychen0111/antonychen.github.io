@@ -1808,12 +1808,11 @@ hr {
 	
 	display: flex;
 	justify-content: space-between;
-	margin: 0.5rem 0 2.5rem 0;
 }
 
-.columnContainer {
+.columnContainer{
 	
-	margin-bottom: 0.75rem;
+	width: 47.5%;
 }
 
 /* 履歷連結樹按鈕 */
