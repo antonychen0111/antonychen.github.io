@@ -6,6 +6,19 @@
 		window.location.protocol = "https";
 	}
 
+// 載入網站進度條
+
+window.onload = setTimeout( function() {
+        window.document.documentElement.scrollTop = 0;
+        document.body.style.overflow = "hidden";
+    }, 1);
+
+window.onload = setTimeout( function() {
+        document.body.style.overflow = "visible";
+        document.querySelector("html").style.overflowY = "scroll";
+        document.getElementById("loadingBar").style.display = "none";
+    }, 1000);
+
 // 回到頂端按鈕
 setInterval( function iconToTop(){
 	if (window.pageYOffset > 100 || document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { // 滾動高度按鈕顯示
