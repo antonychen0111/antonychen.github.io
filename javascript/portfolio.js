@@ -79,8 +79,8 @@ var pages12 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Mu
 var pages13 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 03.webp" loading="lazy" alt="">';
 var pages14 = '<img src="portfolio/A4/portfolio_A4_Summertime Daze Theater 01.webp" loading="lazy" alt="">';
 var pages15 = '<img src="portfolio/A4/portfolio_A4_Summertime Daze Theater 02.webp" loading="lazy" alt="">';
-var pages16 = '<img src="portfolio/A4/portfolio_A4_Siou Fong Chinese Wedding Dress 01.webp" loading="lazy" alt="">';
-var pages17 = '<img src="portfolio/A4/portfolio_A4_Siou Fong Chinese Wedding Dress 02.webp" loading="lazy" alt="">';
+var pages16 = '<img src="portfolio/A4/portfolio_A4_Cheongsam Dress Factory 01.webp" loading="lazy" alt="">';
+var pages17 = '<img src="portfolio/A4/portfolio_A4_Cheongsam Dress Factory 02.webp" loading="lazy" alt="">';
 var pages18 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
 var pages19 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
 var pages20 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
