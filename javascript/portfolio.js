@@ -77,27 +77,31 @@ var pages10 = '<img src="portfolio/A4/portfolio_A4_3D Works Collection 01.webp" 
 var pages11 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 01.webp" loading="lazy" alt="">';
 var pages12 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 02.webp" loading="lazy" alt="">';
 var pages13 = '<img src="portfolio/A4/portfolio_A4_Uân-liû Native Languages Music Festival 03.webp" loading="lazy" alt="">';
-var pages14 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
-var pages15 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
-var pages16 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
-var pages17 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 02.webp" loading="lazy" alt="">';
-var pages18 = '<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 01.webp" loading="lazy" alt="">';
-var pages19 = '<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 02.webp" loading="lazy" alt="">';
-var pages20 = '<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 01.webp" loading="lazy" alt="">';
-var pages21 = '<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 02.webp" loading="lazy" alt="">';
-var pages22 = '<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 01.webp" loading="lazy" alt="">';
-var pages23 = '<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 02.webp" loading="lazy" alt="">';
-var pages24 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Orientation Camp 01.webp" loading="lazy" alt="">';
-var pages25 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 01.webp" loading="lazy" alt="">';
-var pages26 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 02.webp" loading="lazy" alt="">';
-var pages27 = '<img src="portfolio/A4/portfolio_A4_Doraemon Font 01.webp" loading="lazy" alt="">';
-var pages28 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 01.webp" loading="lazy" alt="">';
-var pages29 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 02.webp" loading="lazy" alt="">';
-var pages30 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 03.webp" loading="lazy" alt="">';
-var pages31 = '<img src="portfolio/A4/portfolio_A4_TCIVS 2019 Yearbook\'s Cover Design 01.webp" loading="lazy" alt="">';
-var pages32 = '<img src="portfolio/A4/portfolio_A4_TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt 01.webp" loading="lazy" alt="">';
-var pages33 = '<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 01.webp" loading="lazy" alt="">';
-var pages34 = '<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
+var pages14 = '<img src="portfolio/A4/portfolio_A4_Summertime Daze Theater 01.webp" loading="lazy" alt="">';
+var pages15 = '<img src="portfolio/A4/portfolio_A4_Summertime Daze Theater 02.webp" loading="lazy" alt="">';
+var pages16 = '<img src="portfolio/A4/portfolio_A4_Siou Fong Chinese Wedding Dress 01.webp" loading="lazy" alt="">';
+var pages17 = '<img src="portfolio/A4/portfolio_A4_Siou Fong Chinese Wedding Dress 02.webp" loading="lazy" alt="">';
+var pages18 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 01.webp" loading="lazy" alt="">';
+var pages19 = '<img src="portfolio/A4/portfolio_A4_Political Cartoon about Taiwan\'s Legislative Yuan 02.webp" loading="lazy" alt="">';
+var pages20 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 01.webp" loading="lazy" alt="">';
+var pages21 = '<img src="portfolio/A4/portfolio_A4_Big Brother Xi is Watching You 02.webp" loading="lazy" alt="">';
+var pages22 = '<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 01.webp" loading="lazy" alt="">';
+var pages23 = '<img src="portfolio/A4/portfolio_A4_Chinese Taipei People 02.webp" loading="lazy" alt="">';
+var pages24 = '<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 01.webp" loading="lazy" alt="">';
+var pages25 = '<img src="portfolio/A4/portfolio_A4_Global Anti-Totalitarianism March Taiwan 02.webp" loading="lazy" alt="">';
+var pages26 = '<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 01.webp" loading="lazy" alt="">';
+var pages27 = '<img src="portfolio/A4/portfolio_A4_17th Taiwan LGBT Pride 02.webp" loading="lazy" alt="">';
+var pages28 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Orientation Camp 01.webp" loading="lazy" alt="">';
+var pages29 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 01.webp" loading="lazy" alt="">';
+var pages30 = '<img src="portfolio/A4/portfolio_A4_NTUST TTDD Freshman Week 02.webp" loading="lazy" alt="">';
+var pages31 = '<img src="portfolio/A4/portfolio_A4_Doraemon Font 01.webp" loading="lazy" alt="">';
+var pages32 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 01.webp" loading="lazy" alt="">';
+var pages33 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 02.webp" loading="lazy" alt="">';
+var pages34 = '<img src="portfolio/A4/portfolio_A4_Thought Crime 03.webp" loading="lazy" alt="">';
+var pages35 = '<img src="portfolio/A4/portfolio_A4_TCIVS 2019 Yearbook\'s Cover Design 01.webp" loading="lazy" alt="">';
+var pages36 = '<img src="portfolio/A4/portfolio_A4_TCIVS 80th & 81st Anniversary Sweatshirt and T-shirt 01.webp" loading="lazy" alt="">';
+var pages37 = '<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 01.webp" loading="lazy" alt="">';
+var pages38 = '<img src="portfolio/A4/portfolio_A4_TCIVS GAC Farewell Party 02.webp" loading="lazy" alt="">';
 
 portfolioNextPages.addEventListener("click", function (){
 	if (pages == 1){
@@ -168,6 +172,14 @@ portfolioNextPages.addEventListener("click", function (){
 		document.getElementById("portfolioContainer").innerHTML = pages33;
 	}else if (pages == 34) {
 		document.getElementById("portfolioContainer").innerHTML = pages34;
+	}else if (pages == 35) {
+		document.getElementById("portfolioContainer").innerHTML = pages35;
+	}else if (pages == 36) {
+		document.getElementById("portfolioContainer").innerHTML = pages36;
+	}else if (pages == 37) {
+		document.getElementById("portfolioContainer").innerHTML = pages37;
+	}else if (pages == 38) {
+		document.getElementById("portfolioContainer").innerHTML = pages38;
 	}
 }, false);
 
@@ -240,6 +252,14 @@ portfolioPreviousPages.addEventListener("click", function (){
 		document.getElementById("portfolioContainer").innerHTML = pages33;
 	}else if (pages == 34) {
 		document.getElementById("portfolioContainer").innerHTML = pages34;
+	}else if (pages == 35) {
+		document.getElementById("portfolioContainer").innerHTML = pages35;
+	}else if (pages == 36) {
+		document.getElementById("portfolioContainer").innerHTML = pages36;
+	}else if (pages == 37) {
+		document.getElementById("portfolioContainer").innerHTML = pages37;
+	}else if (pages == 38) {
+		document.getElementById("portfolioContainer").innerHTML = pages38;
 	}
 }, false);
 
@@ -617,4 +637,48 @@ function pagesBox34(){
 	document.getElementById("pagesTitleContainerContainer").style.display = "none";
 	document.querySelector("body").classList.remove("no-scroll");
 	document.getElementById("portfolioContainer").innerHTML = pages34;
+}
+
+function pagesBox35(){
+	pages = 35;
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages35;
+}
+
+function pagesBox36(){
+	pages = 36;
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages36;
+}
+
+function pagesBox37(){
+	pages = 37;
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages37;
+}
+
+function pagesBox38(){
+	pages = 38;
+	document.getElementById("pagesBox").style.display = "none";
+	document.getElementById("pagesBoxBackground").style.display = "none";
+	document.getElementById("iconPortfolioClosePages").style.display = "none";
+	document.getElementById("portfolioIconContainerContainer").style.display = "flex";
+	document.getElementById("pagesTitleContainerContainer").style.display = "none";
+	document.querySelector("body").classList.remove("no-scroll");
+	document.getElementById("portfolioContainer").innerHTML = pages38;
 }
